@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>My Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="startGame()">
+	<div id="container">
+		<h1>Tic tac toe in JAVASCRIPT.</h1>
+		<div id="message">Who is starting with X?</div>
+		<table border="1">
+			<tr>
+				<td class="square" id="s1" onclick="nextMove(this)"></td>
+				<td class="square" id="s2" onclick="nextMove(this)"></td>
+				<td class="square" id="s3" onclick="nextMove(this)"></td>
+			</tr>
+			<tr>
+				<td class="square" id="s4" onclick="nextMove(this)"></td>
+				<td class="square" id="s5" onclick="nextMove(this)"></td>
+				<td class="square" id="s6" onclick="nextMove(this)"></td>
+			</tr>
+			<tr>
+				<td class="square" id="s7" onclick="nextMove(this)"></td>
+				<td class="square" id="s8" onclick="nextMove(this)"></td>
+				<td class="square" id="s9" onclick="nextMove(this)"></td>
+			</tr>
+		</table>
+		<button onClick="startGame();">Start Over</button>
+	</div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+
+body {
+	background: white;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	font-size: 30px;
+}
+input {
+	border: 2px solid #999;
+	font-family: Helvetica, sans-serif;
+	color: #999;
+	font-size: 30px;
+}
+
+#ratefeld {
+	font-family: 'Permanent Marker', 'cursive';
+	font-size: 2.0em;
+}
+
+h1 {
+	font-family: 'Permanent Marker', 'cursive';
+}

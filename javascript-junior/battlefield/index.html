@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A Very Simple Battleship Game</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	
+	<h1>Battleship</h1>	
+	<div id="gameboard">
+	</div>
+		<input id="fireBtn" type="button" onclick="promtFire()" value="Fire">
+	
+	<footer>
+		<img id="bbc" src="img/blackbelt.png">
+		<img src="img/4g.jpg">
+	</footer>
+	<script type="text/javascript" src="battleship.js"></script>
+	<script type="text/javascript">
+		function promtFire()
+		{
+			var position = prompt("Fire positions");
+			if(position)
+			{
+				var coordinates = position.split(',');
+				fireTorpedo(coordinates[0], coordinates[1]);
+			}
+
+		}
+
+		gameBoard = addShip(gameBoard,4,[0,3],"horizontal");
+		gameBoard = addShip(gameBoard,5,[5,0],"vertical");
+		gameBoard = addShip(gameBoard,2,[7,3],"vertical");
+		gameBoard = addShip(gameBoard,3,[3,6],"vertical");
+		gameBoard = addShip(gameBoard,4,[5,6],"horizontal");
+	</script>
+	</body>
+</html>

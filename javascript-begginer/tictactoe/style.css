@@ -1,0 +1,25 @@
+#container{
+  width: 550px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+}
+table{
+	margin: auto;
+}
+h1{
+	text-align: center;
+}
+#message{font-size: 30px;}
+button{font-size: 30px;}
+.square{
+  height: 80px;
+  width: 80px;
+  font-size: 45pt;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
