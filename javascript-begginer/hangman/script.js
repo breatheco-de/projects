@@ -78,3 +78,15 @@ function init(){
 }
 
 window.onload = init;
+
+$(document).ready(function() {
+	console.log("ready...");
+	
+	$.ajax({
+		method: "GET",
+		url: "data.json"
+	}).done(function( msg ) {
+		alert( "Data Saved: " + msg );
+	});
+
+});
