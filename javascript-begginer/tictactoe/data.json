@@ -1,12 +1,12 @@
 {
-	'players' : [
+	"players" : [
 		{
-			'name' : 'Barbara',
-			'lastname' : "Scholetter"
+			"name" : "Barbara",
+			"lastname" : "Scholetter"
 		},
 		{
-			'name' : 'John',
-			'lastname' : "Kane"
+			"name" : "John",
+			"lastname" : "Kane"
 		}
 	]
 }

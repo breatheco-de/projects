@@ -83,10 +83,14 @@ $(document).ready(function() {
 	console.log("ready...");
 	
 	$.ajax({
-		method: "GET",
-		url: "data.json"
-	}).done(function( msg ) {
-		alert( "Data Saved: " + msg );
+	  type: 'GET',
+	  url: '/my/url',
+	  success: function(resp) {
+
+	  },
+	  error: function() {
+
+	  }
 	});
 
 });
