@@ -42,15 +42,21 @@
 			<td><span id="screenBubbles"></span></td>
 		</tr>
 	</table>
-	<input type="text" id="exampleInput1" />
-	<button id="myBtn">First Button</button>
-	<div id="exampleDiv">Example Div</div>
-	<ul id="exampleUL">
-		<li>My first ul</li>
-		<li>My second ul</li>
-		<li>My third ul</li>
-		<li>My forth ul</li>
-	</ul>
+	<div id="instructions">
+		<h2>Instructions</h2>
+		<p id="instructionsMsg"></p>
+	</div>
+	<div id="domelements">
+		<input type="text" id="exampleInput1" />
+		<button id="myBtn">First Button</button>
+		<div id="exampleDiv">Example Div</div>
+		<ul id="exampleUL">
+			<li>My first ul</li>
+			<li>My second ul</li>
+			<li>My third ul</li>
+			<li>My forth ul</li>
+		</ul>
+	</div>
 </div>
 <script type="text/javascript">
 	
@@ -61,6 +67,8 @@
 		
 		old_event_string = elm.value;
 		if(elm.value!='none') document.addEventListener(elm.value,myEventListener);
+
+		showInstructions(elm.value);
 	}
 
 	var myEventListener = function(event){
@@ -82,6 +90,46 @@
 		screenBubbles.innerHTML = event.bubbles;
 
 		generateAditional(event);
+	}
+
+	function showInstructions(eventName)
+	{
+		var instructions = document.getElementById('instructions');
+		instructions.style.display = "block";
+		instructions.className = "glowRed";
+		document.getElementById('domelements').style.display = "block";
+		window.setTimeout(function(){
+			var instructions = document.getElementById('instructions');
+			instructions.className = "";
+			instructions.style.color = "#b70000";
+			instructions.style.fontWeight = "900";
+		}, 1000);
+
+		var instructions = document.getElementById('instructionsMsg');
+		switch(eventName)
+		{
+			case "click":
+				instructions.innerHTML = "Click on any of the elements below to get the event information.";
+			break;
+			case "mousemove":
+				instructions.innerHTML = "Move your mouse and the event is triggered.";
+			break;
+			case "mouseout":
+				instructions.innerHTML = "Move you mouse OUTSIDE of any DOM element below.<small> you have you move outside, not inside.</small>";
+			break;
+			case "mouseover":
+				instructions.innerHTML = "Move you mouse INSIDE of any DOM element below.<small> if you keep inside of the same element, nothing will be triggered</small>";
+			break;
+			case "dblclick":
+				instructions.innerHTML = "Double-Click on any of the elements below to get the event information.";
+			break;
+			case "contextmenu":
+				instructions.innerHTML = "Right click your mouse in any of the elements.";
+			break;
+			default:
+				instructions.innerHTML = "Nothing aditional to show.";
+			break;
+		}
 	}
 
 	function generateAditional(event)
