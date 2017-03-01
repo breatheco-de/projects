@@ -81,12 +81,13 @@ window.onload = init;
 
 $(document).ready(function() {
 	console.log("ready...");
-	
+
 	$.ajax({
 	  type: 'GET',
-	  url: '/my/url',
+	  datatype: 'json',
+	  url: 'https://4geeksacademy.github.io/code-projects/javascript-begginer/hangman/data.json',
 	  success: function(resp) {
-
+	  	console.log(resp);
 	  },
 	  error: function() {
 

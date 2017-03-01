@@ -1,0 +1,469 @@
+body {
+  background: #9db3b9;
+  font-size: 10px;
+}
+
+#gameboy {
+  width: 19.8em;
+  height: 33.1em;
+  background: #e6e7e8;
+  margin: 5% auto 0 auto;
+  border-radius: 1.0em;
+  border-bottom-right-radius: 4.0em;
+  position: relative;
+  border: 0.1em solid #f3fbf5;
+}
+
+#header-v {
+  width: 0.4em;
+  height: 1.7em;
+  background: #d8d9db;
+  position: absolute;
+  top: -0.1em;
+  border-top: 0.2em solid #9db3b9;
+  border-left: 0.1em solid #c0c2c4;
+  left: 1.4em;
+  z-index: 10;
+}
+#header-v + #header-v {
+  left: 17.5em;
+}
+
+#header-h {
+  width: 100%;
+  height: 0.4em;
+  background: #d8d9db;
+  border-top: 0.1em solid #c0c2c4;
+  border-bottom: 0.1em solid #fff;
+  position: absolute;
+  top: 1.7em;
+}
+
+#header-circle {
+  width: 3.0em;
+  height: 0.7em;
+  background: #d8d9db;
+  border-radius: 1.0em;
+  border: 0.1em solid #cbcccf;
+  border-top-color: #b0b2b6;
+  border-bottom-color: #fff;
+  position: absolute;
+  left: 2.3em;
+  top: 0.3em;
+  z-index: 5;
+}
+#footer-circle #header-circle {
+  top: auto;
+  left: 7.5em;
+  bottom: 0.4em;
+}
+
+#v-bit, #v-bit2, #v-bit3 {
+  width: 0.2em;
+  height: 0.5em;
+  position: absolute;
+  background: #d8d9db;
+  border-top: 0.2em solid #9db3b9;
+  border-left: 0.1em solid #c0c2c4;
+  top: -0.1em;
+  left: 2.7em;
+}
+#footer-circle #v-bit, #footer-circle #v-bit2, #footer-circle #v-bit3 {
+  top: auto;
+  left: 9.1em;
+  bottom: -0.1em;
+  border-top: 0em;
+  border-bottom: 0.2em solid #9db3b9;
+}
+
+#v-bit2 {
+  left: 3.2em;
+}
+#footer-circle #v-bit2 {
+  left: 9.6em;
+}
+
+#v-bit3 {
+  left: 3.7em;
+}
+#footer-circle #v-bit3 {
+  left: 10.1em;
+}
+
+#screen-outer {
+  background: #77787b;
+  width: 17.0em;
+  height: 13.0em;
+  position: absolute;
+  left: 1.3em;
+  top: 3.0em;
+  border-radius: 1.0em;
+  border-bottom-right-radius: 3.0em;
+  border: 0.1em solid #5d5e60;
+}
+
+#screen-inner {
+  width: 16.4em;
+  height: 12.4em;
+  position: absolute;
+  left: 0.3em;
+  top: 0.3em;
+  background: #808285;
+  border-radius: 1.0em;
+  border-bottom-right-radius: 3.0em;
+}
+
+#screen-display {
+  width: 11.3em;
+  height: 9.7em;
+  background: #6d793c;
+  background-size: 100% 100%;
+  border-top: 0.1em solid #5d5e60;
+  border-bottom: 0.1em solid #95979a;
+  margin: 0px auto;
+  margin-top: 1.3em;
+  position: relative;
+}
+#screen-display #screen-tetris {
+  width: 100%;
+  height: 100%;
+  background: url("http://dsmedia.gamespy.com/ds/image/article/100/1009097/game-boy-20th-anniversary-celebration-day-1-then-and-now-20090730003531407.gif") no-repeat left top;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: alpha(opacity=25);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+  -moz-opacity: 0.25;
+  -khtml-opacity: 0.25;
+  opacity: 0.25;
+}
+#screen-display #screen-display-triangle {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 9.7em 10.7em;
+  border-color: transparent transparent #616f30 transparent;
+}
+
+#screen-top {
+  width: 15.6em;
+  height: 0.6em;
+  position: absolute;
+  top: 0.3em;
+  left: 0.5em;
+}
+#screen-top #screen-top-purple {
+  width: 5.5em;
+  height: 0.2em;
+  border-top: 0.2em solid #7d6a83;
+  border-bottom: 0.2em solid #564c65;
+  float: left;
+}
+#screen-top #screen-top-text {
+  width: 7.3em;
+  height: 0.5em;
+  float: left;
+  margin-left: 0.5em;
+  background: #8c8e91;
+}
+#screen-top #screen-top-text + #screen-top-purple {
+  width: 1.7em;
+  margin-left: 0.5em;
+}
+
+#screen-left-text {
+  width: 1.7em;
+  height: 0.1em;
+  background: #b9bbbe;
+  border: 0.1em solid #a2a4a7;
+  position: absolute;
+  top: 5.5em;
+  left: 0.3em;
+}
+
+#screen-circle {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 4.5em;
+  left: 0.7em;
+}
+
+.screen-on {
+  background: -moz-radial-gradient(center, ellipse cover, #ffe609 0%, #f1606d 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffe609), color-stop(100%, #f1606d));
+  /* safari4+,chrome */
+  background: -webkit-radial-gradient(center, ellipse cover, #ffe609 0%, #f1606d 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(center, ellipse cover, #ffe609 0%, #f1606d 100%);
+  /* opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, #ffe609 0%, #f1606d 100%);
+  /* ie10+ */
+  background: radial-gradient(ellipse at center, #ffe609 0%, #f1606d 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe609', endColorstr='#f1606d',GradientType=1 );
+  /* ie6-9 */
+  box-shadow: 0px 0px 0.5em #f1606d;
+  border: 0.1em solid #f1606d;
+}
+
+#text {
+  width: 11.1em;
+  height: 1.1em;
+  position: absolute;
+  top: 17.0em;
+  left: 1.3em;
+}
+#text:before {
+  content: " ";
+  display: block;
+  width: 4.5em;
+  height: 0.7em;
+  margin-top: 0.4em;
+  background: #adaabc;
+  float: left;
+}
+#text:after {
+  content: " ";
+  display: block;
+  width: 6.2em;
+  height: 1.1em;
+  background: #adaabc;
+  float: right;
+}
+
+#dpad {
+  width: 6.6em;
+  height: 6.6em;
+  background: #cfd0d2;
+  border-radius: 50%;
+  border-top: 0.1em solid #c7c8cb;
+  border-bottom: 0.1em solid #fff;
+  position: absolute;
+  top: 20.0em;
+  left: 1.1em;
+}
+#dpad #dpad-center {
+  width: 1.9em;
+  height: 1.9em;
+  background: #262929;
+  position: absolute;
+  left: 2.4em;
+  top: 2.3em;
+  z-index: 999;
+}
+#dpad #dpad-center:before {
+  content: " ";
+  width: 1.3em;
+  height: 1.3em;
+  display: block;
+  background: #414142;
+  margin: 0.2em 0 0 0.2em;
+  border-radius: 50%;
+  border: 0.1em solid #1a1c1c;
+}
+#dpad .dpad-top {
+  width: 1.7em;
+  height: 1.5em;
+  position: absolute;
+  background: #262929;
+  top: 0.7em;
+  left: 2.4em;
+  -webkit-border-top-left-radius: 0.3em;
+  -webkit-border-top-right-radius: 0.3em;
+  -moz-border-radius-topleft: 0.3em;
+  -moz-border-radius-topright: 0.3em;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  border: 0.1em solid #333;
+}
+#dpad .dpad-top div {
+  width: 1.3em;
+  height: 0.2em;
+  background: #171414;
+  margin: 0px auto 0.2em auto;
+}
+#dpad .dpad-top div:first-child {
+  margin-top: 0.3em;
+}
+#dpad .dpad-bottom {
+  top: auto;
+  bottom: 0.8em;
+  -webkit-border-radius: 0px;
+  -webkit-border-bottom-right-radius: 0.3em;
+  -webkit-border-bottom-left-radius: 0.3em;
+  -moz-border-radius: 0px;
+  -moz-border-radius-bottomright: 0.3em;
+  -moz-border-radius-bottomleft: 0.3em;
+  border-radius: 0px;
+  border-bottom-right-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+}
+#dpad .dpad-left {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  top: 2.4em;
+  left: 0.7em;
+}
+#dpad .dpad-right {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  top: 2.4em;
+  left: auto;
+  right: 0.6em;
+}
+
+#button-container {
+  width: 7.4em;
+  height: 3.4em;
+  background: #cfd0d2;
+  border-top: 0.1em solid #c7c8cb;
+  border-bottom: 0.1em solid #fff;
+  border-radius: 3.0em;
+  position: absolute;
+  top: 21.0em;
+  right: 0.5em;
+  -webkit-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+}
+#button-container div {
+  width: 2.5em;
+  height: 2.5em;
+  background: #2f3b32;
+  border-radius: 50%;
+  float: left;
+  margin-top: 0.3em;
+  border: 0.1em solid #ffffff;
+}
+#button-container div:first-child {
+  margin-left: 0.8em;
+  margin-right: 0.5em;
+}
+#button-container div:before {
+  content: " ";
+  width: 2.3em;
+  height: 2.3em;
+  display: block;
+  background: #954c74;
+  border-radius: 50%;
+  margin: 0.1em 0px 0px 0.1em;
+  position: absolute;
+}
+#button-container div:after {
+  content: " ";
+  width: 2.1em;
+  height: 2.1em;
+  display: block;
+  background: #7a255a;
+  border-radius: 50%;
+  margin: 0.2em 0px 0px 0.2em;
+  position: absolute;
+}
+
+#button-text {
+  width: 4.0em;
+  height: 0.7em;
+  position: absolute;
+  top: 25.0em;
+  right: 0.9em;
+  -webkit-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+}
+#button-text:before, #button-text:after {
+  content: " ";
+  display: block;
+  width: 0.7em;
+  height: 0.7em;
+  background: #adaabc;
+  border: 0.1em solid #a5a1b5;
+  float: left;
+}
+#button-text:after {
+  float: right;
+}
+
+#start-button {
+  width: 3.2em;
+  height: 1.2em;
+  background: #cfd0d2;
+  border-top: 0.1em solid #c7c8cb;
+  border-bottom: 0.1em solid #fff;
+  border-radius: 3.0em;
+  position: absolute;
+  left: 6.5em;
+  bottom: 4.5em;
+  -webkit-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+}
+#start-button:before {
+  content: " ";
+  display: block;
+  border-radius: 3.0em;
+  background: #92969f;
+  border: 0.1em solid #8a8e98;
+  margin: 0px auto;
+  margin-top: 0.2em;
+  width: 70%;
+  height: 0.5em;
+}
+#start-button + #start-button {
+  left: 10.0em;
+}
+
+#bottom-right-shadow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8.0em;
+  height: 4.0em;
+  border-bottom-right-radius: 4.0em;
+  overflow: hidden;
+}
+#bottom-right-shadow:before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 4.0em 8.0em;
+  border-color: transparent transparent #d8d8d8 transparent;
+}
+
+#bottom-right {
+  width: 17.5em;
+  height: 5.0em;
+  position: absolute;
+  bottom: -1.5em;
+  right: -9.0em;
+  -webkit-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+}
+#bottom-right div {
+  width: 0.3em;
+  height: 3.0em;
+  float: left;
+  margin-right: 0.8em;
+  background: #c2c4c5;
+  border-left: 0.2em solid #a8aaad;
+  border-radius: 2.0em;
+  position: relative;
+  top: -2.3em;
+}
+#bottom-right div:first-child {
+  margin-left: 3.0em;
+}

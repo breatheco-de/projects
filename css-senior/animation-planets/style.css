@@ -1,0 +1,1827 @@
+/* colors */
+body {
+  background-color: #363640;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.planets-wrapper {
+  bottom: 0;
+  height: 125px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1050px;
+}
+
+.sun {
+  background-color: #F2BC46;
+  border-radius: 100%;
+  height: 150px;
+  opacity: 0.8;
+  position: absolute;
+  width: 150px;
+}
+.sun:before {
+  border-radius: 100%;
+  content: '';
+  height: 175px;
+  left: -12.5px;
+  opacity: 0.3;
+  position: absolute;
+  top: -12.5px;
+  width: 175px;
+  z-index: -1;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -ms-filter: blur(1px);
+  -o-filter: blur(1px);
+  background: radial-gradient(#F2BC46, #ffd55f);
+  background: -webkit-radial-gradient(#F2BC46, #ffd55f);
+  background: -moz-radial-gradient(#F2BC46, #ffd55f);
+  background: -ms-radial-gradient(#F2BC46, #ffd55f);
+  animation: sunshine 3s linear infinite;
+  -webkit-animation: sunshine 3s linear infinite;
+  -moz-animation: sunshine 3s linear infinite;
+  -ms-animation: sunshine 3s linear infinite;
+  -o-animation: sunshine 3s linear infinite;
+}
+
+.mercury, .earth, .mars, .jupiter, .saturn, .uranus, .neptune, .pluto {
+  background-color: #76777A;
+  border-radius: 100%;
+  box-shadow: inset -3px -3px #67686b;
+  height: 40px;
+  left: 190px;
+  position: absolute;
+  top: 42.5px;
+  width: 40px;
+  animation: mercuryJump 3.2s linear infinite;
+  -webkit-animation: mercuryJump 3.2s linear infinite;
+  -moz-animation: mercuryJump 3.2s linear infinite;
+  -ms-animation: mercuryJump 3.2s linear infinite;
+  -o-animation: mercuryJump 3.2s linear infinite;
+}
+.mercury:before, .mercury:after, .earth:after, .mars:after, .jupiter:after, .saturn:after, .saturn:before, .uranus:before, .neptune:before, .uranus:after, .neptune:after, .pluto:after, .earth:before, .mars:before, .jupiter:before, .pluto:before {
+  background-color: #67686b;
+  border-radius: 100%;
+  content: '';
+  height: 7px;
+  left: 6px;
+  position: absolute;
+  top: 23px;
+  width: 7px;
+}
+.mercury:after, .earth:after, .mars:after, .jupiter:after, .saturn:after, .saturn:before, .uranus:before, .neptune:before, .uranus:after, .neptune:after, .pluto:after {
+  height: 5px;
+  left: 20px;
+  top: 6px;
+  width: 5px;
+}
+
+.venus {
+  border-radius: 100%;
+  height: 55px;
+  left: 265px;
+  position: absolute;
+  top: 35px;
+  width: 55px;
+  animation: venusJump 2.82s -2s linear infinite;
+  -webkit-animation: venusJump 2.82s -2s linear infinite;
+  -moz-animation: venusJump 2.82s -2s linear infinite;
+  -ms-animation: venusJump 2.82s -2s linear infinite;
+  -o-animation: venusJump 2.82s -2s linear infinite;
+  background: linear-gradient(#e5875f 5px, #c2643c 15px, #D1734B 25px, #ea8c64 40px, #c76941 45px);
+  background: -webkit-linear-gradient(#e5875f 5px, #c2643c 15px, #D1734B 25px, #ea8c64 40px, #c76941 45px);
+  background: -moz-linear-gradient(#e5875f 5px, #c2643c 15px, #D1734B 25px, #ea8c64 40px, #c76941 45px);
+  background: -ms-linear-gradient(#e5875f 5px, #c2643c 15px, #D1734B 25px, #ea8c64 40px, #c76941 45px);
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+}
+
+.earth, .mars, .jupiter, .saturn, .uranus, .neptune {
+  background-color: #496282;
+  box-shadow: inset -3px -3px #3a5373;
+  height: 50px;
+  left: 345px;
+  top: 40px;
+  width: 50px;
+  animation: earthJump 2.76s -1.4s linear infinite;
+  -webkit-animation: earthJump 2.76s -1.4s linear infinite;
+  -moz-animation: earthJump 2.76s -1.4s linear infinite;
+  -ms-animation: earthJump 2.76s -1.4s linear infinite;
+  -o-animation: earthJump 2.76s -1.4s linear infinite;
+}
+.earth:before, .earth:after, .mars:after, .jupiter:after, .saturn:after, .saturn:before, .uranus:before, .neptune:before, .uranus:after, .neptune:after, .mars:before, .jupiter:before {
+  background-color: #5E8249;
+  border-radius: 100% 70% 100% 70%;
+  content: '';
+  height: 32px;
+  left: 3px;
+  position: absolute;
+  top: 15px;
+  width: 15px;
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+}
+.earth:after, .mars:after, .jupiter:after, .saturn:after, .saturn:before, .uranus:before, .neptune:before, .uranus:after, .neptune:after {
+  height: 12px;
+  left: 27px;
+  top: 3px;
+  width: 10px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.mars {
+  background-color: #C25447;
+  box-shadow: inset -3px -3px #b34538;
+  height: 42px;
+  left: 430px;
+  top: 45px;
+  width: 42px;
+  animation: marsJump 2.89s -3.1s linear infinite;
+  -webkit-animation: marsJump 2.89s -3.1s linear infinite;
+  -moz-animation: marsJump 2.89s -3.1s linear infinite;
+  -ms-animation: marsJump 2.89s -3.1s linear infinite;
+  -o-animation: marsJump 2.89s -3.1s linear infinite;
+}
+.mars:before, .mars:after {
+  background-color: #ae4033;
+  border-radius: 100%;
+  height: 12px;
+  left: 20px;
+  top: 23px;
+  width: 12px;
+}
+.mars:after {
+  height: 9px;
+  left: 5px;
+  top: 10px;
+  width: 9px;
+}
+
+.jupiter {
+  box-shadow: 0px 0px 0px;
+  height: 80px;
+  left: 495px;
+  top: 25px;
+  width: 80px;
+  animation: jupiterJump 2.05s -4.32s linear infinite;
+  -webkit-animation: jupiterJump 2.05s -4.32s linear infinite;
+  -moz-animation: jupiterJump 2.05s -4.32s linear infinite;
+  -ms-animation: jupiterJump 2.05s -4.32s linear infinite;
+  -o-animation: jupiterJump 2.05s -4.32s linear infinite;
+  background: linear-gradient(#E89150 5px, #ffc382 10px, #D16F1B 30px, #ffc382 50px, #D16F1B 55px, #ffc382 70px, #E89150 75px);
+  background: -webkit-linear-gradient(#E89150 5px, #ffc382 10px, #D16F1B 30px, #ffc382 50px, #D16F1B 55px, #ffc382 70px, #E89150 75px);
+  background: -moz-linear-gradient(#E89150 5px, #ffc382 10px, #D16F1B 30px, #ffc382 50px, #D16F1B 55px, #ffc382 70px, #E89150 75px);
+  background: -ms-linear-gradient(#E89150 5px, #ffc382 10px, #D16F1B 30px, #ffc382 50px, #D16F1B 55px, #ffc382 70px, #E89150 75px);
+}
+.jupiter:before, .jupiter:after {
+  height: 0;
+}
+
+.saturn, .uranus, .neptune {
+  background-color: #D1AA5E;
+  box-shadow: inset -3px -3px #b89145;
+  height: 65px;
+  left: 635px;
+  top: 35px;
+  width: 65px;
+  animation: saturnJump 2.25s -2.87s linear infinite;
+  -webkit-animation: saturnJump 2.25s -2.87s linear infinite;
+  -moz-animation: saturnJump 2.25s -2.87s linear infinite;
+  -ms-animation: saturnJump 2.25s -2.87s linear infinite;
+  -o-animation: saturnJump 2.25s -2.87s linear infinite;
+}
+.saturn:after, .saturn:before, .uranus:before, .neptune:before, .uranus:after, .neptune:after {
+  background-color: transparent;
+  border-bottom: 10px solid #a98236;
+  border-left: 10px solid #a98236;
+  height: 55px;
+  left: -5px;
+  top: -3px;
+  width: 55px;
+  transform: rotate(-45deg) skew(65deg);
+  -webkit-transform: rotate(-45deg) skew(65deg);
+  -moz-transform: rotate(-45deg) skew(65deg);
+  -ms-transform: rotate(-45deg) skew(65deg);
+}
+.saturn:before, .uranus:before, .neptune:before {
+  border-top: 10px solid #a98236;
+  border-right: 10px solid #a98236;
+  border-left: 0;
+  border-bottom: 0;
+  z-index: -1;
+}
+
+.uranus, .neptune {
+  background-color: #9DB1BF;
+  box-shadow: inset -3px -3px #8498a6;
+  height: 67px;
+  left: 765px;
+  top: 34px;
+  width: 67px;
+  animation: uranusJump 2.73s -5.12s linear infinite;
+  -webkit-animation: uranusJump 2.73s -5.12s linear infinite;
+  -moz-animation: uranusJump 2.73s -5.12s linear infinite;
+  -ms-animation: uranusJump 2.73s -5.12s linear infinite;
+  -o-animation: uranusJump 2.73s -5.12s linear infinite;
+}
+.uranus:after, .neptune:after, .uranus:before, .neptune:before {
+  border: 0;
+}
+
+.neptune {
+  background-color: #5870A8;
+  box-shadow: inset -3px -3px #3f578f;
+  height: 60px;
+  left: 880px;
+  top: 38px;
+  width: 60px;
+  animation: neptuneJump 2.55s -5.77s linear infinite;
+  -webkit-animation: neptuneJump 2.55s -5.77s linear infinite;
+  -moz-animation: neptuneJump 2.55s -5.77s linear infinite;
+  -ms-animation: neptuneJump 2.55s -5.77s linear infinite;
+  -o-animation: neptuneJump 2.55s -5.77s linear infinite;
+}
+
+.pluto {
+  background-color: #805F47;
+  box-shadow: inset -3px -3px #715038;
+  height: 30px;
+  left: 1000px;
+  top: 55px;
+  width: 30px;
+  animation: plutoJump 2.77s -1.22s linear infinite;
+  -webkit-animation: plutoJump 2.77s -1.22s linear infinite;
+  -moz-animation: plutoJump 2.77s -1.22s linear infinite;
+  -ms-animation: plutoJump 2.77s -1.22s linear infinite;
+  -o-animation: plutoJump 2.77s -1.22s linear infinite;
+}
+.pluto:before {
+  background-color: #7b392f;
+  height: 8px;
+  left: -1px;
+  opacity: 0.8;
+  top: 18px;
+  width: 15px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+.pluto:after {
+  background-color: #7b392f;
+  opacity: 0.8;
+}
+
+/* planet animations */
+@keyframes mercuryJump {
+  0% {
+    top: 42.5px;
+  }
+  30% {
+    top: 37.5px;
+  }
+  70% {
+    top: 47.5px;
+  }
+  100% {
+    top: 42.5px;
+  }
+}
+@-webkit-keyframes mercuryJump {
+  0% {
+    top: 42.5px;
+  }
+  30% {
+    top: 37.5px;
+  }
+  70% {
+    top: 47.5px;
+  }
+  100% {
+    top: 42.5px;
+  }
+}
+@-moz-keyframes mercuryJump {
+  0% {
+    top: 42.5px;
+  }
+  30% {
+    top: 37.5px;
+  }
+  70% {
+    top: 47.5px;
+  }
+  100% {
+    top: 42.5px;
+  }
+}
+@-ms-keyframes mercuryJump {
+  0% {
+    top: 42.5px;
+  }
+  30% {
+    top: 37.5px;
+  }
+  70% {
+    top: 47.5px;
+  }
+  100% {
+    top: 42.5px;
+  }
+}
+@keyframes venusJump {
+  0% {
+    top: 35px;
+  }
+  30% {
+    top: 30px;
+  }
+  70% {
+    top: 40px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+@-webkit-keyframes venusJump {
+  0% {
+    top: 35px;
+  }
+  30% {
+    top: 30px;
+  }
+  70% {
+    top: 40px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+@-moz-keyframes venusJump {
+  0% {
+    top: 35px;
+  }
+  30% {
+    top: 30px;
+  }
+  70% {
+    top: 40px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+@-ms-keyframes venusJump {
+  0% {
+    top: 35px;
+  }
+  30% {
+    top: 30px;
+  }
+  70% {
+    top: 40px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+@keyframes earthJump {
+  0% {
+    top: 40px;
+  }
+  30% {
+    top: 35px;
+  }
+  70% {
+    top: 45px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+@-webkit-keyframes earthJump {
+  0% {
+    top: 40px;
+  }
+  30% {
+    top: 35px;
+  }
+  70% {
+    top: 45px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+@-moz-keyframes earthJump {
+  0% {
+    top: 40px;
+  }
+  30% {
+    top: 35px;
+  }
+  70% {
+    top: 45px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+@-ms-keyframes earthJump {
+  0% {
+    top: 40px;
+  }
+  30% {
+    top: 35px;
+  }
+  70% {
+    top: 45px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+@keyframes marsJump {
+  0% {
+    top: 45px;
+  }
+  30% {
+    top: 40px;
+  }
+  70% {
+    top: 50px;
+  }
+  100% {
+    top: 45px;
+  }
+}
+@-webkit-keyframes marsJump {
+  0% {
+    top: 45px;
+  }
+  30% {
+    top: 40px;
+  }
+  70% {
+    top: 50px;
+  }
+  100% {
+    top: 45px;
+  }
+}
+@-moz-keyframes marsJump {
+  0% {
+    top: 45px;
+  }
+  30% {
+    top: 40px;
+  }
+  70% {
+    top: 50px;
+  }
+  100% {
+    top: 45px;
+  }
+}
+@-ms-keyframes marsJump {
+  0% {
+    top: 45px;
+  }
+  30% {
+    top: 40px;
+  }
+  70% {
+    top: 50px;
+  }
+  100% {
+    top: 45px;
+  }
+}
+@keyframes jupiterJump {
+  0% {
+    top: 25px;
+  }
+  30% {
+    top: 20px;
+  }
+  70% {
+    top: 30px;
+  }
+  100% {
+    top: 25px;
+  }
+}
+@-webkit-keyframes jupiterJump {
+  0% {
+    top: 25px;
+  }
+  30% {
+    top: 20px;
+  }
+  70% {
+    top: 30px;
+  }
+  100% {
+    top: 25px;
+  }
+}
+@-moz-keyframes jupiterJump {
+  0% {
+    top: 25px;
+  }
+  30% {
+    top: 20px;
+  }
+  70% {
+    top: 30px;
+  }
+  100% {
+    top: 25px;
+  }
+}
+@-ms-keyframes jupiterJump {
+  0% {
+    top: 25px;
+  }
+  30% {
+    top: 20px;
+  }
+  70% {
+    top: 30px;
+  }
+  100% {
+    top: 25px;
+  }
+}
+@keyframes saturnJump {
+  0% {
+    top: 35px;
+  }
+  30% {
+    top: 30px;
+  }
+  70% {
+    top: 40px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+@-webkit-keyframes saturnJump {
+  0% {
+    top: 35px;
+  }
+  30% {
+    top: 30px;
+  }
+  70% {
+    top: 40px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+@-moz-keyframes saturnJump {
+  0% {
+    top: 35px;
+  }
+  30% {
+    top: 30px;
+  }
+  70% {
+    top: 40px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+@-ms-keyframes saturnJump {
+  0% {
+    top: 35px;
+  }
+  30% {
+    top: 30px;
+  }
+  70% {
+    top: 40px;
+  }
+  100% {
+    top: 35px;
+  }
+}
+@keyframes uranusJump {
+  0% {
+    top: 34px;
+  }
+  30% {
+    top: 29px;
+  }
+  70% {
+    top: 39px;
+  }
+  100% {
+    top: 34px;
+  }
+}
+@-webkit-keyframes uranusJump {
+  0% {
+    top: 34px;
+  }
+  30% {
+    top: 29px;
+  }
+  70% {
+    top: 39px;
+  }
+  100% {
+    top: 34px;
+  }
+}
+@-moz-keyframes uranusJump {
+  0% {
+    top: 34px;
+  }
+  30% {
+    top: 29px;
+  }
+  70% {
+    top: 39px;
+  }
+  100% {
+    top: 34px;
+  }
+}
+@-ms-keyframes uranusJump {
+  0% {
+    top: 34px;
+  }
+  30% {
+    top: 29px;
+  }
+  70% {
+    top: 39px;
+  }
+  100% {
+    top: 34px;
+  }
+}
+@keyframes neptuneJump {
+  0% {
+    top: 38px;
+  }
+  30% {
+    top: 33px;
+  }
+  70% {
+    top: 43px;
+  }
+  100% {
+    top: 38px;
+  }
+}
+@-webkit-keyframes neptuneJump {
+  0% {
+    top: 38px;
+  }
+  30% {
+    top: 33px;
+  }
+  70% {
+    top: 43px;
+  }
+  100% {
+    top: 38px;
+  }
+}
+@-moz-keyframes neptuneJump {
+  0% {
+    top: 38px;
+  }
+  30% {
+    top: 33px;
+  }
+  70% {
+    top: 43px;
+  }
+  100% {
+    top: 38px;
+  }
+}
+@-ms-keyframes neptuneJump {
+  0% {
+    top: 38px;
+  }
+  30% {
+    top: 33px;
+  }
+  70% {
+    top: 43px;
+  }
+  100% {
+    top: 38px;
+  }
+}
+@keyframes plutoJump {
+  0% {
+    top: 55px;
+  }
+  30% {
+    top: 50px;
+  }
+  70% {
+    top: 60px;
+  }
+  100% {
+    top: 55px;
+  }
+}
+@-webkit-keyframes plutoJump {
+  0% {
+    top: 55px;
+  }
+  30% {
+    top: 50px;
+  }
+  70% {
+    top: 60px;
+  }
+  100% {
+    top: 55px;
+  }
+}
+@-moz-keyframes plutoJump {
+  0% {
+    top: 55px;
+  }
+  30% {
+    top: 50px;
+  }
+  70% {
+    top: 60px;
+  }
+  100% {
+    top: 55px;
+  }
+}
+@-ms-keyframes plutoJump {
+  0% {
+    top: 55px;
+  }
+  30% {
+    top: 50px;
+  }
+  70% {
+    top: 60px;
+  }
+  100% {
+    top: 55px;
+  }
+}
+@keyframes sunshine {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+@-webkit-keyframes sunshine {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+@-moz-keyframes sunshine {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+@-ms-keyframes sunshine {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+/* sky/universe background */
+.stars {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.s1 {
+  height: 1.5px;
+  left: 22%;
+  top: 31%;
+  width: 1.5px;
+  animation: shiningStar 13s -11s infinite;
+  -webkit-animation: shiningStar 13s -11s infinite;
+  -moz-animation: shiningStar 13s -11s infinite;
+  -ms-animation: shiningStar 13s -11s infinite;
+  -o-animation: shiningStar 13s -11s infinite;
+}
+
+.s2 {
+  height: 1.5px;
+  left: 65%;
+  top: 25%;
+  width: 1.5px;
+  animation: shiningStar 25s -3s infinite;
+  -webkit-animation: shiningStar 25s -3s infinite;
+  -moz-animation: shiningStar 25s -3s infinite;
+  -ms-animation: shiningStar 25s -3s infinite;
+  -o-animation: shiningStar 25s -3s infinite;
+}
+
+.s3 {
+  height: 1.5px;
+  left: 7%;
+  top: 100%;
+  width: 1.5px;
+  animation: shiningStar 22s -25s infinite;
+  -webkit-animation: shiningStar 22s -25s infinite;
+  -moz-animation: shiningStar 22s -25s infinite;
+  -ms-animation: shiningStar 22s -25s infinite;
+  -o-animation: shiningStar 22s -25s infinite;
+}
+
+.s4 {
+  height: 1.5px;
+  left: 52%;
+  top: 78%;
+  width: 1.5px;
+  animation: shiningStar 14s -16s infinite;
+  -webkit-animation: shiningStar 14s -16s infinite;
+  -moz-animation: shiningStar 14s -16s infinite;
+  -ms-animation: shiningStar 14s -16s infinite;
+  -o-animation: shiningStar 14s -16s infinite;
+}
+
+.s5 {
+  height: 1.5px;
+  left: 72%;
+  top: 43%;
+  width: 1.5px;
+  animation: shiningStar 16s -8s infinite;
+  -webkit-animation: shiningStar 16s -8s infinite;
+  -moz-animation: shiningStar 16s -8s infinite;
+  -ms-animation: shiningStar 16s -8s infinite;
+  -o-animation: shiningStar 16s -8s infinite;
+}
+
+.s6 {
+  height: 1.5px;
+  left: 53%;
+  top: 69%;
+  width: 1.5px;
+  animation: shiningStar 21s -12s infinite;
+  -webkit-animation: shiningStar 21s -12s infinite;
+  -moz-animation: shiningStar 21s -12s infinite;
+  -ms-animation: shiningStar 21s -12s infinite;
+  -o-animation: shiningStar 21s -12s infinite;
+}
+
+.s7 {
+  height: 1.5px;
+  left: 51%;
+  top: 96%;
+  width: 1.5px;
+  animation: shiningStar 19s -11s infinite;
+  -webkit-animation: shiningStar 19s -11s infinite;
+  -moz-animation: shiningStar 19s -11s infinite;
+  -ms-animation: shiningStar 19s -11s infinite;
+  -o-animation: shiningStar 19s -11s infinite;
+}
+
+.s8 {
+  height: 1.5px;
+  left: 41%;
+  top: 39%;
+  width: 1.5px;
+  animation: shiningStar 13s -19s infinite;
+  -webkit-animation: shiningStar 13s -19s infinite;
+  -moz-animation: shiningStar 13s -19s infinite;
+  -ms-animation: shiningStar 13s -19s infinite;
+  -o-animation: shiningStar 13s -19s infinite;
+}
+
+.s9 {
+  height: 1.5px;
+  left: 40%;
+  top: 18%;
+  width: 1.5px;
+  animation: shiningStar 16s -12s infinite;
+  -webkit-animation: shiningStar 16s -12s infinite;
+  -moz-animation: shiningStar 16s -12s infinite;
+  -ms-animation: shiningStar 16s -12s infinite;
+  -o-animation: shiningStar 16s -12s infinite;
+}
+
+.s10 {
+  height: 1.5px;
+  left: 57%;
+  top: 87%;
+  width: 1.5px;
+  animation: shiningStar 21s -10s infinite;
+  -webkit-animation: shiningStar 21s -10s infinite;
+  -moz-animation: shiningStar 21s -10s infinite;
+  -ms-animation: shiningStar 21s -10s infinite;
+  -o-animation: shiningStar 21s -10s infinite;
+}
+
+.s11 {
+  height: 1.5px;
+  left: 34%;
+  top: 21%;
+  width: 1.5px;
+  animation: shiningStar 18s -18s infinite;
+  -webkit-animation: shiningStar 18s -18s infinite;
+  -moz-animation: shiningStar 18s -18s infinite;
+  -ms-animation: shiningStar 18s -18s infinite;
+  -o-animation: shiningStar 18s -18s infinite;
+}
+
+.s12 {
+  height: 1.5px;
+  left: 25%;
+  top: 86%;
+  width: 1.5px;
+  animation: shiningStar 12s -2s infinite;
+  -webkit-animation: shiningStar 12s -2s infinite;
+  -moz-animation: shiningStar 12s -2s infinite;
+  -ms-animation: shiningStar 12s -2s infinite;
+  -o-animation: shiningStar 12s -2s infinite;
+}
+
+.s13 {
+  height: 1.5px;
+  left: 77%;
+  top: 97%;
+  width: 1.5px;
+  animation: shiningStar 20s -13s infinite;
+  -webkit-animation: shiningStar 20s -13s infinite;
+  -moz-animation: shiningStar 20s -13s infinite;
+  -ms-animation: shiningStar 20s -13s infinite;
+  -o-animation: shiningStar 20s -13s infinite;
+}
+
+.s14 {
+  height: 1.5px;
+  left: 19%;
+  top: 75%;
+  width: 1.5px;
+  animation: shiningStar 23s -18s infinite;
+  -webkit-animation: shiningStar 23s -18s infinite;
+  -moz-animation: shiningStar 23s -18s infinite;
+  -ms-animation: shiningStar 23s -18s infinite;
+  -o-animation: shiningStar 23s -18s infinite;
+}
+
+.s15 {
+  height: 1.5px;
+  left: 59%;
+  top: 76%;
+  width: 1.5px;
+  animation: shiningStar 15s -16s infinite;
+  -webkit-animation: shiningStar 15s -16s infinite;
+  -moz-animation: shiningStar 15s -16s infinite;
+  -ms-animation: shiningStar 15s -16s infinite;
+  -o-animation: shiningStar 15s -16s infinite;
+}
+
+.s16 {
+  height: 1.5px;
+  left: 19%;
+  top: 73%;
+  width: 1.5px;
+  animation: shiningStar 22s -3s infinite;
+  -webkit-animation: shiningStar 22s -3s infinite;
+  -moz-animation: shiningStar 22s -3s infinite;
+  -ms-animation: shiningStar 22s -3s infinite;
+  -o-animation: shiningStar 22s -3s infinite;
+}
+
+.s17 {
+  height: 1.5px;
+  left: 61%;
+  top: 76%;
+  width: 1.5px;
+  animation: shiningStar 12s -18s infinite;
+  -webkit-animation: shiningStar 12s -18s infinite;
+  -moz-animation: shiningStar 12s -18s infinite;
+  -ms-animation: shiningStar 12s -18s infinite;
+  -o-animation: shiningStar 12s -18s infinite;
+}
+
+.s18 {
+  height: 1.5px;
+  left: 7%;
+  top: 7%;
+  width: 1.5px;
+  animation: shiningStar 13s -7s infinite;
+  -webkit-animation: shiningStar 13s -7s infinite;
+  -moz-animation: shiningStar 13s -7s infinite;
+  -ms-animation: shiningStar 13s -7s infinite;
+  -o-animation: shiningStar 13s -7s infinite;
+}
+
+.s19 {
+  height: 1.5px;
+  left: 16%;
+  top: 8%;
+  width: 1.5px;
+  animation: shiningStar 21s -23s infinite;
+  -webkit-animation: shiningStar 21s -23s infinite;
+  -moz-animation: shiningStar 21s -23s infinite;
+  -ms-animation: shiningStar 21s -23s infinite;
+  -o-animation: shiningStar 21s -23s infinite;
+}
+
+.s20 {
+  height: 1.5px;
+  left: 77%;
+  top: 72%;
+  width: 1.5px;
+  animation: shiningStar 24s -20s infinite;
+  -webkit-animation: shiningStar 24s -20s infinite;
+  -moz-animation: shiningStar 24s -20s infinite;
+  -ms-animation: shiningStar 24s -20s infinite;
+  -o-animation: shiningStar 24s -20s infinite;
+}
+
+.s21 {
+  height: 1.5px;
+  left: 38%;
+  top: 5%;
+  width: 1.5px;
+  animation: shiningStar 13s -18s infinite;
+  -webkit-animation: shiningStar 13s -18s infinite;
+  -moz-animation: shiningStar 13s -18s infinite;
+  -ms-animation: shiningStar 13s -18s infinite;
+  -o-animation: shiningStar 13s -18s infinite;
+}
+
+.s22 {
+  height: 1.5px;
+  left: 26%;
+  top: 46%;
+  width: 1.5px;
+  animation: shiningStar 16s -20s infinite;
+  -webkit-animation: shiningStar 16s -20s infinite;
+  -moz-animation: shiningStar 16s -20s infinite;
+  -ms-animation: shiningStar 16s -20s infinite;
+  -o-animation: shiningStar 16s -20s infinite;
+}
+
+.s23 {
+  height: 1.5px;
+  left: 48%;
+  top: 86%;
+  width: 1.5px;
+  animation: shiningStar 13s -2s infinite;
+  -webkit-animation: shiningStar 13s -2s infinite;
+  -moz-animation: shiningStar 13s -2s infinite;
+  -ms-animation: shiningStar 13s -2s infinite;
+  -o-animation: shiningStar 13s -2s infinite;
+}
+
+.s24 {
+  height: 1.5px;
+  left: 14%;
+  top: 56%;
+  width: 1.5px;
+  animation: shiningStar 12s -20s infinite;
+  -webkit-animation: shiningStar 12s -20s infinite;
+  -moz-animation: shiningStar 12s -20s infinite;
+  -ms-animation: shiningStar 12s -20s infinite;
+  -o-animation: shiningStar 12s -20s infinite;
+}
+
+.s25 {
+  height: 1.5px;
+  left: 21%;
+  top: 93%;
+  width: 1.5px;
+  animation: shiningStar 21s -12s infinite;
+  -webkit-animation: shiningStar 21s -12s infinite;
+  -moz-animation: shiningStar 21s -12s infinite;
+  -ms-animation: shiningStar 21s -12s infinite;
+  -o-animation: shiningStar 21s -12s infinite;
+}
+
+.s26 {
+  height: 1.5px;
+  left: 95%;
+  top: 72%;
+  width: 1.5px;
+  animation: shiningStar 12s -3s infinite;
+  -webkit-animation: shiningStar 12s -3s infinite;
+  -moz-animation: shiningStar 12s -3s infinite;
+  -ms-animation: shiningStar 12s -3s infinite;
+  -o-animation: shiningStar 12s -3s infinite;
+}
+
+.s27 {
+  height: 1.5px;
+  left: 43%;
+  top: 30%;
+  width: 1.5px;
+  animation: shiningStar 24s -14s infinite;
+  -webkit-animation: shiningStar 24s -14s infinite;
+  -moz-animation: shiningStar 24s -14s infinite;
+  -ms-animation: shiningStar 24s -14s infinite;
+  -o-animation: shiningStar 24s -14s infinite;
+}
+
+.s28 {
+  height: 1.5px;
+  left: 43%;
+  top: 4%;
+  width: 1.5px;
+  animation: shiningStar 14s -6s infinite;
+  -webkit-animation: shiningStar 14s -6s infinite;
+  -moz-animation: shiningStar 14s -6s infinite;
+  -ms-animation: shiningStar 14s -6s infinite;
+  -o-animation: shiningStar 14s -6s infinite;
+}
+
+.s29 {
+  height: 1.5px;
+  left: 89%;
+  top: 45%;
+  width: 1.5px;
+  animation: shiningStar 18s -25s infinite;
+  -webkit-animation: shiningStar 18s -25s infinite;
+  -moz-animation: shiningStar 18s -25s infinite;
+  -ms-animation: shiningStar 18s -25s infinite;
+  -o-animation: shiningStar 18s -25s infinite;
+}
+
+.s30 {
+  height: 1.5px;
+  left: 70%;
+  top: 13%;
+  width: 1.5px;
+  animation: shiningStar 17s -3s infinite;
+  -webkit-animation: shiningStar 17s -3s infinite;
+  -moz-animation: shiningStar 17s -3s infinite;
+  -ms-animation: shiningStar 17s -3s infinite;
+  -o-animation: shiningStar 17s -3s infinite;
+}
+
+.s31 {
+  height: 1.5px;
+  left: 16%;
+  top: 30%;
+  width: 1.5px;
+  animation: shiningStar 21s -8s infinite;
+  -webkit-animation: shiningStar 21s -8s infinite;
+  -moz-animation: shiningStar 21s -8s infinite;
+  -ms-animation: shiningStar 21s -8s infinite;
+  -o-animation: shiningStar 21s -8s infinite;
+}
+
+.s32 {
+  height: 1.5px;
+  left: 65%;
+  top: 38%;
+  width: 1.5px;
+  animation: shiningStar 22s -8s infinite;
+  -webkit-animation: shiningStar 22s -8s infinite;
+  -moz-animation: shiningStar 22s -8s infinite;
+  -ms-animation: shiningStar 22s -8s infinite;
+  -o-animation: shiningStar 22s -8s infinite;
+}
+
+.s33 {
+  height: 1.5px;
+  left: 18%;
+  top: 49%;
+  width: 1.5px;
+  animation: shiningStar 16s -19s infinite;
+  -webkit-animation: shiningStar 16s -19s infinite;
+  -moz-animation: shiningStar 16s -19s infinite;
+  -ms-animation: shiningStar 16s -19s infinite;
+  -o-animation: shiningStar 16s -19s infinite;
+}
+
+.s34 {
+  height: 1.5px;
+  left: 34%;
+  top: 22%;
+  width: 1.5px;
+  animation: shiningStar 14s -19s infinite;
+  -webkit-animation: shiningStar 14s -19s infinite;
+  -moz-animation: shiningStar 14s -19s infinite;
+  -ms-animation: shiningStar 14s -19s infinite;
+  -o-animation: shiningStar 14s -19s infinite;
+}
+
+.s35 {
+  height: 1.5px;
+  left: 36%;
+  top: 77%;
+  width: 1.5px;
+  animation: shiningStar 16s -21s infinite;
+  -webkit-animation: shiningStar 16s -21s infinite;
+  -moz-animation: shiningStar 16s -21s infinite;
+  -ms-animation: shiningStar 16s -21s infinite;
+  -o-animation: shiningStar 16s -21s infinite;
+}
+
+.s36 {
+  height: 1.5px;
+  left: 34%;
+  top: 23%;
+  width: 1.5px;
+  animation: shiningStar 15s -19s infinite;
+  -webkit-animation: shiningStar 15s -19s infinite;
+  -moz-animation: shiningStar 15s -19s infinite;
+  -ms-animation: shiningStar 15s -19s infinite;
+  -o-animation: shiningStar 15s -19s infinite;
+}
+
+.s37 {
+  height: 1.5px;
+  left: 31%;
+  top: 12%;
+  width: 1.5px;
+  animation: shiningStar 17s -8s infinite;
+  -webkit-animation: shiningStar 17s -8s infinite;
+  -moz-animation: shiningStar 17s -8s infinite;
+  -ms-animation: shiningStar 17s -8s infinite;
+  -o-animation: shiningStar 17s -8s infinite;
+}
+
+.s38 {
+  height: 1.5px;
+  left: 23%;
+  top: 71%;
+  width: 1.5px;
+  animation: shiningStar 19s -1s infinite;
+  -webkit-animation: shiningStar 19s -1s infinite;
+  -moz-animation: shiningStar 19s -1s infinite;
+  -ms-animation: shiningStar 19s -1s infinite;
+  -o-animation: shiningStar 19s -1s infinite;
+}
+
+.s39 {
+  height: 1.5px;
+  left: 67%;
+  top: 59%;
+  width: 1.5px;
+  animation: shiningStar 14s -5s infinite;
+  -webkit-animation: shiningStar 14s -5s infinite;
+  -moz-animation: shiningStar 14s -5s infinite;
+  -ms-animation: shiningStar 14s -5s infinite;
+  -o-animation: shiningStar 14s -5s infinite;
+}
+
+.s40 {
+  height: 1.5px;
+  left: 3%;
+  top: 9%;
+  width: 1.5px;
+  animation: shiningStar 13s -7s infinite;
+  -webkit-animation: shiningStar 13s -7s infinite;
+  -moz-animation: shiningStar 13s -7s infinite;
+  -ms-animation: shiningStar 13s -7s infinite;
+  -o-animation: shiningStar 13s -7s infinite;
+}
+
+.s41 {
+  height: 1.5px;
+  left: 18%;
+  top: 82%;
+  width: 1.5px;
+  animation: shiningStar 11s -25s infinite;
+  -webkit-animation: shiningStar 11s -25s infinite;
+  -moz-animation: shiningStar 11s -25s infinite;
+  -ms-animation: shiningStar 11s -25s infinite;
+  -o-animation: shiningStar 11s -25s infinite;
+}
+
+.s42 {
+  height: 1.5px;
+  left: 65%;
+  top: 54%;
+  width: 1.5px;
+  animation: shiningStar 18s -18s infinite;
+  -webkit-animation: shiningStar 18s -18s infinite;
+  -moz-animation: shiningStar 18s -18s infinite;
+  -ms-animation: shiningStar 18s -18s infinite;
+  -o-animation: shiningStar 18s -18s infinite;
+}
+
+.s43 {
+  height: 1.5px;
+  left: 12%;
+  top: 57%;
+  width: 1.5px;
+  animation: shiningStar 22s -13s infinite;
+  -webkit-animation: shiningStar 22s -13s infinite;
+  -moz-animation: shiningStar 22s -13s infinite;
+  -ms-animation: shiningStar 22s -13s infinite;
+  -o-animation: shiningStar 22s -13s infinite;
+}
+
+.s44 {
+  height: 1.5px;
+  left: 99%;
+  top: 1%;
+  width: 1.5px;
+  animation: shiningStar 20s -19s infinite;
+  -webkit-animation: shiningStar 20s -19s infinite;
+  -moz-animation: shiningStar 20s -19s infinite;
+  -ms-animation: shiningStar 20s -19s infinite;
+  -o-animation: shiningStar 20s -19s infinite;
+}
+
+.s45 {
+  height: 1.5px;
+  left: 87%;
+  top: 89%;
+  width: 1.5px;
+  animation: shiningStar 14s -19s infinite;
+  -webkit-animation: shiningStar 14s -19s infinite;
+  -moz-animation: shiningStar 14s -19s infinite;
+  -ms-animation: shiningStar 14s -19s infinite;
+  -o-animation: shiningStar 14s -19s infinite;
+}
+
+.s46 {
+  height: 1.5px;
+  left: 41%;
+  top: 9%;
+  width: 1.5px;
+  animation: shiningStar 13s -21s infinite;
+  -webkit-animation: shiningStar 13s -21s infinite;
+  -moz-animation: shiningStar 13s -21s infinite;
+  -ms-animation: shiningStar 13s -21s infinite;
+  -o-animation: shiningStar 13s -21s infinite;
+}
+
+.s47 {
+  height: 1.5px;
+  left: 79%;
+  top: 88%;
+  width: 1.5px;
+  animation: shiningStar 21s -16s infinite;
+  -webkit-animation: shiningStar 21s -16s infinite;
+  -moz-animation: shiningStar 21s -16s infinite;
+  -ms-animation: shiningStar 21s -16s infinite;
+  -o-animation: shiningStar 21s -16s infinite;
+}
+
+.s48 {
+  height: 1.5px;
+  left: 84%;
+  top: 68%;
+  width: 1.5px;
+  animation: shiningStar 22s -3s infinite;
+  -webkit-animation: shiningStar 22s -3s infinite;
+  -moz-animation: shiningStar 22s -3s infinite;
+  -ms-animation: shiningStar 22s -3s infinite;
+  -o-animation: shiningStar 22s -3s infinite;
+}
+
+.s49 {
+  height: 1.5px;
+  left: 70%;
+  top: 39%;
+  width: 1.5px;
+  animation: shiningStar 23s -19s infinite;
+  -webkit-animation: shiningStar 23s -19s infinite;
+  -moz-animation: shiningStar 23s -19s infinite;
+  -ms-animation: shiningStar 23s -19s infinite;
+  -o-animation: shiningStar 23s -19s infinite;
+}
+
+.s50 {
+  height: 1.5px;
+  left: 92%;
+  top: 64%;
+  width: 1.5px;
+  animation: shiningStar 24s -2s infinite;
+  -webkit-animation: shiningStar 24s -2s infinite;
+  -moz-animation: shiningStar 24s -2s infinite;
+  -ms-animation: shiningStar 24s -2s infinite;
+  -o-animation: shiningStar 24s -2s infinite;
+}
+
+.s51 {
+  height: 1.5px;
+  left: 96%;
+  top: 68%;
+  width: 1.5px;
+  animation: shiningStar 25s -5s infinite;
+  -webkit-animation: shiningStar 25s -5s infinite;
+  -moz-animation: shiningStar 25s -5s infinite;
+  -ms-animation: shiningStar 25s -5s infinite;
+  -o-animation: shiningStar 25s -5s infinite;
+}
+
+.s52 {
+  height: 1.5px;
+  left: 95%;
+  top: 37%;
+  width: 1.5px;
+  animation: shiningStar 14s -15s infinite;
+  -webkit-animation: shiningStar 14s -15s infinite;
+  -moz-animation: shiningStar 14s -15s infinite;
+  -ms-animation: shiningStar 14s -15s infinite;
+  -o-animation: shiningStar 14s -15s infinite;
+}
+
+.s53 {
+  height: 1.5px;
+  left: 33%;
+  top: 51%;
+  width: 1.5px;
+  animation: shiningStar 17s -5s infinite;
+  -webkit-animation: shiningStar 17s -5s infinite;
+  -moz-animation: shiningStar 17s -5s infinite;
+  -ms-animation: shiningStar 17s -5s infinite;
+  -o-animation: shiningStar 17s -5s infinite;
+}
+
+.s54 {
+  height: 1.5px;
+  left: 29%;
+  top: 39%;
+  width: 1.5px;
+  animation: shiningStar 18s -10s infinite;
+  -webkit-animation: shiningStar 18s -10s infinite;
+  -moz-animation: shiningStar 18s -10s infinite;
+  -ms-animation: shiningStar 18s -10s infinite;
+  -o-animation: shiningStar 18s -10s infinite;
+}
+
+.s55 {
+  height: 1.5px;
+  left: 23%;
+  top: 11%;
+  width: 1.5px;
+  animation: shiningStar 11s -24s infinite;
+  -webkit-animation: shiningStar 11s -24s infinite;
+  -moz-animation: shiningStar 11s -24s infinite;
+  -ms-animation: shiningStar 11s -24s infinite;
+  -o-animation: shiningStar 11s -24s infinite;
+}
+
+.s56 {
+  height: 1.5px;
+  left: 6%;
+  top: 88%;
+  width: 1.5px;
+  animation: shiningStar 12s -2s infinite;
+  -webkit-animation: shiningStar 12s -2s infinite;
+  -moz-animation: shiningStar 12s -2s infinite;
+  -ms-animation: shiningStar 12s -2s infinite;
+  -o-animation: shiningStar 12s -2s infinite;
+}
+
+.s57 {
+  height: 1.5px;
+  left: 31%;
+  top: 65%;
+  width: 1.5px;
+  animation: shiningStar 25s -10s infinite;
+  -webkit-animation: shiningStar 25s -10s infinite;
+  -moz-animation: shiningStar 25s -10s infinite;
+  -ms-animation: shiningStar 25s -10s infinite;
+  -o-animation: shiningStar 25s -10s infinite;
+}
+
+.s58 {
+  height: 1.5px;
+  left: 43%;
+  top: 95%;
+  width: 1.5px;
+  animation: shiningStar 14s -23s infinite;
+  -webkit-animation: shiningStar 14s -23s infinite;
+  -moz-animation: shiningStar 14s -23s infinite;
+  -ms-animation: shiningStar 14s -23s infinite;
+  -o-animation: shiningStar 14s -23s infinite;
+}
+
+.s59 {
+  height: 1.5px;
+  left: 44%;
+  top: 42%;
+  width: 1.5px;
+  animation: shiningStar 21s -3s infinite;
+  -webkit-animation: shiningStar 21s -3s infinite;
+  -moz-animation: shiningStar 21s -3s infinite;
+  -ms-animation: shiningStar 21s -3s infinite;
+  -o-animation: shiningStar 21s -3s infinite;
+}
+
+.s60 {
+  height: 1.5px;
+  left: 9%;
+  top: 84%;
+  width: 1.5px;
+  animation: shiningStar 21s -18s infinite;
+  -webkit-animation: shiningStar 21s -18s infinite;
+  -moz-animation: shiningStar 21s -18s infinite;
+  -ms-animation: shiningStar 21s -18s infinite;
+  -o-animation: shiningStar 21s -18s infinite;
+}
+
+.s61 {
+  height: 1.5px;
+  left: 68%;
+  top: 69%;
+  width: 1.5px;
+  animation: shiningStar 23s -1s infinite;
+  -webkit-animation: shiningStar 23s -1s infinite;
+  -moz-animation: shiningStar 23s -1s infinite;
+  -ms-animation: shiningStar 23s -1s infinite;
+  -o-animation: shiningStar 23s -1s infinite;
+}
+
+.s62 {
+  height: 1.5px;
+  left: 2%;
+  top: 85%;
+  width: 1.5px;
+  animation: shiningStar 13s -25s infinite;
+  -webkit-animation: shiningStar 13s -25s infinite;
+  -moz-animation: shiningStar 13s -25s infinite;
+  -ms-animation: shiningStar 13s -25s infinite;
+  -o-animation: shiningStar 13s -25s infinite;
+}
+
+.s63 {
+  height: 1.5px;
+  left: 35%;
+  top: 54%;
+  width: 1.5px;
+  animation: shiningStar 19s -23s infinite;
+  -webkit-animation: shiningStar 19s -23s infinite;
+  -moz-animation: shiningStar 19s -23s infinite;
+  -ms-animation: shiningStar 19s -23s infinite;
+  -o-animation: shiningStar 19s -23s infinite;
+}
+
+.s64 {
+  height: 1.5px;
+  left: 58%;
+  top: 44%;
+  width: 1.5px;
+  animation: shiningStar 18s -5s infinite;
+  -webkit-animation: shiningStar 18s -5s infinite;
+  -moz-animation: shiningStar 18s -5s infinite;
+  -ms-animation: shiningStar 18s -5s infinite;
+  -o-animation: shiningStar 18s -5s infinite;
+}
+
+.s65 {
+  height: 1.5px;
+  left: 95%;
+  top: 18%;
+  width: 1.5px;
+  animation: shiningStar 14s -19s infinite;
+  -webkit-animation: shiningStar 14s -19s infinite;
+  -moz-animation: shiningStar 14s -19s infinite;
+  -ms-animation: shiningStar 14s -19s infinite;
+  -o-animation: shiningStar 14s -19s infinite;
+}
+
+.s66 {
+  height: 1.5px;
+  left: 78%;
+  top: 41%;
+  width: 1.5px;
+  animation: shiningStar 19s -21s infinite;
+  -webkit-animation: shiningStar 19s -21s infinite;
+  -moz-animation: shiningStar 19s -21s infinite;
+  -ms-animation: shiningStar 19s -21s infinite;
+  -o-animation: shiningStar 19s -21s infinite;
+}
+
+.s67 {
+  height: 1.5px;
+  left: 65%;
+  top: 59%;
+  width: 1.5px;
+  animation: shiningStar 24s -4s infinite;
+  -webkit-animation: shiningStar 24s -4s infinite;
+  -moz-animation: shiningStar 24s -4s infinite;
+  -ms-animation: shiningStar 24s -4s infinite;
+  -o-animation: shiningStar 24s -4s infinite;
+}
+
+.s68 {
+  height: 1.5px;
+  left: 16%;
+  top: 85%;
+  width: 1.5px;
+  animation: shiningStar 22s -18s infinite;
+  -webkit-animation: shiningStar 22s -18s infinite;
+  -moz-animation: shiningStar 22s -18s infinite;
+  -ms-animation: shiningStar 22s -18s infinite;
+  -o-animation: shiningStar 22s -18s infinite;
+}
+
+.s69 {
+  height: 1.5px;
+  left: 99%;
+  top: 78%;
+  width: 1.5px;
+  animation: shiningStar 19s -10s infinite;
+  -webkit-animation: shiningStar 19s -10s infinite;
+  -moz-animation: shiningStar 19s -10s infinite;
+  -ms-animation: shiningStar 19s -10s infinite;
+  -o-animation: shiningStar 19s -10s infinite;
+}
+
+.s70 {
+  height: 1.5px;
+  left: 93%;
+  top: 45%;
+  width: 1.5px;
+  animation: shiningStar 12s -3s infinite;
+  -webkit-animation: shiningStar 12s -3s infinite;
+  -moz-animation: shiningStar 12s -3s infinite;
+  -ms-animation: shiningStar 12s -3s infinite;
+  -o-animation: shiningStar 12s -3s infinite;
+}
+
+.s71 {
+  height: 1.5px;
+  left: 30%;
+  top: 62%;
+  width: 1.5px;
+  animation: shiningStar 13s -9s infinite;
+  -webkit-animation: shiningStar 13s -9s infinite;
+  -moz-animation: shiningStar 13s -9s infinite;
+  -ms-animation: shiningStar 13s -9s infinite;
+  -o-animation: shiningStar 13s -9s infinite;
+}
+
+.s72 {
+  height: 1.5px;
+  left: 10%;
+  top: 57%;
+  width: 1.5px;
+  animation: shiningStar 16s -3s infinite;
+  -webkit-animation: shiningStar 16s -3s infinite;
+  -moz-animation: shiningStar 16s -3s infinite;
+  -ms-animation: shiningStar 16s -3s infinite;
+  -o-animation: shiningStar 16s -3s infinite;
+}
+
+.s73 {
+  height: 1.5px;
+  left: 68%;
+  top: 88%;
+  width: 1.5px;
+  animation: shiningStar 21s -8s infinite;
+  -webkit-animation: shiningStar 21s -8s infinite;
+  -moz-animation: shiningStar 21s -8s infinite;
+  -ms-animation: shiningStar 21s -8s infinite;
+  -o-animation: shiningStar 21s -8s infinite;
+}
+
+.s74 {
+  height: 1.5px;
+  left: 66%;
+  top: 56%;
+  width: 1.5px;
+  animation: shiningStar 21s -2s infinite;
+  -webkit-animation: shiningStar 21s -2s infinite;
+  -moz-animation: shiningStar 21s -2s infinite;
+  -ms-animation: shiningStar 21s -2s infinite;
+  -o-animation: shiningStar 21s -2s infinite;
+}
+
+.s75 {
+  height: 1.5px;
+  left: 90%;
+  top: 66%;
+  width: 1.5px;
+  animation: shiningStar 25s -3s infinite;
+  -webkit-animation: shiningStar 25s -3s infinite;
+  -moz-animation: shiningStar 25s -3s infinite;
+  -ms-animation: shiningStar 25s -3s infinite;
+  -o-animation: shiningStar 25s -3s infinite;
+}
+
+/* animations */
+@keyframes shiningStar {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes shiningStar {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes shiningStar {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes shiningStar {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}

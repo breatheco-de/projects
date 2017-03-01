@@ -1,0 +1,31 @@
+    body {
+      background-color: black;
+      /*background-image: url("http://corgiorgy.com/corgiswimflipflip.gif");*/
+    }
+    #hostContainer {
+      margin: auto;
+      width: 175px;
+      height: 175px;
+      background-color: #4c0000;
+      padding: 25px;
+    }
+    #dollOne {
+      background-color: #990000;
+    }
+    #dollTwo {
+      background-color: #e50000;
+    }
+    #dollThree {
+      background-color: #ff3232;
+    }
+    #dollFour {
+      background-color: #ff7f7f;
+    }
+
+    #dollOne, #dollTwo, #dollThree, #dollFour {
+      margin: auto;
+      width: 75px;
+      height: 75px;
+      position: absolute;
+
+    }

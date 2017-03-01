@@ -1,0 +1,125 @@
+body {
+  margin: 0px;
+  opacity: 0.9;
+  overflow: hidden;
+}
+
+#trafficTop {
+  background-color: black;
+  width: 10px;
+  height: 70px;
+  margin-left: 82px;
+}
+
+#container {
+  background-color: black;
+  width: 56px;
+  height: 178px;
+  margin-left: 50px;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.redLight {
+  background-color: #990000;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.orangeLight {
+  background-color: #CC6600;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.greenLight {
+  background-color: #009933;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+}
+
+#road {
+  background-color: rgba(96, 96, 96, 0.1);
+  width: 100%;
+  top: -100px;
+  height: 280px;
+  position: relative;
+}
+
+#retryBtn {
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+}
+
+span { 
+  text-align: center;
+}
+
+.msg {
+  text-align: center;
+}
+
+#yellowCar {
+  margin: auto;
+  position: relative;
+  width: 200px;
+  bottom: -60px;
+}
+
+.top {
+  position: relative;
+  height: 45px;
+  width: 60px;
+  border-radius: 5px;
+  background-color: #FFF000;
+  bottom: -15px;
+  left: 70px;
+}
+
+.bottom {
+  position: relative;
+  height: 30px;
+  width: 120px;
+  background-color: #FFF000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  bottom: 0px;
+  left: 32px;
+}
+
+.fwheel {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  shadow: 1px white;
+  border-radius: 100%;
+  border: 10px solid black;
+  background-color: white;
+  bottom: 15px;
+  left: 39px;
+}
+
+.bwheel {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  border: 10px solid black;
+  background-color: white;
+  bottom: 45px;
+  left: 115px;
+}

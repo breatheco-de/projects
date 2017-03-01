@@ -1,0 +1,16 @@
+#counter{
+    background:black;
+    color: white;
+    text-align: center;
+    font-size: 54px;
+    padding: 10px;
+    font-weight: 900;
+}
+.digit, .icon{
+    display: inline-table;
+    background: #0f0f0f;
+    padding: 15px;
+    border-radius: 10px;
+    border-right: 3px solid #161616;
+    border-left: 3px solid #161616;
+}
