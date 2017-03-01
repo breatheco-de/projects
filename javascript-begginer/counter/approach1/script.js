@@ -1,4 +1,4 @@
-var number=90;
+var number=1;
 setInterval(myDivUpdate, 1000);
 
 function myDivUpdate(){
