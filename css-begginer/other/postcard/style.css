@@ -1,0 +1,49 @@
+html,
+body {
+  background-color: #171717;
+  margin: 0;
+  padding: 0;
+}
+
+.post-card {
+  width: 500px;
+  height: 350px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  padding: 12px;
+}
+
+.post-stample {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 12px;
+  border: 1px solid black;
+}
+
+.post-card__title {
+  font-family: 'La Belle Aurore';
+}
+
+.content-left {
+  width: calc(50%);
+  font-family: 'La Belle Aurore';
+  font-size: 21px;
+  line-height: 1.2;
+  float: left;
+}
+
+.content-right {
+  width: 50%;
+  float: left;
+}
+
+.adress-line {
+  display: block;
+  margin: 10px 20px;
+  font-family: 'La Belle Aurore';
+  border-bottom: 1px solid black;
+}
