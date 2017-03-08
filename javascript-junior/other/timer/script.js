@@ -104,12 +104,13 @@ $(document).ready(function() {
   loadMusic();
   $("#closeInstructions").click(function() { $('#instructions').hide(); });
   $("#loadJSONBtn").click(function() {
-    var jsonUrl = $('json-url').val();
+    var jsonUrl = $('#json-url').val();
     $.ajax({
       url: jsonUrl,
       success: function(data){
-        instructionsArray = data;
+        instructionsArray = data.instructions;
         loadInstruction();
+        $('#instructions').html(data.title);
       },
       error: function(pq, errorString){
         alert(errorString);
@@ -202,5 +203,5 @@ function loadInstruction(index){
   if(!currentInstruction) currentInstruction = 0;
   else currentInstruction++;
   if(typeof(index)!='undefined') currentInstruction = index;
-  $('#instruction-area').val(instructionsArray[currentInstruction]);
+  $('#instruction-area').val(instructionsArray[currentInstruction].content);
 }
