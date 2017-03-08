@@ -1,0 +1,34 @@
+body {
+  background-color: lightgrey;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+.page-header {
+  background-color: #428bca;
+  padding-top: 5px;
+}
+.page-header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+.page-header h1 small {
+  color: #f2f2f2;
+}
+.clock-timer {
+  font-size:11em;
+  font-weight: bold;
+  color: tomato;
+}
+.text-ack {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  background-color: tomato;
+}
+.fluid-textarea{
+	width: 100%;
+	height: 100%;
+	font-size: 4em;
+}

@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Timer App</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container-fluid">
+	  <div class="row">
+			<div class="col-xs-4">
+				<button type="button" class="btn btn-primary center-block btn-lg" id="refresh" class="sr-only">
+				<span class="glyphicon glyphicon-refresh">
+				</button>
+				<h1 id="time" class="text-center clock-timer">00:00</h1>
+				<div id="inputArea">
+				<input type="text" id="minutes" class="input-lg center-block" placeholder="ENTER MINUTES ONLY"><br>
+				<button type="button" id ="breakBtn" class="btn btn-primary btn-lg center-block"><span class="glyphicon glyphicon-time"></span> BREAK</button>
+				</div><!--/#inputArea-->
+				<div id="pauseArea">
+				<button type="button" id ="pauseBtn" class="btn btn-primary btn-lg center-block"><span class="glyphicon glyphicon-pause"></button>
+				</div><!--/#pauseArea-->
+				<div id="resumeArea">
+				<button type="button" id ="resumeBtn" class="btn btn-primary btn-lg center-block"><span class="glyphicon glyphicon-play"></button>
+				</div><!--/#resumeArea-->
+			</div>
+			<div class="col-xs-8">
+				<textarea class="fluid-textarea"></textarea>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
