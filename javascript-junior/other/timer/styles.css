@@ -35,4 +35,7 @@ body {
 #instructions{
   background: #3d3d3d;
 }
+#instructions h4{display: inline;}
+#instructions img{max-height: 30px; margin-top: 5px;}
 #json-url{width: 70%;}
+#previous, #next{display: inline-block; margin: 5px;}

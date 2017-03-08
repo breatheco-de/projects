@@ -109,10 +109,22 @@ $(document).ready(function() {
       url: jsonUrl,
       success: function(data){
         instructionsArray = data.instructions;
-        loadInstruction();
-        $('#instructions').html(data.title);
+        $('#instruction-area').val(instructionsArray[getInstruction()].content);
+        $('#instructions').html('<button id="previous" class="btn btn-success">-</button>');
+        $('#instructions').append('<h4>'+data.title+' <span id="current-instruction">'+(currentInstruction+1)+'</span>/'+instructionsArray.length+'</h4>');
+        $('#instructions').append('<button id="next" class="btn btn-success">+</button>')
+        $('#instructions').append('<img class="img-responsive pull-left" src="https://4geeksacademy.github.io/exercise-assets/img/4geeks-logo-white-small.png" />')
         $('#instructions').css('background','#003a00');
         $('#instructions').css('color','#FFFFFF');
+
+        $("#previous").click(function() {
+              $('#instruction-area').val(instructionsArray[getInstruction("-1")].content);
+              $('#current-instruction').html(currentInstruction+1);
+          });
+          $("#next").click(function() {
+              $('#instruction-area').val(instructionsArray[getInstruction("+1")].content);
+              $('#current-instruction').html(currentInstruction+1);
+          });
       },
       error: function(p1, p2,errorString){
         alert(errorString);
@@ -148,9 +160,11 @@ $(document).ready(function() {
       else minutes--;      
       $("#minutes").val(minutes);
     }else if(e.keyCode == 37){//left
-      loadInstruction('-1');
-    }else if(e.keyCode == 38){//right
-      loadInstruction('+1');
+      $('#instruction-area').val(instructionsArray[getInstruction("-1")].content);
+      $('#current-instruction').html(currentInstruction+1);
+    }else if(e.keyCode == 39){//right
+      $('#instruction-area').val(instructionsArray[getInstruction("+1")].content);
+      $('#current-instruction').html(currentInstruction+1);
     }
   });
 
@@ -206,21 +220,29 @@ function getRandomSong(){
   return audio;
 }
 
-function loadInstruction(index){
+function getInstruction(index){
 
+  if($('#instruction-area').is(":focus")) return currentInstruction;
   if(typeof(index)=='undefined')
   {
     if(!currentInstruction) currentInstruction = 0;
-    else currentInstruction++;
+    else if(currentInstruction<instructionsArray.length-1) currentInstruction++;
   }
   else
   {
     if(!currentInstruction) currentInstruction = 0;
-    if(index.indexOf('-')>-1) currentInstruction = currentInstruction - parseInt(index);
-    else if(index.indexOf('+')>-1) currentInstruction = currentInstruction + parseInt(index); 
-    else currentInstruction = index;
+    
+    if(index.indexOf('-')>-1){
+      if(typeof(instructionsArray[currentInstruction-1])!=='undefined') currentInstruction--; 
+    }
+    else if(index.indexOf('+')>-1){
+      if(typeof(instructionsArray[currentInstruction+1])!=='undefined') currentInstruction++; 
+    }
+    else{
+      if(typeof(instructionsArray[index])!=='undefined') currentInstruction = index;
+    } 
 
-    if(currentInstruction<0) currentInstruction = 0;
   }
-  $('#instruction-area').val(instructionsArray[currentInstruction].content);
+
+  return currentInstruction;
 }
