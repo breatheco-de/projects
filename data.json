@@ -155,28 +155,28 @@
 	},
 	{
 		"title": "Nest Container Animation",
-		"url":"jquery-begginer/other/nestedcontainer/",
+		"url":"jquery-begginer/animations/nestedcontainer/",
 		"category": "animations",
 		"technology": "jquery",
 		"difficulty": "begginer"
 	},
 	{
 		"title": "Traffic Light Animation",
-		"url":"jquery-begginer/other/trafficlight/",
+		"url":"jquery-begginer/animations/trafficlight/",
 		"category": "animations",
 		"technology": "jquery",
 		"difficulty": "begginer"
 	},
 	{
 		"title": "Basic Portfolio",
-		"url":"jquery-begginer/other/basic/",
+		"url":"jquery-begginer/portfolios/basic/",
 		"category": "portfolios",
 		"technology": "jquery",
 		"difficulty": "begginer"
 	},
 	{
 		"title": "Instant Portfolio",
-		"url":"jquery-begginer/other/instant/",
+		"url":"jquery-begginer/portfolios/instant/",
 		"category": "portfolios",
 		"technology": "jquery",
 		"difficulty": "begginer"
