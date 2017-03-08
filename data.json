@@ -50,14 +50,14 @@
 	},
 	{
 		"title": "Planets",
-		"url":"css-senior/other/planets/",
+		"url":"css-senior/animation/planets/",
 		"category": "animation",
 		"technology": "css",
 		"difficulty": "senior"
 	},
 	{
 		"title": "Solar System",
-		"url":"css-senior/other/solarsystem/",
+		"url":"css-senior/animation/solarsystem/",
 		"category": "animation",
 		"technology": "css",
 		"difficulty": "senior"
