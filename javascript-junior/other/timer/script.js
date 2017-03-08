@@ -1,50 +1,56 @@
 var intervalHandle;
-var secondsRemaining;
+var secondsRemaining = 0;
+var mainMusic = null;
+var songsArray = [];
 
-function errorHide() {
-  document.getElementById("errorMessage").style.display = "none";
- }
+var currentInstruction = null;
+var instructionsArray = [];
 
 function resetPage() {
   //show input
-  document.getElementById("inputArea").style.display = "block";
-  //hide pause button by default
-  document.getElementById("pauseArea").style.display = "none";
-  //hide resume button
-   document.getElementById("resumeArea").style.display = "none";
-  //hide refresh button
-  document.getElementById("refresh").style.display = "none";
+  $("#inputArea").show();
+  $("#playBtn").show();
+
+  $("#pauseBtn").hide();
+  $("#refreshBtn").hide();
   //reset value to blank
-  document.getElementById("minutes").value = "";
-  setTimeout(errorHide, 5000);
+  $("#time").html("00:00");
+  $("#minutes").val(1);
+
+  if(mainMusic && !mainMusic.paused) mainMusic.pause();
+  intervalHandle = false;
 }
 
 function resumeCountdown() {
   tick();
   intervalHandle = setInterval(tick, 1000);
-   //hide resume button when resuming
-  document.getElementById("resumeArea").style.display = "none";
-  //show resume button;
-  document.getElementById("pauseArea").style.display = "block";
+
+  $("#playBtn").hide();
+  $("#refreshBtn").hide();
+  $("#pauseBtn").show();
+
+  mainMusic.play();
   return;
 }
 
 function pauseCountdown() {
   clearInterval(intervalHandle);
-  document.getElementById("pauseArea").style.display = "none";
-  document.getElementById("resumeArea").style.display = "block";
+  intervalHandle = false;
+  $("#playBtn").show();
+  $("#pauseBtn").hide();
+  $("#refreshBtn").show();
+  mainMusic.pause();
   return;
 }
 
 function tick() {
-  var timeDisplay = document.getElementById("time");
   
   var min = Math.floor(secondsRemaining / 60);
   var sec = secondsRemaining - (min * 60);
 
   if(sec%10===0)
   {
-	playAudio('tic1');
+	   playFX('tictac');
   }
   
   if(min < 10) {
@@ -56,105 +62,145 @@ function tick() {
   }
 
   var message = min + ":" + sec;
-  timeDisplay.innerHTML = message;
+  $("#time").html(message);
   
   if(secondsRemaining === 0) {
-	playAudio('end');
-    document.getElementById("errorMessage").innerHTML = "<strong>Times up!</strong>";
-    document.getElementById("errorMessage").setAttribute("class","alert alert-success text-center");
+	  playFX('end');
+    $("#screen-message").html("<strong>Times up!</strong>");
     clearInterval(intervalHandle);
     resetPage();
   }
-  secondsRemaining--;
+  else secondsRemaining--;
 }
 
 function startCountdown() {
-  var minutes = document.getElementById("minutes").value;
-
-  playAudio('start');
-  
-   //check if it is a number
+  var minutes = $("#minutes").val();
   if(isNaN(minutes)||minutes == ""){
-      document.getElementById("errorMessage").innerHTML = "Yikes! It's not a number. <strong>TRY AGAIN</strong>";
-      document.getElementById("errorMessage").setAttribute("class","alert alert-danger text-center");
-       
-       //hides error after 5 secs
-      setTimeout(errorHide, 5000);
+      alert("Yikes! It's not a number. Try Again!");
       resetPage();
       return;
   }
+  console.log('Starting countdown...');
+
+  playFX('start');
+  //code before the pause
+  setTimeout(function(){
+    //do what you need here
+    mainMusic.play();
+  }, 3000);
+   //check if it is a number
   //get the seconds
   secondsRemaining = minutes * 60;
   //reoccuring function
   intervalHandle = setInterval(tick, 1000);
   //hide input form once running
-  document.getElementById("inputArea").style.display = "none";
-  //show pause when running
-  document.getElementById("pauseArea").style.display = "block";
-  //show refresh when running
-   document.getElementById("refresh").style.display = "block";
+  $("#playBtn").hide();
+  $("#pauseBtn").show();
+  $("#refreshBtn").hide();
 }
-//refresh page with button
-document.getElementById("refresh").onclick = function() {
-  clearInterval(intervalHandle);
-  document.getElementById("time").innerHTML = "00:00";
-  document.getElementById("minutes").value = "";
-  document.getElementById("inputArea").style.display = "block";
-  document.getElementById("refresh").style.display = "none";
-  document.getElementById("resumeArea").style.display = "none";
-  document.getElementById("pauseArea").style.display = "none";
-}
-window.onload = function() {
-  //break button
-  var startButton = document.getElementById("breakBtn");
-  startButton.onclick = function() {
-    startCountdown();
-  };
-  //pause button
-  var pauseButton = document.getElementById("pauseBtn");
-  pauseButton.onclick = function() {
-    pauseCountdown();
-  };
- 
-  //resume button
-  var resumeButton = document.getElementById("resumeBtn");
-  resumeButton.onclick = function() {
-    resumeCountdown();
-  };
- document.getElementById("inputArea").appendChild(startButton);
- document.getElementById("pauseArea").appendChild(pauseButton);
- document.getElementById("resumeArea").appendChild(resumeButton);
-  
-  //hide pause button by default
-  document.getElementById("pauseArea").style.display = "none";
-  //hide pause button by default
-  document.getElementById("resumeArea").style.display = "none";
-  //hide refresh by default
-  document.getElementById("refresh").style.display = "none";
-};
 
-function playAudio(action){
-	var audioURL = '';
+$(document).ready(function() {
+  
+  loadMusic();
+  $("#closeInstructions").click(function() { $('#instructions').hide(); });
+  $("#loadJSONBtn").click(function() {
+    var jsonUrl = $('json-url').val();
+    $.ajax({
+      url: jsonUrl,
+      success: function(data){
+        instructionsArray = data;
+        loadInstruction();
+      },
+      error: function(pq, errorString){
+        alert(errorString);
+      }
+    });
+  });
+
+  //pause button
+  $("#pauseBtn").click(function() { pauseCountdown(); });
+  $("#refreshBtn").click(function() { clearInterval(intervalHandle); resetPage(); });
+  $("#playBtn").click(function() {
+    if(secondsRemaining===0) startCountdown();
+    else resumeCountdown();
+  });
+
+  $('body').on('keyup',function(e){
+    if(e.keyCode == 32){//space bar
+      if(secondsRemaining==0) startCountdown();
+      else{
+        console.log(intervalHandle);
+        if (!intervalHandle) resumeCountdown();
+        else pauseCountdown();
+      }
+    }else if(e.keyCode == 38){//space bar
+      var minutes = $("#minutes").val();
+      if(isNaN(minutes)) minutes = 0;
+      else minutes++;
+      $("#minutes").val(minutes);
+    }else if(e.keyCode == 40){//space bar
+      var minutes = $("#minutes").val();
+      if(isNaN(minutes) || minutes<=1) minutes = 1;
+      else minutes--;      
+      $("#minutes").val(minutes);
+    }
+  });
+
+  resetPage();
+
+});
+
+function playFX(action){
+	var fxs = musicArray.fx;
+  var audioURL = 'https://4geeksacademy.github.io/exercise-assets/sound/';
 	switch(action){
 		case "pause":
-			audioURL = 'sounds/smb_pause.wav';
-			break;
-		case "end":
-			audioURL = 'sounds/smb_gameover.wav';
-			break;
-		case "start":
-			audioURL = 'sounds/smb_warning.wav';
-			break;
-		case "unpause":
-			audioURL = 'sounds/smb_jump-super.wav';
-			break;
-		case "tic1":
-			audioURL = 'sounds/clock-ticking-2.wav';
-			break;	
-		case "tic2":
-			audioURL = 'sounds/clock-ticking-4.wav';
-			break;			
+      audioURL += fxs[3].url;//pause
+      break;
+    case "end":
+      audioURL += fxs[0].url;//gameover
+      break;
+    case "start":
+      audioURL += fxs[5].url;//warning
+      break;
+    case "unpause":
+      audioURL += fxs[1].url;//jump super
+      break;
+    case "tictac":
+      audioURL += fxs[10].url;
+      break;  
 	}
 	var audio = new Audio(audioURL);
 	audio.play();
+}
+
+function loadMusic()
+{
+  $.ajax({
+    url : 'https://4geeksacademy.github.io/exercise-assets/sound/randomizer.json',
+    success: function(data){
+      if(data.songs)
+      {
+        musicArray = data;
+        mainMusic = getRandomSong();        
+        mainMusic.volume = 0.3;
+        $(mainMusic).on('ended',function(){
+          mainMusic.play();
+        });
+      }
+    }
+  });
+}
+
+function getRandomSong(){
+  var audioURL = 'https://4geeksacademy.github.io/exercise-assets/sound/'+musicArray.songs[Math.floor(Math.random()*musicArray.songs.length)].url;
+  var audio = new Audio(audioURL);
+  return audio;
+}
+
+function loadInstruction(index){
+  if(!currentInstruction) currentInstruction = 0;
+  else currentInstruction++;
+  if(typeof(index)!='undefined') currentInstruction = index;
+  $('#instruction-area').val(instructionsArray[currentInstruction]);
 }
