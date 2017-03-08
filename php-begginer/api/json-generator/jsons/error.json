@@ -1,0 +1,5 @@
+{
+    "error":{
+        "msg":"you need to pass a project variable in the url"
+    }
+}

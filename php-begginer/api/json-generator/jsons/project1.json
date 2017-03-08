@@ -1,0 +1,11 @@
+{
+    "category": "Design",
+    "title": "The Amazin Project",
+    "background": "https://json-generator-alesanchezr.c9users.io/assets/bg/1.jpg",
+    "excerpt": "No project is more amazing that this one. Believe me.",
+    "description": {
+        "client":   "The client was very anonying like always, he was constantly reminding me about the money he paid me.",
+        "proposal": "I proposed something expensive because I wanted to earn more mony, I had some old codes that I could reuse.",
+        "results":  "The client was happy, he paid late (like always) but I earn a lot of money because I reuse most of the code form another project."
+    }
+}

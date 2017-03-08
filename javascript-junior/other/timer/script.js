@@ -109,6 +109,7 @@ $(document).ready(function() {
       url: jsonUrl,
       success: function(data){
         instructionsArray = data.instructions;
+        $("#minutes").val(data.minutes_duration);
         $('#instruction-area').val(instructionsArray[getInstruction()].content);
         $('#instructions').html('<button id="previous" class="btn btn-success">-</button>');
         $('#instructions').append('<h4>'+data.title+' <span id="current-instruction">'+(currentInstruction+1)+'</span>/'+instructionsArray.length+'</h4>');
