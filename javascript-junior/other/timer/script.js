@@ -109,8 +109,9 @@ $(document).ready(function() {
       url: jsonUrl,
       success: function(data){
         instructionsArray = data.instructions;
-        $("#minutes").val(data.minutes_duration);
-        $('#instruction-area').val(instructionsArray[getInstruction()].content);
+        var instructionIndex = getInstruction();
+        $('#instruction-area').val(instructionsArray[instructionIndex].content);
+        if(instructionsArray[instructionIndex].minutes_duration) $('#minutes').val(instructionsArray[instructionIndex].minutes_duration);
         $('#instructions').html('<button id="previous" class="btn btn-success">-</button>');
         $('#instructions').append('<h4>'+data.title+' <span id="current-instruction">'+(currentInstruction+1)+'</span>/'+instructionsArray.length+'</h4>');
         $('#instructions').append('<button id="next" class="btn btn-success">+</button>')
@@ -119,11 +120,15 @@ $(document).ready(function() {
         $('#instructions').css('color','#FFFFFF');
 
         $("#previous").click(function() {
-              $('#instruction-area').val(instructionsArray[getInstruction("-1")].content);
+              var instructionIndex = getInstruction('-1');
+              $('#instruction-area').val(instructionsArray[instructionIndex].content);
+              if(instructionsArray[instructionIndex].minutes_duration) $('#minutes').val(instructionsArray[instructionIndex].minutes_duration);
               $('#current-instruction').html(currentInstruction+1);
           });
           $("#next").click(function() {
-              $('#instruction-area').val(instructionsArray[getInstruction("+1")].content);
+              var instructionIndex = getInstruction('+1');
+              $('#instruction-area').val(instructionsArray[instructionIndex].content);
+              if(instructionsArray[instructionIndex].minutes_duration) $('#minutes').val(instructionsArray[instructionIndex].minutes_duration);
               $('#current-instruction').html(currentInstruction+1);
           });
       },
@@ -167,6 +172,9 @@ $(document).ready(function() {
       $('#instruction-area').val(instructionsArray[getInstruction("+1")].content);
       $('#current-instruction').html(currentInstruction+1);
     }
+
+    e.stopPropagation();
+    return false;
   });
 
   resetPage();
