@@ -111,9 +111,12 @@ $(document).ready(function() {
         instructionsArray = data.instructions;
         loadInstruction();
         $('#instructions').html(data.title);
+        $('#instructions').css('background','#003a00');
+        $('#instructions').css('color','#FFFFFF');
       },
-      error: function(pq, errorString){
+      error: function(p1, p2,errorString){
         alert(errorString);
+        $('#instructions').css('background','#560000');
       }
     });
   });
@@ -134,16 +137,20 @@ $(document).ready(function() {
         if (!intervalHandle) resumeCountdown();
         else pauseCountdown();
       }
-    }else if(e.keyCode == 38){//space bar
+    }else if(e.keyCode == 38){//up
       var minutes = $("#minutes").val();
       if(isNaN(minutes)) minutes = 0;
       else minutes++;
       $("#minutes").val(minutes);
-    }else if(e.keyCode == 40){//space bar
+    }else if(e.keyCode == 40){//down
       var minutes = $("#minutes").val();
       if(isNaN(minutes) || minutes<=1) minutes = 1;
       else minutes--;      
       $("#minutes").val(minutes);
+    }else if(e.keyCode == 37){//left
+      loadInstruction('-1');
+    }else if(e.keyCode == 38){//right
+      loadInstruction('+1');
     }
   });
 
@@ -200,8 +207,20 @@ function getRandomSong(){
 }
 
 function loadInstruction(index){
-  if(!currentInstruction) currentInstruction = 0;
-  else currentInstruction++;
-  if(typeof(index)!='undefined') currentInstruction = index;
+
+  if(typeof(index)=='undefined')
+  {
+    if(!currentInstruction) currentInstruction = 0;
+    else currentInstruction++;
+  }
+  else
+  {
+    if(!currentInstruction) currentInstruction = 0;
+    if(index.indexOf('-')>-1) currentInstruction = currentInstruction - parseInt(index);
+    else if(index.indexOf('+')>-1) currentInstruction = currentInstruction + parseInt(index); 
+    else currentInstruction = index;
+
+    if(currentInstruction<0) currentInstruction = 0;
+  }
   $('#instruction-area').val(instructionsArray[currentInstruction].content);
 }
