@@ -51,12 +51,14 @@ h2 {
   font-size: 17px;
   font-style: italic;
   font-weight: normal;
+  text-transform: capitalize;
 }
 
 .directory-list a {
   border-bottom: 1px solid transparent;
   color: #4c6893;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .directory-list a:hover {

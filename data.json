@@ -35,6 +35,13 @@
 		"difficulty": "junior"
 	},
 	{
+		"title": "Goku",
+		"url":"css-junior/drawing/goku/",
+		"category": "drawing",
+		"technology": "css",
+		"difficulty": "junior"
+	},
+	{
 		"title": "First Parallax",
 		"url":"css-junior/other/parallax/",
 		"category": "other",
@@ -119,7 +126,7 @@
 		"difficulty": "begginer"
 	},
 	{
-		"title": "First Parallax",
+		"title": "Battlefield",
 		"url":"javascript-junior/games/battlefield/",
 		"category": "games",
 		"technology": "javascript",
