@@ -38,7 +38,7 @@ h2 {
 
 /* The list style
 -------------------------------------------------------------- */
-
+.directory-list{padding-left: 0px;}
 .directory-list ul {
   margin-left: 10px;
   padding-left: 20px;
