@@ -100,7 +100,7 @@ function startCountdown() {
 }
 
 $(document).ready(function() {
-  
+  $('#instruction-area').trumbowyg();
   loadMusic();
   $("#closeInstructions").click(function() { $('#instructions').hide(); });
   $("#loadJSONBtn").click(function() {
@@ -148,13 +148,17 @@ $(document).ready(function() {
   });
 
   $('body').on('keyup',function(e){
+    
     if(e.keyCode == 32){//space bar
+
+      if($('#instruction-area').is(":focus")) return false;
       if(secondsRemaining==0) startCountdown();
       else{
         console.log(intervalHandle);
         if (!intervalHandle) resumeCountdown();
         else pauseCountdown();
       }
+
     }else if(e.keyCode == 38){//up
       var minutes = $("#minutes").val();
       if(isNaN(minutes)) minutes = 0;

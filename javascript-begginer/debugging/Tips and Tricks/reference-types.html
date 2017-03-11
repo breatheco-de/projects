@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var wallets = [{ amount: 0 }];
+		 
+		setInterval( function() { 
+		    console.log( wallets, wallets[0], wallets[0].amount ); 
+		    wallets[0].amount += 100; 
+		}, 1000 );
+	</script>
+</body>
+</html>

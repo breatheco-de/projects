@@ -91,20 +91,7 @@
         </div><!--/row-->
       </div><!--/.container-->
     <div class="portfolio-centered mt">
-      <div id="portfolio-list" class="recentitems portfolio">
-
-        <div class="portfolio-item graphic-design">
-          <div class="he-wrap tpl6">
-          <img src="assets/img/portfolio/portfolio_09.jpg" class="img-responsive" alt="">
-            <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
-                <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_09.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-               </div><!-- he bg -->
-            </div><!-- he view -->    
-          </div><!-- he wrap -->
-        </div><!-- end col-12 -->
+      <div id="list-of-items" class="recentitems portfolio">
                             
         <div class="portfolio-item web-design">
           <div class="he-wrap tpl6">
@@ -272,6 +259,7 @@
       </div><!--/container-->
     </div><!--/.F-->
 
+    <div id="testDiv"></div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -284,88 +272,6 @@
     <script src="assets/js/jquery.isotope.min.js"></script>
     <script src="assets/js/custom.js"></script>
 
-
-    <script>
-// Portfolio
-(function($) {
-  "use strict";
-  var $container = $('.portfolio'),
-    $items = $container.find('.portfolio-item'),
-    portfolioLayout = 'fitRows';
-    
-    if( $container.hasClass('portfolio-centered') ) {
-      portfolioLayout = 'masonry';
-    }
-        
-    $container.isotope({
-      filter: '*',
-      animationEngine: 'best-available',
-      layoutMode: portfolioLayout,
-      animationOptions: {
-      duration: 750,
-      easing: 'linear',
-      queue: false
-    },
-    masonry: {
-    }
-    }, refreshWaypoints());
-    
-    function refreshWaypoints() {
-      setTimeout(function() {
-      }, 1000);   
-    }
-        
-    $('nav.portfolio-filter ul a').on('click', function() {
-        var selector = $(this).attr('data-filter');
-        $container.isotope({ filter: selector }, refreshWaypoints());
-        $('nav.portfolio-filter ul a').removeClass('active');
-        $(this).addClass('active');
-        return false;
-    });
-    
-    function getColumnNumber() { 
-      var winWidth = $(window).width(), 
-      columnNumber = 1;
-    
-      if (winWidth > 1200) {
-        columnNumber = 5;
-      } else if (winWidth > 950) {
-        columnNumber = 4;
-      } else if (winWidth > 600) {
-        columnNumber = 3;
-      } else if (winWidth > 400) {
-        columnNumber = 2;
-      } else if (winWidth > 250) {
-        columnNumber = 1;
-      }
-        return columnNumber;
-      }       
-      
-      function setColumns() {
-        var winWidth = $(window).width(), 
-        columnNumber = getColumnNumber(), 
-        itemWidth = Math.floor(winWidth / columnNumber);
-        
-        $container.find('.portfolio-item').each(function() { 
-          $(this).css( { 
-          width : itemWidth + 'px' 
-        });
-      });
-    }
-    
-    function setPortfolio() { 
-      setColumns();
-      $container.isotope('reLayout');
-    }
-      
-    $container.imagesLoaded(function () { 
-      setPortfolio();
-    });
-    
-    $(window).on('resize', function () { 
-    setPortfolio();          
-  });
-})(jQuery);
-</script>
+<script type="text/javascript" src="script.js"></script>
   </body>
 </html>
