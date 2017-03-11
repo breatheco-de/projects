@@ -149,9 +149,10 @@ $(document).ready(function() {
 
   $('body').on('keyup',function(e){
     
+    if($('#instruction-area').is(":focus")) return false;
+
     if(e.keyCode == 32){//space bar
 
-      if($('#instruction-area').is(":focus")) return false;
       if(secondsRemaining==0) startCountdown();
       else{
         console.log(intervalHandle);
@@ -160,11 +161,13 @@ $(document).ready(function() {
       }
 
     }else if(e.keyCode == 38){//up
+      
       var minutes = $("#minutes").val();
       if(isNaN(minutes)) minutes = 0;
       else minutes++;
       $("#minutes").val(minutes);
     }else if(e.keyCode == 40){//down
+
       var minutes = $("#minutes").val();
       if(isNaN(minutes) || minutes<=1) minutes = 1;
       else minutes--;      
@@ -235,7 +238,6 @@ function getRandomSong(){
 
 function getInstruction(index){
 
-  if($('#instruction-area').is(":focus")) return currentInstruction;
   if(typeof(index)=='undefined')
   {
     if(!currentInstruction) currentInstruction = 0;
