@@ -80,6 +80,7 @@ function startCountdown() {
       resetPage();
       return;
   }
+  $("#screen-message").html('');
   console.log('Starting countdown...');
 
   playFX('start');
