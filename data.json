@@ -182,10 +182,17 @@
 		"difficulty": "begginer"
 	},
 	{
-		"title": "My first php",
-		"url":"jquery-begginer/portfolios/instant/",
-		"category": "portfolios",
+		"title": "Portfolio API",
+		"url":"php-junior/portfolio-api/",
+		"category": "API",
 		"technology": "php",
-		"difficulty": "begginer"
+		"difficulty": "junior"
+	},
+	{
+		"title": "Chat System v0.1",
+		"url":"php-junior/chat-system-v1/",
+		"category": "object-oriented",
+		"technology": "php",
+		"difficulty": "junior"
 	}
 ]

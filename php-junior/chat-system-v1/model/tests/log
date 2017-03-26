@@ -1,0 +1,43 @@
+{
+    "event": "suiteStart",
+    "suite": "tests",
+    "tests": 2
+}{
+    "event": "suiteStart",
+    "suite": "PrivateChat_test",
+    "tests": 2
+}{
+    "event": "testStart",
+    "suite": "PrivateChat_test",
+    "test": "PrivateChat_test::test_addMemberToPrivateChat"
+}{
+    "event": "test",
+    "suite": "PrivateChat_test",
+    "test": "PrivateChat_test::test_addMemberToPrivateChat",
+    "status": "pass",
+    "time": 0.0013341903686523,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "PrivateChat_test",
+    "test": "PrivateChat_test::test_deleteMemberToPrivateChat"
+}{
+    "event": "test",
+    "suite": "PrivateChat_test",
+    "test": "PrivateChat_test::test_deleteMemberToPrivateChat",
+    "status": "error",
+    "time": 0.00026488304138184,
+    "trace": [
+        {
+            "file": "\/Users\/Alejandro\/Sites\/code-projects\/php-junior\/chat-system-v1\/model\/tests\/PrivateChat_Test.php",
+            "line": 38,
+            "function": "handleError",
+            "class": "PHPUnit_Util_ErrorHandler",
+            "type": "::"
+        }
+    ],
+    "message": "Argument 1 passed to PrivateChat_test::test_deleteMemberToPrivateChat() must be of the type array, null given",
+    "output": ""
+}

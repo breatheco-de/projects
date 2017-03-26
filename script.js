@@ -1,7 +1,7 @@
 var projectOriginalData = {};
 $(document).ready(function(){
 	$.ajax({
-		url: 'https://4geeksacademy.github.io/code-projects/data.json',
+		url: './data.json',
 		cache: false,
 		success: function(data){
 			projectOriginalData = data;
