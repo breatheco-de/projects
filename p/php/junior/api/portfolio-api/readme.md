@@ -1,3 +1,0 @@
-# The Portfolio API
-
-asd

@@ -1,0 +1,3 @@
+[submodule "p/php/junior/api/portfolio-api"]
+	path = p/php/junior/api/portfolio-api
+	url = git@bitbucket.org:codingacademy/portfolio-api.git
