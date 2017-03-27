@@ -1,0 +1,4 @@
+RewriteEngine Off
+RewriteEngine On
+
+DirectoryIndex app/index.php

@@ -1,0 +1,33 @@
+/* Demo page styles
+-------------------------------------------------------------- */
+
+body {
+  margin: 0;
+  font-family: "times new roman", serif;
+  line-height: 30px;
+}
+table{
+  border: 0px;
+  width: 100%;
+  margin-left: 10px;
+  border-left: 1px solid #BFBFBF;
+  padding-left: 20px;
+}
+table tr{
+  text-transform: capitalize;
+}
+.directory-list{
+  border-left: none;
+}
+header{
+  background: #222222;
+  height: 50px;
+  display: inline-table;
+  width: 100%;
+  vertical-align: center;
+}
+header img{
+  max-height: 30px;
+  padding-top: 10px;
+}
+.filter-content{background: #BDBDBD; margin-top: 0px;}
