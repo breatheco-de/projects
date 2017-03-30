@@ -2,3 +2,5 @@
 composer.phar
 vendor/
 .DS_Store
+app/php_errorlog
+p/php/junior/api/portfolio-api/php_errorlog
