@@ -1,19 +1,27 @@
 var projectOriginalData = {};
 $(document).ready(function(){
 	$.ajax({
-		url: './app/projects.php',
+		url: '/projects.php',
 		cache: false,
 		success: function(data){
-			projectOriginalData = data;
+			alert(data);
+			if(data && data.length!='')
+			{
+				projectOriginalData = data;
 
-			filterProjectDOM();
+				filterProjectDOM();
 
-			$('#technology-options').change(function(){
-				filterNodes();
-			});
-			$('#difficulty-options').change(function(){
-				filterNodes();
-			});
+				$('#technology-options').change(function(){
+					filterNodes();
+				});
+				$('#difficulty-options').change(function(){
+					filterNodes();
+				});
+			}
+			else
+			{
+				alert('Invalid Project Definition');
+			}
 
 		},
 		error: function(p1,p2,errorThrown){

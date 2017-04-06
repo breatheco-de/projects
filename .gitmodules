@@ -4,3 +4,6 @@
 [submodule "p/php/junior/api/chat-system-api"]
 	path = p/php/junior/api/chat-system-api
 	url = git@bitbucket.org:codingacademy/chat-system-api.git
+[submodule "p/css/senior/other/chat-system-views"]
+	path = p/css/senior/other/chat-system-views
+	url = git@bitbucket.org:codingacademy/chat-system-views.git

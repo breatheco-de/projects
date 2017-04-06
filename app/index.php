@@ -10,15 +10,18 @@ $twig = new Twig_Environment($loader);
 //$projects = json_encode($json);
 
 $args = array(
-	"baseurl" => "app/",
+	"assetsURL" => "/app/assets/",
 	"title" => "Project Repository for the Breathe Code Movement",
 	"logo" => array(
-			"url" => "app/assets/img/breathe-code-logo.png",
+			"url" => "/app/assets/img/breathe-code-logo.png",
 			"alt" => "Breath Code Movement Logo"
 		)
 	//"projects" => $projects
 	);
 
+if(isset($_GET['classroom'])) $classroom = $_GET['classroom'];
 
-$template = $twig->load('index.html');
+if(isset($classroom) and $classroom!='') $template = $twig->load('classroom.html');
+else $template = $twig->load('index.html');
+
 echo $template->render($args);
