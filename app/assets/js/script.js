@@ -4,7 +4,7 @@ $(document).ready(function(){
 		url: '/projects.php',
 		cache: false,
 		success: function(data){
-			alert(data);
+
 			if(data && data.length!='')
 			{
 				projectOriginalData = data;
