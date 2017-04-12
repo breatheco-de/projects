@@ -13,6 +13,7 @@ table{
   border-left: 1px solid #BFBFBF;
   padding-left: 20px;
 }
+table td{border: none;}
 table tr{
   text-transform: capitalize;
 }
@@ -31,3 +32,5 @@ header img{
   padding-top: 10px;
 }
 .filter-content{background: #BDBDBD; margin-top: 0px;}
+.project td:first-child {width: 70%;}
+.project:hover{background: #e8e8e8;}

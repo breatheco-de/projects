@@ -56,7 +56,16 @@ function projectHTMLOutput(projects)
 	}
 	if(Array.isArray(projects))
 	{
-		for(var j = 0; j<projects.length;j++) htmlStr += '<tr class="project"><td><a href="'+projects[j]['url']+'">'+projects[j]['title']+'</a></td></tr>';
+		for(var j = 0; j<projects.length;j++)
+		{
+			var sourceCode = '#';
+			if(projects[j]['source-code'] && projects[j]['source-code']!='') sourceCode = projects[j]['source-code'];
+			htmlStr += '<tr class="project">';
+			htmlStr += 		'<td><a href="'+projects[j]['url']+'">'+projects[j]['title']+'</a></td>';
+			htmlStr += 		'<td><a href="'+projects[j]['url']+'readme.md">Readme</a></td>';
+			if(sourceCode!='#') htmlStr += '<td><a href="'+sourceCode+'">Source</a></td>';
+			htmlStr += '</tr>';
+		}
 	}
 	return htmlStr;
 
