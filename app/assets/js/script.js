@@ -36,14 +36,9 @@ function filterNodes()
 	if(tech=='true') tech = '';
 	else tech = '.'+tech;
 
-	//var diff = $('#difficulty-options').val();
-	//if(diff=='true') diff = '';
-	//else diff = '.'+diff;
-	//alert('.node'+tech+diff);
 	$('.node').hide();
 	$('.node'+tech).show();
 	$('.node'+tech+' tr').show();
-	//$('.'+tech).show();
 }
 
 function projectHTMLOutput(projects)
@@ -54,7 +49,6 @@ function projectHTMLOutput(projects)
 	var keys = Object.keys(projects);
 	while(projects[keys[i]] && !projects[keys[i]]['title'])
 	{
-		console.log(keys[i]);
 		htmlStr += '<tr class="node '+keys[i]+'"><td>'+keys[i]+'<table>';
 		htmlStr += projectHTMLOutput(projects[keys[i]]);
 		htmlStr += '</table></td></tr>';
