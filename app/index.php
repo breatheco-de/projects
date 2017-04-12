@@ -11,6 +11,7 @@ $twig = new Twig_Environment($loader);
 
 $args = array(
 	"assetsURL" => "/app/assets/",
+	"version" => "0.".rand(0,9999999999),//avoid cache
 	"title" => "Project Repository for the Breathe Code Movement",
 	"logo" => array(
 			"url" => "/app/assets/img/breathe-code-logo.png",
