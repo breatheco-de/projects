@@ -1,0 +1,114 @@
+.syllabus-wrapper {
+  min-height: 100vh;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+}
+
+.syllabus-wrapper section {
+  height: 100vh;
+  font-size: 40px;
+  font-weight: 100;
+  background-color: #22A7F0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.syllabus-wrapper .nav__wrapper {
+  position: fixed;
+  height: 100%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.syllabus-wrapper .nav {
+  margin: 0 0 100px 30px;
+}
+.nav__counter {
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.active .nav__counter{
+  text-decoration: underline;
+}
+.nav__title {
+  font-size: 26px;
+  font-weight: 300;
+  margin: 0;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: height 0.3s ease-out, opacity 0.2s ease-out;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav__body {
+  font-weight: 100;
+  font-size: 16px;
+  width: 300px;
+  margin-bottom: 6px;
+  color: #eaeaea;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: height 0.3s ease-out, opacity 0.2s ease-out;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.syllabus-wrapper .nav li {
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.syllabus-wrapper .nav li:after {
+  content: '';
+  display: block;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  height: 250px;
+  width: 20px;
+  position: absolute;
+  left: -30px;
+  top: 15px;
+}
+.syllabus-wrapper .nav li a {
+  display: block;
+  padding: 0;
+  color: #fff;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.syllabus-wrapper .nav li a:hover {
+  background-color: transparent;
+  padding-left: 1em;
+}
+.syllabus-wrapper .nav li a:focus {
+  background-color: transparent;
+}
+.syllabus-wrapper .nav li.active {
+  pointer-events: none;
+  padding-left: 1em;
+}
+.syllabus-wrapper .nav li.active:after {
+  width: 35px;
+  height: 400px;
+  top: 35px;
+}
+.syllabus-wrapper .nav li.active .nav__title {
+  height: 32px;
+  opacity: 1;
+  overflow: visible;
+}
+.syllabus-wrapper .nav li.active .nav__body {
+  height: 100px;
+  opacity: 1;
+  overflow: visible;
+}
