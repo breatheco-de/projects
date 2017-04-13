@@ -63,7 +63,9 @@ function projectHTMLOutput(projects)
 			htmlStr += '<tr class="project">';
 			htmlStr += 		'<td><a href="'+projects[j]['url']+'">'+projects[j]['title']+'</a></td>';
 			htmlStr += 		'<td><a href="'+projects[j]['url']+'readme.md">Readme</a></td>';
+			htmlStr += 		'<td><a href="/?classroom='+projects[j]['url']+'info.json">Class</a></td>';
 			if(sourceCode!='#') htmlStr += '<td><a href="'+sourceCode+'">Source</a></td>';
+			else htmlStr += '<td></td>';
 			htmlStr += '</tr>';
 		}
 	}

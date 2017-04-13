@@ -40,3 +40,8 @@ body {
 #json-url{width: 70%;}
 #previous, #next{display: inline-block; margin: 5px;}
 #logoArea{padding: 20%;}
+.right-buttonbar{
+  margin-top: 5px;
+  float: right;
+}
+.right-buttonbar button{ margin-right:5px;}

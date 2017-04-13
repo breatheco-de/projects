@@ -12,6 +12,7 @@ $twig = new Twig_Environment($loader);
 $args = array(
 	"assetsURL" => "/app/assets/",
 	"version" => "0.".rand(0,9999999999),//avoid cache
+	//"version" => "0.3",//avoid cache
 	"title" => "Project Repository for the Breathe Code Movement",
 	"logo" => array(
 			"url" => "/app/assets/img/breathe-code-logo.png",
@@ -22,7 +23,10 @@ $args = array(
 
 if(isset($_GET['classroom'])) $classroom = $_GET['classroom'];
 
-if(isset($classroom) and $classroom!='') $template = $twig->load('classroom.html');
+if(isset($classroom) and $classroom!=''){
+	$args["classJSON"] = urldecode($classroom);
+	$template = $twig->load('classroom.html');
+}
 else $template = $twig->load('index.html');
 
 echo $template->render($args);
