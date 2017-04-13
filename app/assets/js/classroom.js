@@ -330,7 +330,7 @@
       additionalButtons     +=  '</div>';
       $('#instructions').append(additionalButtons);
       
-      $('#instructions').append('<img class="img-responsive pull-left" src="../assets/img/breathe-code-logo.png" />')
+      $('#instructions').append('<img class="img-responsive pull-left" src="../app/assets/img/breathe-code-logo-white.png" />')
       $('#instructions').css('background','#003a00');
       $('#instructions').css('color','#FFFFFF');
     }
