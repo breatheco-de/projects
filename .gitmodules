@@ -10,3 +10,6 @@
 [submodule "p/php/senior/api/chat-system-api"]
 	path = p/php/senior/api/chat-system-api
 	url = git@bitbucket.org:codingacademy/chat-system-api.git
+[submodule "p/php/junior/other/simple-mvc"]
+	path = p/php/junior/other/simple-mvc
+	url = git@bitbucket.org:codingacademy/simple-mvc.git
