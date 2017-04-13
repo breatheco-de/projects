@@ -21,6 +21,8 @@ $args = array(
 	//"projects" => $projects
 	);
 
+if(isset($_GET['teacher'])) $args["teacherMode"] = $_GET['teacher'];
+
 if(isset($_GET['classroom'])) $classroom = $_GET['classroom'];
 
 if(isset($classroom) and $classroom!=''){

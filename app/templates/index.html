@@ -33,5 +33,21 @@
 	</div>
 	<script type="text/javascript" src="{{ assetsURL }}js/jquery-3.2.0.min.js"></script>
 	<script type="text/javascript" src="{{ assetsURL }}js/script.js?v{{ version }}"></script>
+	{% if teacherMode == 'true' %}
+	<script type="text/javascript">
+		var teacherMode = true;
+	</script>
+	{% else %}
+	<script type="text/javascript">
+		var teacherMode = false;
+	</script>
+	{% endif %}
+	<script type="text/javascript">
+		$(document).ready(function(){
+			projectTree.initialize({
+				teacher: teacherMode
+			});
+		});
+	</script>
 </body>
 </html>
