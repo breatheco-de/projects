@@ -324,9 +324,9 @@
       $('#instructions').append('<button id="next" class="btn btn-success"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>')
       
       var additionalButtons =  '<div class="right-buttonbar">';
-      additionalButtons       +=  '<button id="save" class="btn btn-success"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span></button>';
-      additionalButtons       +=  '<button id="add" class="btn btn-success"><span class="glyphicon glyphicon-plus-sign"></span></button>';
-      additionalButtons       +=  '<button id="delete" class="btn btn-success"><span class="glyphicon glyphicon-trash"></span></button>';
+      additionalButtons       +=  '<button id="save" class="btn btn-success"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save</button>';
+      additionalButtons       +=  '<button id="add" class="btn btn-success"><span class="glyphicon glyphicon-plus-sign"></span> Add Step</button>';
+      additionalButtons       +=  '<button id="delete" class="btn btn-success"><span class="glyphicon glyphicon-trash"></span> Delete Step</button>';
       additionalButtons     +=  '</div>';
       $('#instructions').append(additionalButtons);
       
