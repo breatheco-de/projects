@@ -223,7 +223,7 @@
     $.ajax({
       cache: false,
       dataType: 'json',
-      url : ASSETS_URL+'/sound/randomizer.json',
+      url : ASSETS_URL+'/sound/randomizer.php',
       success: function(data){
         if(data.songs)
         {
