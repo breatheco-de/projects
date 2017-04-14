@@ -42,13 +42,13 @@ function getInfo($parts, $path){
 	{
 		$prjObj = json_decode($json);
 		$prj = (array) $prjObj;
-		$prj["info-path"] = $path.'/class-steps/info.json';
+		$prj["info-path"] = $path.'class-steps/info.json';
 	}
 	else if(file_exists($path.'/info.json') and $json = file_get_contents($path.'/info.json'))
 	{
 		$prjObj = json_decode($json);
 		$prj = (array) $prjObj;
-		$prj["info-path"] = $path.'/info.json';
+		$prj["info-path"] = $path.'info.json';
 	}
 	else
 	{

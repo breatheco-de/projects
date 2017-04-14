@@ -14,7 +14,17 @@ class InfoJSON{
 
 	public function __construct($projectBaseDirectory)
 	{
-		$this->projectBaseDirectory = dirname($projectBaseDirectory).'/';
+		//removing the "class-steps/" part from the directory
+		$pos = strpos($projectBaseDirectory, self::CLASS_STEPS_DIRECTORY);
+		if($pos !== false) $projectBaseDirectory = substr($projectBaseDirectory, 0,$pos);
+		else
+		{
+			$pos = strpos($projectBaseDirectory, $this->keyname);
+			if($pos !== false) $projectBaseDirectory = substr($projectBaseDirectory, 0,$pos);
+			else throw new Exception($this->keyname." not found", 1);
+		}
+
+		$this->projectBaseDirectory = $projectBaseDirectory;
 		$this->gitIgnoreURL = $this->projectBaseDirectory.'.gitignore';
 		$this->logManager = new ASLogin();
 	}
