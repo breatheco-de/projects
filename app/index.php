@@ -1,4 +1,7 @@
 <?php
+session_set_cookie_params(0, '/', '.breatheco.de');
+session_start();
+
 ini_set('display_errors', '1');
 require_once('vendor/autoload.php');
 
@@ -22,6 +25,7 @@ $args = array(
 	);
 
 if(isset($_GET['teacher'])) $args["teacherMode"] = $_GET['teacher'];
+if(isset($_SESSION['academy_roles'])) $args["teacherMode"] = 'true';
 
 if(isset($_GET['classroom'])) $classroom = $_GET['classroom'];
 
