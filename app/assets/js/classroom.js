@@ -8,7 +8,7 @@
       songsArray = [],
       settings = {},
       currentInstruction = null;
-  const ASSETS_URL = 'https://4geeksacademy.github.io/exercise-assets';
+  const ASSETS_URL = 'https://assets.breatheco.de/';
  
   function resetPage() {
     //show input
