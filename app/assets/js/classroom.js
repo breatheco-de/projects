@@ -21,6 +21,7 @@
     //reset value to blank
     $("#time").html(settings.time);
     $("#minutes").val(settings.minutes);
+    $("#music-icon").hide();
 
     if(musicArray) changeSong();
     intervalHandle = false;
@@ -224,7 +225,7 @@
     $.ajax({
       cache: false,
       dataType: 'json',
-      url : ASSETS_URL+'/sound/randomizer.php',
+      url : ASSETS_URL+'/sound/sounds.php',
       success: function(data){
         if(data.songs)
         {
@@ -249,6 +250,7 @@
 
       mainMusic = getRandomSong(); 
       mainMusic.volume = 0.3;
+      $("#music-icon").show();
 
       $(mainMusic).on('ended',function(){
         mainMusic.play();
@@ -262,6 +264,10 @@
     }
     var nextIndex = Math.floor(Math.random()*musicArray.songs.length);
     var audioURL = ASSETS_URL+'/sound/'+musicArray.songs[nextIndex].url;
+    
+    $("#music-icon").attr("title",musicArray.songs[nextIndex].name);
+    $('#music-icon').tooltip();
+    
     musicArray.songs.splice(nextIndex, 1);
     var audio = new Audio(audioURL);
     return audio;
