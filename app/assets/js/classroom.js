@@ -8,7 +8,7 @@
       songsArray = [],
       settings = {},
       currentInstruction = null;
-  const ASSETS_URL = 'https://4geeksacademy.github.io/exercise-assets';
+  const ASSETS_URL = 'https://assets.breatheco.de/';
  
   function resetPage() {
     //show input
@@ -21,7 +21,7 @@
     $("#time").html(settings.time);
     $("#minutes").val(settings.minutes);
 
-    if(mainMusic && !mainMusic.paused) mainMusic.pause();
+    changeSong();
     intervalHandle = false;
   }
 
@@ -221,19 +221,32 @@
   function loadMusic()
   {
     $.ajax({
+      cache: false,
+      dataType: 'json',
       url : ASSETS_URL+'/sound/randomizer.json',
       success: function(data){
         if(data.songs)
         {
           musicArray = data;
-          mainMusic = getRandomSong();        
-          mainMusic.volume = 0.3;
-          $(mainMusic).on('ended',function(){
-            mainMusic.play();
-          });
+          changeSong();
         }
       }
     });
+  }
+
+  function changeSong()
+  {
+      if(mainMusic && !mainMusic.paused){
+        mainMusic.pause();
+        $(mainMusic).off();
+      }
+
+      mainMusic = getRandomSong(); 
+      mainMusic.volume = 0.3;
+
+      $(mainMusic).on('ended',function(){
+        mainMusic.play();
+      });
   }
 
   function getRandomSong(){
