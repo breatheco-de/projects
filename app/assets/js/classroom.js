@@ -361,6 +361,7 @@
     $.ajax({
       url: 'app/save.php',
       method: 'post',
+      dataType: 'json',
       cache: false,
       data: {url: jsonURL, content: JSON.stringify(projectData)},
       success: function(result){
@@ -371,7 +372,7 @@
         else
         {
           alert('Error saving...');
-          console.log(data.msg);
+          console.log(result.msg);
         }
       },
       error: function(){
