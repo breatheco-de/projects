@@ -12,7 +12,7 @@ if(isset($_POST['url']) and $_POST['content'])
 }
 else throwError("Missing params: url and content");
 
-header("Content type: application/json");
+header("Content-type: application/json");
 function throwSuccess($data=null){
 	$response = array(
 		"code" => 200

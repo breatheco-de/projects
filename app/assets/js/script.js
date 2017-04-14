@@ -77,7 +77,7 @@
 				htmlStr += 		'<td><a href="'+projects[j]['url']+'">'+projects[j]['title']+'</a></td>';
 				htmlStr += 		'<td><a href="'+projects[j]['url']+'readme.md">Readme</a></td>';
 				if(mainSettings.teacher) 
-					htmlStr += 		'<td><a href="/?classroom='+projects[j]['url']+'info.json">Class</a></td>';
+					htmlStr += 		'<td><a href="/?classroom='+projects[j]['info-path']+'">Class</a></td>';
 				if(sourceCode!='#') 
 					htmlStr += '<td><a href="'+sourceCode+'">Source</a></td>';
 				else 
