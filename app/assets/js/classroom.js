@@ -221,6 +221,8 @@
   function loadMusic()
   {
     $.ajax({
+      cache: false,
+      dataType: 'json',
       url : ASSETS_URL+'/sound/randomizer.json',
       success: function(data){
         if(data.songs)
