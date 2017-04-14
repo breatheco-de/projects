@@ -5,10 +5,17 @@ require_once('classes/autoload.php');
 
 if(isset($_POST['url']) and $_POST['content'])
 {
-	$info = new InfoJSON($_POST['url']);
-	$newInfoURL = $info->save($_POST['content']);
-	if(!$newInfoURL) throwError($info->getLogs());
-	else throwSuccess($newInfoURL);
+	try
+	{
+		$info = new InfoJSON($_POST['url']);
+		$newInfoURL = $info->save($_POST['content']);
+		if(!$newInfoURL) throwError($info->getLogs());
+		else throwSuccess($newInfoURL);
+	}
+	catch(Exception $e)
+	{
+		throwError($e->getMessage());
+	}
 }
 else throwError("Missing params: url and content");
 
