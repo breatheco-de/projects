@@ -5,7 +5,8 @@
       projectData,
       secondsRemaining = 0,
       mainMusic = null,
-      songsArray = [],
+      musicArray = null,
+      backupMusicArray = null,
       settings = {},
       currentInstruction = null;
   const ASSETS_URL = 'https://assets.breatheco.de/';
@@ -21,7 +22,7 @@
     $("#time").html(settings.time);
     $("#minutes").val(settings.minutes);
 
-    changeSong();
+    if(musicArray) changeSong();
     intervalHandle = false;
   }
 
@@ -227,7 +228,12 @@
       success: function(data){
         if(data.songs)
         {
-          musicArray = data;
+          backupMusicArray = data;
+          musicArray = {
+            songs: backupMusicArray.songs.slice(0),//asign a clone of the backup array
+            fx: backupMusicArray.fx.slice(0)
+          }
+
           changeSong();
         }
       }
@@ -250,7 +256,13 @@
   }
 
   function getRandomSong(){
-    var audioURL = ASSETS_URL+'/sound/'+musicArray.songs[Math.floor(Math.random()*musicArray.songs.length)].url;
+    if(musicArray.songs.length==0)
+    {
+      musicArray = backupMusicArray.slice(0);
+    }
+    var nextIndex = Math.floor(Math.random()*musicArray.songs.length);
+    var audioURL = ASSETS_URL+'/sound/'+musicArray.songs[nextIndex].url;
+    musicArray.songs.splice(nextIndex, 1);
     var audio = new Audio(audioURL);
     return audio;
   }
