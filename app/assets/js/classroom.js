@@ -21,7 +21,7 @@
     $("#time").html(settings.time);
     $("#minutes").val(settings.minutes);
 
-    if(mainMusic && !mainMusic.paused) mainMusic.pause();
+    changeSong();
     intervalHandle = false;
   }
 
@@ -226,14 +226,25 @@
         if(data.songs)
         {
           musicArray = data;
-          mainMusic = getRandomSong();        
-          mainMusic.volume = 0.3;
-          $(mainMusic).on('ended',function(){
-            mainMusic.play();
-          });
+          changeSong();
         }
       }
     });
+  }
+
+  function changeSong()
+  {
+      if(mainMusic && !mainMusic.paused){
+        mainMusic.pause();
+        $(mainMusic).off();
+      }
+
+      mainMusic = getRandomSong(); 
+      mainMusic.volume = 0.3;
+
+      $(mainMusic).on('ended',function(){
+        mainMusic.play();
+      });
   }
 
   function getRandomSong(){
