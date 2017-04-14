@@ -7,18 +7,25 @@ class InfoJSON{
 	private $projectBaseDirectory;
 
 	private $gitIgnoreURL;
-	
+
+	private $logManager;
+
 	const CLASS_STEPS_DIRECTORY = "class-steps/";
 
 	public function __construct($projectBaseDirectory)
 	{
 		$this->projectBaseDirectory = dirname($projectBaseDirectory).'/';
 		$this->gitIgnoreURL = $this->projectBaseDirectory.'.gitignore';
+		$this->logManager = new ASLogin();
 	}
 
 	public function save($string)
 	{
-		$this->put($string);
+		return $this->put($string);
+	}
+
+	public function getLogs(){
+		return $this->logManager->getLogs();
 	}
 	
 	public function getOriginalContent()
@@ -31,41 +38,56 @@ class InfoJSON{
 	private function put($content)
 	{
 		if(!$this->addToGitignore())
-		    die('Failed to update gitignore...');
+		{
+		    $this->logManager->add('Failed to update gitignore...');
+			return false;
+		}
 			
 
-		if(!is_dir(self::CLASS_STEPS_DIRECTORY))
-			if (!mkdir(self::CLASS_STEPS_DIRECTORY, 0777, true))
-			    die('Failed to create folders...');
+		if(!is_dir($this->projectBaseDirectory.self::CLASS_STEPS_DIRECTORY))
+		{
+			if(is_writable($this->projectBaseDirectory))
+			{
+				if (!mkdir($this->projectBaseDirectory.self::CLASS_STEPS_DIRECTORY, 0777, true))
+				{
+					$this->logManager->add('Failed to create folders...');
+				    return false;
+				}
+			}else{
+				$this->logManager->add('The directory '.$this->projectBaseDirectory.' is not writable, failed creating steps directory.');
+				return false;
+			} 
+		}
 
-		if(file_put_contents($this->projectBaseDirectory.self::CLASS_STEPS_DIRECTORY.$this->keyname, $content))
-			return true;
+		$newDir = $this->projectBaseDirectory.self::CLASS_STEPS_DIRECTORY.$this->keyname;
+		if(file_put_contents($newDir, $content))
+			return $newDir;
 	}
 
 	private function addToGitignore()
 	{
-		if( strpos(file_get_contents($this->gitIgnoreURL),self::CLASS_STEPS_DIRECTORY) !== false) return true;
+		if(file_exists($this->gitIgnoreURL) and strpos(file_get_contents($this->gitIgnoreURL),self::CLASS_STEPS_DIRECTORY) !== false) return true;
 
 		$success = false;
 		// Let's make sure the file exists and is writable first.
-		if (is_writable($this->gitIgnoreURL)) {
+		if (!file_exists($this->gitIgnoreURL) or is_writable($this->gitIgnoreURL)) {
 
 		    // In our example we're opening $filename in append mode.
 		    // The file pointer is at the bottom of the file hence
 		    // that's where $somecontent will go when we fwrite() it.
 		    if (!$handle = fopen($this->gitIgnoreURL, 'a')) {
-		         echo "Cannot open file ($this->gitIgnoreURL)";
+		         $this->logManager->add("Cannot open file ($this->gitIgnoreURL)");
 		    }
 
 		    // Write $somecontent to our opened file.
 		    if (fwrite($handle, self::CLASS_STEPS_DIRECTORY) === FALSE) {
-		        echo "Cannot write to file ($this->gitIgnoreURL)";
+		        $this->logManager->add("Cannot write to file ($this->gitIgnoreURL)");
 		    }
 		    else $success = true;
 
 		    fclose($handle);
 
-		}
+		}else $this->logManager->add(".gitignore not writable");
 
 		return $success;
 	}

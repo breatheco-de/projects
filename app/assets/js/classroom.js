@@ -363,11 +363,19 @@
       method: 'post',
       cache: false,
       data: {url: jsonURL, content: JSON.stringify(projectData)},
-      success: function(){
-        alert('Successfully saved...');
+      success: function(result){
+        if(result.code==200)
+        {
+          alert('Successfully saved...');
+        }
+        else
+        {
+          alert('Error saving...');
+          console.log(data.msg);
+        }
       },
       error: function(){
-        alert('Error saving...');
+        alert('Error saving: Conexion Error.');
       }
     });
   }
