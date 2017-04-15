@@ -10,3 +10,6 @@
 [submodule "p/php/junior/other/simple-mvc"]
 	path = p/php/junior/other/simple-mvc
 	url = git@bitbucket.org:codingacademy/simple-mvc.git
+[submodule "p/php/junior/sessions/login-with-php-sessions"]
+	path = p/php/junior/sessions/login-with-php-sessions
+	url = git@bitbucket.org:codingacademy/login-with-php-sessions.git
