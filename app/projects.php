@@ -57,7 +57,7 @@ function getInfo($parts, $path){
 		$prj["name"] = $parts[$maxDepth];
 	}
 
-	if(file_exists($path.'readme.md')) $prj["readme"] = str_replace('../','',$path.'readme.md');
+	if(file_exists($path.'readme.md')) $prj["readme"] = str_replace('../','',$path.'README.md');
 	$prj["url"] = $path;
 	$prj["technology"] = $parts[$maxDepth-3];
 	$prj["difficulty"] = $parts[$maxDepth-2];

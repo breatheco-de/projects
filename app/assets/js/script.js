@@ -78,7 +78,7 @@
 				htmlStr += '<tr class="project">';
 				htmlStr += 		'<td><a href="'+projects[j]['url']+'">'+projects[j]['title']+'</a></td>';
 				if(projects[j]['readme'] && projects[j]['readme']!='')
-					htmlStr += 		'<td><a href="'+ASSETS_URL+'live-demos/markdown-parser/?path='+projects[j]['readme']+'">Readme</a></td>';
+					htmlStr += 		'<td><a href="'+ASSETS_URL+'live-demos/markdown-parser/?path='+PROJECTS_URL+projects[j]['readme']+'">Readme</a></td>';
 				if(mainSettings.teacher) 
 					htmlStr += 		'<td><a href="/?classroom='+projects[j]['info-path']+'">Class</a></td>';
 				if(sourceCode!='#') 
