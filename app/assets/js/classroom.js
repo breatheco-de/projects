@@ -10,6 +10,7 @@
       settings = {},
       currentInstruction = null;
   const ASSETS_URL = 'https://assets.breatheco.de/';
+  const CLASS_STEPS_DIRECTORY = "class-steps/";
  
   function resetPage() {
     //show input
@@ -399,6 +400,15 @@
         if(result.code==200)
         {
           alert('Successfully saved...');
+          //replace the querystring with the new info.json path in case the teacher reloads the website
+          if (history.pushState) {
+              var currentURL = window.location.href;
+              if(currentURL.indexOf(CLASS_STEPS_DIRECTORY)===-1)
+              {
+                var newurl = currentURL.replace("info.json",CLASS_STEPS_DIRECTORY+"info.json");
+                window.history.pushState({path:newurl},'',newurl);
+              }
+          }
         }
         else
         {
