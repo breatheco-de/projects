@@ -38,13 +38,13 @@ function getInfo($parts, $path){
 	while(!isset($parts[$maxDepth]) and $maxDepth>2) $maxDepth--;
 
 	$prj = array();
-	if(file_exists($path.'/class-steps/info.json') and $json = file_get_contents($path.'/class-steps/info.json'))
+	if(file_exists($path.'class-steps/info.json') and $json = file_get_contents($path.'class-steps/info.json'))
 	{
 		$prjObj = json_decode($json);
 		$prj = (array) $prjObj;
 		$prj["info-path"] = $path.'class-steps/info.json';
 	}
-	else if(file_exists($path.'/info.json') and $json = file_get_contents($path.'/info.json'))
+	else if(file_exists($path.'info.json') and $json = file_get_contents($path.'info.json'))
 	{
 		$prjObj = json_decode($json);
 		$prj = (array) $prjObj;
@@ -57,6 +57,7 @@ function getInfo($parts, $path){
 		$prj["name"] = $parts[$maxDepth];
 	}
 
+	if(file_exists($path.'readme.md')) $prj["readme"] = str_replace('../','',$path.'readme.md');
 	$prj["url"] = $path;
 	$prj["technology"] = $parts[$maxDepth-3];
 	$prj["difficulty"] = $parts[$maxDepth-2];
