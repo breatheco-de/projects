@@ -4,6 +4,8 @@
 		mainSettings = {
 			teacher: false
 		};
+	const ASSETS_URL = 'http://assets.breatheco.de/';
+	const PROJECTS_URL = 'http://projects.breatheco.de/';
 
 	projectTree.initialize = function(globalSettings){
 
@@ -75,7 +77,8 @@
 				if(projects[j]['source-code'] && projects[j]['source-code']!='') sourceCode = projects[j]['source-code'];
 				htmlStr += '<tr class="project">';
 				htmlStr += 		'<td><a href="'+projects[j]['url']+'">'+projects[j]['title']+'</a></td>';
-				htmlStr += 		'<td><a href="'+projects[j]['url']+'readme.md">Readme</a></td>';
+				if(projects[j]['readme'] && projects[j]['readme']!='')
+					htmlStr += 		'<td><a href="'+ASSETS_URL+'live-demos/markdown-parser/?path='+projects[j]['readme']+'">Readme</a></td>';
 				if(mainSettings.teacher) 
 					htmlStr += 		'<td><a href="/?classroom='+projects[j]['info-path']+'">Class</a></td>';
 				if(sourceCode!='#') 
