@@ -10,8 +10,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !^/app/
 RewriteRule ^(.*)/(.*)$ /app/index.php?$1=$2
 RewriteRule ^projects.php$ /app/projects.php
-
-# Add trailing slash to directories within app
-# This does not expose the internal URL.
-#RewriteCond %{SCRIPT_FILENAME} -d
-#RewriteRule ^app/(.*[^/])$ http://projects.breathecode.local/$1/ [R=301]

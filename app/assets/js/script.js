@@ -73,6 +73,8 @@
 		{
 			for(var j = 0; j<projects.length;j++)
 			{
+				if(projects[j]['hidden']) return htmlStr;
+				
 				var sourceCode = '#';
 				if(projects[j]['source-code'] && projects[j]['source-code']!='') sourceCode = projects[j]['source-code'];
 				htmlStr += '<tr class="project">';
