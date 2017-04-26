@@ -1,6 +1,6 @@
 {
 	"title" : "Live Event PDF Classroom",
-	"hidden" : false,
+	"hidden" : true,
 	"instructions":[
 		{
 			"content": "This will be the first instruction",
