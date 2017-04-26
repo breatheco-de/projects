@@ -1,0 +1,49 @@
+body {
+  background-color: lightgrey;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+.page-header {
+  background-color: #428bca;
+  padding-top: 5px;
+}
+.page-header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+.page-header h1 small {
+  color: #f2f2f2;
+}
+.clock-timer {
+  font-size:11em;
+  font-weight: bold;
+  color: tomato;
+}
+.text-ack {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  background-color: tomato;
+}
+.fluid-textarea{
+	width: 100%;
+	height: 90%;
+}
+.trumbowyg-box{margin-top: 0px !important;}
+#instructions{
+  background: #3d3d3d;
+}
+#mainscreen{height: 100vh;}
+#instructions h4{display: inline;}
+#instructions img{max-height: 30px; margin-top: 5px;}
+#json-url{width: 70%;}
+#previous, #next{display: inline-block; margin: 5px;}
+#logoArea{padding: 20%;}
+#logoArea img{ max-width: 200px; }
+.right-buttonbar{
+  margin-top: 5px;
+  float: right;
+}
+.right-buttonbar button{ margin-right:5px;}
