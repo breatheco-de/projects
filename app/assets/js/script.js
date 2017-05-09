@@ -62,7 +62,7 @@
 
 		var i = 0;
 		var keys = Object.keys(projects);
-		while(projects[keys[i]] && !projects[keys[i]]['title'])
+		while(projects[keys[i]] && !projects[keys[i]]['title'] && i<30)
 		{
 			htmlStr += '<tr class="node '+keys[i]+'"><td>'+keys[i]+'<table>';
 			htmlStr += projectHTMLOutput(projects[keys[i]]);
@@ -79,6 +79,8 @@
 				if(projects[j]['source-code'] && projects[j]['source-code']!='') sourceCode = projects[j]['source-code'];
 				htmlStr += '<tr class="project">';
 				htmlStr += 		'<td><a href="'+projects[j]['url']+'">'+projects[j]['title']+'</a></td>';
+				if(projects[j]['video-path'] && projects[j]['video-path']!='')
+					htmlStr += 		'<td><a href="/?vtutorial='+projects[j]['video-path']+'">Video</a></td>';
 				if(projects[j]['readme'] && projects[j]['readme']!='')
 					htmlStr += 		'<td><a target="_blank" href="'+ASSETS_URL+'live-demos/markdown-parser/?path='+PROJECTS_URL+projects[j]['readme']+'">Readme</a></td>';
 				if(mainSettings.teacher) 
