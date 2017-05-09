@@ -13,6 +13,8 @@ $twig = new Twig_Environment($loader);
 
 $args = array(
 	"assetsURL" => "/app/assets/",
+	"assetsGlobalURL" => "http://assets.breatheco.de/",
+	"projectsGlobalURL" => 'http://'.$_SERVER['HTTP_HOST'].'/',
 	"version" => "0.".rand(0,9999999999),//avoid cache
 	//"version" => "0.4",//avoid cache
 	"title" => "Project Repository from Breathe Code",
@@ -44,6 +46,16 @@ elseif(isset($_GET['vtutorial']))
 	if($classroom!=''){
 		$args["videoJSON"] = urldecode($classroom);
 		if($args["videoJSON"]) $template = $twig->load('tutorial.html');
+		else $template = $twig->load('404.html');
+	}
+	else $template = $twig->load('404.html');
+}
+else if(isset($_GET['d']))
+{
+	$slug = $_GET['d'];
+	if($slug!=''){
+		$args["requestSlug"] = urldecode($slug);
+		if($args["requestSlug"]) $template = $twig->load('demo.html');
 		else $template = $twig->load('404.html');
 	}
 	else $template = $twig->load('404.html');

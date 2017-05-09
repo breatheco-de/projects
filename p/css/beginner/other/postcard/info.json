@@ -1,5 +1,6 @@
 {
 	"title" : "Postcard",
+	"slug" : "postcard",
 	"skin" : "retro",
 	"description" : "Replicate this postcard with CSS and HTML",
 	"instructions":[

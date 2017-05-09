@@ -99,5 +99,22 @@ function fillReadmeFilePath($prj,$path){
 	return $prj;
 }
 
+function getProject($projects,$slug)
+{
+	if(empty($slug)) return null;
+
+	foreach ($projects as $p) {
+		if(isset($p['slug']) and $p['slug']==$slug) return $p;
+	}
+
+	return null;
+}
+
 header("Content-type: application/json");
-echo json_encode($projects);
+if(!empty($_REQUEST['slug']))
+{
+	$project = getProject($projects,$_REQUEST['slug']);
+	if($project) echo json_encode($project);
+	else echo json_encode(array());
+}
+else echo json_encode($projects);

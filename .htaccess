@@ -9,4 +9,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !^/app/
 RewriteRule ^(.*)/(.*)$ /app/index.php?$1=$2
+RewriteRule ^d/(.*)$ /app/index.php?demo=$1
 RewriteRule ^projects.php$ /app/projects.php

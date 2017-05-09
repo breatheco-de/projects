@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>Timer App</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="{{ assetsURL }}css/demo.css?v{{ version }}">
+</head>
+<body>
+	<header>
+		<dropdown>
+		  <input id="toggle" type="checkbox">
+		  <label for="toggle" class="animate">Demonstration<i class="fa fa-desktop float-right"></i></label>
+		  <ul class="animate">
+		    <li id="readme" class="animate"><a target="_blank" href="#">Readme</a><i class="fa fa-file-text-o float-right"></i></li>
+		    <li class="animate">Source<i class="fa fa-code float-right"></i></li>
+		    <!-- <li class="animate">Fullpage<i class="fa fa-arrows-alt float-right"></i></li> -->
+		    <li id="video" class="animate"><a href="#">Video</a><i class="fa fa-youtube-play float-right"></i></li>
+		  </ul>
+		</dropdown>
+	</header>
+
+    <div class="main">
+    	<iframe id="the-demo" width="100%" height="100%" frameborder="0" src="#"></iframe>
+    </div>
+	
+	<script type="text/javascript" src="{{ assetsURL }}js/jquery-3.2.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$.ajax({
+				url:"/projects.php",
+				data: { slug: '{{requestSlug}}'},
+				success: function(data){
+					if(data && data.slug)
+					{
+						document.querySelector('#the-demo').src = data.url;
+
+						loadReadme(data);
+						loadSource(data);
+						loadFullpage(data);
+						loadVideo(data);
+					}
+					else document.querySelector('#the-demo').src = "/?d";
+				},
+				error: function(p1,p2,errorString){
+					//alert("Error retreiving "+errorString);
+				}
+			});
+		});
+
+		function loadReadme(data)
+		{
+			if(data.readme)
+			{
+				skin = '';
+				if(data.skin) skin = data.skin;
+				$("#readme a").attr("href","{{assetsGlobalURL}}live-demos/markdown-parser/?skin="+skin+"&path={{projectsGlobalURL}}"+data.readme);
+				$("#readme").show();
+			}else $("#readme").hide();
+		}
+
+		function loadVideo(data)
+		{
+			if(data['video-path'])
+			{
+				$("#video a").attr("href","{{projectsGlobalURL}}?vtutorial="+data['video-path']);
+				$("#video").show();
+			}else $("#video").hide();
+		}
+
+		function loadFullpage(data)
+		{
+			if(data.readme)
+			{
+				skin = '';
+				if(data.skin) skin = data.skin;
+				$("#fullpage a").attr("href","{{assetsGlobalURL}}live-demos/markdown-parser/?skin="+skin+"&path={{projectsGlobalURL}}"+data.readme);
+				$("#fullpage").show();
+			}else $("#fullpage").hide();
+		}
+
+		function loadSource(data)
+		{
+			if(data['source-code'])
+			{
+				skin = '';
+				if(data.skin) skin = data.skin;
+				$("#source a").attr("href",data['source-code']);
+				$("#source").show();
+			}else $("#source").hide();
+		}
+	</script>
+</body>
+</html>

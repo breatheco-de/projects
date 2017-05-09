@@ -1,4 +1,4 @@
-#The Poscard
+#The Postcard
 
 Lets create a postcard with HTML5 and CSS!
 

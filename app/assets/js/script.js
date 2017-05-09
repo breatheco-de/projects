@@ -81,13 +81,19 @@
 				var sourceCode = '#';
 				if(projects[j]['source-code'] && projects[j]['source-code']!='') sourceCode = projects[j]['source-code'];
 				htmlStr += '<tr class="project">';
-				htmlStr += 		'<td><a href="'+projects[j]['url']+'">'+projects[j]['title']+'</a></td>';
+				
+				if(projects[j]['slug']) htmlStr += 	'<td><a href="/d/'+projects[j]['slug']+'">'+projects[j]['title']+'</a></td>';
+				else htmlStr += 	'<td><a href="'+projects[j]['url']+'">'+projects[j]['title']+'</a></td>';
+				
 				if(projects[j]['video-path'] && projects[j]['video-path']!='')
 					htmlStr += 		'<td><a href="/?vtutorial='+projects[j]['video-path']+'">Video</a></td>';
+				
 				if(projects[j]['readme'] && projects[j]['readme']!='')
 					htmlStr += 		'<td><a target="_blank" href="'+ASSETS_URL+'live-demos/markdown-parser/?skin='+skin+'&path='+PROJECTS_URL+projects[j]['readme']+'">Readme</a></td>';
+				
 				if(mainSettings.teacher) 
 					htmlStr += 		'<td><a href="/?classroom='+projects[j]['info-path']+'">Class</a></td>';
+				
 				if(sourceCode!='#') 
 					htmlStr += '<td><a href="'+sourceCode+'">Source</a></td>';
 				else 
