@@ -3,8 +3,14 @@ body {
   background-color: #171717;
   margin: 0;
   padding: 0;
+  font-family: 'Handlee', cursive;
 }
-
+input{
+  border: 0px; 
+  border-bottom: 1px gray solid; 
+  font-size: 19px;
+  font-family: 'Handlee', cursive;
+}
 .post-card {
   width: 500px;
   height: 350px;
@@ -15,26 +21,21 @@ body {
   position: absolute;
   padding: 12px;
 }
-
-.post-stample {
+.postcard-header{overflow: hidden;}
+.postcard-footer{text-align: center}
+.postcard-body {overflow: hidden;}
+.postcard-header img{
   width: 70px;
   height: 70px;
-  position: absolute;
-  right: 12px;
-  border: 1px solid black;
+  float: right;
 }
-
-.post-card__title {
-  font-family: 'La Belle Aurore';
-}
-
 .content-left {
   width: calc(50%);
-  font-family: 'La Belle Aurore';
   font-size: 21px;
   line-height: 1.2;
   float: left;
 }
+h1{margin-bottom: 0px;}
 
 .content-right {
   width: 50%;
@@ -44,6 +45,6 @@ body {
 .adress-line {
   display: block;
   margin: 10px 20px;
-  font-family: 'La Belle Aurore';
-  border-bottom: 1px solid black;
+  width: 220px;
 }
+.content-footer{background: blue;}
