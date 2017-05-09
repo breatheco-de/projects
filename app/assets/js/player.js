@@ -5,7 +5,8 @@
   	  menuSelector,
   	  videoStringId,
   	  videoURL,
-  	  menuTitle,
+      menuTitle,
+  	  menuTitleValue,
   	  done = false,
       settings = {};
 
@@ -20,7 +21,7 @@
         loadPlayer(playerSelector, videoStringId);
       };
 
-      $.getScript('//www.youtube.com/iframe_api');
+      $.getScript('https://www.youtube.com/iframe_api');
     }
 
   }
@@ -85,6 +86,7 @@
 
     if(theSettings['menu-title']) menuTitle = theSettings['menu-title'];
     else menuTitle = settings['menu-title'];
+    menuTitleValue = $('#'+menuTitle).html();
     $('#'+menuTitle).html('Loading');
 
     return settings;
@@ -135,7 +137,7 @@
           }
           else
           {
-          	$('#'+menuTitle).html('Topics');
+          	$('#'+menuTitle).html(menuTitleValue);
           	renderTimeline(data.timeline);
           	player.playVideo();
           }
