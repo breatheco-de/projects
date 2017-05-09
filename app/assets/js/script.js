@@ -15,7 +15,7 @@
 		}
 
 		$.ajax({
-			url: '/projects.php',
+			url: '/projects.php?1',
 			cache: false,
 			success: function(data){
 
