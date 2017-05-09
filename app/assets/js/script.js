@@ -82,7 +82,7 @@
 				if(projects[j]['video-path'] && projects[j]['video-path']!='')
 					htmlStr += 		'<td><a href="/?vtutorial='+projects[j]['video-path']+'">Video</a></td>';
 				if(projects[j]['readme'] && projects[j]['readme']!='')
-					htmlStr += 		'<td><a target="_blank" href="'+ASSETS_URL+'live-demos/markdown-parser/?path='+PROJECTS_URL+projects[j]['readme']+'">Readme</a></td>';
+					htmlStr += 		'<td><a target="_blank" href="'+ASSETS_URL+'live-demos/markdown-parser/?skin=modest&path='+PROJECTS_URL+projects[j]['readme']+'">Readme</a></td>';
 				if(mainSettings.teacher) 
 					htmlStr += 		'<td><a href="/?classroom='+projects[j]['info-path']+'">Class</a></td>';
 				if(sourceCode!='#') 
