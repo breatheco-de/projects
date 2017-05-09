@@ -1,11 +1,13 @@
 {
+	"id": "CNaA1VsU02M",
+	"title": "Creating an photo-feed like instragram",
 	"timeline":[
 		{
-			"seconds": "10",
+			"seconds": "1",
 			"description": "Introduction"
 		},
 		{
-			"seconds": "180",
+			"seconds": "150",
 			"description": "Download Sublime 3"
 		},
 		{

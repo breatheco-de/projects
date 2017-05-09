@@ -16,14 +16,18 @@
 
     defaults(theSettings);
 
-	if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
+    loadInfoJSON(videoURL);
+
+  }
+
+  function initializePlayer(){
+    if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
       window.onYouTubeIframeAPIReady = function() {
         loadPlayer(playerSelector, videoStringId);
       };
 
       $.getScript('https://www.youtube.com/iframe_api');
     }
-
   }
 
   function loadPlayer() {
@@ -46,7 +50,7 @@
 
   // 4. The API will call this function when the video player is ready.
   function onPlayerReady(event) {
-	loadInfoJSON(videoURL);
+	   player.playVideo();
   }
 
   // 5. The API calls this function when the player's state changes.
@@ -59,7 +63,7 @@
   }
 
   videotutorial.jumpTo = function(seconds) {
-	player.seekTo(seconds, true);
+	   player.seekTo(seconds, true);
   }
 
   function defaults(theSettings)
@@ -68,8 +72,7 @@
     	'selector': 'player',
     	'menu-selector': 'menu-items',
     	'video-url': '',
-    	'menu-title': 'Menu',
-    	'videoId': ''
+    	'menu-title': 'Menu'
     };
 
     if(theSettings['selector']) playerSelector = theSettings['selector'];
@@ -77,9 +80,6 @@
 
     if(theSettings['menu-selector']) menuSelector = theSettings['menu-selector'];
     else menuSelector = settings['menu-selector'];
-
-    if(theSettings['videoId']) videoStringId = theSettings['videoId'];
-    else videoStringId = settings['videoId'];
 
     if(theSettings['timeline-url']) videoURL = theSettings['timeline-url'];
     else videoURL = settings['timeline-url'];
@@ -113,14 +113,19 @@
     var ss = seconds % 60;
 
     let timeStr = '';
-    if(hh==0) timeStr = mm + ":" + ss;
-    else timeStr = hh + ":" + mm + ":" + ss;
+    if(hh==0) timeStr = pad(mm,2) + ":" + pad(ss,2);
+    else timeStr = pad(hh,2) + ":" + pad(mm,2) + ":" + pad(ss,2);
     return timeStr;
+  }
+
+  function pad(n, width, z) {
+    z = z || '0';
+    n = n + '';
+    return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
   }
 
   function addMenuListeners(){
   	$('.player-topic').click(function(){
-  		alert($(this).data('seconds'));
   		videotutorial.jumpTo($(this).data('seconds'));
   	});
   }
@@ -131,15 +136,16 @@
         cache: false,
         dataType: 'json',
         success: function(data){
-          if(!data.timeline || data.timeline.length==0)
+          if(!data.id || data.id==='')
           {
             alert('No timeline could be loaded');
           }
           else
           {
           	$('#'+menuTitle).html(menuTitleValue);
-          	renderTimeline(data.timeline);
-          	player.playVideo();
+          	if(data.timeline && data.timeline.length>0) renderTimeline(data.timeline);
+          	videoStringId = data.id;
+            initializePlayer();
           }
         },
         error: function(p1, p2,errorString){
