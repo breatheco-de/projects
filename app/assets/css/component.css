@@ -11,27 +11,28 @@
 
 .dr-menu {
 	width: 70%;
-	min-width: 300px;
+	min-width: 400px;
 	position: relative;
 	font-size: 1.8em;
 	font-weight: 400;
 	color: #fff;
 	padding-top: 2em;
-	height: 98%;
 }
 .dr-menu.dr-menu-open{
 	padding-top: 3em;
+	background: rgba(0,0,0,0.8);
 }
 .dr-menu > div  {
 	cursor: pointer;
 	position: absolute;
-	width: 100%;
 	z-index: 100;
 }
-
+.dr-trigger{background: #08c; border-radius: 20px; padding: 10px; left: 10px;}
+.dr-menu-open .dr-trigger{background: none; width: 100%;padding: 0px; transition: all 0.2s ease;}
+#menu-items{margin-top: 20px; max-height: 75vh; overflow-x: hidden; overflow-y: auto; margin-bottom: 20px;}
 .dr-menu > div .dr-icon {
-	top: 0;
-	left: 0;
+	top: 9px;
+	left: 5px;
 	position: absolute;
 	padding: 0 10px;
 	-webkit-transition: all 0.2s ease;
@@ -40,6 +41,8 @@
 }
 
 .dr-menu.dr-menu-open > div .dr-icon {
+	top:0;
+	left:0;
 	color: white;
 	left: 90%;
 	-webkit-transform: translateX(-100%);
@@ -112,6 +115,9 @@
 	-moz-transition: opacity 0.3s ease;
 	transition: opacity 0.3s ease;
 }
+.dr-menu ul li:hover {
+	background: black;
+}
 
 .dr-menu.dr-menu-open ul li {
 	opacity: 1;
@@ -132,7 +138,7 @@
 }
 
 .dr-menu ul li a:hover {
-	color: white;
+	color: #BDBDBD;
 }
 
 .dr-icon:before, 
