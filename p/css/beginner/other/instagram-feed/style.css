@@ -40,6 +40,9 @@ article > header{
 .post_title{
 	overflow: hidden;
 }
+.title_container h2{
+	font-size: 18px;
+}
 
 .post_title > div {
 	width: 50%;
