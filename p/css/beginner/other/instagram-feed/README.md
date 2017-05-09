@@ -1,4 +1,4 @@
-#Log in/out with PHP Sessions
+#The Super Photo Feed
 
 This is a ver simple version of instagram. The main goal is to show a simple layout and the inter-connection between CSS and HTML.
 
