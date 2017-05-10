@@ -2,6 +2,7 @@
 	"title" : "Postcard",
 	"slug" : "postcard",
 	"skin" : "retro",
+	"source-code" : "../p/css/beginner/other/postcard/src.zip",
 	"description" : "Replicate this postcard with CSS and HTML",
 	"instructions":[
 		{

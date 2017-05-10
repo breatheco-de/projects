@@ -8,16 +8,18 @@
 </head>
 <body>
 	<header>
-		<dropdown>
+		<dropdown id="the-dropdown">
 		  <input id="toggle" type="checkbox">
-		  <label for="toggle" class="animate">Demonstration<i class="fa fa-desktop float-right"></i></label>
+		  <label for="toggle" class="animate"></label>
 		  <ul class="animate">
-		    <li id="readme" class="animate"><a target="_blank" href="#">Readme</a><i class="fa fa-file-text-o float-right"></i></li>
-		    <li class="animate">Source<i class="fa fa-code float-right"></i></li>
-		    <!-- <li class="animate">Fullpage<i class="fa fa-arrows-alt float-right"></i></li> -->
+		    <li id="demo" class="animate"><a href="#">Live Demo</a><i class="fa fa-desktop float-right"></i></li>
+		    <li id="readme" class="animate"><a href="#">Readme</a><i class="fa fa-file-text-o float-right"></i></li>
+		    <li id="source" class="animate"><a href="#">Source</a><i class="fa fa-code float-right"></i></li>
+		    <li id="fullpage" class="animate"><a href="#">Fullpage</a><i class="fa fa-arrows-alt float-right"></i></li>
 		    <li id="video" class="animate"><a href="#">Video</a><i class="fa fa-youtube-play float-right"></i></li>
 		  </ul>
 		</dropdown>
+		<h1 id="the-title"></h1>
 	</header>
 
     <div class="main">
@@ -27,6 +29,7 @@
 	<script type="text/javascript" src="{{ assetsURL }}js/jquery-3.2.0.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript">
+		var currentState = "demo";
 		$(document).ready(function(){
 			$.ajax({
 				url:"/projects.php",
@@ -35,11 +38,14 @@
 					if(data && data.slug)
 					{
 						document.querySelector('#the-demo').src = data.url;
+						if(data.title) $('#the-title').html(data.title);
 
 						loadReadme(data);
 						loadSource(data);
 						loadFullpage(data);
 						loadVideo(data);
+						loadDemo(data);
+						refreshMenu(data);
 					}
 					else document.querySelector('#the-demo').src = "/?d";
 				},
@@ -49,46 +55,87 @@
 			});
 		});
 
-		function loadReadme(data)
+		function loadFullpage(data)
 		{
-			if(data.readme)
-			{
-				skin = '';
-				if(data.skin) skin = data.skin;
-				$("#readme a").attr("href","{{assetsGlobalURL}}live-demos/markdown-parser/?skin="+skin+"&path={{projectsGlobalURL}}"+data.readme);
-				$("#readme").show();
-			}else $("#readme").hide();
+			if(data.url) $("#fullpage a").click(function(){
+				window.location.href = data.url;
+			});
 		}
 
 		function loadVideo(data)
 		{
 			if(data['video-path'])
 			{
-				$("#video a").attr("href","{{projectsGlobalURL}}?vtutorial="+data['video-path']);
-				$("#video").show();
-			}else $("#video").hide();
+				$("#video a").click(function(){
+					$('#the-demo').attr("src","{{projectsGlobalURL}}?vtutorial="+data['video-path']);
+					currentState = 'video';
+					refreshMenu(data);
+				});
+			}
 		}
 
-		function loadFullpage(data)
+		function loadDemo(data)
+		{
+			if(data.url)
+			{
+				$("#demo a").click(function(){
+					$('#the-demo').attr("src",data.url);
+					currentState = 'demo';
+					refreshMenu(data);
+				});
+				
+			}else $("#demo").hide();
+		}
+
+		function loadReadme(data)
 		{
 			if(data.readme)
 			{
 				skin = '';
 				if(data.skin) skin = data.skin;
-				$("#fullpage a").attr("href","{{assetsGlobalURL}}live-demos/markdown-parser/?skin="+skin+"&path={{projectsGlobalURL}}"+data.readme);
-				$("#fullpage").show();
-			}else $("#fullpage").hide();
+				$("#readme a").click(function(){
+					$('#the-demo').attr("src","{{assetsGlobalURL}}live-demos/markdown-parser/?skin="+skin+"&path={{projectsGlobalURL}}"+data.readme);
+					currentState = 'readme';
+					refreshMenu(data);
+				});
+			} 
 		}
 
 		function loadSource(data)
 		{
 			if(data['source-code'])
 			{
-				skin = '';
-				if(data.skin) skin = data.skin;
 				$("#source a").attr("href",data['source-code']);
-				$("#source").show();
-			}else $("#source").hide();
+			}
+		}
+
+		function refreshMenu(data){
+
+			if(currentState!=='demo' && data.url) $("#demo").show();
+			else $("#demo").hide();
+
+			if(currentState!=='video' && data['video-path']) $("#video").show();
+			else $("#video").hide();
+
+			if(data.readme) $("#readme").show();
+			else $("#readme").hide();
+
+			if(data['source-code']) $("#source").show();
+			else $("#source").hide();
+
+			if(data.url && currentState==='demo') $("#fullpage").show();
+			else $("#fullpage").hide();
+
+			switch(currentState)
+			{
+				case "video":
+					$('#the-dropdown label').html('Video Tutorial<i class="fa fa-youtube-play float-right"></i>');
+				break;
+				case "demo":
+					$('#the-dropdown label').html('Live Demo<i class="fa fa-desktop float-right"></i>');
+				break;
+			}
+
 		}
 	</script>
 </body>
