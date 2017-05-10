@@ -136,7 +136,7 @@
         cache: false,
         dataType: 'json',
         success: function(data){
-          if(!data.id || data.id==='')
+          if(!data['video-id'] || data['video-id']==='')
           {
             alert('No timeline could be loaded');
           }
@@ -144,7 +144,7 @@
           {
           	$('#'+menuTitle).html(menuTitleValue);
           	if(data.timeline && data.timeline.length>0) renderTimeline(data.timeline);
-          	videoStringId = data.id;
+          	videoStringId = data['video-id'];
             initializePlayer();
           }
         },
