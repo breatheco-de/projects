@@ -12,11 +12,11 @@
 		  <input id="toggle" type="checkbox">
 		  <label for="toggle" class="animate"></label>
 		  <ul class="animate">
-		    <li id="demo" class="animate"><a href="#">Live Demo</a><i class="fa fa-desktop float-right"></i></li>
-		    <li id="readme" class="animate"><a href="#">Readme</a><i class="fa fa-file-text-o float-right"></i></li>
+		    <li id="demo" class="animate"><a href="#demo">Live Demo</a><i class="fa fa-desktop float-right"></i></li>
+		    <li id="readme" class="animate"><a href="#readme">Readme</a><i class="fa fa-file-text-o float-right"></i></li>
 		    <li id="source" class="animate"><a href="#">Source</a><i class="fa fa-code float-right"></i></li>
 		    <li id="fullpage" class="animate"><a href="#">Fullpage</a><i class="fa fa-arrows-alt float-right"></i></li>
-		    <li id="video" class="animate"><a href="#">Video</a><i class="fa fa-youtube-play float-right"></i></li>
+		    <li id="video" class="animate"><a href="#video">Video</a><i class="fa fa-youtube-play float-right"></i></li>
 		  </ul>
 		</dropdown>
 		<h1 id="the-title"></h1>
@@ -37,9 +37,7 @@
 				success: function(data){
 					if(data && data.slug)
 					{
-						document.querySelector('#the-demo').src = data.url;
 						if(data.title) $('#the-title').html(data.title);
-
 						loadReadme(data);
 						loadSource(data);
 						loadFullpage(data);
