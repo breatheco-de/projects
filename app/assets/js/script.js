@@ -92,7 +92,7 @@
 					htmlStr += 		'<td><a target="_blank" href="'+ASSETS_URL+'live-demos/markdown-parser/?skin='+skin+'&path='+PROJECTS_URL+projects[j]['readme']+'">Readme</a></td>';
 				
 				if(mainSettings.teacher) 
-					htmlStr += 		'<td><a href="/?classroom='+projects[j]['info-path']+'">Class</a></td>';
+					htmlStr += 		'<td><a href="/?classroom='+projects[j]['classroom']+'">Class</a></td>';
 				
 				if(sourceCode!='#') 
 					htmlStr += '<td><a href="'+sourceCode+'">Source</a></td>';

@@ -59,13 +59,18 @@ function generateJSON($parts, $path){
 }
 
 function fillProjectInfoFilePath($prj,$path){
-	if(file_exists($path.'class-steps/info.json') and $json = file_get_contents($path.'class-steps/info.json'))
+	
+	//verify that the classroom data exists
+	if(file_exists($path.'class-steps/classroom.json') and $json = file_get_contents($path.'class-steps/info.json'))
 	{
-		$prjObj = json_decode($json);
-		foreach($prjObj as $key => $val) $prj[$key] = $val;
-		$prj["info-path"] = $path.'class-steps/info.json';
+		$prj["classroom"] = $path.'class-steps/classroom.json';
 	}
-	else if(file_exists($path.'info.json') and $json = file_get_contents($path.'info.json'))
+	else if(file_exists($path.'classroom.json') and $json = file_get_contents($path.'info.json'))
+	{
+		$prj["classroom"] = $path.'classroom.json';
+	}
+
+	if(file_exists($path.'info.json') and $json = file_get_contents($path.'info.json'))
 	{
 		$prjObj = json_decode($json);
 		foreach($prjObj as $key => $val) $prj[$key] = $val;
