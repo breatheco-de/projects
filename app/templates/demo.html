@@ -1,10 +1,11 @@
 <html>
 <head>
-	<title>Timer App</title>
+	<title>Project tutorial - Breathe Code Platform</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="{{ assetsURL }}css/demo.css?v{{ version }}">
+	<link rel="icon" href="http://assets.breatheco.de/img/logo/breathecode-icon-small.png">
 </head>
 <body>
 	<header>
@@ -37,7 +38,11 @@
 				success: function(data){
 					if(data && data.slug)
 					{
-						if(data.title) $('#the-title').html(data.title);
+						if(data.title)
+						{
+							$('#the-title').html(data.title);
+							document.title = data.title+" - Breathe Code Platform";
+						}
 						loadReadme(data);
 						loadSource(data);
 						loadFullpage(data);

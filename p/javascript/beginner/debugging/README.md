@@ -21,5 +21,5 @@ File structure
 1. Learn how to use the "console table" feature
 2. Learn how to reference types
 
-##Source Codes
+##Source Code
 >Click here to download the source files: [src.zip](http://projects.breatheco.de/p/javascript/beginner/debugging/src.zip)
