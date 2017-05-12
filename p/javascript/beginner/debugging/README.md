@@ -9,13 +9,13 @@ Find the problem in the code and fix it.
 
 File structure
 
->/root folder/
->---/1-0/
->---/1-1/
->---/2-0/
->---/3-0/
->---/3-1/
->---/Tips and Tricks/
+* /root folder/
+  * /1-0/
+  * /1-1/
+  * /2-0/
+  * /3-0/
+  * /3-1/
+  * /Tips and Tricks/
 
 ##Tips and Tricks
 1. Learn how to use the "console table" feature
