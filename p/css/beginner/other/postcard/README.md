@@ -2,7 +2,7 @@
 
 Lets create a postcard with HTML5 and CSS!
 
-To see this exercise live go to: [http://projects.breatheco.de/p/css/beginner/other/postcard/](http://projects.breatheco.de/p/css/beginner/other/postcard/)
+To see this exercise live go to: [http://projects.breatheco.de/d/postcard#demo](http://projects.breatheco.de/d/postcard#demo)
 
 ##Fundamentals
 This exercise covers the following fundamentals:
@@ -15,5 +15,5 @@ This exercise covers the following fundamentals:
 6. Using a simple form.
 
 ##Resources
-- [Download the source code here](http://projects.breatheco.de/p/css/beginner/other/postcard/)
-- [Watch the video tutorial here](http://projects.breatheco.de/p/css/beginner/other/postcard/)
+- [Download the source code here](http://projects.breatheco.de/d/postcard#source)
+- [Watch the video tutorial here](http://projects.breatheco.de/d/postcard#video)
