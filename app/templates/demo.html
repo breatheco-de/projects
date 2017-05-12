@@ -45,7 +45,13 @@
 						loadFullpage(data);
 						loadVideo(data);
 						loadDemo(data);
-						refreshMenu(data);
+						
+						if(location.hash.length>1)
+						{
+							changeTo(location.hash.substring(1,location.hash.length), data)
+						}
+						else refreshMenu(data);
+
 					}
 					else document.querySelector('#the-demo').src = "/?d";
 				},
@@ -55,11 +61,30 @@
 			});
 		});
 
+		function parseParms(str) 
+		{
+			//For example: str = ‘paramA=34¶mB=23&…’  
+		   if(typeof(str)=='undefined' || str=='') return {};
+		   var pieces = str.split('&'), data = {}, i, parts;
+		    // process each query pair  
+		   for (i = 0; i < pieces.length; i++) {
+		      parts = pieces[i].split('=');
+		      if (parts.length < 2) {
+		         parts.push('');
+		      }
+		      data[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
+		   }
+		   return data;
+		}
+
 		function loadFullpage(data)
 		{
-			if(data.url) $("#fullpage a").click(function(){
-				window.location.href = data.url;
-			});
+			if(data.url)
+			{
+				$("#fullpage a").click(function(){
+					window.location.href = data.url;
+				});
+			}
 		}
 
 		function loadVideo(data)
@@ -67,9 +92,7 @@
 			if(data['video-path'])
 			{
 				$("#video a").click(function(){
-					$('#the-demo').attr("src","{{projectsGlobalURL}}?vtutorial="+data['video-path']);
-					currentState = 'video';
-					refreshMenu(data);
+					changeTo('video',data);
 				});
 			}
 		}
@@ -79,24 +102,18 @@
 			if(data.url)
 			{
 				$("#demo a").click(function(){
-					$('#the-demo').attr("src",data.url);
-					currentState = 'demo';
-					refreshMenu(data);
+					changeTo('demo',data);
 				});
 				
-			}else $("#demo").hide();
+			}
 		}
 
 		function loadReadme(data)
 		{
 			if(data.readme)
 			{
-				skin = 'modest';
-				if(data.skin) skin = data.skin;
 				$("#readme a").click(function(){
-					$('#the-demo').attr("src","{{assetsGlobalURL}}live-demos/markdown-parser/?skin="+skin+"&path={{projectsGlobalURL}}"+data.readme);
-					currentState = 'readme';
-					refreshMenu(data);
+					changeTo('readme',data);
 				});
 			} 
 		}
@@ -107,6 +124,29 @@
 			{
 				$("#source a").attr("href",data['source-code']);
 			}
+		}
+
+		function changeTo(state,data)
+		{
+			switch(state)
+			{
+				case "video":
+					$('#the-demo').attr("src","{{projectsGlobalURL}}?vtutorial="+data['video-path']);
+					currentState = state;
+				break;
+				case "demo":
+					$('#the-demo').attr("src",data.url);
+					$("#demo").hide();
+					currentState = state;
+				break;
+				case "readme":
+					skin = 'modest';
+					if(data.skin) skin = data.skin;
+					$('#the-demo').attr("src","{{assetsGlobalURL}}live-demos/markdown-parser/?skin="+skin+"&path={{projectsGlobalURL}}"+data.readme);
+					currentState = state;
+				break;
+			}
+			refreshMenu(data);
 		}
 
 		function refreshMenu(data){
