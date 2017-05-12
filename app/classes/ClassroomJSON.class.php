@@ -1,8 +1,8 @@
 <?php
 
-class InfoJSON{
+class ClassRoomJSON{
 
-	private $keyname = 'info.json';
+	private $keyname = 'classroom.json';
 
 	private $projectBaseDirectory;
 
@@ -41,8 +41,8 @@ class InfoJSON{
 	public function getOriginalContent()
 	{
 		$oldContent = file_get_contents($this->projectBaseDirectory.$this->keyname);
-		if(!$oldContent) throw new Exception("Imposible to read info.json", 1);
-		if(!json_decode($oldContent)) throw new Exception("The info.json has invalid syntax (imposible to parse).", 1);
+		if(!$oldContent) throw new Exception("Imposible to read ".$keyname, 1);
+		if(!json_decode($oldContent)) throw new Exception("The "+$keyname+" has invalid syntax (imposible to parse).", 1);
 	}
 
 	private function put($content)

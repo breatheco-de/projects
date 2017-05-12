@@ -75,27 +75,20 @@
 			{
 				if(!mainSettings.teacher && projects[j]['hidden']) return htmlStr;
 				
-				let skin = 'modest';
-				if(projects[j]['skin'] && projects[j]['skin']!=='') skin = projects[j]['skin'];
-
-				var sourceCode = '#';
-				if(projects[j]['source-code'] && projects[j]['source-code']!='') sourceCode = projects[j]['source-code'];
 				htmlStr += '<tr class="project">';
-				
-				if(projects[j]['slug']) htmlStr += 	'<td><a href="/d/'+projects[j]['slug']+'">'+projects[j]['title']+'</a></td>';
-				else htmlStr += 	'<td><a href="'+projects[j]['url']+'">'+projects[j]['title']+'</a></td>';
+				htmlStr += 	'<td><a href="'+getURL('demo',projects[j])+'">'+projects[j]['title']+'</a></td>';
 				
 				if(projects[j]['video-path'] && projects[j]['video-path']!='')
-					htmlStr += 		'<td><a href="/?vtutorial='+projects[j]['video-path']+'">Video</a></td>';
+					htmlStr += 		'<td><a href="'+getURL('video',projects[j])+'">Video</a></td>';
 				
 				if(projects[j]['readme'] && projects[j]['readme']!='')
-					htmlStr += 		'<td><a target="_blank" href="'+ASSETS_URL+'live-demos/markdown-parser/?skin='+skin+'&path='+PROJECTS_URL+projects[j]['readme']+'">Readme</a></td>';
+					htmlStr += 		'<td><a href="'+getURL('readme',projects[j])+'">Readme</a></td>';
 				
 				if(mainSettings.teacher) 
-					htmlStr += 		'<td><a href="/?classroom='+projects[j]['classroom']+'">Class</a></td>';
+					htmlStr += 		'<td><a href="'+getURL('teacher',projects[j])+'">Class</a></td>';
 				
-				if(sourceCode!='#') 
-					htmlStr += '<td><a href="'+sourceCode+'">Source</a></td>';
+				if(projects[j]['source-code'] && projects[j]['source-code']!='') 
+					htmlStr += '<td><a href="'+getURL('source',projects[j])+'">Source</a></td>';
 				else 
 					htmlStr += '<td></td>';
 				htmlStr += '</tr>';
@@ -103,6 +96,34 @@
 		}
 		return htmlStr;
 
+	}
+
+	function getURL(type,project){
+		switch(type)
+		{
+			case "demo":
+				if(project['slug']) return '/d/'+project['slug'];
+				else return project['url'];
+			break;
+			case "video":
+				if(project['slug']) return '/d/'+project['slug']+'#video';
+				else return '/?vtutorial='+project['video-path'];
+			break;
+			case "readme":
+				if(project['slug']) return '/d/'+project['slug']+'#readme';
+				else{
+					let skin = 'modest';
+					if(project['skin'] && project['skin']!=='') skin = project['skin'];
+					return ASSETS_URL+'live-demos/markdown-parser/?skin='+skin+'&path='+PROJECTS_URL+project['readme'];
+				}
+			break;
+			case "teacher":
+				return '/?classroom='+project['classroom'];
+			break;
+			case "source":
+				return project['source-code'];
+			break;
+		}
 	}
 
 	function filterProjectData(data,settings){

@@ -7,7 +7,7 @@ if(isset($_POST['url']) and $_POST['content'])
 {
 	try
 	{
-		$info = new InfoJSON($_POST['url']);
+		$info = new ClassRoomJSON($_POST['url']);
 		$newInfoURL = $info->save($_POST['content']);
 		if(!$newInfoURL) throwError($info->getLogs());
 		else throwSuccess($newInfoURL);

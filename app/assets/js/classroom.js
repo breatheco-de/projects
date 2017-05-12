@@ -11,6 +11,7 @@
       currentInstruction = null;
   const ASSETS_URL = 'https://assets.breatheco.de/';
   const CLASS_STEPS_DIRECTORY = "class-steps/";
+  const CLASSROOM_JSON = "classroom.json";
  
   function resetPage() {
     //show input
@@ -130,7 +131,7 @@
     
     $("#loadJSONBtn").click(function() {
       var jsonUrl = $('#json-url').val();
-      loadInfoJSON(jsonUrl);
+      loadClassroomJSON(jsonUrl);
     });
 
     //pause button
@@ -295,7 +296,7 @@
     return currentInstruction;
   }
 
-  function loadInfoJSON(jsonURL){
+  function loadClassroomJSON(jsonURL){
       $.ajax({
         url: jsonURL,
         cache: false,
@@ -400,12 +401,12 @@
         if(result.code==200)
         {
           alert('Successfully saved...');
-          //replace the querystring with the new info.json path in case the teacher reloads the website
+          //replace the querystring with the new classroom.json path in case the teacher reloads the website
           if (history.pushState) {
               var currentURL = window.location.href;
               if(currentURL.indexOf(CLASS_STEPS_DIRECTORY)===-1)
               {
-                var newurl = currentURL.replace("info.json",CLASS_STEPS_DIRECTORY+"info.json");
+                var newurl = currentURL.replace(CLASSROOM_JSON,CLASS_STEPS_DIRECTORY+CLASSROOM_JSON);
                 window.history.pushState({path:newurl},'',newurl);
               }
           }

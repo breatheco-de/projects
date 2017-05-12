@@ -45,7 +45,7 @@ elseif(isset($_GET['vtutorial']))
 
 	if($classroom!=''){
 		$args["videoJSON"] = urldecode($classroom);
-		if($args["videoJSON"]) $template = $twig->load('tutorial.html');
+		if($args["videoJSON"]) $template = $twig->load('video.html');
 		else $template = $twig->load('404.html');
 	}
 	else $template = $twig->load('404.html');
@@ -59,10 +59,6 @@ else if(isset($_GET['d']))
 		else $template = $twig->load('404.html');
 	}
 	else $template = $twig->load('404.html');
-}
-else if(isset($_GET['new']) and $_GET['new']=='project')
-{
-	$twig->load('new-project.html');
 }
 else $template = $twig->load('index.html');
 
