@@ -1,27 +1,27 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [One Page Wonder](http://startbootstrap.com/template-overviews/one-page-wonder/)
+# Bootstrap Portfolio
 
-[One Page Wonder](http://startbootstrap.com/template-overviews/one-page-wonder/) is a basic one page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+This is a general template that was built mixing several other codes found in [Start Bootstrap](http://startbootstrap.com/).
 
-## Getting Started
+## Technologies
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/one-page-wonder/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-one-page-wonder.git`
-* Fork the repo
+HTML5, CSS3, Bootstrap, JS (Just a little bit, irrelevant).
 
-## Bugs and Issues
+## Objective
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/one-page-wonder/).
+Develop a portfolio template that looks cool but does not have much code.
 
-## Creator
+## How the template was built
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+We are using the following external libraries:
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+1. Import imported the bootstrap css form a CDN:
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+> <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-## Copyright and License
+Note: We dont need the javacript bootstrap part because we are not going to use it.
 
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/gh-pages/LICENSE) license.
+2. Import fix.js from the js folder because the file needs 2 small javascript scripts, you don;t need to understand those small fixes yet, don't worry about it:
+3. The create all yout html base including a first version of all the body content.
+4. Start adding the css styles based whatever you see that needs fixing.
+5. Create the single-project html the same way you created this one (import bootstrap.css and fix.js in that file too)
+6. On the project section of index.html add path to single-project.html into the href property of the anchors.

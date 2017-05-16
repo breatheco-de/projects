@@ -3,19 +3,28 @@ var turn = "X";
 
 function startGame()
 {
+	document.querySelector('#modal-container').style.display = "block";
+	document.querySelector('#start-over').style.display = "none";
 	//Select all the squares and clean them
 	var squares = document.getElementsByClassName('square');
-	for(var i = 0; i <=squares.length; i++){
-		squares[i].innerText = "";
+	for(var i = 0; i <squares.length; i++){
+		squares[i].innerHTML = "";
 	}
     
-	turn = "X";
+
+}
+
+function setTurn(turnBtn){
 	winner = null;
+	turn = turnBtn.innerHTML;
 	setMessage(turn + " get's to start.");
+	document.querySelector('#modal-container').style.display = "none";
+	document.querySelector('#start-over').style.display = "inline";
+
 }
 
 //To save time and reusability I defined this class
-function setMessage(msg){ document.getElementById("message").innerText = msg; }
+function setMessage(msg){ document.querySelector("#message").innerHTML = msg; }
 
 function nextMove(square)
 {
@@ -23,9 +32,10 @@ function nextMove(square)
 	if(winner != null) setMessage(turn + " already won.");
 
 	//else, if the square is empty
-	else if(square.innerText === '')
+	else if(square.innerHTML === '')
 	{
-		square.innerText = turn;
+		square.className += ' '+turn.toLowerCase()+'-marker';
+		square.innerHTML = turn;
 		switchTurn();
 	}
 	//else, the square is occupied
@@ -87,6 +97,6 @@ function checkRow(a, b, c, move)
 
 //Get the value of that box (if empty, no one has taken that box)
 function getBox(number){
- return document.getElementById("s" + number).innerText;
+ 	return document.querySelector("#s" + number).innerHTML;
 }
 

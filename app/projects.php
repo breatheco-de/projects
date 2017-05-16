@@ -47,6 +47,9 @@ function generateJSON($parts, $path){
 
 	//generating readme path (if any)
 	$prj = fillReadmeFilePath($prj, $path);
+	
+	//generating source path (if any), it can be a zip or tar.gz
+	$prj = fillSourceFilePath($prj, $path);
 
 	$prj["url"] = $path;
 	if(!empty($prj["info-path"])) $prj["name"] = $parts[$maxDepth];
@@ -100,6 +103,14 @@ function fillVideoFilePath($prj,$path){
 function fillReadmeFilePath($prj,$path){
 	
 	if(file_exists($path.'README.md')) $prj["readme"] = str_replace('../','',$path.'README.md');
+
+	return $prj;
+}
+
+function fillSourceFilePath($prj,$path){
+	
+	if(file_exists($path.'src.zip')) $prj["source-code"] = str_replace('../','',$path.'src.zip');
+	else if(file_exists($path.'src.tar.gz')) $prj["source-code"] = str_replace('../','',$path.'src.tar.gz');
 
 	return $prj;
 }
