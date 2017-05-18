@@ -64,11 +64,11 @@ function generateJSON($parts, $path){
 function fillProjectInfoFilePath($prj,$path){
 	
 	//verify that the classroom data exists
-	if(file_exists($path.'class-steps/classroom.json') and $json = file_get_contents($path.'class-steps/info.json'))
+	if(file_exists($path.'class-steps/classroom.json') and $json = file_get_contents($path.'class-steps/classroom.json'))
 	{
 		$prj["classroom"] = $path.'class-steps/classroom.json';
 	}
-	else if(file_exists($path.'classroom.json') and $json = file_get_contents($path.'info.json'))
+	else if(file_exists($path.'classroom.json') and $json = file_get_contents($path.'classroom.json'))
 	{
 		$prj["classroom"] = $path.'classroom.json';
 	}
