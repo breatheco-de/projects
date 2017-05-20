@@ -5,19 +5,11 @@ body{font-family: 'Open Sans', sans-serif; font-size: 18px;}
 .navbar-brand .brand{font-family: 'Oleo Script', cursive;}
 .navbar-brand i,.navbar-brand .brand{font-size: 25px;}
 .view-options{margin-bottom: 10px; font-size: 10px;}
-#one-col,#three-col{background: #e2e2e2;}
-#one-col article{margin-top: 30px;margin-bottom: 30px;}
-#three-col article .post-header,
-#three-col article .post-comment,
-#three-col article .post-button-bar
-{display: none;}
 article{background: white;}
 article .post-header, article .post-comment{padding: 10px;}
 article .post-header h2{margin: 0; font-size: 1.3em;}
 article .post-header p{float: right; font-size: 1.2em; color: grey; margin-top: 3px;}
 article{ padding: 0px;}
-article .post-img{width: 100%; height: 400px;}
-article .post-video{width: 100%; height: 400px;}
 article{border: 1px solid #f7f7f7; border-radius: 5px;}
 article .post-likes{font-weight: 900;}
 article .post-button-bar input[type=text]{outline:none; border: none; width: 100%; padding: 5px;}
@@ -25,6 +17,16 @@ article .post-button-bar div{padding: 0; text-align: center;}
 article .post-button-bar div i{margin-top: 7px;}
 article .post-button-bar{border-top: 1px;}
 article .post-button-bar a{color: grey;}
+#one-col,#three-col{background: #e2e2e2;}
+#one-col article{margin-top: 30px;margin-bottom: 30px;}
+#one-col article .post-img{width: 100%; height: 400px;}
+#one-col article .post-video{width: 100%; height: 400px;}
+#three-col article .post-header,
+#three-col article .post-comment,
+#three-col article .post-button-bar
+{display: none;}
+#three-col article .post-img{width: 100%; height: 40vh;}
+#three-col article .post-video{width: 100%; height: 40vh;}
 .nav-tabs > li, .nav-pills > li {
     float:none;
     display:inline-block;

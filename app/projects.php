@@ -39,8 +39,8 @@ function generateJSON($parts, $path){
 
 	$prj = array();
 
-	//generating info.json path (if any)
-	$prj = fillProjectInfoFilePath($prj, $path);
+	//generating classroom.json path (if any)
+	$prj = fillProjectClassFilePath($prj, $path);
 
 	//generating video.json path (if any)
 	$prj = fillVideoFilePath($prj, $path);
@@ -50,6 +50,9 @@ function generateJSON($parts, $path){
 	
 	//generating source path (if any), it can be a zip or tar.gz
 	$prj = fillSourceFilePath($prj, $path);
+
+	//generating info.json path (if any)
+	$prj = fillProjectInfoFilePath($prj, $path);
 
 	$prj["url"] = $path;
 	if(!empty($prj["info-path"])) $prj["name"] = $parts[$maxDepth];
@@ -61,8 +64,8 @@ function generateJSON($parts, $path){
 	return $prj;
 }
 
-function fillProjectInfoFilePath($prj,$path){
-	
+function fillProjectClassFilePath($prj, $path)
+{
 	//verify that the classroom data exists
 	if(file_exists($path.'class-steps/classroom.json') and $json = file_get_contents($path.'class-steps/classroom.json'))
 	{
@@ -73,6 +76,11 @@ function fillProjectInfoFilePath($prj,$path){
 		$prj["classroom"] = $path.'classroom.json';
 	}
 
+	return $prj;
+}
+
+function fillProjectInfoFilePath($prj,$path){
+	
 	if(file_exists($path.'info.json') and $json = file_get_contents($path.'info.json'))
 	{
 		$prjObj = json_decode($json);
