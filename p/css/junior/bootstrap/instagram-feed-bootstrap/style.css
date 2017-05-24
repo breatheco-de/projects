@@ -65,3 +65,7 @@ article .post-button-bar a{color: grey;}
   padding-right:0;
   padding-left:0;
 }
+/* Extra Small Devices, Phones */  
+@media only screen and (max-width : 480px) {
+  .view-options{margin-bottom: 10px;}
+}

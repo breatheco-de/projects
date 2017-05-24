@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first form</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+		<div class="container-fluid">
+
+		    <div class="panel panel-default">
+		        <div class="panel-heading">
+		            <h1 class="panel-title"><strong>Sample Form</strong></h1>
+		        </div>
+		        <div class="panel-body">
+
+
+		            <form method="post" action="http://assets.breatheco.de/live-demos/php/forms/index.php" class="form-horizontal">
+
+		                <!-- Left Column -->
+		                <div class="col-md-6">
+
+		                    <div class="form-group">
+		                        <label class="col-md-3 control-label">Gender</label>
+		                        <div class="col-md-9">
+		                            <select name="gender" class="form-control" type="text">
+		                                <option value="item1">Male</option>
+		                                <option value="item2">Female</option>
+		                                <option value="item3">Transexual</option>
+		                                <option value="item3">Other</option>
+		                            </select>
+		                            <span class="help-block">Select an option</span>
+		                        </div>
+		                    </div>
+
+		                    <div class="form-group">
+		                        <label class="col-md-3 control-label">Birthdate</label>
+		                        <div class="col-md-4">
+		                            <div class="input-group">
+		                                <input name="birthdate" type="date" class="form-control">
+		                            <span class="input-group-addon">
+		                               <span class="glyphicon glyphicon-calendar"></span>
+		                            </span>
+		                            </div>
+		                            <span class="help-block">Select a valid date</span>
+		                        </div>
+
+		                    </div>
+
+		                    <div class="form-group">
+		                        <label class="col-md-3 control-label">Security answer</label>
+		                        <div class="col-md-9 has-feedback">
+		                            <input name="security-answer" class="form-control" type="text" />
+		                            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+		                            <span class="help-block">
+		                                Click <span class="glyphicon glyphicon-remove"></span> to clear contents.
+		                            </span>
+		                        </div>
+		                    </div>
+
+		                    <div class="form-group">
+		                        <label class="col-md-3 control-label">Phone number</label>
+		                        <div class="col-md-9">
+		                            <input name="phone" class="form-control" type="number" />
+		                        </div>
+		                    </div>
+		                    <!-- Monies -->
+		                    <div class="form-group">
+		                        <label class="col-md-3 control-label">Money Collected</label>
+		                        <div class="col-sm-3 money-inputs-left">
+		                            <div class="input-group">
+		                                <div class="input-group-addon">$</div>
+		                                <input name="amount[]" class="form-control" type="number" />
+		                            </div>
+		                            <span class="help-block help-block-label">First</span>
+		                        </div>
+		                        <div class="col-sm-3">
+		                            <div class="input-group">
+		                                <div class="input-group-addon">$</div>
+		                                <input name="amount[]" class="form-control" type="number" />
+		                            </div>
+		                            <span class="help-block help-block-label">Second</span>
+		                        </div>
+		                        <div class="col-sm-3">
+		                            <div class="input-group">
+		                                <div class="input-group-addon">$</div>
+		                                <input name="amount[]" class="form-control" type="number" />
+		                            </div>
+		                            <span class="help-block help-block-label">Third</span>
+		                        </div>
+		                    </div>
+
+		                </div>
+
+		                <!-- Right Column -->
+		                <div class="col-md-6">
+
+		                    <div class="form-group">
+		                        <label class="col-md-3 control-label">Email</label>
+		                        <div class="col-md-9">
+		                            <input name="user-email" class="form-control input-sm" type="email" required/>
+		                            <span class="help-block">Small size input box</span>
+		                        </div>
+		                    </div>
+		                    <div class="form-group">
+		                        <label class="col-md-3 control-label">Password</label>
+		                        <div class="col-md-9">
+		                            <input name="user-pass" class="form-control input-sm" type="Password" />
+		                            <span class="help-block">Small size input box</span>
+		                        </div>
+		                    </div>
+
+		                    <div class="form-group">
+		                        <label class="col-md-3 control-label">Do you have any special comments?</label>
+		                        <div class="col-md-9">
+		                            <textarea name="user-comments" class="form-control input-lg" rows="3"></textarea>
+		                        </div>
+
+		                    </div>
+
+		                    <div class="form-group">
+		                        <label class="col-md-3 control-label">Age</label>
+		                        <div class="col-md-9">
+		                            <input name="age" class="form-control input-sm" type="number"  type="number" size="6" min="18" max="99" value="21" />
+		                            <span class="help-block">Small size input box</span>
+		                        </div>
+		                    </div>
+
+		                    <!-- Start Action Buttons -->
+		                    <div class="form-group">
+		                        <div class="col-md-offset-3 col-md-9">
+
+		                                    <button class="btn btn-lg btn-danger">
+		                                        Cancel <span class="glyphicon glyphicon-remove"></span>
+		                                    </button>
+
+
+		                                    <button class="btn btn-lg btn-warning">
+		                                        Reset Form <span class="glyphicon glyphicon-refresh"></span>
+		                                    </button>
+
+
+		                                    <button class="btn btn-lg btn-primary">
+		                                        Save Data <span class="glyphicon glyphicon-cloud-upload"></span>
+		                                    </button>
+
+		                        </div>
+		                    </div>
+		                    <!-- End Action Buttons -->
+
+		                </div>
+
+		            </form>
+		        </div>
+		    </div>
+		</div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
