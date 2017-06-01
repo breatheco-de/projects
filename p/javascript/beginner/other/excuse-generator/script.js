@@ -14,6 +14,7 @@ var excuse = function(){
    var rdm4 = Math.floor((Math.random() * possetion.length) );
    var rdm5 = Math.floor((Math.random() * where.length) );
   
- alert(first + adj[rdm1] + noun[rdm2] + action[rdm3] + possetion[rdm4] + where[rdm5] ); 
+    //creating a sentence (the excuse)
+    document.querySelector('#theexcuse').innerHTML = first + adj[rdm1] + noun[rdm2] + action[rdm3] + possetion[rdm4] + where[rdm5]; 
   
 }
