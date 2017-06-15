@@ -1,0 +1,116 @@
+html {
+  background: #0098db;
+  height:100%;
+  width:100%;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  padding: 50px;
+}
+
+a {
+  color: #FFF;
+}
+
+.wrapper {
+  max-width: 680px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+p {
+  color: #FFF;
+  font-size: 1.2em;
+  font-family: 'Open Sans'
+}
+
+img {
+  max-width: 30px;
+  vertical-align: middle;
+}
+
+label {
+  display: none;
+   
+}
+
+h1 img {
+  vertical-align: middle;
+  margin-top:-5px;
+  padding-right: 10px;
+  opacity: .5;
+}
+
+input.textbox {
+  width: 50%;
+  height: 41px;
+  font-size: 1.2em;
+  border: none;
+  padding-left: 10px;
+}
+
+input[type=button] {
+    padding:13px 13px; 
+    background:#3B5998; 
+    color: #FFF;
+    border:0 none;
+    cursor:pointer;
+    border-top-right-radius: 5px; 
+  border-bottom-right-radius: 5px;
+  margin-left:-4px;
+  font-size: 1em;
+  vertical-align: top;
+}
+
+input[type=button]:hover {
+  background: #38538f;
+}
+
+#share-information {
+  text-align: left;
+  background: #FFF;
+  border-radius: 10px;
+  
+  margin: 2em;
+}
+
+#share-information h2 {
+  background: #3B5998;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  margin-bottom: .2em;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+}
+
+#share-information p {
+  color: #3B5998;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+#share-information img {
+  max-width: 25px;
+  vertical-align: middle;
+  margin-top:-4px;
+  padding-right: 10px
+}
+
+.fa {
+  font-size: 30px;
+  vertical-align: middle;
+  margin-top: -4px;
+  padding-left: 8px;
+  padding-right: 4px;
+  color: green;
+}
+
+.credit-link {
+  color: #3B5998;
+}

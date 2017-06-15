@@ -1,0 +1,6 @@
+{
+	"title" : "Get page likes with Facebook Graph API",
+	"slug" : "get-page-likes",
+	"description" : "Very simple call to the facebook graph API to request the shares and comments over an URL.",
+	"technologies" : ["js","facebook sdk", "HTML", "css"]
+}

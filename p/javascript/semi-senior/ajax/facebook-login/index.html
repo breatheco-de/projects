@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <link rel="stylesheet" href="style.css?v1" type="text/css" />
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    <body>
+      <script type="text/javascript" src="facebook-app.js?v1"></script>
+      <script>
+        var app = new FacebookApp();//This is the project, all the javascript is inside this module object
+        window.fbAsyncInit = app.connect;
+      
+        // Load the SDK asynchronously
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <div class="container">
+      	<div class="row">
+      	  <div class="col-xs-12">
+      	    <fb:login-button id="theloginBtn" scope="public_profile,email" onlogin="app.loggedIn();"></fb:login-button>
+      	    <a id="theLogoutBtn" href="#">Logout</a>
+      	  </div>
+      	</div>
+      	<div class="row">
+      		<div class="col-lg-3 col-sm-6">
+      
+                  <div class="card hovercard">
+                      <div class="cardheader">
+      
+                      </div>
+                      <div class="avatar">
+                          <img alt="" src="http://lorempixel.com/100/100/people/9/">
+                      </div>
+                      <div class="info">
+                          <div class="title">
+                              <a target="_blank" href="#">Script Eden</a>
+                          </div>
+                      </div>
+                  </div>
+      
+              </div>
+      
+      	</div>
+      </div>
+    </body>
+</html>

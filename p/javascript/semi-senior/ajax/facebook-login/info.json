@@ -1,0 +1,6 @@
+{
+	"title" : "Doing a Login with the Faebook SDK",
+	"slug" : "facebook-login",
+	"description" : "Standard Login Flow with Facebook SDK",
+	"technologies" : ["js","facebook sdk", "HTML", "css"]
+}
