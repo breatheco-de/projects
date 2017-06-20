@@ -1,0 +1,6 @@
+{
+	"title" : "Search Youtube Videos",
+	"slug" : "youtube-search",
+	"description" : "Sign in to Google using OAuth2, search youtube videos and list them in a beautiful way.",
+	"technologies" : ["js","google sdk", "HTML", "css"]
+}
