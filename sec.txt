@@ -1,0 +1,10 @@
+ssh c4geeksa@breatheco.de -p18765 
+
+To restart the agent
+eval "$(ssh-agent -s)"
+
+change key permissions
+chmod 400 ~/.ssh/keyname
+
+To add the key
+ssh-add path/to/key

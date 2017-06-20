@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css?v1" type="text/css" />
+    </head>
+    <body>
+        <div class="loading">
+            <div class="content">
+                <div class="load-wrapp">
+                    <div class="load-3">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inside">
+            <a id="logout-link">Logout</a>
+            <div class="content">
+              <input type="text" name="input" class="input">
+              <button type="reset" class="search"></button>
+              <ul class="videos">
+              </ul>
+            </div>
+        </div>
+        <div class="outside">
+            <div class="content">
+                <a id="login-link" href="#" class="btn btn-social btn-google">
+                    <i class="fa fa-google"></i> Sign in with Google
+                </a>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- 
+        <script async defer src="https://apis.google.com/js/api.js">
+        <script type="text/javascript" src="google-oauth2.js"></script>
+        -->
+        <script src="https://apis.google.com/js/client.js"></script> 
+        </script>
+        <script type="text/javascript" src="google-oauth.js"></script>
+        <script type="text/javascript" src="youtube-search.js"></script>
+        <script>
+              // The client ID is obtained from the {{ Google Cloud Console }}
+              // at {{ https://cloud.google.com/console }}.
+              // If you run this code from a server other than http://localhost,
+              // you need to register your own client ID.
+              var app = new YouTubeApp();
+              
+              var oauth = new GoogleOAuth({
+                  'client-id': '227051705379-lajm9llakj941515q26461ch22ggf1pm.apps.googleusercontent.com',
+                  'api-key': 'AIzaSyCKhpyGzlccksVKTF9KYctXE1vCvnGuFeg',
+                  'scopes': [
+                            'https://www.googleapis.com/auth/youtube.force-ssl'
+                            ],
+              }, app.init);
+        </script>
+    </body>
+</html>
