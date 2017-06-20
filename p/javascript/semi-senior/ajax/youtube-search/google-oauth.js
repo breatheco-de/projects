@@ -37,6 +37,8 @@ var GoogleOAuth = function(settings, callback){
     } else {
       // Make the #login-link clickable. Attempt a non-immediate OAuth 2.0
       // client flow. The current function is called when that flow completes.
+      document.querySelector('.inside').style.display = "none";
+      document.querySelector('.outside').style.display = "block";
       document.querySelector('#login-link').addEventListener('click',function(){
         gapi.auth.authorize({
           client_id: settings['client-id'],
