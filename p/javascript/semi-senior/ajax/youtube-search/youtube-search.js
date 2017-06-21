@@ -18,7 +18,8 @@ var YouTubeApp = function()
             var q = document.querySelector('.input').value;
             var request = gapi.client.youtube.search.list({
                 q: q,
-                part: 'snippet'
+                part: 'snippet',
+                type: "video"
             });
             
             request.execute(function(response) {
