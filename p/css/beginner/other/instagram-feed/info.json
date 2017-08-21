@@ -3,7 +3,7 @@
 	"slug" : "instagram-feed",
 	"description" : "Very simple instagram simulation to undestand the basics of CSS and HTML5 and how to use them together to create a website.",
 	"talents": [
-		{ "badge": "css_master", "points": 3 },
-		{ "badge": "css_selectors", "points": 4 }
+		{ "badge": "css-master", "points": 3 },
+		{ "badge": "css-selectors", "points": 4 }
 	]
 }
