@@ -1,5 +1,14 @@
 {
 	"title" : "Landing Page",
 	"slug" : "landing-page",
-	"description" : "Build a beautiful landing page using bootstrap"
+	"duration" : 6,
+	"description" : "Build a beautiful landing page using bootstrap",
+	"talents": [
+		{ "badge": "identator", "points": 10 },
+		{ "badge": "tag-master", "points": 10 },
+		{ "badge": "path-master", "points": 10 },
+		{ "badge": "select-everything", "points": 10 },
+		{ "badge": "be-dry", "points": 10 },
+		{ "badge": "abc", "points": 10 }
+	]
 }
