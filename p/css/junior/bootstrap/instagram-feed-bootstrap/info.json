@@ -1,5 +1,14 @@
 {
 	"title" : "Instagram Photo Feed with Bootstrap",
 	"slug" : "instagram-feed-bootstrap",
-	"description" : "This is an improoved version of the first instagram exercise, now using bootstrap."
+	"duration" : 6,
+	"description" : "This is an improoved version of the first instagram exercise, now using bootstrap.",
+	"talents": [
+		{ "badge": "identator", "points": 10 },
+		{ "badge": "tag-master", "points": 10 },
+		{ "badge": "path-master", "points": 10 },
+		{ "badge": "select-everything", "points": 10 },
+		{ "badge": "be-dry", "points": 10 },
+		{ "badge": "abc", "points": 10 }
+	]
 }

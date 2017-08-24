@@ -1,5 +1,15 @@
 {
 	"title" : "Create a HTML5 form",
 	"slug" : "html5-form",
-	"description" : "Create a HTML5 form with all the typical inputs"
+	"duration" : 3,
+	"description" : "Create a HTML5 form with all the typical inputs",
+	"talents": [
+		{ "badge": "form-inputs", "points": 10 },
+		{ "badge": "form-designer", "points": 10 },
+		{ "badge": "select-everything", "points": 10 },
+		{ "badge": "identator", "points": 5 },
+		{ "badge": "tag-master", "points": 5 },
+		{ "badge": "be-dry", "points": 5 },
+		{ "badge": "abc", "points": 5 }
+	]
 }
