@@ -1,0 +1,9 @@
+{
+	"title" : "Firewatch Landscape with Parallax",
+	"slug" : "parallax-firewatch",
+	"description" : "Use CSS3 to draw a Gameboy",
+	"duration" : 6,
+	"talents": [
+		{ "badge": "identator", "points": 5 }
+	]
+}
