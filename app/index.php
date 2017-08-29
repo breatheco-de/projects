@@ -13,8 +13,8 @@ $twig = new Twig_Environment($loader);
 
 $args = array(
 	"assetsURL" => "/app/assets/",
-	"assetsGlobalURL" => "http://assets.breatheco.de/",
-	"projectsGlobalURL" => 'http://'.$_SERVER['HTTP_HOST'].'/',
+	"assetsGlobalURL" => "https://assets.breatheco.de/",
+	"projectsGlobalURL" => 'https://'.$_SERVER['HTTP_HOST'].'/',
 	//"version" => "0.".rand(0,9999999999),//avoid cache
 	"version" => "0.46",//avoid cache
 	"title" => "Project Repository from Breathe Code",
