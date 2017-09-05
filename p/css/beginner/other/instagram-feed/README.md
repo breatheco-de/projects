@@ -4,38 +4,16 @@ Congratulations! If you are about to start this project it means you already hav
 
 *Deliver, deliver, deliver!*
 
-From now on you are going to be treated as a developer and good developers are the ones that deliver. We are not going to give you stickers for effort, just like in real life your performance is based on productivity. Period.[/vc_column_text][vc_column_text]
+From now on you are going to be treated as a developer and good developers are the ones that deliver. We are not going to give you stickers for effort, just like in real life your performance is based on productivity. Period.
 
 ## Instructions
 
-1. Based on the Instagram photo-feed we already did, please rewrite the whole project but now use all the tools bootstrap has to make your life easier.
-2. All the layout needs to be done using the bootstrap grid system.
-3. The projects has to be 100% responsive.
-4. Use the bootstrap components if needed.
+Using everything you have learn with HTML and CSS3, please create a website that replicates [this exact picture](https://projects.breatheco.de/p/css/beginner/other/instagram-feed/example.png), your new website will have to look exactly as that picture.
 
-### Resources
+You can use the display propery like in the old days or the new flex CSS property to make the feed of posts.
 
-You have the online lesson about bootstrap, a 3 cheat sheets about bootstrap in the assets section. We also recommend Net Ninja's tutorials on bootstrap.
+## Resources
 
-### What to do if you are stuck?
+- [This video](https://www.youtube.com/watch?v=Y8zMYaD1bz0) from the net ninja is amazing to start understanding the flexbox.
 
-Clean the cache, try to use incognito window.
-Look at google for solutions.
-Talk to the other students.
-Talk to senior developers you know.
-Talk to the instructors over slack.
-
-### What not to do if you are stuck?
-
-Get frustrated and think you are not good for this: All the developers get stuck all the time, ask around! How do you know if you are good at something that you don't know? Coding is a science, facts matter and you have no facts.
-Keep wondering around for hours without seeking help: Google is only as useful as you are good at googling, please speak to other students or your instructors.
-Change strategy: Einstein once said, if you do the same stuff you will get the same results.
-
-### Fundamentals
-This exercise covers the following fundamentals:
-1. Basic structure for every HTML5 website.
-2. The *Link* tag to import CSS Rules.
-3. Using the different selectors available in CSS.
-4. Working with boxes: border, padding and margins.
-5. Overflow.
-6. Using images.
+## Please discuss with your coding partner or any other student or mentor about any questions you may have. Coding is hard for everyone.

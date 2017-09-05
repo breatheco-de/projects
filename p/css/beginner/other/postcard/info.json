@@ -1,7 +1,6 @@
 {
 	"title" : "Digital Postcard",
 	"slug" : "postcard",
-	"skin" : "retro",
 	"duration" : 4,
 	"description" : "Replicate this postcard with CSS and HTML",
 	"talents": [
