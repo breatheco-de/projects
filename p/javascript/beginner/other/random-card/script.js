@@ -1,8 +1,8 @@
-var cardNumber = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
-var suit = ["Diamonds", "Spades", "Hearts", "Clubs"];
 
-function randomCard() {
-
+window.onload = function(){
+  
+  var cardNumber = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+  var suit = ["Diamonds", "Spades", "Hearts", "Clubs"];
   var randomCardNumber = Math.floor(Math.random() * cardNumber.length);
   var randomSuitNumber = Math.floor(Math.random() * suit.length);
   var finalSuit = suit[randomSuitNumber];
@@ -11,8 +11,7 @@ function randomCard() {
   document.getElementById('theCard').className = "";
   document.getElementById('theCard').classList.add("card");
   document.getElementById('theCard').classList.add(getSuiteClass(finalSuit));
- 
-  return true;
+  
 }
 
 function getSuiteClass(suit)
