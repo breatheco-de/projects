@@ -13,13 +13,15 @@
 	width: 70%;
 	min-width: 400px;
 	position: relative;
-	font-size: 1.8em;
+	font-size: 1.5em;
 	font-weight: 400;
+	height: 130px;
 	color: #fff;
 	padding-top: 2em;
 }
 .dr-menu.dr-menu-open{
 	padding-top: 3em;
+	height: inherit;
 	background: rgba(0,0,0,0.8);
 }
 .dr-menu > div  {
