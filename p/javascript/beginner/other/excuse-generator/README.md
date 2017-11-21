@@ -7,9 +7,13 @@ Disneyland for procrastinators and lazy people. Or even if you are avoiding some
 We wanted a project that used very little Javascript but still with a very fun application, the excuse generator takes
 20 lines of code, is super simple to understand and is the perfect first project for any beginner developer.
 
+## Instructions
+
+Please create a small website that generates an excuse each time a button is pressed (Look at the demonstration of as your mentor about the details)
+
 ##Technologies
 
-HTML, CSS3, and Javascript.
+HTML, CSS3, Sass, Javascript, Webpack.
 
 ##Fundamentals
 This exercise covers the following fundamentals:
