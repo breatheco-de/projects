@@ -3,3 +3,8 @@ composer.phar
 vendor/
 .DS_Store
 php_errorlog
+
+
+
+#Ignore Project Folders
+p/css/begginer/other/
