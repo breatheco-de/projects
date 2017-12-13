@@ -8,7 +8,7 @@ php_errorlog
 
 #Ignore Project Folders
 p/css/beginner/other/*
-p/css/beginner/junior/*
+p/css/junior/bootstrap/*
 
 
 !.gitkeep
