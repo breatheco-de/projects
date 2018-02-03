@@ -17,7 +17,7 @@ function createDirectory($path,$pjcs){
 			$laspath = basename($path);
 			//echo "entro...$laspath... \n";
 			//if(isset($urlparts[5])) echo $urlparts[5]."\n";
-			if(count(glob($path."/*.html"))===0 and count(glob($path."/*.php"))===0)
+			if(count(glob($path."/*.html"))===0 and count(glob($path."/*.php"))===0 and count(glob($path."/*.md"))===0)
 			{
 				if(is_dir($newPath)) $pjcs = createDirectory($newPath,$pjcs);
 			}
