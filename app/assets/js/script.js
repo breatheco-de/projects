@@ -62,6 +62,7 @@
 
 		var i = 0;
 		var keys = Object.keys(projects);
+		
 		while(projects[keys[i]] && !projects[keys[i]]['title'] && i<30)
 		{
 			htmlStr += '<tr class="node '+keys[i]+'"><td>'+keys[i]+'<table>';
