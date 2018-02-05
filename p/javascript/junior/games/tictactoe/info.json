@@ -1,13 +1,21 @@
 {
-	"title" : "Tic Tac Toe",
-	"instructions":[
-		{
-			"content": "This will be the first instruction",
-			"minutes_duration": 1
-		},
-		{
-			"content": "This will be the second instruction",
-			"minutes_duration": 1
-		}
+	"title" : "TicTacToe Game (Vanilla.js)",
+	"slug" : "tictactoe",
+	"duration" : 16,
+	"description" : "Create a simple tictactoe game using VanillaJS",
+	"talents": [
+		{ "badge": "tag-master", "points": 3 },
+		{ "badge": "select-everything", "points": 3 },
+		{ "badge": "be-dry", "points": 3 },
+		{ "badge": "css-inspector", "points": 5 },
+		{ "badge": "source-inspector", "points": 10 },
+		{ "badge": "abc", "points": 5 },
+		{ "badge": "js-inspector", "points": 5 },
+		{ "badge": "sass-master", "points": 3 },
+		{ "badge": "git-creator", "points": 5 },
+		{ "badge": "mouse-god", "points": 5 },
+		{ "badge": "conditionals", "points": 5 },
+		{ "badge": "looper", "points": 5 },
+		{ "badge": "functional-developer", "points": 5 }
 	]
 }

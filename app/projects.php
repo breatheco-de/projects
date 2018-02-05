@@ -54,8 +54,11 @@ function generateJSON($parts, $path){
 	//generating info.json path (if any)
 	$prj = fillProjectInfoFilePath($prj, $path);
 
-	$prj["url"] = $path;
 	if(!empty($prj["info-path"])) $prj["name"] = $parts[$maxDepth];
+	
+	if(array_key_exists("live-url",$prj)) $prj["url"] = $prj["live-url"];
+	else $prj["url"] = $path;
+	
 	$prj["technology"] = $parts[$maxDepth-3];
 	$prj["difficulty"] = $parts[$maxDepth-2];
 	$prj["category"] = $parts[$maxDepth-1];
@@ -64,8 +67,7 @@ function generateJSON($parts, $path){
 	return $prj;
 }
 
-function fillProjectClassFilePath($prj, $path)
-{
+function fillProjectClassFilePath($prj, $path){
 	//verify that the classroom data exists
 	if(file_exists($path.'class-steps/classroom.json') and $json = file_get_contents($path.'class-steps/classroom.json'))
 	{
@@ -84,8 +86,17 @@ function fillProjectInfoFilePath($prj,$path){
 	if(file_exists($path.'info.json') and $json = file_get_contents($path.'info.json'))
 	{
 		$prjObj = json_decode($json);
-		foreach($prjObj as $key => $val) $prj[$key] = $val;
-		$prj["info-path"] = $path.'info.json';
+		if(is_object($prjObj))
+		{
+			foreach($prjObj as $key => $val) $prj[$key] = $val;
+			$prj["info-path"] = $path.'info.json';
+		}
+		else{
+			echo json_encode(array(
+				"code" => 500,
+				"msg" => "Invalid info-path or info.json for ".$path
+			)); die();
+		}
 	}
 	else
 	{
@@ -123,8 +134,7 @@ function fillSourceFilePath($prj,$path){
 	return $prj;
 }
 
-function getProject($projects,$slug)
-{
+function getProject($projects,$slug){
 	if(empty($slug)) return null;
 
 	foreach ($projects as $p) {
