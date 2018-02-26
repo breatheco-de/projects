@@ -24,6 +24,7 @@ function createDirectory($path,$pjcs){
 			else
 			{
 				$projectName = basename($path);
+				//if($projectName) die($projectName);
 				array_push($pjcs, generateJSON($urlparts, $path));
 				break;
 			}

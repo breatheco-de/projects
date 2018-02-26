@@ -15,12 +15,13 @@
 		}
 
 		$.ajax({
-			url: '/projects.php?1',
+			url: '/projects.php?2',
 			cache: false,
 			success: function(data){
 
 				if(data && data.length!='')
 				{
+					console.log("Incoming HTTP Data", data);
 					projectOriginalData = data;
 
 					filterProjectDOM();
@@ -62,8 +63,7 @@
 
 		var i = 0;
 		var keys = Object.keys(projects);
-		
-		while(projects[keys[i]] && !projects[keys[i]]['title'] && i<30)
+		while(projects[keys[i]] && !projects[keys[i]]['title'] && i<40)
 		{
 			htmlStr += '<tr class="node '+keys[i]+'"><td>'+keys[i]+'<table>';
 			htmlStr += projectHTMLOutput(projects[keys[i]]);
@@ -74,8 +74,10 @@
 		{
 			for(var j = 0; j<projects.length;j++)
 			{
-				if(!mainSettings.teacher && projects[j]['hidden']) return htmlStr;
-				
+				if(!mainSettings.teacher && typeof(projects[j]['hidden']) != 'undefined' && projects[j]['hidden']==true){
+					console.log("Ignoring project: ",projects[j]);
+					continue;
+				} 
 				htmlStr += '<tr class="project">';
 				htmlStr += 	'<td><a href="'+getURL('demo',projects[j])+'">'+projects[j]['title']+'</a></td>';
 				
@@ -95,6 +97,7 @@
 				htmlStr += '</tr>';
 			}
 		}
+		
 		return htmlStr;
 
 	}
@@ -139,23 +142,29 @@
 			if(typeof(projects[data[i].technology][data[i].difficulty])=='undefined' && (settings.difficulty=='true' || settings.difficulty==data[i].difficulty )) projects[data[i].technology][data[i].difficulty] = {};
 			
 			if(typeof(projects[data[i].technology][data[i].difficulty][data[i].category])=='undefined' && (settings.category=='true' || settings.category==data[i].category )) projects[data[i].technology][data[i].difficulty][data[i].category] = [];
-			
+
 			if(
 				(settings.technology=='true' || data[i].technology==settings.technology) &&
 				(settings.difficulty=='true' || data[i].difficulty==settings.difficulty) &&
 				(settings.category=='true' || data[i].category==settings.category)
-			)
+			){
 				projects[data[i].technology][data[i].difficulty][data[i].category].push(data[i]);
+			}
+			else 
+			{
+				console.log("IGNORING project: ",data[i].title);
+			}
 		}
+		
 		return projects;
 	}
 
 	function filterProjectDOM(settings){
 		var projects = {};
 		projects = filterProjectData(projectOriginalData,settings);
-		console.log(projects);
 		console.log('iteration beggins...');
 		$('.directory-list').html(projectHTMLOutput(projects));
+	
 		$('.directory-list li').filter(function(){
 			if($(this).hasClass('project')) return false;
 
