@@ -1,6 +1,7 @@
 {
 	"title" : "Drawing a Gameboy",
 	"slug": "gameboy",
+	"status": "draft",
 	"description" : "Use CSS3 to draw a Gameboy",
 	"duration": 6,
 	"talents": [

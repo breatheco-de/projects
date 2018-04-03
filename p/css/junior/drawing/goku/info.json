@@ -1,6 +1,7 @@
 {
 	"title" : "Drawing a Son Goku",
 	"slug": "son-goku",
+	"status": "draft",
 	"description" : "Use CSS3 to draw Son Goku from DragonBall",
 	"duration": 6,
 	"talents": [

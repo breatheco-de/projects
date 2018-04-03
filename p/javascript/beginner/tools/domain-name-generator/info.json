@@ -1,6 +1,8 @@
 {
 	"title" : "Domain Name Generator",
 	"slug" : "domain-generator",
+	"status": "published",
+	"solution" : "https://bitbucket.org/codingacademy/domain-generator",
 	"duration" : 4,
 	"description" : "The domain mafia is far from over, with more domain extensions every day is a good idea to chase for great domain available to buy. Who knows, maybe you get lucky and become a millionaire!",
 	"talents": [

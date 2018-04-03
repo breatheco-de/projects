@@ -1,6 +1,7 @@
 {
 	"title" : "Drawing an Emoji",
 	"slug": "emojis",
+	"status": "draft",
 	"description" : "Use CSS3 to draw emojis",
 	"duration": 3,
 	"talents": [

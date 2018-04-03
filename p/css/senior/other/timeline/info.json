@@ -1,6 +1,7 @@
 {
 	"title" : "Timeline v0.1",
 	"next" : "Timeline v0.2",
+	"status": "draft",
 	"instructions":[
 		{
 			"content": "This will be the first instruction",

@@ -1,8 +1,9 @@
 {
 	"title" : "TicTacToe Game (Vanilla.js)",
 	"slug" : "tictactoe",
+	"status": "deprecated",
 	"duration" : 16,
-	"description" : "Create a simple tictactoe game using VanillaJS",
+	"description" : "Create a simple tictactoe 2 player game (no AI)",
 	"talents": [
 		{ "badge": "tag-master", "points": 3 },
 		{ "badge": "select-everything", "points": 3 },

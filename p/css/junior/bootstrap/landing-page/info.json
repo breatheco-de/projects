@@ -1,6 +1,7 @@
 {
 	"title" : "Landing Page",
 	"slug" : "landing-page",
+	"status": "draft",
 	"duration" : 6,
 	"description" : "Build a beautiful landing page using bootstrap",
 	"talents": [

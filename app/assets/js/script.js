@@ -74,12 +74,16 @@
 		{
 			for(var j = 0; j<projects.length;j++)
 			{
-				if(!mainSettings.teacher && typeof(projects[j]['hidden']) != 'undefined' && projects[j]['hidden']==true){
+				if(!mainSettings.teacher && typeof(projects[j]['status']) != 'undefined' && projects[j]['status']=='draft'){
 					console.log("Ignoring project: ",projects[j]);
 					continue;
-				} 
+				}
+				
+				let status = '';
+				if(mainSettings.teacher) status = (typeof projects[j]['status'] !== 'undefined') ? projects[j]['status'] : '';
+				
 				htmlStr += '<tr class="project">';
-				htmlStr += 	'<td><a href="'+getURL('demo',projects[j])+'">'+projects[j]['title']+'</a></td>';
+				htmlStr += 	'<td class="'+status+'">'+((status != '') ? '('+status+')':'')+' <a href="'+getURL('demo',projects[j])+'">'+projects[j]['title']+'</a></td>';
 				
 				if(projects[j]['video-path'] && projects[j]['video-path']!='')
 					htmlStr += 		'<td><a href="'+getURL('video',projects[j])+'">Video</a></td>';
