@@ -2,16 +2,18 @@
 <html>
 <head>
 	<title>{{ title }}</title>
+	<link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="{{ assetsURL }}css/style.css?v{{ version }}">
 </head>
 <body>
 	<div id="content">
 		<header>
-			<img alt="{{ logo.alt }}" src="{{ logo.url }}" />
+			<img alt="{{ logo.alt }}" src="{{ logo.url }}" /> Projects
 		</header>
 		<p class="filter-content">
-			Browse Tutorial Projects
-			<select id="technology-options">
+			Showing
+			<select id="technology-options" class="form-control d-inline-block">
 				<option value="true">All technologies</option>
 				<option value="javascript">Javascript</option>
 				<option value="css">CSS</option>

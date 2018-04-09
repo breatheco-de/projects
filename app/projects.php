@@ -39,7 +39,7 @@ function generateJSON($parts, $path){
 	while(!isset($parts[$maxDepth]) and $maxDepth>2) $maxDepth--;
 
 	$prj = array();
-
+	
 	//generating classroom.json path (if any)
 	$prj = fillProjectClassFilePath($prj, $path);
 
@@ -59,6 +59,9 @@ function generateJSON($parts, $path){
 	
 	if(array_key_exists("live-url",$prj)) $prj["url"] = $prj["live-url"];
 	else $prj["url"] = $path;
+	
+	if(array_key_exists("status",$prj)) $prj["status"] = $prj["status"];
+	else $prj["status"] = "draft";
 	
 	$prj["technology"] = $parts[$maxDepth-3];
 	$prj["difficulty"] = $parts[$maxDepth-2];
@@ -101,6 +104,7 @@ function fillProjectInfoFilePath($prj,$path){
 	}
 	else
 	{
+		throw new Exception("No info.json was found on: ".$path);
 		$prj["title"] = "[Undefined title]";
 		$prj["description"] = "description not found because there was no info.json";
 	}

@@ -29,6 +29,9 @@
 					$('#technology-options').change(function(){
 						filterNodes();
 					});
+					$('#status-options').change(function(){
+						filterNodes();
+					});
 					$('#difficulty-options').change(function(){
 						filterNodes();
 					});
@@ -51,7 +54,7 @@
 		var tech = $('#technology-options').val();
 		if(tech=='true') tech = '';
 		else tech = '.'+tech;
-
+		
 		$('.node').hide();
 		$('.node'+tech).show();
 		$('.node'+tech+' tr').show();
@@ -65,7 +68,7 @@
 		var keys = Object.keys(projects);
 		while(projects[keys[i]] && !projects[keys[i]]['title'] && i<40)
 		{
-			htmlStr += '<tr class="node '+keys[i]+'"><td>'+keys[i]+'<table>';
+			htmlStr += '<tr class="node '+keys[i]+'"><td class="category"><span class="category-name">'+keys[i]+'</span><table>';
 			htmlStr += projectHTMLOutput(projects[keys[i]]);
 			htmlStr += '</table></td></tr>';
 			i++;
@@ -85,19 +88,21 @@
 				htmlStr += '<tr class="project">';
 				htmlStr += 	'<td class="'+status+'">'+((status != '') ? '('+status+')':'')+' <a href="'+getURL('demo',projects[j])+'">'+projects[j]['title']+'</a></td>';
 				
-				if(projects[j]['video-path'] && projects[j]['video-path']!='')
-					htmlStr += 		'<td><a href="'+getURL('video',projects[j])+'">Video</a></td>';
+				htmlStr += '<td class="button-bar">';
 				
 				if(projects[j]['readme'] && projects[j]['readme']!='')
-					htmlStr += 		'<td><a href="'+getURL('readme',projects[j])+'">Readme</a></td>';
+					htmlStr += 		'<a class="btn btn-light" href="'+getURL('readme',projects[j])+'">Readme</a>';
+				
+				if(projects[j]['video-path'] && projects[j]['video-path']!='')
+					htmlStr += 		'<a class="btn btn-light" href="'+getURL('video',projects[j])+'">Video</a>';
 				
 				if(mainSettings.teacher) 
-					htmlStr += 		'<td><a href="'+getURL('teacher',projects[j])+'">Class</a></td>';
+					htmlStr += 		'<a class="btn btn-light" href="'+getURL('teacher',projects[j])+'">Class</a>';
 				
 				if(projects[j]['source-code'] && projects[j]['source-code']!='') 
-					htmlStr += '<td><a href="'+getURL('source',projects[j])+'">Source</a></td>';
-				else 
-					htmlStr += '<td></td>';
+					htmlStr += '<a class="btn btn-light" href="'+getURL('source',projects[j])+'">Source</a>';
+				htmlStr += '</td>';
+					
 				htmlStr += '</tr>';
 			}
 		}
@@ -137,19 +142,26 @@
 	function filterProjectData(data,settings){
 		if(!settings) settings = {
 			technology: 'true',
+			status: null,
 			difficulty: 'true',
 			category: 'true'
 		}
 		var projects = {};
 		for(var i =0;i<data.length;i++){
+			
+			//default technologies
 			if(typeof(projects[data[i].technology])=='undefined') projects[data[i].technology] = {};
+			
+			//default difficulty
 			if(typeof(projects[data[i].technology][data[i].difficulty])=='undefined' && (settings.difficulty=='true' || settings.difficulty==data[i].difficulty )) projects[data[i].technology][data[i].difficulty] = {};
 			
+			//default category
 			if(typeof(projects[data[i].technology][data[i].difficulty][data[i].category])=='undefined' && (settings.category=='true' || settings.category==data[i].category )) projects[data[i].technology][data[i].difficulty][data[i].category] = [];
 
 			if(
 				(settings.technology=='true' || data[i].technology==settings.technology) &&
 				(settings.difficulty=='true' || data[i].difficulty==settings.difficulty) &&
+				(!settings.status || data[i].status==settings.status) &&//if there is not status filter or the status matches
 				(settings.category=='true' || data[i].category==settings.category)
 			){
 				projects[data[i].technology][data[i].difficulty][data[i].category].push(data[i]);
@@ -169,10 +181,11 @@
 		console.log('iteration beggins...');
 		$('.directory-list').html(projectHTMLOutput(projects));
 	
-		$('.directory-list li').filter(function(){
+		$('.directory-list tr').filter(function(){
 			if($(this).hasClass('project')) return false;
 
-			if($(this).find('.project').length != 0) return false;
+			//ignore categories without projects
+			if($(this).find('.project').length > 0) return false;
 			else return true;
 		}).remove();
 	}
