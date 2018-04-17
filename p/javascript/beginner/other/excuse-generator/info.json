@@ -1,0 +1,17 @@
+{
+	"title" : "The Excuse Generator",
+	"slug" : "excuse-generator",
+	"status": "published",
+	"solution": "https://bitbucket.org/codingacademy/excuse-generator",
+	"duration" : 4,
+	"description" : "Disneyland for procrastinators. This excuse generator takes no more than 20 lines of code and can save you for the rest of your life!",
+	"talents": [
+		{ "badge": "identator", "points": 6 },
+		{ "badge": "tag-master", "points": 3 },
+		{ "badge": "window-lover", "points": 3 },
+		{ "badge": "mouse-god", "points": 3 },
+		{ "badge": "source-inspector", "points": 5 },
+		{ "badge": "abc", "points": 5 },
+		{ "badge": "functional-developer", "points": 5 }
+	]
+}
