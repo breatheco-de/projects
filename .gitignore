@@ -11,7 +11,5 @@ php_errorlog
 #p/css/junior/bootstrap/*
 #p/javascript/beginner/other/*
 #p/javascript/beginner/counters/*
-#p/javascript/beginner/webpack/*
-
 
 !.gitkeep
