@@ -1,0 +1,10 @@
+{
+	"title" : "First Prototype",
+	"slug" : "full-stack-project-prototype",
+	"status": "published",
+	"duration" : 20,
+	"description" : "Create the product prototype",
+	"talents": [
+		{ "badge": "docu-lover", "points": 5 }
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"title" : "Final Project Validation",
+	"slug" : "full-stack-project-validations",
+	"status": "publish",
+	"duration" : 8,
+	"description" : "Validate your user stories",
+	"talents": [
+		{ "badge": "docu-lover", "points": 5 }
+	]
+}

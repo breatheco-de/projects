@@ -1,10 +1,11 @@
 # Wireframing
 
-A greay to polish your user stories is to develop a draft of all 
-the application wireframes.
+A great way to polish your user stories is to draft of all your application wireframes.
+
+Please create all the wireframes for your [application's MVP](https://www.youtube.com/watch?v=joNKkWPafZs).
 
 ## Steps
-- Start by building your sitemap
+- Start by building a sitemap
 - Then do the wireframe of your home page.
 - Continue drawing the most important pages.
 - Everytime you draw a page, ideantify and highlite the re-usable parts to convert them into components.
