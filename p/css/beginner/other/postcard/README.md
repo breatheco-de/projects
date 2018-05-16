@@ -6,7 +6,7 @@ Lets create a postcard with HTML5 and CSS and then you can share it with your mo
 
 ## Instructions
 
-Create the HTML and CSS needed to replicate [this exact same picture)[https://projects.breatheco.de/p/css/beginner/other/postcard/example.png].
+Create the HTML and CSS needed to replicate [this exact same picture](https://projects.breatheco.de/p/css/beginner/other/postcard/example.png).
 
 ## What to do if you are stuck?
 

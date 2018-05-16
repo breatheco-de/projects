@@ -1,4 +1,4 @@
-# Prototype
+# Creating the Prototype
 
 The best way to experiment how your product will be used, is actually using it. Right? :)
 

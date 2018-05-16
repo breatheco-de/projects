@@ -1,4 +1,4 @@
-# Welcome to the Full-Stack final project!
+# Full-Stack Final Project
 
 It's time to thing about what you are going to be building, you'll have to develop an entire product, prepare a presentation & demonstrate the product and the idea to family, friends and hiring partners.
 

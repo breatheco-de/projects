@@ -1,4 +1,6 @@
-# Let's stop playing God here...
+# Validating the priorities
+
+Let's stop playing God here...
 
 You had a great idea and your project its amazing, but now you want to add 
 so many features that it's hard to know what to code first.
