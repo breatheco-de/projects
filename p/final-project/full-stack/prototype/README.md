@@ -1,4 +1,4 @@
-# Creating the Prototype
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32)  Creating the Prototype
 
 The best way to experiment how your product will be used, is actually using it. Right? :)
 

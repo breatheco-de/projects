@@ -1,4 +1,4 @@
-# The Excuse Generator
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32)  The Excuse Generator
 
 Disneyland for procrastinators and lazy people. Or even if you are avoiding someone! This excuse generator takes no more than 20 lines of code and can save you for the rest of your life!
 

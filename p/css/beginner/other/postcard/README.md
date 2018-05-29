@@ -1,4 +1,4 @@
-# The Postcard
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32)  The Postcard
 
 Who does not like postcard's? This is one of your first exercises (if not the first) and it's fun and relatively easy :)
 

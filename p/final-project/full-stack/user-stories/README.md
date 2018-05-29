@@ -1,4 +1,4 @@
-# Full-Stack Final Project
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32)  Full-Stack Final Project
 
 It's time to thing about what you are going to be building, you'll have to develop an entire product, prepare a presentation & demonstrate the product and the idea to family, friends and hiring partners.
 

@@ -1,4 +1,4 @@
-#The Super Photo Feed
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) The Super Photo Feed
 
 ## Instructions
 

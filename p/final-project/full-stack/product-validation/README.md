@@ -1,4 +1,4 @@
-# Validating the priorities
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32)  Validating the priorities
 
 Let's stop playing God here...
 

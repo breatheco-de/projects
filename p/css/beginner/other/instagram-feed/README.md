@@ -1,4 +1,4 @@
-# The Instagram Photo Feed
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32)  The Instagram Photo Feed
 
 Congratulations! If you are about to start this project, it means you already have enough knowledge to start doing interesting stuff.
 

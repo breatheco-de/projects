@@ -1,4 +1,4 @@
-# Wireframing
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32)  Wireframing
 
 A great way to polish your user stories is to draft of all your application wireframes.
 

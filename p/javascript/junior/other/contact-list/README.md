@@ -1,10 +1,10 @@
-# Contact Managment Application 
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Contact Managment Application 
 
 Technologies: HTML, CSS, JS, React, React Router and Flux.
 
 Hello! It is time to start doing professional front-end applications. This time
 we will be creating a small contact management application that allows users to:
-Create, Update, Delete and Read contacts. [Check it out here!]()
+Create, Update, Delete and Read contacts. [Check it out here!](https://projects.breatheco.de/p/javascript/junior/other/contact-list/preview.gif)
 
 ***Please use the Flux architecture for this:*** The Flux architecture is one of the most used proposal for web application architetures.
 

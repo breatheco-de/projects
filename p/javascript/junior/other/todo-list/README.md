@@ -1,4 +1,4 @@
-# React TODO application with Flux
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) React TODO application with Flux
 
 Create a TODO list application that allows users to add and delete tasks.
 
