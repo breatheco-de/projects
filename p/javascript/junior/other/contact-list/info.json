@@ -3,7 +3,7 @@
 	"slug" : "contact-list",
 	"status": "published",
 	"solution": "https://bitbucket.org/codingacademy/contact-list",
-	"duration" : 16,
+	"duration" : 24,
 	"description" : "Create a simple contact list application using the React.js framework and Flux Architecture",
 	"talents": [
 		{ "badge": "tag-master", "points": 10 },
