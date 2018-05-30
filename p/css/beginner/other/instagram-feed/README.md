@@ -8,9 +8,9 @@ From now on you are going to be treated as a developer, and good developers are 
 
 ## Instructions
 
-Using everything you have learned with HTML and CSS3, please create a website that replicates [this picture](https://projects.breatheco.de/p/css/beginner/other/instagram-feed/example.png) in every way.
+Using everything you have learned with HTML and CSS3, please create a website that replicates [this picture](https://projects.breatheco.de/p/css/beginner/other/instagram-feed/example.png) in every way (pixel perfect).
 
-You can use the display property like in the old days or the new flex CSS property to make the feed of posts.
+Use the display property like in the old days or the new flex CSS property to make the posts feed.
 
 ## Resources
 
