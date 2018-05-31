@@ -17,7 +17,7 @@ In the end, project needs to look similar to [this demo](https://breatheco-de.gi
 - Remember that the first event on a website lifecicle is [onLoad (your code starts running there)](https://www.w3schools.com/jsref/event_onload.asp), you should generate a random number between 1 and 4 to pick a sute and another random number between 0 and 12 to pick a card number.
 - Create a general .card for the general card, and one additional CSS class for each suite: .spade, .club, .heart & .diamond
 - Apply the .card class to the entire div but only apply one of the suite classes at a time depending on what suite you want to apply.
-- You can use images or HTML character entities to generate the sute symbol into the HTML (Here you can find the character entities)[https://brajeshwar.github.io/entities/] for the :before and :after content.
+- You can use images or HTML character entities to generate the sute symbol into the HTML [Here you can find the character entities](https://brajeshwar.github.io/entities/) for the :before and :after content.
 
 HTML	| Symbol	| Numeric	| Description	                    | Hex	        | CSS (ISO) | JS (Octal)|
 --------|-----------|-----------|-----------------------------------|---------------|-----------|-----------|
