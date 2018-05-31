@@ -1,6 +1,6 @@
 # ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32)  Random Card Dealer (generator)
 
-In this project you will learn how to change your website styles during the runtime using (VanillaJS)[https://stackoverflow.com/questions/20435653/what-is-vanillajs] (plain normal js).
+In this project you will learn how to change your website styles during the runtime using [VanillaJS](https://stackoverflow.com/questions/20435653/what-is-vanillajs) (plain normal js).
 
 ## Instructions
 
