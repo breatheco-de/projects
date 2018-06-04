@@ -1,0 +1,24 @@
+{
+	"title" : "TicTacToe with React.js",
+	"slug" : "tictactoe-react",
+	"status": "published",
+	"solution": "https://bitbucket.org/codingacademy/tictactoe-react",
+	"duration" : 16,
+	"description" : "Create a simple tictactoe 2 player game (no AI), using the React.js framework",
+	"talents": [
+		{ "badge": "tag-master", "points": 10 },
+		{ "badge": "select-everything", "points": 5 },
+		{ "badge": "be-dry", "points": 5 },
+		{ "badge": "css-inspector", "points": 5 },
+		{ "badge": "source-inspector", "points": 10 },
+		{ "badge": "abc", "points": 5 },
+		{ "badge": "functional-developer", "points": 10 },
+		{ "badge": "js-inspector", "points": 10 },
+		{ "badge": "sass-master", "points": 5 },
+		{ "badge": "git-creator", "points": 5 },
+		{ "badge": "the-console", "points": 10 },
+		{ "badge": "mouse-god", "points": 5 },
+		{ "badge": "conditionals", "points": 5 },
+		{ "badge": "looper", "points": 5 }
+	]
+}

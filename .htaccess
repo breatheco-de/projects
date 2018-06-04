@@ -11,3 +11,4 @@ RewriteCond %{REQUEST_URI} !^/app/
 RewriteRule ^(.*)/(.*)$ /app/index.php?$1=$2
 RewriteRule ^d/(.*)$ /app/index.php?demo=$1
 RewriteRule ^projects.php$ /app/projects.php
+RewriteRule ^json$ /app/projects.php

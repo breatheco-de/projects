@@ -1,6 +1,0 @@
-{
-	"title" : "Login sessions using salt",
-	"slug" : "login-with-sessions",
-	"skin" : "retro",
-	"description" : "Pure PHP non-framework login implementation with good security best practices"
-}

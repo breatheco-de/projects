@@ -48,6 +48,9 @@ function generateJSON($parts, $path){
 
 	//generating readme path (if any)
 	$prj = fillReadmeFilePath($prj, $path);
+
+	//generating preview path (if any)
+	$prj = fillPreviewFilePath($prj, $path);
 	
 	//generating source path (if any), it can be a zip or tar.gz
 	$prj = fillSourceFilePath($prj, $path);
@@ -131,6 +134,13 @@ function fillReadmeFilePath($prj,$path){
 	return $prj;
 }
 
+function fillPreviewFilePath($prj,$path){
+	if(file_exists($path.'preview.gif')) $prj["preview"] = str_replace('../','',$path.'preview.gif');
+	else if(file_exists($path.'preview.png')) $prj["preview"] = str_replace('../','',$path.'preview.png');
+	else if(file_exists($path.'preview.jpeg')) $prj["preview"] = str_replace('../','',$path.'preview.jpeg');
+	return $prj;
+}
+
 function fillSourceFilePath($prj,$path){
 	
 	if(file_exists($path.'src.zip')) $prj["source-code"] = str_replace('../','',$path.'src.zip');
@@ -153,7 +163,26 @@ header("Content-type: application/json");
 if(!empty($_REQUEST['slug']))
 {
 	$project = getProject($projects,$_REQUEST['slug']);
-	if($project) echo json_encode($project);
-	else echo json_encode(array());
+	if($project){
+		if(isset($_REQUEST['preview'])){
+			$filePath = '../'.$project['preview'];
+			$file_ext = pathinfo($filePath, PATHINFO_EXTENSION);
+			if(file_exists($filePath)){
+				header("Content-type: image/".$file_ext);
+				header('Content-Length: ' . filesize($filePath));
+				readfile($filePath);
+				die();
+			}
+			else{
+				header("HTTP/1.0 404 Not Found");
+				echo json_encode(['msg' => 'preview not found']);
+			}
+		} 
+		else echo json_encode($project);
+	} 
+	else{
+		header("HTTP/1.0 404 Not Found");
+		echo json_encode(array());
+	} 
 }
 else echo json_encode($projects);

@@ -1,0 +1,49 @@
+{
+	"video-id": "CNaA1VsU02M",
+	"timeline":[
+		{
+			"seconds": "1",
+			"description": "Introduction"
+		},
+		{
+			"seconds": "150",
+			"description": "Download Sublime 3"
+		},
+		{
+			"seconds": "125",
+			"description": "Create a new project"
+		},
+		{
+			"seconds": "315",
+			"description": "HTML5 Basic structure"
+		},
+		{
+			"seconds": "570",
+			"description": "Connect/Link HTML with CSS"
+		},
+		{
+			"seconds": "870",
+			"description": "Grabing colors from other websites"
+		},
+		{
+			"seconds": "991",
+			"description": "Structure of each post"
+		},
+		{
+			"seconds": "1160",
+			"description": "Width and centering of the box"
+		},
+		{
+			"seconds": "1490",
+			"description": "Margins between boxes"
+		},
+		{
+			"seconds": "1790",
+			"description": "Changing the font of the website"
+		},
+		{
+			"seconds": "1870",
+			"description": "Float property for adding the post date"
+		}
+	]
+}
