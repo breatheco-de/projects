@@ -1,0 +1,10 @@
+{
+	"title" : "Use Flux to make your Project Dynamic",
+	"slug" : "full-stack-project-fluxify",
+	"status": "published",
+	"duration" : 20,
+	"description" : "Making the prototipe dynamic using Flux",
+	"talents": [
+		{ "badge": "docu-lover", "points": 5 }
+	]
+}
