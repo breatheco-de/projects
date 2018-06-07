@@ -1,0 +1,11 @@
+{
+	"title" : "Simple Counter",
+	"slug" : "simple-counter-react",
+	"solution": "https://bitbucket.org/codingacademy/simple-counter-react",
+	"status": "published",
+	"duration" : 4,
+	"description" : "Use your react.js skills to make a simple counter component",
+	"talents": [
+		{ "badge": "functional-developer", "points": 6 }
+	]
+}
