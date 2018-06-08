@@ -1,8 +1,9 @@
 # ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Simple Counter with React
 
-AS you may already heard, React let's you create your own components and render them inside your website using the **ReactDOM.render()** the method.
+React improves the creation of custom components, which you can render throughout your webapp using the **ReactDOM.render()** method. A custom component allows you to divide an conquer, separating logical and visual challenges into smaller pieces giving you greater control over the display and functionalities of each part of the webapp.
 
-For example, to create a bootstrap &#x3C;Card /&#x3E; component you can write this code:
+For example, to create a bootstrap &#x3C;Card /&#x3E; component you'd code this:
+
 ```
 function Card(props){
     render (
@@ -10,33 +11,46 @@ function Card(props){
             <img className="card-img-top" src="http://via.placeholder.com/350x150" alt="Card image cap" />
             <div className="card-body">
                 <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p className="card-text">Some quick example text to build on the card title and fill the card's content.</p>
                 <a href="#" className="btn btn-primary">Go somewhere</a>
             </div>
         </div>
     );
 }
 ```
-And then.. you are able to include it in your website like this:
+
+After declaring it, you are able to **import** and **use** it in your webapp like this:
+
 ```
 //import react into the bundle
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Card from './component/Card.jsx'
+
 ReactDOM.render(<Card />, document.quertSelector('#root'));
 ```
-Finally, you can pass information to the component as a prop by doing this:
+
+Aditionally, you can pass information through **props**:
+
 ```html
-<Card imageUrl="http://via.placeholder.com/350x150" />
+
+<!-- Use of the custom component -->
+<Card imageUrl="http://via.placeholder.com/350x150" title="A nice image" />
+
 ```
-And then using it inside the render method of your component like this:
-```html
+
+... for usage within the render method of your component:
+
+```
+//Declaration of custom component (Card.jsx)
+
 function Card(props){
     render (
         <div className="card">
             <img className="card-img-top" src={props.imageUrl} alt="Card image cap" />
             <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 className="card-title">{props.title}</h5>
+                <p className="card-text">Some quick example text to build on the card title and fill the card's content.</p>
                 <a href="#" className="btn btn-primary">Go somewhere</a>
             </div>
         </div>
@@ -46,13 +60,14 @@ function Card(props){
 
 # Instructions
 
-Let's do a secons counter component called ***SecondCounter*** in React.js that looks [like this one](https://projects.breatheco.de/json?slug=simple-counter-react&preview).
+Create a seconds-counter component, called ***SecondsCounter***. It should look [like this one](https://projects.breatheco.de/json?slug=simple-counter-react&preview).
 
-- The whole purpose of the component is displaying how many seconds have passed since the website finished loading.
-- Use the ReactDOM.render to render the component into the store.
-- Use the setInterval function to render de component into the DOM on every second.
-- The component does not need a local state, you can pass the number of seconds as a property like this:
+- The whole purpose of the component is to display how many seconds have passed since the website finished loading (onLoad).
+- Use the ***ReactDOM.render()*** to render the component into the webapp.
+- Use the ***setInterval()*** function to re-render de component on every second.
+- The component does not need a local state, you can pass the number of seconds as **props** like this:
 ```
-<SecondCounter seconds={3434} />
+<SecondsCounter seconds={3434} />
+
 ```
-- The clock icon on the left of the component you can find it on font-awesome.
+- You can find the clock icon on the left of the component in font-awesome.
