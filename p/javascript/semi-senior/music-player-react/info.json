@@ -1,0 +1,11 @@
+{
+	"title" : "Audio player like Spotify with React.js",
+	"slug" : "music-player-react",
+	"status": "published",
+	"description" : "Use the audio tag to create your own music player"
+	"solution": "https://bitbucket.org/codingacademy/music-player-react",
+	"duration" : 16,
+	"talents": [
+		{ "badge": "tag-master", "points": 10 }
+	]
+}

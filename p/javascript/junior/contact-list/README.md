@@ -21,10 +21,8 @@ allowing you to focus on the functionality.
 1. Contact: Contains the list of contacts.
 2. AddContact: It's just a form that you can use to create or update contatcs.
 
-#### And two different components:
-
-1. ContactCard: Ideal component to display just one contact.
-2. Modal: Show and hide the confirmation modal and listen to the user answer (confirmation or cancellation).
+#### There is one additional component:
+ContactCard: Ideal component to display just one contact.
 
 ## Expected functionalities
 

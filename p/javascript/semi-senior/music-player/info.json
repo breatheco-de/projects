@@ -1,5 +1,6 @@
 {
 	"title" : "Create an MP3 player like Spotify.com",
 	"slug" : "media-player",
+	"status": "draft",
 	"description" : "Use the audio tag to create your own media player"
 }
