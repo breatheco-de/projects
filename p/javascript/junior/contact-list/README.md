@@ -26,10 +26,10 @@ ContactCard: Ideal component to display just one contact.
 
 ## Expected functionalities
 
-1. You have to add the code needed to make your application create, edit, 
+- You have to add the code needed to make your application create, edit, 
 and delete contacts from the list.
-2. You have to ask the user for confirmation before deleting (use the 
-Modal component for that)
+- (Optional but is a plus) Ask the user for confirmation before deleting, use the 
+Modal component for that.
 
 ## Steps to install this project
 
