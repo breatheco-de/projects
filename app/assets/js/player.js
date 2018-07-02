@@ -113,6 +113,8 @@
   }
 
   function displayTime(seconds) {
+    if(typeof seconds != 'string' || seconds.indexOf(':') != -1) return seconds;
+    
     var hh = Math.floor(seconds / 3600);
     var mm = Math.floor((seconds % 3600) / 60);
     var ss = seconds % 60;
@@ -131,7 +133,14 @@
 
   function addMenuListeners(){
   	$('.player-topic').click(function(){
-  		videotutorial.jumpTo($(this).data('seconds'));
+  	  let seconds = $(this).data('seconds');
+  	  if(typeof seconds == 'string' && seconds.indexOf(':') != -1){
+  	    const timeArr = seconds.split(':').reverse();
+  	    seconds = parseInt(timeArr[0]);
+  	    if(typeof timeArr[1] != 'undefined') seconds += timeArr[1] * 60;
+  	    if(typeof timeArr[2] != 'undefined') seconds += timeArr[2] * 3600;
+  	  }
+  		videotutorial.jumpTo(seconds);
   	});
   	
   	$('.dr-menu').click(function(){
