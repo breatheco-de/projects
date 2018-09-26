@@ -17,12 +17,12 @@ Start with the React boilerplate.
 
 ##### 0. Make sure you have breathecode-cli installed in your environment. [Detailed instructions](https://www.npmjs.com/package/@breathecode/breathecode-cli)
 ```
-$ npm install -g @breathecode/breathecode-cli
+$ npm install -g breathecode-cli
 ````
 
 ##### 1. Start the React boilerplate
 ```
-$ breathecode start:react
+$ breathecode start:react-project
 ```
 ##### 2. Install the /node_modules
 ```
