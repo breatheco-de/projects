@@ -1,0 +1,20 @@
+{
+	"title" : "Landing Page with React",
+	"slug" : "landing-page-with-react",
+	"status": "published",
+	"solution": "https://blackrockdigital.github.io/startbootstrap-heroic-features/",
+	"duration" : 12,
+	"description" : "Create a simple landing page using React.js components",
+	"talents": [
+		{ "badge": "tag-master", "points": 10 },
+		{ "badge": "select-everything", "points": 5 },
+		{ "badge": "be-dry", "points": 10 },
+		{ "badge": "css-inspector", "points": 5 },
+		{ "badge": "source-inspector", "points": 5 },
+		{ "badge": "abc", "points": 5 },
+		{ "badge": "functional-developer", "points": 10 },
+		{ "badge": "js-inspector", "points": 10 },
+		{ "badge": "git-creator", "points": 10 },
+		{ "badge": "the-console", "points": 10 }
+	]
+}
