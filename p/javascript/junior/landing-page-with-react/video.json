@@ -1,0 +1,22 @@
+{
+	"video-id": "CmdPegEyyVs",
+	"menuname": "Learn Flux creating a Contact List",
+	"timeline":[ 
+		{ "seconds": "0", "description": "Introduction" },
+		{ "seconds": "145", "description": "Why Flux" },
+		{ "seconds": "320", "description": "Reduct vs Flux" },
+		{ "seconds": "372", "description": "React Component vs React Page/View" },
+		{ "seconds": "518", "description": "The basic workflow" },
+		{ "seconds": "660", "description": "Flux Workflow in detail" },
+		{ "seconds": "795", "description": "Start coding! (setup)" },
+		{ "seconds": "1000", "description": "Simplifying the HTML" },
+		{ "seconds": "1115", "description": "Action: Creating the \"addContact\" action" },
+		{ "seconds": "1220", "description": "Store: Declaring the Flux Store" },
+		{ "seconds": "1412", "description": "View: Listening to store changes (subscription)" },
+		{ "seconds": "1788", "description": "Integrating everything together (View+Action+Store)" },
+		{ "seconds": "2215", "description": "Debugging (How to know what is happening)" },
+		{ "seconds": "2518", "description": "Deleting a contact (view+action+store)" },
+		{ "seconds": "3055", "description": "Editing a contact (view+action+store)" },
+		{ "seconds": "4576", "description": "Final summary" }
+	]
+}
