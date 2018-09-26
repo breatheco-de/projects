@@ -11,11 +11,7 @@ Note: the Cards have different content, think DRY (Don't repeat yourself) and de
 
 ### How to start?
 
-Clone the repository with the boilerplate, it contains no real functionalities 
-but it has 99.99% of the HTML/CSS that you'll need for the project, 
-allowing you to focus on the functionality.
-
-### The project is divided in: 
+Start with the React boilerplate.
 
 ## Steps to install this project
 
