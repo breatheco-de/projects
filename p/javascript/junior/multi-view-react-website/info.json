@@ -1,10 +1,10 @@
 {
-	"title" : "Landing Page with React",
-	"slug" : "landing-page-with-react",
+	"title" : "Multi View React Web App",
+	"slug" : "multi-view-react-website",
 	"status": "published",
-	"solution": "https://blackrockdigital.github.io/startbootstrap-heroic-features/",
-	"duration" : 12,
-	"description" : "Create a simple landing page using React.js components",
+	"solution": "",
+	"duration" : 24,
+	"description" : "Create a web app using React router and Context",
 	"talents": [
 		{ "badge": "tag-master", "points": 10 },
 		{ "badge": "select-everything", "points": 5 },

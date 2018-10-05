@@ -7,7 +7,7 @@ Enough with the landing pages and single view projects, it is time to build our 
 This is a collaborative project, the class will be separated in 4 groups and each will create a piece of a multi view website.
 
 ### Pieces/Groups:
-- NavBar/Login View (Session) |
+- NavBar/Footer/Login View (Session) |
 https://getbootstrap.com/docs/4.1/examples/carousel/ & https://getbootstrap.com/docs/4.1/examples/sign-in/
 - Landing Page with Carousel (Products and Posts) | 
 https://getbootstrap.com/docs/4.1/examples/carousel/
