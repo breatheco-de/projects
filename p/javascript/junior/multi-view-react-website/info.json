@@ -1,0 +1,20 @@
+{
+	"title" : "Multi View React Web App",
+	"slug" : "multi-view-react-website",
+	"status": "published",
+	"solution": "",
+	"duration" : 24,
+	"description" : "Create a web app using React router and Context",
+	"talents": [
+		{ "badge": "tag-master", "points": 10 },
+		{ "badge": "select-everything", "points": 5 },
+		{ "badge": "be-dry", "points": 10 },
+		{ "badge": "css-inspector", "points": 5 },
+		{ "badge": "source-inspector", "points": 5 },
+		{ "badge": "abc", "points": 5 },
+		{ "badge": "functional-developer", "points": 10 },
+		{ "badge": "js-inspector", "points": 10 },
+		{ "badge": "git-creator", "points": 10 },
+		{ "badge": "the-console", "points": 10 }
+	]
+}
