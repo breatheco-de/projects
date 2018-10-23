@@ -3,7 +3,11 @@
 Technologies: HTML, CSS, JS, React, React Router and React Context API.
 
 Hello! It is time to start doing professional front-end applications. This time
-we will be creating a small Meetup.com application that allows users to Browse and RSVP to events, very similar to how Meetup.com works.
+we will be creating a small Meetup.com application that allows users to Browse and RSVP events, very similar to how Meetup.com works.
+
+**Event**s the are center entity in the system, the main view (Home) will have a list of **Event**s organized by date.
+Each **Event** is linked to _a single **Meetup**_.
+A **Meetup** can be linked to _one or more_ **Event**s.
 
 _Optimized for groups of 2-3 students._
 
@@ -60,7 +64,7 @@ Some dummy content.
 store = {
     events:[
         {
-            ID: 36
+            ID: 36,
             post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero consectetur risus vehicula interdum eu at elit. Proin a commodo erat, eu molestie ipsum. Aliquam tristique nunc a est tristique, et convallis risus ullamcorper. Fusce nec massa ac enim pellentesque ornare. Pellentesque non sapien varius, pellentesque tellus sit amet, facilisis justo. Duis rhoncus nunc id elementum dapibus. Sed dictum lacinia vestibulum.",
             post_title: "Lorem Event",
             meta_keys: {
