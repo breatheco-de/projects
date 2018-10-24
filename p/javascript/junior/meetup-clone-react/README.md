@@ -16,14 +16,24 @@ _Optimized for groups of 2-3 students._
 First we want to focus on the visuals, make sure the viewable structures are working correctly. 
 Secondly, we should implement the dynamic data display.
 
-### Phase 1: create the views. Link them with React Router.
+### Phase 1: Create the views, then link them with React Router in your Layout Component.
 
 Each group must create the projects ***view components***: 
-- Home (Events)
-- Event
-- Meetup
+- Home (List of Events)
+- Event detail
+- Meetup detail
 
 Use dummy content initially. 
+
+On Meetup.com, Meetups are the groups or organizations hosting the events. 
+
+##### Each Meetup must have:
+- Title
+- Description
+
+
+In contrast, the events are the specific events that the group is hosting through the month. 
+
 ##### Each event must have:
 - Title
 - Description
@@ -31,13 +41,11 @@ Use dummy content initially.
 - Time
 - Meetup
 
-##### Each Meetup must have:
-- Title
-- Description
+
 
 Note: Think DRY (Don't repeat yourself) and declare only ***one*** component and use ```props``` to handle similar structure but different content.
 
-Use the ``` Link ``` components from React Router to implement the navigation between views.
+REMEMBER: Anchor tags will cause a redirect, which you don't want in React. Be sure to use the ``` Link ``` component from React Router to implement the navigation between views.
 
 ```jsx
 ...
@@ -50,7 +58,7 @@ Use the ``` Link ``` components from React Router to implement the navigation be
 ```
 
 
-### Phase 2: make the app dynamic. React Context.
+### Phase 2: Make the app dynamic by implementing React Context.
 
 ***Use the store to fill the dummy content*** within the views/components. The store is accessible using the ```Context.Consumer```
 
@@ -128,6 +136,8 @@ import {Context} from '/path/to/store/appContext.jsx';
 
 ```
 
+All of your Fetch/AJAX will be in the ```componentDidMount()``` section of the appContext.jsx file.
+
 ### How to start?
 
 Start with the React boilerplate.
@@ -163,3 +173,4 @@ That's it! Time to code.
 _"The scariest moment is always before you start"_
 
 -_Stephen King_
+
