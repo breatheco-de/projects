@@ -127,3 +127,39 @@ import {Context} from '/path/to/store/appContext.jsx';
 ...
 
 ```
+
+### How to start?
+
+Start with the React boilerplate.
+
+## Steps to install the boilerplate
+
+Note: breathecode-cli uses nvm 8:
+
+```$ nvm install 8```
+
+```$ nvm use 8```
+
+##### 0. Make sure you have breathecode-cli installed in your environment. [Detailed instructions](https://www.npmjs.com/package/@breathecode/breathecode-cli)
+```
+$ npm install -g breathecode-cli
+````
+
+##### 1. Start the React boilerplate
+```
+$ breathecode start:react-project
+```
+##### 2. Install the /node_modules
+```
+$ npm install
+```
+##### 3. Run the webpack development server
+```
+$ npm run c9
+```
+
+That's it! Time to code.
+
+_"The scariest moment is always before you start"_
+
+-_Stephen King_
