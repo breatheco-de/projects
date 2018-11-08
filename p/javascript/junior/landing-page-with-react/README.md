@@ -23,10 +23,8 @@ $ npm install -g breathecode-cli
 ```
 $ breathecode start:react-project
 ```
-###### (optional) Check if your folder has a ```package.json``` file, if negative:
-```
-$ cd hello-rigo
-```
+###### (optional) Check if your folder has a ```package.json``` file, otherwise, move to that folder (```cd```):
+
 ##### 2. Install the /node_modules
 ```
 $ npm install
