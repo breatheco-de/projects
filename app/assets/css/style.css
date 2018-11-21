@@ -44,6 +44,7 @@ select.form-control:focus{
 .filter-content{ padding-left: 10px; background: #BDBDBD; margin-top: 0px;}\
 .category {color: #797979;}
 .category .category-name:before {content: ':';}
+.to-hide { display: none;}
 .project{ color: black;}
 .project td:first-child {width: 70%; padding-left: 10px;}
 .project a{color: black; text-decoration: none;}
