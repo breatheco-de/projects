@@ -24,7 +24,9 @@
 					console.log("Incoming HTTP Data", data);
 					projectOriginalData = data;
 
-					filterProjectDOM();
+					filterProjectDOM({
+						category: false
+					});
 
 					$('#technology-options').change(function(){
 						filterNodes();
@@ -140,13 +142,14 @@
 	}
 
 	function filterProjectData(data,settings){
-		if(!settings) settings = {
+		settings = {
 			technology: 'true',
 			status: null,
 			difficulty: 'true',
 			category: 'true'
-		}
+		};
 		var projects = {};
+		console.log("Original Projects",data);
 		for(var i =0;i<data.length;i++){
 			
 			//default technologies
