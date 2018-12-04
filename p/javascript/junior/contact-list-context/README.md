@@ -57,4 +57,4 @@ $ npm install
 $ npm run c9
 ```
 
-That is it! Start coding your ReactJS+Flux application.
+That is it! Start coding your React Application :)
