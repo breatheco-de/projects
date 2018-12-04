@@ -2,9 +2,9 @@
 /**
  * This test checks that there is always an upcoming 4geeks night
  */
-
-    include './app/vendor/autoload.php';
-    include './app/test/utils.php';
+    $PATH = dirname(__FILE__);
+    include $PATH.'/../vendor/autoload.php';
+    include $PATH.'/../test/utils.php';
     
     use ZendDiagnostics\Check;
     use ZendDiagnostics\Runner\Runner;

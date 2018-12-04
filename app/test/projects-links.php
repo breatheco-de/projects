@@ -1,5 +1,5 @@
 <?php
-    require './app/vendor/autoload.php';
+    require dirname(__FILE__).'/../vendor/autoload.php';
     
     use GlLinkChecker\GlLinkChecker;
     use GlLinkChecker\GlLinkCheckerReport;
