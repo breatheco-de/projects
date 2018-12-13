@@ -4,7 +4,7 @@ As a web developer, you will be creatings lots and lots of dynamic HTML using Ja
 
 In this exercise you have to create the HTML code needed to render a profile card based on a series of variables that could change in value during runtime. Here is an example of the profile card:
 
-![Conditional Profile Card](https://raw.githubusercontent.com/breatheco-de/conditional-profile-card/master/preview.png)
+![Conditional Profile Card](https://raw.githubusercontent.com/breatheco-de/exercise-conditional-profile-card/master/preview.png)
 
 ## Initial Variable Values
 
@@ -46,7 +46,7 @@ This is an example of a possible HTML output, you will have to replace the name,
 
 ## Installation
 
-1. Clone this repository to download the initial boilerplate: `git clone https://github.com/breatheco-de/conditional-profile-card`
+1. Clone this repository to download the initial boilerplate: `git clone https://github.com/breatheco-de/exercise-conditional-profile-card`
 2. Get into the project folder: `cd conditional-profile-card`
 3. Install NPM packages: `npm install`
 4. Buid for the first time: `npm run build`
