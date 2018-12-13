@@ -46,9 +46,11 @@ This is an example of a possible HTML output, you will have to replace the name,
 
 ## Installation
 
-1. Clone the repository
-2. Install NPM packages: `npm install`
-3. Buid for the first time: `npm run build`
-4. Start updating the `render` function inside the `index.js` file, that is the only file you have to update.
+1. Clone this repository to download the initial boilerplate: `git clone https://github.com/breatheco-de/conditional-profile-card`
+2. Get into the project folder: `cd conditional-profile-card`
+3. Install NPM packages: `npm install`
+4. Buid for the first time: `npm run build`
+5. If you are using cloud 9, right click on the `public/index.html` file and click "run" to start the server and get your public website link.
+6. Start updating the `render` function inside the `index.js` file, that is the only file you have to do `npm run build` again and refresh your public website url.
 
 Note: every time you update any file you will have to build again in order to update the bundle.
