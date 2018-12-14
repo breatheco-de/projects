@@ -75,7 +75,8 @@ skills: List your skills with a percentage of expertise.
   <img height="350" src="https://raw.githubusercontent.com/4GeeksAcademy/student-external-profile/master/static/yml.png">
 </p>
 
-You can pick between your template and your skin, for example:
+You can pick a different template and skin, for example:
+
 ```yml
 template: "online-cv"
 skin: "orange"
