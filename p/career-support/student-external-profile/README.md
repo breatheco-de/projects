@@ -55,7 +55,7 @@ After completing the PR (Pull Request) the application will automatically genera
 </p>
 
 <p align="center">
-  <a href="https://4geeksacademy.github.io/student-external-profile/sharu725" target="_blank">Wach Live Demo Here</a>
+  <a href="http://sep.4geeksacademy.co/sharu725" target="_blank">Wach Live Demo Here</a>
 </p>
 
 ## Completing the YML file
