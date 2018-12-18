@@ -48,7 +48,11 @@ This `Student Showcase` it's still in beta and you are one of the first students
   ![alt-text](https://github-images.s3.amazonaws.com/help/pull_requests/recently_pushed_branch.png)
 
 
-After completing the PR (Pull Request) the application will automatically generate a student portfolio like the following:
+After completing the PR (Pull Request) the application will automatically generate your own student portfolio, to see it, see if your name appears here: 
+
+**[http://sep.4geeksacademy.co/students](http://sep.4geeksacademy.co/students)**
+
+Your profile should look like the following:
 
 <p align="center">
   <img height="350" src="https://raw.githubusercontent.com/4GeeksAcademy/student-external-profile/master/preview.png">
