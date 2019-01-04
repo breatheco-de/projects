@@ -2,8 +2,8 @@
 Do you know what you're good at? No, video games is not a technical skill, neither is watching sports or fashion blogging ;) Although you could include them as personal fun facts in your Summary, what we're looking for here are the skills relevant to what you want to do pro-fe-ssio-na-lly.
 
 ### Instructions
-
- 1. List item
+ 1. Carefully read the following content.
+ 2. List your relevant skills following the indications provided here.
 
 ### Skills Section
 The **skills** section of your resume is a place where you can show your strengths and individuality. Tailor your skills section
@@ -54,5 +54,6 @@ Detail oriented, creative, proactive, adaptable, organized, Ability to understan
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzOTAzNzUyNCwtMTY1OTE2NjMwMl19
+eyJoaXN0b3J5IjpbMjA0MDQ3MjYxOSwxNDM5MDM3NTI0LC0xNj
+U5MTY2MzAyXX0=
 -->
