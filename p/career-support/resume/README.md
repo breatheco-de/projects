@@ -1,9 +1,9 @@
 ## Resume
-To this part of the project we like to call "Inception", not only because you're probably gonna have nightmares about this, but also because it's about building a profile inside your profile :D. It's something like PHP (find out what the first P in PHP stands for), but simpler ^^. And also, this is the *inception* of your job-seeking process, so try to enjoy it with confidence and positivism.
+To this part of the project we like to call "Inception", not only because you're probably gonna have nightmares about this, but also because it's about building a profile inside your profile :D. It's something like PHP (find out what the first P in PHP stands for), but simpler ^^. And also, this is the *inception* of your job-seeking process, so try to enjoy it with confidence and positivism ;).
 
 ### Instructions
 
- 1. List item
+ 1. Take 
 
 ### Resume Section
 In this section, you will simply need to upload a pdf file with your resume. But first, you have to build your resume. Creating your resume is the first step to getting a job. 
@@ -29,6 +29,6 @@ Keywords tend to be nouns that are industry-specific qualifications, skills or t
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMDgzODI0NiwtNzQzODU0MzU3LC0yMD
-M2MTY2MzAxXX0=
+eyJoaXN0b3J5IjpbLTY3MTAyODkwMCwtNDEwODM4MjQ2LC03ND
+M4NTQzNTcsLTIwMzYxNjYzMDFdfQ==
 -->
