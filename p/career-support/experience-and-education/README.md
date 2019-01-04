@@ -3,6 +3,10 @@ Have you ever written a story about yourself? Well, this may be the first time! 
 
 We want you to start by telling us about your education and work experience. But don't start just yet, there's a right way to do it :) Keep reading and we'll tell you how it's done.
 
+### Instructions
+
+ 1. List item
+
 ### Work Experience
 Your **work history** is the most important component of your resume. Employers will want know where you have worked, when you worked there, and what responsibilities you held in each role you have had. They will be looking to see how your experience lines up with what they are looking for in prospective employees.
 
@@ -35,5 +39,5 @@ Whether you include your GPA on your resume depends on how long ago you graduate
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NzYzMTYxNF19
+eyJoaXN0b3J5IjpbLTQxMDQyMzQwMCwtNzc3NjMxNjE0XX0=
 -->
