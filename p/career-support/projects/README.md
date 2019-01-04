@@ -2,7 +2,6 @@
 Now, this is where you're going to tell us how an AWESOME developer you are. We know you're an awesome developer, we already know you, and in this section we want you to show it to everyone else :).
 
 ### Instructions
-
  1. List item
 
 ### Projects Section
@@ -32,5 +31,5 @@ Created a searchable database of agricultural documents using Django with MySQL 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1ODM4MjY4XX0=
+eyJoaXN0b3J5IjpbLTE3NjU0NTQxOTRdfQ==
 -->
