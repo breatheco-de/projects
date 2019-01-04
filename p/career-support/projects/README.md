@@ -1,6 +1,9 @@
 ## Projects
 Now, this is where you're going to tell us how an AWESOME developer you are. We know you're an awesome developer, we already know you, and in this section we want you to show it to everyone else :).
 
+### Instructions
+
+
 ### Projects Section
 The **projects** section is instrumental in demonstrating your technical expertise in real world settings.
 
@@ -28,5 +31,5 @@ Created a searchable database of agricultural documents using Django with MySQL 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MDQ1NzA5Ml19
+eyJoaXN0b3J5IjpbMTgxNzUyMzM4OF19
 -->
