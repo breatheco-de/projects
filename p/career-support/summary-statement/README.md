@@ -2,7 +2,7 @@
 You don't have to be Hemingway or Charles Dickens to complete this section, but you'll have to invoke your best writing abilities and each of the nine goddesses, daughters of Zeus and Mnemosyne, who preside over the arts and sciences ^^'.
 
 ### Instructions
- 1. Read the following information and write your own, unique and particular, summary statement.
+ 1. Read the following information and write down your own, unique and particular, summary statement.
  2. Make sure to include your newly acquired developer skills, as well as your career focus (web development, software development, backend, frontend, etc.).
  3.  
 
@@ -32,6 +32,6 @@ However, if you’re  changing careers or you’re looking for jobs without any 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNzgyMTQxNywtMjI5MjYxODYxLDQ3OT
-cwODQ5OV19
+eyJoaXN0b3J5IjpbLTMxNjcyODM2OSwxNTM3ODIxNDE3LC0yMj
+kyNjE4NjEsNDc5NzA4NDk5XX0=
 -->
