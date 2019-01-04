@@ -2,8 +2,7 @@
 To this part of the project we like to call "Inception", not only because you're probably gonna have nightmares about this, but also because it's about building a profile inside your profile :D. It's something like PHP (find out what the first P in PHP stands for), but simpler ^^. And also, this is the *inception* of your job-seeking process, so try to enjoy it with confidence and positivism ;).
 
 ### Instructions
-
- 1. Take 
+ 1. Take all the sections of your Student External Profile that you've already worked on and 
 
 ### Resume Section
 In this section, you will simply need to upload a pdf file with your resume. But first, you have to build your resume. Creating your resume is the first step to getting a job. 
@@ -29,6 +28,6 @@ Keywords tend to be nouns that are industry-specific qualifications, skills or t
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MTAyODkwMCwtNDEwODM4MjQ2LC03ND
-M4NTQzNTcsLTIwMzYxNjYzMDFdfQ==
+eyJoaXN0b3J5IjpbNjE4OTUyOTg1LC00MTA4MzgyNDYsLTc0Mz
+g1NDM1NywtMjAzNjE2NjMwMV19
 -->
