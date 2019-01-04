@@ -2,8 +2,8 @@
 To this part of the project we like to call "Inception", not only because you're probably gonna have nightmares about this, but also because it's about building a profile inside your profile :D. It's something like PHP (find out what the first P in PHP stands for), but simpler ^^. And also, this is the *inception* of your job-seeking process, so try to enjoy it with confidence and positivism ;).
 
 ### Instructions
- 1. Take all the sections of your Student External Profile, that you've already worked on, and pour them into a word document, using this layout: (link a pdf de Resume Guide)
- 2. 
+ 1. Take all the sections of your Student External Profile, that you've already worked on, and pour them into a one-page long word document, using this layout: (link a pdf de Resume Guide)
+ 2. Save your word document as a pdf and name it Resume [
 
 ### Resume Section
 In this section, you will simply need to upload a pdf file with your resume. But first, you have to build your resume. Creating your resume is the first step to getting a job. 
@@ -29,6 +29,7 @@ Keywords tend to be nouns that are industry-specific qualifications, skills or t
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NjE1MzYwMSw2MTg5NTI5ODUsLTQxMD
-gzODI0NiwtNzQzODU0MzU3LC0yMDM2MTY2MzAxXX0=
+eyJoaXN0b3J5IjpbODQ0NzgyMTgwLC03OTYxNTM2MDEsNjE4OT
+UyOTg1LC00MTA4MzgyNDYsLTc0Mzg1NDM1NywtMjAzNjE2NjMw
+MV19
 -->
