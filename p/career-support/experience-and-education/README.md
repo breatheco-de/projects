@@ -4,7 +4,6 @@ Have you ever written a story about yourself? Well, this may be the first time! 
 We want you to start by telling us about your education and work experience. But don't start just yet, there's a right way to do it :) Keep reading and we'll tell you how it's done.
 
 ### Instructions
-
  1. Carefully read the following content.
  2. List your relevant work experiences and education.
 
@@ -40,6 +39,6 @@ Whether you include your GPA on your resume depends on how long ago you graduate
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NDAyODQxMiwtNDc5MzU2NDM2LC00MT
-A0MjM0MDAsLTc3NzYzMTYxNF19
+eyJoaXN0b3J5IjpbLTE4MTc3OTQxMjYsLTQ3OTM1NjQzNiwtND
+EwNDIzNDAwLC03Nzc2MzE2MTRdfQ==
 -->
