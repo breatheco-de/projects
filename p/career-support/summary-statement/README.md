@@ -4,7 +4,7 @@ You don't have to be Hemingway or Charles Dickens to complete this section, but 
 ### Instructions
  1. Read the following information and write down your own, unique and particular, summary statement.
  2. Make sure to include your newly acquired developer skills, as well as your career focus (web development, software development, backend, frontend, etc.).
- 3.  
+ 3.  You may share it with your Career Support
 
 ### Summary Statement Section
 A **summary statement** is a short paragraph that highlights your professional skills and experience. It gives hiring managers a glimpse into your expertise before diving into your resume. The goal of a summary statement is to demonstrate your unique value through your professional story, your skills, and accomplishments.
@@ -32,6 +32,6 @@ However, if you’re  changing careers or you’re looking for jobs without any 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjcyODM2OSwxNTM3ODIxNDE3LC0yMj
+eyJoaXN0b3J5IjpbLTM5NDAyNjMzOSwxNTM3ODIxNDE3LC0yMj
 kyNjE4NjEsNDc5NzA4NDk5XX0=
 -->
