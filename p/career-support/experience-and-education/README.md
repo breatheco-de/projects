@@ -5,7 +5,7 @@ We want you to start by telling us about your education and work experience. But
 
 ### Instructions
  1. Carefully read the following content.
- 2. List your relevant work experiences and education.
+ 2. List your relevant work experiences and education following the indications provided here.
 
 ### Work Experience
 Your **work history** is the most important component of your resume. Employers will want know where you have worked, when you worked there, and what responsibilities you held in each role you have had. They will be looking to see how your experience lines up with what they are looking for in prospective employees.
@@ -39,6 +39,6 @@ Whether you include your GPA on your resume depends on how long ago you graduate
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTc3OTQxMjYsLTQ3OTM1NjQzNiwtND
-EwNDIzNDAwLC03Nzc2MzE2MTRdfQ==
+eyJoaXN0b3J5IjpbMTIxMzkwOTQwMCwtMTgxNzc5NDEyNiwtND
+c5MzU2NDM2LC00MTA0MjM0MDAsLTc3NzYzMTYxNF19
 -->
