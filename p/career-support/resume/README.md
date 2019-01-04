@@ -4,8 +4,8 @@ To this part of the project we like to call "Inception", not only because you're
 ### Instructions
  1. Take all the sections of your Student External Profile (SEP), that you've already worked on, and pour them into a one-page long word document, using this layout: (link a pdf de Resume Guide)
  2. Save your word document as a pdf and name it "Resume [Name Last Name]".
- 3. Add a new section to your SEP called Resume
- 4. Upload your pdf fileresume
+ 3. Add a new section to your SEP called Resume.
+ 4. Upload your pdf file.
 
 ### Resume Section
 In this section, you will simply need to upload a pdf file with your resume. But first, you have to build your resume. Creating your resume is the first step to getting a job. 
@@ -31,7 +31,7 @@ Keywords tend to be nouns that are industry-specific qualifications, skills or t
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzOTU4MDI5MSwtMTQzOTMxNjg3OSwtNz
+eyJoaXN0b3J5IjpbLTY0MjAxMTQwOCwtMTQzOTMxNjg3OSwtNz
 k2MTUzNjAxLDYxODk1Mjk4NSwtNDEwODM4MjQ2LC03NDM4NTQz
 NTcsLTIwMzYxNjYzMDFdfQ==
 -->
