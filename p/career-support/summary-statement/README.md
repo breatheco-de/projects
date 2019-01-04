@@ -1,6 +1,9 @@
 ## Summary Statement
 You don't have to be Hemingway or Charles Dickens to complete this section, but you'll have to invoke your best writing abilities and each of the nine goddesses, daughters of Zeus and Mnemosyne, who preside over the arts and sciences ^^'.
 
+### Instructions
+
+
 ### Summary Statement Section
 A **summary statement** is a short paragraph that highlights your professional skills and experience. It gives hiring managers a glimpse into your expertise before diving into your resume. The goal of a summary statement is to demonstrate your unique value through your professional story, your skills, and accomplishments.
 
@@ -27,5 +30,5 @@ However, if you’re  changing careers or you’re looking for jobs without any 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc5NzA4NDk5XX0=
+eyJoaXN0b3J5IjpbLTIyOTI2MTg2MSw0Nzk3MDg0OTldfQ==
 -->
