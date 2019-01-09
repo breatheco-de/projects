@@ -62,7 +62,7 @@ class ProjectsJSON{
 	
 		if(!empty($prj["info-path"])) $prj["name"] = $parts[$maxDepth];
 
-		if(!array_key_exists("slug",$prj)) return false;
+		//if(!array_key_exists("slug",$prj)) return false;
 		
 		if(array_key_exists("live-url",$prj)) $prj["url"] = $prj["live-url"];
 		else $prj["url"] = $path;

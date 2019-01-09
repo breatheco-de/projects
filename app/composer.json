@@ -10,5 +10,8 @@
         "twig/twig": "~1.0",
         "glicer/link-checker": "dev-with-markdown",
         "zendframework/zenddiagnostics": "^1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
     }
 }
