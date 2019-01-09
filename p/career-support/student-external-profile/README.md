@@ -1,8 +1,5 @@
  # Student External Profile
 
-![Buddy Works Build](https://app.buddy.works/breathecode/student-external-profile/pipelines/pipeline/162573/badge.svg?token=7fd65f24ee0daa2c60600820880d585a0bf52da8e65b5ef1f886615b58237012)
-![Travis Build](https://api.travis-ci.org/4GeeksAcademy/student-external-profile.svg?branch=master)
-
 It is time to start your first GitHub contribution. Git offers a way of pushing code into a repository without owning it, or even being invited to it, it is called `Pull Request` and this exercise's main objective is to create your first `Pull Request` ever.
 
 At the same time, you will start building your student profile, one of the most significant accomplishments you can have at the academy because:

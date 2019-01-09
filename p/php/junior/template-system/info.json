@@ -1,5 +1,6 @@
 {
 	"title" : "Doing Templates with PHP",
+	"slug" : "template-system",
 	"source-code": "https://bitbucket.org/codingacademy/simple-mvc",
 	"description" : "Demostration of two appoaches for the same project: Withi and wihtout MVC",
 	"instructions":[

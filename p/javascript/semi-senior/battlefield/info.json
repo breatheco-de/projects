@@ -1,5 +1,6 @@
 {
 	"title" : "Battlefield",
+	"slug" : "battlefield",
 	"instructions":[
 		{
 			"content": "This will be the first instruction",
