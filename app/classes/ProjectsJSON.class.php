@@ -28,7 +28,8 @@ class ProjectsJSON{
 				{
 					$projectName = basename($path);
 					//print_r($this->generateProjectJSON($urlparts, $path)); die();
-					array_push($this->projects, $this->generateProjectJSON($urlparts, $path));
+					$project = $this->generateProjectJSON($urlparts, $path);
+					if($project) array_push($this->projects, $project);
 					break;
 				}
 			}
@@ -60,6 +61,8 @@ class ProjectsJSON{
 		$prj = $this->fillProjectInfoFilePath($prj, $path);
 	
 		if(!empty($prj["info-path"])) $prj["name"] = $parts[$maxDepth];
+
+		if(!array_key_exists("slug",$prj)) return false;
 		
 		if(array_key_exists("live-url",$prj)) $prj["url"] = $prj["live-url"];
 		else $prj["url"] = $path;
