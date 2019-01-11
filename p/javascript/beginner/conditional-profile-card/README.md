@@ -64,7 +64,13 @@ With real values.
 
 `cd exercise-conditional-profile-card`
 
-3. Install NPM packages: 
+3. Install NPM packages:
+Note: if you're using c9 make sure you are running in the latest version of node: 
+
+`nvm install 8`
+
+`nvm use 8`
+
 
 `npm install`
 
