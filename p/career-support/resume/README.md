@@ -13,6 +13,8 @@ You can use the following document as formatting guide:
 
 Use the following guide to write a Cover Letter in case you need to: 
 
+ - Cover Letter Guide
+
 ### Resume Section
 In this section, you will simply need to upload a pdf file with your resume. But first, you have to build your resume. Creating your resume is the first step to getting a job. 
 
@@ -37,7 +39,7 @@ Keywords tend to be nouns that are industry-specific qualifications, skills or t
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDA0ODgyOCwtMTQzOTMxNjg3OSwtNz
-k2MTUzNjAxLDYxODk1Mjk4NSwtNDEwODM4MjQ2LC03NDM4NTQz
-NTcsLTIwMzYxNjYzMDFdfQ==
+eyJoaXN0b3J5IjpbMTIxMjgyNzg0NiwxNDMwMDQ4ODI4LC0xND
+M5MzE2ODc5LC03OTYxNTM2MDEsNjE4OTUyOTg1LC00MTA4Mzgy
+NDYsLTc0Mzg1NDM1NywtMjAzNjE2NjMwMV19
 -->
