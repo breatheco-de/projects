@@ -11,6 +11,7 @@ To this part of the project we like to call "Inception", not only because you're
 You can use the following document as formatting guide:
  - [Resume Building Guide](https://ucarecdn.com/d189146c-89d2-4dff-9c5a-40b7812e55ab/ResumeSetupGuide4Geeks.pdf)
 
+Use the following guide to write a Cover Letter in case you need to: 
 
 ### Resume Section
 In this section, you will simply need to upload a pdf file with your resume. But first, you have to build your resume. Creating your resume is the first step to getting a job. 
@@ -36,7 +37,7 @@ Keywords tend to be nouns that are industry-specific qualifications, skills or t
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTY1NTQ1NTYsLTE0MzkzMTY4NzksLT
-c5NjE1MzYwMSw2MTg5NTI5ODUsLTQxMDgzODI0NiwtNzQzODU0
-MzU3LC0yMDM2MTY2MzAxXX0=
+eyJoaXN0b3J5IjpbMTQzMDA0ODgyOCwtMTQzOTMxNjg3OSwtNz
+k2MTUzNjAxLDYxODk1Mjk4NSwtNDEwODM4MjQ2LC03NDM4NTQz
+NTcsLTIwMzYxNjYzMDFdfQ==
 -->
