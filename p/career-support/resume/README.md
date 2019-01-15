@@ -7,6 +7,9 @@ To this part of the project we like to call "Inception", not only because you're
  3. Add a new section to your SEP called Resume.
  4. Upload your pdf file.
 
+### Resources
+You can use the following document as formatting: 
+
 ### Resume Section
 In this section, you will simply need to upload a pdf file with your resume. But first, you have to build your resume. Creating your resume is the first step to getting a job. 
 
@@ -31,7 +34,7 @@ Keywords tend to be nouns that are industry-specific qualifications, skills or t
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MjAxMTQwOCwtMTQzOTMxNjg3OSwtNz
+eyJoaXN0b3J5IjpbLTI3NzE0MzY4NiwtMTQzOTMxNjg3OSwtNz
 k2MTUzNjAxLDYxODk1Mjk4NSwtNDEwODM4MjQ2LC03NDM4NTQz
 NTcsLTIwMzYxNjYzMDFdfQ==
 -->
