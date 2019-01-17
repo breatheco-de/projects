@@ -5,7 +5,9 @@ We want you to start by telling us about your education and work experience. But
 
 ### Instructions
  1. Carefully read the following content.
- 2. List your relevant work experiences and education following the indications provided here.
+ 2. You will be doing your second pull request! Please look for the [Student Exernal Profile repository](https://github.com/4GeeksAcademy/student-external-profile) again, find your corresponding student .YML file and update the secion that talks about your relevan work experience following the indications provided during the rest of the document.
+ 
+ ## How to write your experience and education?
 
 ### Work Experience
 Your **work history** is the most important component of your resume. Employers will want know where you have worked, when you worked there, and what responsibilities you held in each role you have had. They will be looking to see how your experience lines up with what they are looking for in prospective employees.
