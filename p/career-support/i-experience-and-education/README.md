@@ -5,7 +5,7 @@ We want you to start by telling us about your education and work experience. But
 
 ### Instructions
  1. Carefully read the following content.
- 2. You will be doing your second pull request! Please look for the [Student Exernal Profile repository](https://github.com/4GeeksAcademy/student-external-profile) again, find your corresponding student `.YML` file inside the `src/students/` folder, and update the secion that talks about your relevan work experience following the indications provided during the rest of the document.
+ 2. You will be doing your second pull request! Please look for the [Student Exernal Profile repository](https://github.com/4GeeksAcademy/student-external-profile) again, find your corresponding student `.YML` file inside the `src/students/` folder, and update the section that talks about your relevant work experience following the indications provided during the rest of the document.
  
  ## How to write your experience and education?
 
@@ -41,5 +41,5 @@ Whether you include your GPA on your resume depends on how long ago you graduate
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzkwOTQwMF19
+eyJoaXN0b3J5IjpbNDE1NDA4MTM5LDEyMTM5MDk0MDBdfQ==
 -->
