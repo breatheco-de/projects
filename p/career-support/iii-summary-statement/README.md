@@ -2,9 +2,12 @@
 You don't have to be Hemingway or Charles Dickens to complete this section, but you'll have to invoke your best writing abilities and each of the nine goddesses, daughters of Zeus and Mnemosyne, who preside over the arts and sciences ^^'.
 
 ### Instructions
- 1. Read the following information and write down your own, unique and particular, summary statement.
- 2. Make sure to include your newly acquired developer skills, as well as your career focus (web development, software development, backend, frontend, etc.).
- 3.  You may share your statement with our Career Support team to get feedback from them.
+ 1.  Carefully read the following content.
+ 2.  You will be doing your fifth pull request! Please look for the [Student Exernal Profile repository](https://github.com/4GeeksAcademy/student-external-profile) again.
+ 3. Find your corresponding student `.YML` file inside the `src/students/` folder.
+ 4. Read the following information and write down your own, unique and particular, summary statement.
+ 5. Make sure to include your newly acquired developer skills, as well as your career focus (web development, software development, backend, frontend, etc.).
+ 6.  You may share your statement with our Career Support team to get feedback from them.
 
 ### Summary Statement Section
 A **summary statement** is a short paragraph that highlights your professional skills and experience. It gives hiring managers a glimpse into your expertise before diving into your resume. The goal of a summary statement is to demonstrate your unique value through your professional story, your skills, and accomplishments.
@@ -32,5 +35,5 @@ However, if you’re  changing careers or you’re looking for jobs without any 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTgyMjg5MThdfQ==
+eyJoaXN0b3J5IjpbLTEyMzM1Nzc0OTJdfQ==
 -->
