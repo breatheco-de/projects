@@ -6,9 +6,9 @@ To this part of the project we like to call "Inception", not only because you're
  2. Save your word document as a pdf and name it "Resume [Name Last Name]".
  3. Add a new section to your SEP called Resume.
  4.  Carefully read the following content.
- 2.You will be doing your third pull request! Please look for the [Student Exernal Profile repository](https://github.com/4GeeksAcademy/student-external-profile) again.
- 3. Find your corresponding student `.YML` file inside the `src/students/` folder.
- 4. Update the section about your relevant projects following the indications provided in the rest of this document.
+ 5. You will be doing your final pull request! Please look for the [Student Exernal Profile repository](https://github.com/4GeeksAcademy/student-external-profile) again.
+ 6. Find your corresponding student `.YML` file inside the `src/students/` folder.
+ 7. Upload your pdf file.
 
 ### Resources
 You can use the following document as formatting guide:
@@ -41,5 +41,5 @@ Keywords tend to be nouns that are industry-specific qualifications, skills or t
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1OTI4ODIyNV19
+eyJoaXN0b3J5IjpbMzYzNjk5MDQ5XX0=
 -->
