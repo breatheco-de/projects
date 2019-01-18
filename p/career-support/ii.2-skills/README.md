@@ -3,7 +3,9 @@ Do you know what you're good at? No, video games is not a technical skill, neith
 
 ### Instructions
  1. Carefully read the following content.
- 2. List your relevant skills following the indications provided here.
+ 2.  You will be doing your fourth pull request! Please look for the [Student Exernal Profile repository](https://github.com/4GeeksAcademy/student-external-profile) again.
+ 3. Find your corresponding student `.YML` file inside the `src/students/` folder.
+ 4. Update the section about your relevant soft, hard & technical skills following the indications provided in the rest of this document.
 
 ### Skills Section
 The **skills** section of your resume is a place where you can show your strengths and individuality. Tailor your skills section
@@ -54,5 +56,5 @@ Detail oriented, creative, proactive, adaptable, organized, Ability to understan
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MDQ3MjYxOV19
+eyJoaXN0b3J5IjpbNTEwOTg5ODk2XX0=
 -->
