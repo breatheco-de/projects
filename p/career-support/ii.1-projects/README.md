@@ -3,7 +3,9 @@ Now, this is where you're going to tell us how an AWESOME developer you are. We 
 
 ### Instructions
  1. Carefully read the following content.
- 2. List your relevant projects following the indications provided here.
+ 2.  You will be doing your third pull request! Please look for the [Student Exernal Profile repository](https://github.com/4GeeksAcademy/student-external-profile) again.
+ 3. Find your corresponding student `.YML` file inside the `src/students/` folder.
+ 4. Update the section about your relevant projects following the indications provided in the rest of this document.
 
 ### Projects Section
 The **projects** section is instrumental in demonstrating your technical expertise in real world settings.
@@ -36,5 +38,6 @@ Created a searchable database of agricultural documents using Django with MySQL 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzUwODMxNzNdfQ==
+eyJoaXN0b3J5IjpbLTEwOTQ0MjA0ODQsLTE1MzUwODMxNzNdfQ
+==
 -->
