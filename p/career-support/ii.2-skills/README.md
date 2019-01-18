@@ -8,7 +8,9 @@ Do you know what you're good at? No, video games is not a technical skill, neith
  4. Update the section about your relevant soft, hard & technical skills following the indications provided in the rest of this document.
  
 ### Resources
-The Red Bull Wingfinder: Strengths & Personality Online Test, 
+The Red Bull Wingfinder: Strengths & Personality Online Test, may be useful to help you identify your strengths and soft skills: 
+https://www.wingfinder.com/
+
 ### Skills Section
 The **skills** section of your resume is a place where you can show your strengths and individuality. Tailor your skills section
 to the kind of job you'd like to apply, including skills that are explicitly mentioned in job postings or known to be valued at the organizations.
@@ -58,5 +60,5 @@ Detail oriented, creative, proactive, adaptable, organized, Ability to understan
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDMxODQ1MDldfQ==
+eyJoaXN0b3J5IjpbLTU4MjU2NzY4M119
 -->
