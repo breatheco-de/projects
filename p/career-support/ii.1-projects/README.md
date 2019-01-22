@@ -12,7 +12,7 @@ The **projects** section is instrumental in demonstrating your technical experti
 
 Strategically **select two to three projects** that you are particularly proud of and demonstrate the breadth of your technical expertise or highlight different skills and competencies.
 
-Make sure to **include working links to GitHub** to all your project's live demos, and that the code is accessible for potential review, the code must have a README.md file with ~500 words about the project: What it does, technologies used and interesting challenges you had to overcome when developing it, and lastly it is recommended to add a small animated GIT demonstration like this one:
+Make sure to **include working links to GitHub** to all your project's live demos, and that the code is accessible for potential review, the code must have a README.md file with ~500 words about the project: What it does, technologies used and interesting challenges you had to overcome when developing it, and lastly it is recommended to add a small animated GIF demonstration like this one:
 <p align="center">
 <img src="https://ucarecdn.com/c16892ee-ef76-4733-9448-9360a845ea73/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4644745a675239795a4a564d4f784a5443542f67697068792e676966.gif" height="250"  />
 </p>
@@ -39,6 +39,6 @@ Created a searchable database of agricultural documents using Django with MySQL 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTEyMzk1NzEsLTUwMDQxMTYwMCwtMT
-A5NDQyMDQ4NCwtMTUzNTA4MzE3M119
+eyJoaXN0b3J5IjpbLTYxNTU0NzA3NywtNTAwNDExNjAwLC0xMD
+k0NDIwNDg0LC0xNTM1MDgzMTczXX0=
 -->
