@@ -33,12 +33,12 @@ Describing projects as part of your professional trajectory offers several disti
 
 *Example:*
 **Project: Agricultural Corpus**: 
-github.com/jodth07/mscottee
+github.com/mscottee
 Created a searchable database of agricultural documents using Django with MySQL database. Also used Python to clean up the data prior to adding the to the database. The search results provided paginated context text before and after the searched text.
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NDY0MzAzNSwtMTA5NDQyMDQ4NCwtMT
+eyJoaXN0b3J5IjpbLTUwMDQxMTYwMCwtMTA5NDQyMDQ4NCwtMT
 UzNTA4MzE3M119
 -->
