@@ -155,7 +155,7 @@ class BaseTestClass extends TestCase {
         }
         
         
-        return $this->_getErrorsFromLinks($links, false);
+        return "There are ".$this->_getErrorsFromLinks($links, false)." link errors";
     }
     
     function log($msg){

@@ -35,7 +35,7 @@ class ProjectsTest extends BaseTestClass {
     }
     
     function testProjectLinksOnReadmes(){
-        $this->assertSame($this->checkLinksOnFiles('../p', '*.md'), 0);
+        $this->assertSame($this->checkLinksOnFiles('../p', '*.md'), "There are 0 link errors");
     }
     
     private function _checkProp($project, $property){
