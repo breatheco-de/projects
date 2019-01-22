@@ -32,7 +32,7 @@ Describing projects as part of your professional trajectory offers several disti
 [Name of the project]: [short description of the project]
 
 *Example:*
-**Project: Agricultural Corpus**: [https://github.com/jodth07/mscottee](https://github.com/jodth07/mscotee)
+**Project: Agricultural Corpus**: [github.com/jodth07/mscottee](github.com/jodth07/mscotee)
 Created a searchable database of agricultural documents using Django with MySQL database. Also used Python to clean up the data prior to adding the to the database. The search results provided paginated context text before and after the searched text.
 
 
