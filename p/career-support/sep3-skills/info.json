@@ -1,0 +1,12 @@
+{
+	"status": "published",
+	"title" : "Update your Skills",
+	"slug" : "sep3-skills",
+	"duration" : 3,
+	"description" : "Update the skills on your student profile",
+	"talents": [
+		{ "badge": "fully-committed", "points": 5 },
+		{ "badge": "git-brancher", "points": 5 },
+		{ "badge": "git-creator", "points": 5 }
+	]
+}
