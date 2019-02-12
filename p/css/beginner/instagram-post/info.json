@@ -2,6 +2,7 @@
 	"title" : "Instagram Post",
 	"slug" : "instagram-post",
 	"status": "published",
+	"solution": "https://codepen.io/alesanchezr/pen/zeaaVx",
 	"duration" : 4,
 	"description" : "Replicate a single instagram post using HTML and CSS",
 	"talents": [
