@@ -6,7 +6,7 @@ In this case, we are starting with a single post.
 
 ## Instructions
 
-Create the HTML and CSS needed to replicate [this exact same picture](https://projects.breatheco.de/json?slug=instagram-post&preview).
+Create the HTML and CSS needed to replicate 
 
 ## What to do if you are stuck?
 
