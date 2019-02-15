@@ -1,10 +1,10 @@
 {
 	"status": "published",
-	"title" : "Create a HTML5 form",
-	"slug" : "html5-form",
-	"solution": "https://codepen.io/alesanchezr/pen/zeaaVx",
-	"duration" : 3,
-	"description" : "Create a HTML5 form with all the typical inputs",
+	"title" : "Use JS to validate an HTML Form",
+	"slug" : "html5-form-validations",
+	"duration" : 4,
+	"solution" : "https://codepen.io/alesanchezr/pen/zeaaVx",
+	"description" : "Use Javascript to validate the inputs of an HTML form (on submit)",
 	"talents": [
 		{ "badge": "form-inputs", "points": 10 },
 		{ "badge": "form-designer", "points": 10 },
