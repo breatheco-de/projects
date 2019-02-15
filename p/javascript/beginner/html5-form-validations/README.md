@@ -6,6 +6,7 @@ To prevent a form submission we have to listen to the "submit" event that is tri
 
 Here is a little more about preventing an event from occurring: [https://www.youtube.com/watch?v=I_fVO_NzT2g&t=401s](https://www.youtube.com/watch?v=I_fVO_NzT2g&t=401s)
 
+![Form Validations Preview](https://projects.breatheco.de/json?slug=html5-form-validations&preview)
 
 ## Instructions
 
