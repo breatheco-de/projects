@@ -14,7 +14,7 @@ the "Selection Soring Algorithm" is also another simple example of how computers
 
 This is an example of how your application should look:
 
-![Bubble Sorting Cards on a website](https://projects.breatheco.de/json?slug=bubble-sorting-cards&preview)
+![Bubble Sorting Cards on a website](https://projects.breatheco.de/json?slug=sorting-cards-with-select&preview)
 
 Hint:
 
