@@ -64,8 +64,9 @@ class ProjectsJSON{
 
 		//if(!array_key_exists("slug",$prj)) return false;
 		
-		if(array_key_exists("live-url",$prj)) $prj["url"] = $prj["live-url"];
-		else $prj["url"] = $path;
+		if(array_key_exists("live-url",$prj)) $prj["demo"] = $prj["live-url"];
+		else if(array_key_exists("demo",$prj)) $prj["demo"] = $prj["demo"];
+		$prj["url"] = $path;
 		
 		if(array_key_exists("status",$prj)) $prj["status"] = $prj["status"];
 		else $prj["status"] = "draft";

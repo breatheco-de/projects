@@ -97,6 +97,9 @@
 				
 				if(projects[j]['video-path'] && projects[j]['video-path']!='')
 					htmlStr += 		'<a class="btn btn-light" href="'+getURL('video',projects[j])+'">Video</a>';
+					
+				if(projects[j]['demo'] && projects[j]['demo']!='')
+					htmlStr += 		'<a class="btn btn-light" href="'+getURL('demo',projects[j])+'">Demo</a>';
 				
 				if(mainSettings.teacher) 
 					htmlStr += 		'<a class="btn btn-light" href="'+getURL('teacher',projects[j])+'">Class</a>';
