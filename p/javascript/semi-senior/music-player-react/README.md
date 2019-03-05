@@ -5,7 +5,6 @@ Let's create a MP3 player that works similar to Spotify, [here is the demo](http
 The buttons should always remain at the bottom of the viewport (use position fixed for that).
 You only need to implement the Play, Pause, Next and previous buttons.
 
-
 ## Requierments
 - List the songs from [this API](http://assets.breatheco.de/apis/sound/) using the fetch function.
 - When the user clicks on a song, the player it must start playing it.
