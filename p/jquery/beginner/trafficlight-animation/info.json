@@ -1,5 +1,6 @@
 {
 	"title" : "Traffic Light",
+	"slug" : "trafficlight-animation",
 	"instructions":[
 		{
 			"content": "This will be the first instruction",

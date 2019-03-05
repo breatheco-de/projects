@@ -1,0 +1,12 @@
+{
+	"status": "published",
+	"title" : "Update your Career Summary",
+	"slug" : "sep4-summary-statement",
+	"duration" : 3,
+	"description" : "Update the summary on your student profile",
+	"talents": [
+		{ "badge": "fully-committed", "points": 5 },
+		{ "badge": "git-brancher", "points": 5 },
+		{ "badge": "git-creator", "points": 5 }
+	]
+}

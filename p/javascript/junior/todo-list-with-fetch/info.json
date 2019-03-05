@@ -1,0 +1,11 @@
+{
+	"title" : "Todolist Application Using React and Fetch",
+	"slug" : "todo-list-with-fetch",
+	"status": "published",
+	"solution": "https://bitbucket.org/codingacademy/todo-list",
+	"duration" : 8,
+	"description" : "Create a simple todo web app using the React.js framework and use the API to sync with the server",
+	"talents": [
+		{ "badge": "tag-master", "points": 10 }
+	]
+}

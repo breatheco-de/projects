@@ -16,7 +16,7 @@ On this proyect you will learn to style forms like a Pro! Using boorstrap compon
 
 ## Resources
 
-Here is the bootstrap 3 documentation about forms: [https://bootstrapdocs.com/v3.0.0/docs/css/#forms](https://bootstrapdocs.com/v3.0.0/docs/css/#forms)
+Here is the bootstrap 4 documentation about forms: [https://getbootstrap.com/docs/4.0/components/forms/](https://getbootstrap.com/docs/4.0/components/forms/)
 
 ## What to do if you are stuck?
 

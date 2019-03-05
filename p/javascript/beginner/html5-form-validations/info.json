@@ -1,0 +1,17 @@
+{
+	"status": "published",
+	"title" : "Use JS to validate an HTML Form",
+	"slug" : "html5-form-validations",
+	"duration" : 4,
+	"solution" : "https://codepen.io/alesanchezr/pen/zeaaVx",
+	"description" : "Use Javascript to validate the inputs of an HTML form (on submit)",
+	"talents": [
+		{ "badge": "form-inputs", "points": 10 },
+		{ "badge": "form-designer", "points": 10 },
+		{ "badge": "select-everything", "points": 10 },
+		{ "badge": "identator", "points": 5 },
+		{ "badge": "tag-master", "points": 5 },
+		{ "badge": "be-dry", "points": 5 },
+		{ "badge": "abc", "points": 5 }
+	]
+}

@@ -15,15 +15,16 @@ Start with the React boilerplate.
 
 ## Steps to install this project
 
-##### 0. Make sure you have breathecode-cli installed in your environment. [Detailed instructions](https://www.npmjs.com/package/@breathecode/breathecode-cli)
+##### 0. Make sure you have breathecode-cli installed in your environment. [Detailed instructions](https://www.npmjs.com/package/breathecode-cli)
 ```
 $ npm install -g breathecode-cli
-````
-
+```
 ##### 1. Start the React boilerplate
 ```
 $ breathecode start:react-project
 ```
+###### (optional) Check if your folder has a ```package.json``` file, otherwise, move to that folder (```cd```):
+
 ##### 2. Install the /node_modules
 ```
 $ npm install

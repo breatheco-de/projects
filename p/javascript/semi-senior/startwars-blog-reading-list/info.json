@@ -1,0 +1,10 @@
+{
+	"title" : "Starwars blog reading list",
+	"slug" : "startwars-blog-reading-list",
+	"status": "published",
+	"duration" : 16,
+	"description" : "Create a simple todo web app using the React.js framework",
+	"talents": [
+		{ "badge": "tag-master", "points": 10 }
+	]
+}

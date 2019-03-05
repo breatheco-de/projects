@@ -1,0 +1,16 @@
+{
+	"title" : "Instagram Post",
+	"slug" : "instagram-post",
+	"status": "published",
+	"solution": "https://codepen.io/alesanchezr/pen/zeaaVx",
+	"duration" : 4,
+	"description" : "Replicate a single instagram post using HTML and CSS",
+	"talents": [
+		{ "badge": "identator", "points": 10 },
+		{ "badge": "tag-master", "points": 10 },
+		{ "badge": "path-master", "points": 10 },
+		{ "badge": "select-everything", "points": 10 },
+		{ "badge": "be-dry", "points": 10 },
+		{ "badge": "abc", "points": 10 }
+	]
+}

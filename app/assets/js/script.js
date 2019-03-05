@@ -24,7 +24,9 @@
 					console.log("Incoming HTTP Data", data);
 					projectOriginalData = data;
 
-					filterProjectDOM();
+					filterProjectDOM({
+						category: false
+					});
 
 					$('#technology-options').change(function(){
 						filterNodes();
@@ -60,7 +62,7 @@
 		$('.node'+tech+' tr').show();
 	}
 
-	function projectHTMLOutput(projects)
+	function projectHTMLOutput(projects, previousCat='')
 	{
 		var htmlStr = '';
 
@@ -69,7 +71,7 @@
 		while(projects[keys[i]] && !projects[keys[i]]['title'] && i<40)
 		{
 			htmlStr += '<tr class="node '+keys[i]+'"><td class="category"><span class="category-name">'+keys[i]+'</span><table>';
-			htmlStr += projectHTMLOutput(projects[keys[i]]);
+			htmlStr += projectHTMLOutput(projects[keys[i]], keys[i]);
 			htmlStr += '</table></td></tr>';
 			i++;
 		}
@@ -85,8 +87,8 @@
 				let status = '';
 				if(mainSettings.teacher) status = (typeof projects[j]['status'] !== 'undefined') ? projects[j]['status'] : '';
 				
-				htmlStr += '<tr class="project">';
-				htmlStr += 	'<td class="'+status+'">'+((status != '') ? '('+status+')':'')+' <a href="'+getURL('demo',projects[j])+'">'+projects[j]['title']+'</a></td>';
+				htmlStr += '<tr class="project" data-category="'+previousCat+'">';
+				htmlStr += 	'<td class="'+status+'">'+((status != '') ? '('+status+')':'')+' <a href="'+getURL('readme',projects[j])+'">'+projects[j]['title']+'</a></td>';
 				
 				htmlStr += '<td class="button-bar">';
 				
@@ -95,6 +97,9 @@
 				
 				if(projects[j]['video-path'] && projects[j]['video-path']!='')
 					htmlStr += 		'<a class="btn btn-light" href="'+getURL('video',projects[j])+'">Video</a>';
+					
+				if(projects[j]['demo'] && projects[j]['demo']!='')
+					htmlStr += 		'<a class="btn btn-light" href="'+getURL('demo',projects[j])+'">Demo</a>';
 				
 				if(mainSettings.teacher) 
 					htmlStr += 		'<a class="btn btn-light" href="'+getURL('teacher',projects[j])+'">Class</a>';
@@ -140,13 +145,14 @@
 	}
 
 	function filterProjectData(data,settings){
-		if(!settings) settings = {
+		settings = {
 			technology: 'true',
 			status: null,
 			difficulty: 'true',
 			category: 'true'
-		}
+		};
 		var projects = {};
+		console.log("Original Projects",data);
 		for(var i =0;i<data.length;i++){
 			
 			//default technologies
@@ -180,7 +186,9 @@
 		projects = filterProjectData(projectOriginalData,settings);
 		console.log('iteration beggins...');
 		$('.directory-list').html(projectHTMLOutput(projects));
-	
+		
+		$(".project").closest('td.category').find('.category-name').addClass('to-hide');
+		
 		$('.directory-list tr').filter(function(){
 			if($(this).hasClass('project')) return false;
 

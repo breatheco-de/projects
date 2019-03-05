@@ -1,0 +1,13 @@
+{
+	"title" : "Student External Profile",
+	"slug" : "student-external-profile",
+	"status": "draft",
+	"solution": "",
+	"duration" : 1,
+	"description" : "Build the first version of your student external profile that recruiters will see",
+	"talents": [
+		{ "badge": "fully-committed", "points": 5 },
+		{ "badge": "git-brancher", "points": 5 },
+		{ "badge": "git-creator", "points": 5 }
+	]
+}

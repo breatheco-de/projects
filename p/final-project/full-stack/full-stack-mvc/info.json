@@ -1,0 +1,10 @@
+{
+	"title" : "Use MVC to make your Project Dynamic",
+	"slug" : "full-stack-project-mvc",
+	"status": "published",
+	"duration" : 20,
+	"description" : "Making the prototipe dynamic using MVC",
+	"talents": [
+		{ "badge": "docu-lover", "points": 5 }
+	]
+}

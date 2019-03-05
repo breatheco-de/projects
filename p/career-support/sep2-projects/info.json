@@ -1,0 +1,12 @@
+{
+	"status": "published",
+	"title" : "Update your project portfolio",
+	"slug" : "sep2-projects",
+	"duration" : 3,
+	"description" : "Update your project experience on your Student Profile",
+	"talents": [
+		{ "badge": "fully-committed", "points": 5 },
+		{ "badge": "git-brancher", "points": 5 },
+		{ "badge": "git-creator", "points": 5 }
+	]
+}

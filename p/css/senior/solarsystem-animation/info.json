@@ -1,6 +1,7 @@
 {
 	"title" : "Animated Solar System",
 	"status": "draft",
+	"slug": "solarsystem-animation",
 	"instructions":[
 		{
 			"content": "This will be the first instruction",

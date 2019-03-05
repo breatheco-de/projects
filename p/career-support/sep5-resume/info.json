@@ -1,0 +1,12 @@
+{
+	"status": "published",
+	"title" : "Last update to your Resume",
+	"slug" : "sep5-resume",
+	"duration" : 3,
+	"description" : "Final review to your Student Public Profile",
+	"talents": [
+		{ "badge": "fully-committed", "points": 5 },
+		{ "badge": "git-brancher", "points": 5 },
+		{ "badge": "git-creator", "points": 5 }
+	]
+}

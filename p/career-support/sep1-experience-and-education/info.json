@@ -1,0 +1,12 @@
+{
+	"status": "published",
+	"title" : "Update your Career Experiences and Education",
+	"slug" : "sep1-experience-and-education",
+	"duration" : 3,
+	"description" : "Update the experience and education on your student profile",
+	"talents": [
+		{ "badge": "fully-committed", "points": 5 },
+		{ "badge": "git-brancher", "points": 5 },
+		{ "badge": "git-creator", "points": 5 }
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"title" : "Tetris with JS",
+	"slug" : "tetris-js",
+	"draft": true,
+	"status": "draft",
+	"duration" : 16,
+	"description" : "Create a tetris game using js",
+	"talents": [
+		{ "badge": "tag-master", "points": 10 }
+	]
+}

@@ -1,7 +1,8 @@
 {
-	"status": "draft",
+	"status": "published",
 	"title" : "Create a HTML5 form",
 	"slug" : "html5-form",
+	"solution": "https://codepen.io/alesanchezr/pen/zeaaVx",
 	"duration" : 3,
 	"description" : "Create a HTML5 form with all the typical inputs",
 	"talents": [

@@ -1,0 +1,20 @@
+{
+	"title" : "Sorting Cards with Select",
+	"slug" : "sorting-cards-with-select",
+	"status": "published",
+	"solution": "https://jsfiddle.net/BreatheCode/8c36nrk5/7/",
+	"duration" : 4,
+	"description" : "Practice building algorithms by doing a selection-sorting algorithm and displaying it on a website",
+	"talents": [
+		{ "badge": "identator", "points": 6 },
+		{ "badge": "tag-master", "points": 3 },
+		{ "badge": "select-everything", "points": 10 },
+		{ "badge": "position-vs-display", "points": 10 },
+		{ "badge": "be-dry", "points": 10 },
+		{ "badge": "css-inspector", "points": 5 },
+		{ "badge": "window-lover", "points": 3 },
+		{ "badge": "source-inspector", "points": 5 },
+		{ "badge": "abc", "points": 6 },
+		{ "badge": "functional-developer", "points": 6 }
+	]
+}
