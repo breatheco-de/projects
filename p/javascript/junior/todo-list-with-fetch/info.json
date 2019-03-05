@@ -5,5 +5,7 @@
 	"solution": "https://bitbucket.org/codingacademy/todo-list",
 	"duration" : 8,
 	"description" : "Create a simple todo web app using the React.js framework and use the API to sync with the server",
-	"talents": []
+	"talents": [
+		{ "badge": "tag-master", "points": 10 }
+	]
 }
