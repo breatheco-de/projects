@@ -3,7 +3,7 @@
 	"slug" : "startwars-blog-reading-list",
 	"status": "published",
 	"duration" : 16,
-	"description" : "Create a simple todo web app using the React.js framework",
+	"description" : "Create a simple to-read website for Star Wars fans. Use the SWAPI to fetch and React + React Router + Context to save the reading list.",
 	"talents": [
 		{ "badge": "tag-master", "points": 10 }
 	]
