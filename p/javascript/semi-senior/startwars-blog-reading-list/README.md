@@ -8,12 +8,14 @@ Create a React webapp that lists the _peope_, _vehicles_ and _planets_ **entitie
 #### Grid view (Cards)
 [Star Wars Databank](https://www.starwars.com/databank)
 
-![cards](../sw_data.png "Star Wars Grid")
+![cards](https://raw.githubusercontent.com/nachovz/projects/master/p/javascript/semi-senior/startwars-blog-reading-list/sw_data.png "Star Wars Grid")
+
+Other reference: [Cards](https://bootsnipp.com/snippets/Vg6mV)
 
 #### Details view
 [Star Wars Databank Details](https://www.starwars.com/databank/luke-skywalker)
 
-![details](../sw_data_details.png "Details")
+![details](https://raw.githubusercontent.com/nachovz/projects/master/p/javascript/semi-senior/startwars-blog-reading-list/sw_data_details.png "Details")
 
 
 ***Important***: The SWAPI doesn't provide the images, you can use placeholders or avoid the images altogether. The focus of this exercise is to practice *fetch*, *router* and *context*; you can focus on the color theme and simple layout to make it look good.
