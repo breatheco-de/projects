@@ -4,5 +4,7 @@
 	"status": "published",
 	"duration" : 16,
 	"description" : "Create a simple todo web app using the React.js framework",
-	"talents": []
+	"talents": [
+		{ "badge": "tag-master", "points": 10 }
+	]
 }
