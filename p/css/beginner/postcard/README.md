@@ -8,6 +8,8 @@ Lets create a postcard with HTML5 and CSS and then you can share it with your mo
 
 Create the HTML and CSS needed to replicate [this exact same picture](https://projects.breatheco.de/json?slug=postcard&preview).
 
+Here the url for 4Geeks logo: [http://assets.breatheco.de/apis/img/icon/4geeks.png](http://assets.breatheco.de/apis/img/icon/4geeks.png)
+
 ## What to do if you are stuck?
 
 There is a video about this exercise, watch it if you are lost. But don't copy everything, try to code some of your own.
