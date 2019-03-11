@@ -1,14 +1,14 @@
 # ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Demo Day Presentation
 
-Your final presentation day marks the beginning of your coding career. Everything has to be pefect :smile:
+Your final presentation day marks the beginning of your coding career. Everything has to be perfect :smile:
 
 The academy makes a great effort in giving you a great platform to shine:
 
-- Invite your family to support you, there will be seats and refreshments for them to feel more confortable.
+- Invite your family to support you, there will be seats and refreshments for them to feel more comfortable.
 - Be aware that some of our hiring partners could attend to the presentations looking for devs.
 - Dress casual and remember we will be taking pictures.
 - Presentations are recorded, published on the website and sent to our media partners.
-- Finish a polish out your final project, make it look amazing!
+- Finish a polished out version of your final project, make it look amazing!
 - Your entire presentation should not be longer than 15 minutes.
 - Students from recently started cohorts will also be attending.
 
