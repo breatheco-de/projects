@@ -1,0 +1,10 @@
+{
+	"title" : "Demo Day Preparation for Full-Stack Software Development",
+	"slug" : "full-stack-demo-day-preparation",
+	"status": "published",
+	"duration" : 20,
+	"description" : "Final presentation for the Full-stack Software Development Course",
+	"talents": [
+		{ "badge": "docu-lover", "points": 5 }
+	]
+}
