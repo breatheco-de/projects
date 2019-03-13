@@ -2,7 +2,7 @@
 
 Disneyland for procrastinators and lazy people. 
 
-This project is ideal to are avoiding someone annoying, it takes no more than 20 lines of code and can save you for the rest of your life!
+This project is ideal to are avoiding someone annoying, it takes no more than 20 lines of code and it can save you for the rest of your life!
 
 ## The Goal
 
@@ -11,9 +11,15 @@ We wanted a project that used very little Javascript but still with a very fun a
 
 ## Instructions
 
-Please create a small website that generates an excuse each time a button is pressed (Look at the demonstration of as your mentor about the details)
+Please create a small website that generates an excuse each time a button is pressed, it has to look like this: [Checkout the demo animation](https://projects.breatheco.de/json?slug=excuse-generator&preview).
 
-It has to look like this: [Checkout the demo animation](https://projects.breatheco.de/json?slug=excuse-generator&preview).
+## Discuss with your classmates the strategy first
+
+How can we generate an excuse? How are sentences build?
+
+![Excuse generator explanation](https://github.com/breatheco-de/projects/blob/master/p/javascript/beginner/excuse-generator/explanation.gif?raw=true)
+
+The idea is to generate each part of the sentence randomly to come up with great excuses!
 
 ## Hint
 
