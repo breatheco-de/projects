@@ -1,5 +1,6 @@
  # Student External Profile
 
+
 It is time to start your first GitHub contribution. Git offers a way of pushing code into a repository without owning it, or even being invited to it, it is called `Pull Request` and this exercise's main objective is to create your first `Pull Request` ever.
 
 At the same time, you will start building your student profile, one of the most significant accomplishments you can have at the academy because:
