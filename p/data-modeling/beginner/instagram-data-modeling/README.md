@@ -1,5 +1,6 @@
 # Instagram Data Modeling
 
+![Instagram Data Modeling Preview](https://projects.breatheco.de/json?slug=instagram-data-modeling&preview)
 
 > DATA MODELS DESCRIBE BUSINESS ENTITIES AND RELATIONSHIPS
 >
