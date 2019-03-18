@@ -7,7 +7,9 @@ At the same time, you will start building your student profile, one of the most 
 - It will be the first version of your Resume (as a coder).
 - It will give more context to your learning experience: You can see a table of everything you will be learning throughout the course.
 
-This `Student Showcase` it's still in beta and you are one of the first students to become a contributor. You can find the list of students that have their profile already built on the [FOLLOWING URL](http://sep.4geeksacademy.co/students/), you can also click on the students name to find a beta version of how the student profile looks right now.
+This `Student Showcase` its still in beta and you are one of the first students to become a contributor. You can find the list of students that have their profile already built on the [FOLLOWING URL](http://sep.4geeksacademy.co/students/), you can also click on the students name to find a beta version of how the student profile looks right now.
+
+Don't worry about the content of your profile, today its just about the YML and making sure you show up on the [student list](http://sep.4geeksacademy.co/students/).
 
 ## How to build your own profile inside the Student Showcase?
 
