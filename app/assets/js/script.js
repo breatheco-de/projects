@@ -84,8 +84,7 @@
 					continue;
 				}
 				
-				let status = '';
-				if(mainSettings.teacher) status = (typeof projects[j]['status'] !== 'undefined') ? projects[j]['status'] : '';
+				let status = (typeof projects[j]['status'] !== 'undefined') ? projects[j]['status'] : '';
 				
 				htmlStr += '<tr class="project" data-category="'+previousCat+'">';
 				htmlStr += 	'<td class="'+status+'">'+((status != '') ? '('+status+')':'')+' <a href="'+getURL('readme',projects[j])+'">'+projects[j]['title']+'</a></td>';
