@@ -79,7 +79,7 @@
 		{
 			for(var j = 0; j<projects.length;j++)
 			{
-				if(!mainSettings.teacher && typeof(projects[j]['status']) != 'undefined' && projects[j]['status']=='draft'){
+				if(!mainSettings.teacher && typeof(projects[j]['status']) != 'undefined' && projects[j]['status']=='hidden'){
 					console.log("Ignoring project: ",projects[j]);
 					continue;
 				}

@@ -1,0 +1,28 @@
+{
+	"title" : "TicTacToe REST API with django",
+	"slug" : "tictactoe-api",
+	"status": "published",
+	"live-url": "https://assets.breatheco.de/apis/tictactoe/",
+	"duration" : 16,
+	"description" : "Create a rest API with django-rest",
+	"talents": [
+		{ "badge": "functional-developer", "points": 10 },
+		{ "badge": "git-creator", "points": 5 },
+		{ "badge": "the-console", "points": 5 },
+		{ "badge": "conditionals", "points": 5 },
+		{ "badge": "looper", "points": 5 },
+		{ "badge": "abstract-configer", "points": 5 },
+		{ "badge": "package-composer", "points": 5 },
+		{ "badge": "the-console", "points": 5 },
+		{ "badge": "docu-lover", "points": 10 },
+		{ "badge": "transaction-master", "points": 10 },
+		{ "badge": "client-vs-server", "points": 10 },
+		{ "badge": "http-requester", "points": 10 },
+		{ "badge": "speak-json", "points": 5 },
+		{ "badge": "model-master", "points": 10 },
+		{ "badge": "migrator", "points": 10 },
+		{ "badge": "crud-master", "points": 10 },
+		{ "badge": "speak-json", "points": 5 },
+		{ "badge": "speak-json", "points": 5 }
+	]
+}
