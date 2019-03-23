@@ -1,39 +1,39 @@
-## Projects
-Now, this is where you're going to tell us how an AWESOME developer you are. We know you're an awesome developer, we already know you, and in this section we want you to show it to everyone else :).
+## Proyectos
+Ahora, aquí es donde vas a decirnos cómo eres un desarrollador IMPRESIONANTE. Sabemos que eres un desarrollador increíble, ya te conocemos y en esta sección queremos que lo muestres a todos los demás :).
 
-### Instructions
- 1. Carefully read the following content.
- 2.  You will be doing your third pull request! Please look for the [Student Exernal Profile repository](https://github.com/4GeeksAcademy/student-external-profile) again.
- 3. Find your corresponding student `.YML` file inside the `src/students/` folder.
- 4. Update the section about your relevant projects following the indications provided in the rest of this document.
+### Instruciones
+ 1. Lea atentamente el siguiente contenido.
+ 2. Estarás haciendo tu tercer pull request! Por favor busque el [repositorio de perfil externo del estudiante](https://github.com/4GeeksAcademy/student-external-profile) again.
+ 3. Encuentre el archivo `.YML` correspondiente a su estudiante dentro de la carpeta `src / students /`.
+ 4. Actualiza la sección sobre tus proyectos relevantes siguiendo las indicaciones proporcionadas en el resto de este documento.
 
-### Projects Section
-The **projects** section is instrumental in demonstrating your technical expertise in real world settings.
+### Sección de Proyectos
+La sección **proyectos** es fundamental para demostrar su experiencia técnica en entornos reales.
 
-Strategically **select two to three projects** that you are particularly proud of and demonstrate the breadth of your technical expertise or highlight different skills and competencies.
+Estratégicamente **seleccione dos o tres proyectos** de los que estés particularmente orgulloso y demuestre la amplitud de su experiencia técnica o resalte diferentes habilidades y competencias.
 
-Make sure to **include working links to GitHub** to all your project's live demos and that the code is accessible for potential review, the code must have a README.md file with ~500 words about the project: What it does, technologies used and interesting challenges you had to overcome when developing it. And lastly, it is recommended to add a small animated GIF demonstration like this one:
+Asegúrate de incluir **enlaces de trabajo a GitHub** a todas las demostraciones en vivo de tu proyecto y que el código sea accesible para una posible revisión, el código debe tener un archivo README.md con ~ 500 palabras sobre el proyecto: Qué hace, tecnologías Desafíos usados e interesantes que tuvo que superar al desarrollarlo. Y por último, se recomienda agregar una pequeña demostración GIF animada como esta:
 <p align="center">
 <img src="https://ucarecdn.com/c16892ee-ef76-4733-9448-9360a845ea73/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4644745a675239795a4a564d4f784a5443542f67697068792e676966.gif" height="250"  />
 </p>
-Make it shine!
+Hazlo brillar!
 
-Describing projects as part of your professional trajectory offers several distinct advantages:
--   It establishes you as a experienced professional in your field.  
--   It demonstrates a proven track record of success.  
--   It allows potential employers to mentally insert you into a position that requires a similar skill set.
--   It demonstrates leadership skills and initiative. 
+La descripción de proyectos como parte de tu trayectoria profesional ofrece varias ventajas distintivas:
+-   Te establece como un profesional experimentado en tu campo.
+-   Demuestra un historial probado de éxito.
+-   Permite que los posibles empleadores te inserten mentalmente en una posición que requiere un conjunto de habilidades similar.
+-   Demuestra habilidades de liderazgo e iniciativa.
 
-### Things to remember:
- - Focus on a few unique or interesting projects that demonstrate mastery of critical skills.
- - Linking your projects to your website or GitHub repository may encourage curious reviewers to dig deeper.
+### Cosas para recordar:
+ - Enfócate en algunos proyectos únicos o interesantes que demuestren dominio de habilidades críticas.
+ - Vincular tus proyectos a tu sitio web o al repositorio de GitHub puede animar a los revisores curiosos a profundizar.
 
-### How to list a project:
+### Cómo listar un proyecto:
 [Name of the project]: [short description of the project]
 
-*Example:*
-**Project: Agricultural Corpus**: [github.com/jodth07/mscottee](github.com/jodth07/mscotee)
-Created a searchable database of agricultural documents using Django with MySQL database. Also used Python to clean up the data prior to adding the to the database. The search results provided paginated context text before and after the searched text.
+*Ejemplo:*
+**Proyecto: Agricultural Corpus**: [github.com/jodth07/mscottee](github.com/jodth07/mscotee)
+Crea una base de datos de búsqueda de documentos agrícolas usando Django con la base de datos MySQL. También usó Python para limpiar los datos antes de agregarlos a la base de datos. Los resultados de la búsqueda proporcionaron texto de contexto paginado antes y después del texto buscado.
 
 
 > Written with [StackEdit](https://stackedit.io/).
