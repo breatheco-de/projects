@@ -1,0 +1,10 @@
+{
+	"title" : "Contact List API in Flask",
+	"slug" : "contact-list-api-flask",
+	"status": "published",
+	"duration" : 8,
+	"description" : "Create an API to manage (create,delete,update) contacts",
+	"talents": [
+		{ "badge": "identator", "points": 10 }
+	]
+}

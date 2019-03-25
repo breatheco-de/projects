@@ -1,0 +1,10 @@
+{
+	"title" : "Famility Tree Static API",
+	"slug" : "family-static-api",
+	"status": "draft",
+	"duration" : 8,
+	"description" : "Create the data structures and endpoints to manage a family tree (no database)",
+	"talents": [
+		{ "badge": "identator", "points": 10 }
+	]
+}
