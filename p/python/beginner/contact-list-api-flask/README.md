@@ -1,26 +1,37 @@
 # ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Contact List REST API in Flask
 
-Creating REST API's is an everyday job for lots of backend developers, this project will take you over all the steps normally required for building one.
+Creating and maintaining REST APIs is THE everyday job for most of backend developers, so it is a skill that we need to mature. In this project we'll practice every step of the API development process.
 
-We are going to build the API necesary to manage a contact database and publicly expose the endpoints so front-end applications can use them.
+We are going to build the API that manages a contact-list database and publicly expose the endpoints so client applications (including ours) can use it. This time we'll include *Groups*, a new entity that will allow the system to group *Contacts*. Example: Work, Family, Friends. **Hint**: we can implement this logic by using a *many-to-many* relationship between the two tables. 
 
 ## 📝 Instructions
 
-Create an API that includes enpoints for the following cases:
+Create an API with the following endpoints:
 
-1. Get a list of all the contacts `GET /contact/all`
-2. Create new contact `POST /contact`
-3. Delete a contact `DELETE /contact/{contact_id}`
-4. Update a contact `UPDATE /contact/{contact_id}`
+1. Get a list of all the Contacts `GET /contact/all`
+2. Create a new Contact `POST /contact`
+3. Get a specific Contact (with the Group objects it belongs to) `GET /contact/{contact_id}`
+4. Delete a Contact `DELETE /contact/{contact_id}`
+5. Update a Contact `UPDATE /contact/{contact_id}`
+6. Get a list of all the Group names and ids `GET /group/all`
+7. Get a specific Group (with all Contact objects related to it) `GET /group/{group_id}`
+8. Update a Group name `UPDATE /group/{group_id}`
+9. Delete a Group `DELETE /group/{group_id}`
 
 A contact must have the following data-structure on the database:
-```js
-    {
-        "full_name": "Dave Bradley",
-        "email": "dave@gmail.com",
-        "address":"47568 NW 34ST, 33434 FL, USA",
-        "phone":"7864445566"
-    }
+```python
+# Contact
+    id: (int, primary_key)
+    full_name: (string, mandatory)
+    email: (string, mandatory)
+    address: (string, optional)
+    phone: (string, optional)
+    groups: (list of foreign_key)
+
+# Group
+    id: (int, primary_key)
+    name: (string, mandatory)
+    contacts: (list of foreign_key)
 ```
 
 ## Formal API Documentation
@@ -37,7 +48,8 @@ A contact must have the following data-structure on the database:
                 "full_name": "Dave Bradley",
                 "email": "dave@gmail.com",
                 "address":"47568 NW 34ST, 33434 FL, USA",
-                "phone":"7864445566"
+                "phone":"7864445566",
+                "groups": [2,3]
             },
             ...
         ]
@@ -48,10 +60,11 @@ A contact must have the following data-structure on the database:
         type: POST
         path: /contact
         body: {
-            full_name (string, mandatory)
-            email (string, mandatory)
-            address (stirng, optional)
-            phone (string, optional)
+            "full_name": "Dave Bradley",
+            "email": "dave@gmail.com",
+            "address":"47568 NW 34ST, 33434 FL, USA",
+            "phone":"7864445566",
+            "groups": [2,3]
         }
     RESPONSE (application/json)
         code: 200 | 400 | 500
@@ -60,19 +73,45 @@ A contact must have the following data-structure on the database:
             "full_name": "Dave Bradley",
             "email": "dave@gmail.com",
             "address":"47568 NW 34ST, 33434 FL, USA",
-            "phone":"7864445566"
+            "phone":"7864445566",
+            "groups": [2,3]
         }
 ```
-3. Update a give contact 
+3. Get a specific Contact
+```
+    REQUEST (application/json)
+        type: GET
+        path: /contact/{contact_id}
+    RESPONSE (application/json)
+        code: 200 | 404 | 400 | 500
+        body:{
+            "id": 12
+            "full_name": "Dave Bradley",
+            "email": "dave@gmail.com",
+            "address":"47568 NW 34ST, 33434 FL, USA",
+            "phone":"7864445566",
+            "groups": [
+                {
+                    "id": 2,
+                    "name": "Family"
+                },{
+                    "id": 3,
+                    "name": "Gamers"
+                }
+             ]
+        }
+```
+4. Update a given contact 
 ```
     REQUEST (application/json)
         type: PUT
         path: /contact/{contact_id}
         body: {
-            full_name (string, optional)
-            email (string, optional)
-            address (stirng, optional)
-            phone (string, optional)
+            "full_name": "Dave Bradley",
+            "email": "dave@gmail.com",
+            "address":"47568 NW 34ST, 33434 FL, USA",
+            "phone":"7864445566",
+            "groups": [2,3]
         }
     RESPONSE (application/json)
         code: 200 | 404 | 400 | 500
@@ -81,10 +120,11 @@ A contact must have the following data-structure on the database:
             "full_name": "Dave Bradley",
             "email": "dave@gmail.com",
             "address":"47568 NW 34ST, 33434 FL, USA",
-            "phone":"7864445566"
+            "phone":"7864445566",
+            "groups": [2,3]
         }
 ```
-4. Delete a contact by id 
+5. Delete a contact by id 
 ```
     REQUEST (application/json)
         type: DELETE
@@ -92,17 +132,97 @@ A contact must have the following data-structure on the database:
         body: null
     RESPONSE (application/json)
         code: 200 | 404 | 500
-        body: null
+        body: {
+            "deleted": {
+                "id": 12,
+                "full_name": "Dave Bradley",
+            }
+        }
 ```
-
+6. List all Groups
+```
+    REQUEST (application/json)
+        type: GET
+        path: /group/
+        body: null
+    RESPONSE (application/json)
+        code: 200 | 500
+        body: {
+            "data": [
+                {
+                    "id": 1,
+                    "name": "Work"
+                },{
+                    "id": 2,
+                    "name": "Gamers"
+                }
+            ]
+        }
+```
+7. Get a specific Group
+```
+    REQUEST (application/json)
+        type: GET
+        path: /group/{group_id}
+    RESPONSE (application/json)
+        code: 200 | 404 | 400 | 500
+        body:{
+            "id": 2
+            "name": "Work",
+            "contacts": [
+                {
+                    "id": 12
+                    "full_name": "Dave Bradley",
+                    "email": "dave@gmail.com",
+                    "address":"47568 NW 34ST, 33434 FL, USA",
+                    "phone":"7864445566",
+                    "groups": [2,3]
+                }
+             ]
+        }
+```
+8. Update a given group's id 
+```
+    REQUEST (application/json)
+        type: PUT
+        path: /group/{group_id}
+        body: {
+            "name": "Beach Crew",
+        }
+    RESPONSE (application/json)
+        code: 200 | 404 | 400 | 500
+        body:{
+            "id": 2
+            "name": "Beach Crew",
+        }
+```
+9. Delete a group by id 
+```
+    REQUEST (application/json)
+        type: DELETE
+        path: /group/{group_id}
+        body: null
+    RESPONSE (application/json)
+        code: 200 | 404 | 500
+        body: {
+            "deleted": {
+                "id": 2,
+                "name": "Beach Crew",
+            }
+        }
+```  
+  
+  
 ## 💡 How to start?
 
-1. Start by reading the instructions very carebully.
-2. Build the database model class Contact
-3. Manually add some contacts into the database to make sure you have dummy data
-4. Create the GET endpoint and request all the contacts into the DB
-5. Use postman to make sure the endpoint returns the expected JSON with all the contacts from the database
-
+1. Start by reading the instructions very carefully.
+2. Build the database model class Contact and Group.
+3. Implement the add methods (POST) to be able to add some contacts and groups into the database to make sure you have dummy data.
+4. Create the GET(all) endpoints. List contacts and list groups.
+5. Implement the rest of the endpoints.
+6. Connect your React Contact List application using `fetch`.
+  
+Hint: Use Postman as a testing tool before you connect your front end application (React Contact List).
 ## 📖 Fundamentals
 
 This exercise will make you practice the following fundamentals:
@@ -113,3 +233,6 @@ This exercise will make you practice the following fundamentals:
 3. SQL Databases
 4. REST API's
 5. Python Flask
+6. Fetch and async
+  
+  
