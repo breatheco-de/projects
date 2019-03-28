@@ -14,9 +14,10 @@ Create an API with the following endpoints:
 4. Delete a Contact `DELETE /contact/{contact_id}`
 5. Update a Contact `UPDATE /contact/{contact_id}`
 6. Get a list of all the Group names and ids `GET /group/all`
-7. Get a specific Group (with all Contact objects related to it) `GET /group/{group_id}`
-8. Update a Group name `UPDATE /group/{group_id}`
-9. Delete a Group `DELETE /group/{group_id}`
+7. Create a new Group `POST /group`
+8. Get a specific Group (with all Contact objects related to it) `GET /group/{group_id}`
+9. Update a Group name `UPDATE /group/{group_id}`
+10. Delete a Group `DELETE /group/{group_id}`
 
 A contact must have the following data-structure on the database:
 ```python
