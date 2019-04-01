@@ -1,8 +1,29 @@
-# Code Projects
+<p align="center"><img src="https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,128"></p>
+<h1 align="center"> BreatheCode's Project-Exercises Pool </h1>
 
-## API Endpoints
+By now, everybody knows that learning to code has to be a practical experience: No much reading or watching videos, but choosing projects its still one of the bigges limitations in students learning process because of the following reasons:
 
-### 1) Retrieving all the projects:
+- Bad instructions: Making them harder to complete or start.
+- Boring projects: Students loose motivation because they don't identify with the project.
+- To dificult for your current level: How do I know if I will be able to finish it?
+- Old technologies: There are too much projects out there, the majority in old deprecated technologies.
+- What do I do if I'm stuck in the middle of the project? There is not model solution or video tutorial to help me.
+
+## What is this?
+
+We have decided to create a database of projects for people learning to code. We want to invite anyone to contribute and upload projects using the following guide: [Submiting a project](https://github.com/breatheco-de/projects/blob/master/CONTRIBUTING.md).
+
+Once your Pull-Request is approved it will be automatically published as part of the pool in the [following link](https://projects.breatheco.de).
+
+## The projects API
+
+All projects in the pool are also automatically published in the following JSON API: 
+
+HOST: [https://projects.breatheco.de/json](https://projects.breatheco.de/json)
+
+### API Endpoints
+
+#### 1) Retrieving all the projects:
 ```
 Request:
     GET /json
@@ -30,7 +51,7 @@ Response (application/json):
     ...
 ]
 ```
-### 2) Retrieve single project
+#### 2) Retrieve single project
 ```
 Request:
     GET /json?slug=<project_slug>
@@ -55,7 +76,7 @@ Reponse (application/json):
         folder-name: ""
     }
 ```
-### 3 Retrieve project preview as an image
+#### 3 Retrieve project preview as an image
 ```
 Request
     GET /json?slug=<project_slug>&preview
@@ -65,7 +86,7 @@ Response (image/gif || image/jpeg || image/png)
 ```
 
 
-## Describing the info.json
+### Describing the info.json
 
 | Property  | Required  | Data Type     | Description                           |
 |-----------|-----------|---------------|---------------------------------------|
