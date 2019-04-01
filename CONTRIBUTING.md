@@ -47,5 +47,5 @@ Here is an example of [a great README.md file](https://github.com/breatheco-de/p
 we strongly recomend you record the project solution using something like [Recordit.co](http://recordit.co/), an image speaks more than a thousand words. Here is an example of a project ideal preview:
 
 <p align="center">
-  <img height="400px" src="https://projects.breatheco.de/json?slug=instagram-feed-bootstrap&preview" />
+  <img height="400px" src="https://github.com/breatheco-de/projects/blob/master/p/css/junior/instagram-feed-bootstrap/preview.gif" />
 </p>
