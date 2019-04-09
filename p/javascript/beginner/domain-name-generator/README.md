@@ -33,7 +33,7 @@ Your tools: For loop, string concatenation.
 ## A bit of history about the project (read only if you care)
 
 Before the domain market was centralized and converted into a mafia 
-controlled by Godaddy, Enom and some others. Eath citizends like you and me 
+controlled by Godaddy, Enom and some others. Earsth citizends like you and me 
 were able to buy a .com domain realtively easy. 
 
 In fact, this project was originally built in 2002 by one of 4Geeks teachers 
