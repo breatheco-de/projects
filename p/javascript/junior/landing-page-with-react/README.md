@@ -1,38 +1,38 @@
 # ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Landing page with React 
 
-Technologies: HTML, CSS, JS, React.
+Tecnologías: HTML, CSS, JS, React.
 
 Ok, time to take it up a notch. Let's build [this landing page](https://blackrockdigital.github.io/startbootstrap-heroic-features/) using React Function Components.
-The idea is to split Bootstrap components into different function Components, they'll be all imported in the main component Home.jsx
+La idea es dividir los componentes de Bootstrap en diferentes componentes de función, todos se importarán en el componente principal Home.jsx
 
-***Please use Function Components for this***
+***Por favor use los Componentes de Función para esto***
 
-Note: the Cards have different content, think DRY (Don't repeat yourself) and declare only ***one*** component and use ```props``` to handle different content.
+Nota: las tarjetas tienen un contenido diferente, piense DRY (no se repita) y declare solo ***un*** componente y use ```props``` para manejar contenido diferente.
 
-### How to start?
+### ¿Como empezar?
 
-Start with the React boilerplate.
+Comience con la placa de reacción React.
 
-## Steps to install this project
+## Pasos para instalar este proyecto
 
-##### 0. Make sure you have breathecode-cli installed in your environment. [Detailed instructions](https://www.npmjs.com/package/breathecode-cli)
+##### 0. Asegúrese de tener instalado el código de aliento en su entorno. [Instrucciones detalladas](https://www.npmjs.com/package/breathecode-cli)
 ```
 $ npm install -g breathecode-cli
 ```
-##### 1. Start the React boilerplate
+##### 1. Poner en marcha la placa de calentamiento React.
 ```
 $ breathecode start:react-project
 ```
-###### (optional) Check if your folder has a ```package.json``` file, otherwise, move to that folder (```cd```):
+###### (opcional) Comprueba si tu carpeta tiene un archivo ```package.json```, de lo contrario, muévete a esa carpeta (``` cd```):
 
-##### 2. Install the /node_modules
+##### 2. Instalar el /node_modules
 ```
 $ npm install
 ```
-##### 3. Run the webpack development server
+##### 3. Ejecutar el servidor de desarrollo webpack.
 ```
 $ npm run c9
 ```
 
-That is it! Start coding your first React website.
-Have fun!
+¡Eso es! Comience a codificar su primer sitio web React.
+¡Que te diviertas!
