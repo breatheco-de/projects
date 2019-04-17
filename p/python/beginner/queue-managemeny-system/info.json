@@ -1,0 +1,12 @@
+{
+	"slug" : "queue-managemeny-system",
+	"title" : "Queue Managment System",
+	"description": "Cloud-based queue management system",
+	"status": "published",
+	"live-url": null,
+	"duration" : 8,
+	"technologies": ["flask", "python", "json", "static files", "logging"],
+	"talents": [
+		{ "badge": "identator", "points": 10 }
+	]
+}
