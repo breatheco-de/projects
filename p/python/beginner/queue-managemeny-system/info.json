@@ -3,7 +3,7 @@
 	"title" : "Queue Managment System",
 	"description": "Cloud-based queue management system",
 	"status": "published",
-	"live-url": null,
+	"live-url": "",
 	"duration" : 8,
 	"technologies": ["flask", "python", "json", "static files", "logging"],
 	"talents": [
