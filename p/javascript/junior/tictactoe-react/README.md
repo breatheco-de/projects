@@ -1,10 +1,12 @@
-# TicTacToe With React.js
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) TicTacToe With React
 
 Time to start building cool stuff, let's code our first game! 
 
-## Instructions
+<p align="center"><img height="300" src="https://github.com/breatheco-de/projects/blob/master/p/javascript/junior/tictactoe-react/preview.gif" /></p>
 
-Create a tictactoe in React.js just like [this one](https://projects.breatheco.de/p/javascript/junior/games/tictactoe-react/). Remember to follow the recommended workflow to start coding:
+## 📝 Instructions
+
+Create a tictactoe in React.js just like [this one](https://github.com/breatheco-de/projects/blob/master/p/javascript/junior/tictactoe-react/preview.gif). Remember to follow the recommended workflow to start coding:
 
 1. Design your sitemap: How many pages/views?
 2. Designing your wireframe: What components and where?
@@ -14,7 +16,7 @@ Create a tictactoe in React.js just like [this one](https://projects.breatheco.d
 7. `Console.log` on each of those funtions to make sure they are being called.
 9. Continue... whatch the video if you have any other doubts.
 
-### Concepts you wil learn hard:
+### Concepts you wil learn:
 
 - State of the components (global variables)
 - Props
