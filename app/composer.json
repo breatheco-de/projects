@@ -1,14 +1,8 @@
 {
-	"repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/alesanchezr/php-linkchecker"
-        }
-    ],
     "require": {
         "erusev/parsedown": "^1.6",
         "twig/twig": "~1.0",
-        "glicer/link-checker": "dev-with-markdown",
+        "glicer/link-checker": "dev-master",
         "zendframework/zenddiagnostics": "^1.1"
     },
     "require-dev": {
