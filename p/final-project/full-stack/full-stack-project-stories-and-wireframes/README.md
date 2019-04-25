@@ -2,12 +2,17 @@
 
 It's time to thing about what you are going to be building, you'll have to develop an entire product, prepare a presentation & demonstrate the product and the idea to family, friends and hiring partners.
 
+This project should be started after you have the class about Agile Development because you will have to create User Stories and a Kanban Board.
+
 ## Instrutions
 
-1. Please create a trello board with the KANBAN columns: Backlog, Todo, Doing, Done, Really done
-2. Add all your user stories into your trello boad.
+1. Create the project repository (one for front-end and one for backend): The front-end code shout never be merged with the backend.
+2. Add all your user stories into the front-end [repository issues](https://help.github.com/en/articles/about-issues) as it will be the main repository for your project specs.
+3. Please create a [Github Kanban Automated Project](https://help.github.com/en/articles/about-project-boards) with the KANBAN columns: Backlog, Todo, Doing, Done.
+4. Now add the issues into the project as cards, plan for your first iteration.
 
-### Technological Requirements:
+
+### Technological Requirements for the project:
 
 1. Several HTML5 + CSS3 + Bootstrap pages.
 2. User authentication (Login+Signup+Remind Password).
@@ -18,11 +23,10 @@ It's time to thing about what you are going to be building, you'll have to devel
 
 ### Methodology Requirements
 
-1. Partner with someone else for the development (groups of 2 people).
-2. Start by doing the wireframes (you have to deliver them).
+1. The project must have between 2 - 3 team members (3 is better than 2)
+2. Start by doing the wireframes and user stories and add them into your repository issues and projects (you have to deliver them).
 3. Create all the user stories with acceptance criteria.
 4. Use a Kanban board for follow up on [Github Project Boards](https://help.github.com/articles/about-project-boards/)
-5. 
 
 # Building the Wireframe
 
