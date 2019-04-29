@@ -2,19 +2,37 @@
 
 ![Instagram Data Modeling Preview](https://projects.breatheco.de/json?slug=instagram-data-modeling&preview)
 
-> DATA MODELS DESCRIBE BUSINESS ENTITIES AND RELATIONSHIPS
->
-> Data models are made up of entities, which are the objects or concepts we want to track data about, and they become the tables in a database. Products, vendors, and customers are all examples of potential entities in a data model. Entities have attributes, which are details we want to track about entities—you can think of attributes as the columns in a table. If we have a product entity, the product name could be an attribute. [Source](https://www.credera.com/blog/technology-solutions/data-modeling-explained-in-10-minutes-or-less/)
+## Install the initial boilerplate
 
-One of the most important skills to develop in your coding career is to use [abstraction](https://en.wikipedia.org/wiki/Abstraction_(computer_science)) to translate from physical world to digital world.
+Download the initial boilerplate for this exercises by cloning the following github repository:
 
-Objects and Object Oriented programming are the best way to see this skill in action, we've seen this process happening when we represented cars in the digital world, not by their looks but by their data.
-
-Just as almost all other subjects in coding/computer science there's a standard way to represent *data models*, it is called [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language) (Unified Modeling Language). Check this video that explains how to create a [UML Diagram](https://www.youtube.com/watch?v=UI6lqHOVHic&list=PLUoebdZqEHTxNC7hWPPwLsBmWI0KEhZOd)
+```
+git clone https://github.com/breatheco-de/exercise-instagram-data-modeling
+```
 
 ## Exercise
 
-- Create a UML Diagram of the popular platform: **Instagram**. 
-- Try to find 3 entities that represent the platform and are key for it to work. 
+- Create a UML Diagram of the popular platform: **Instagram**.
+- Try to find 4 entities that represent the platform and are key for it to work.
 - Try to include at least 5 *attributes* per entity (some are invisible for the regular user, but not for a coder).
 - Upload your diagram to a github repository and deliver the project when finished.
+
+Inside he `src/models.py` file you will find have a couple of classes describing an example database.
+
+Here is a 4min video explaining what UML is: [https://www.youtube.com/watch?v=UI6lqHOVHic](https://www.youtube.com/watch?v=UI6lqHOVHic)
+
+## 📝Instructions
+
+Your Job is to update he `src/models.py` file with the code needed to replicate he instagram data model.
+
+The project is using the SQLAlchemy Python library to generate the database.
+
+- What tables you think instagram my have on its database: E.g: Post, User, etc.?
+- What properties should go inside the user? or inside the Post table?
+- Please add at least 4 models with all of its properties.
+- Degenerate the diagram.png file at the end by running `$ python3 models.py` on the console.
+
+## ❔How to generate the UML diagram?
+
+Type `$ python3 models.py` on the console.
+Open he file `diagram.png` to check out your URML diagram!

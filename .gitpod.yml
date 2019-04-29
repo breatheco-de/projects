@@ -12,8 +12,8 @@ tasks:
     echo " * apachectl start";
     echo " * gp open /var/log/apache2/access.log";
     echo " * gp open /var/log/apache2/error.log";
-- command: composer install
 - name: Apache
   command: >
+    cd app && composer install
     apachectl start &&
     multitail /var/log/apache2/access.log -I /var/log/apache2/error.log

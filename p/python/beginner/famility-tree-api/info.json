@@ -1,0 +1,10 @@
+{
+	"title" : "Family API",
+	"slug" : "family-api",
+	"status": "published",
+	"duration" : 8,
+	"description" : "Create a real API connected to a real database that allos to manage (Read, Update, Delete and Add) family members",
+	"talents": [
+		{ "badge": "identator", "points": 10 }
+	]
+}
