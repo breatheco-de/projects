@@ -1,0 +1,12 @@
+{
+	"slug" : "todo-list-api",
+	"title" : "Todo List API",
+	"description": "Todo List API using Flask or Django",
+	"status": "published",
+	"live-url": "",
+	"duration" : 8,
+	"technologies": ["flask", "python", "json", "logging"],
+	"talents": [
+		{ "badge": "identator", "points": 10 }
+	]
+}
