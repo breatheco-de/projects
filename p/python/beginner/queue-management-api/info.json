@@ -1,7 +1,7 @@
 {
-	"slug" : "queue-managemeny-system",
-	"title" : "Queue Managment System",
-	"description": "Cloud-based queue management system",
+	"slug" : "queue-management-api",
+	"title" : "Queue Managment API",
+	"description": "Cloud-based queue management API",
 	"status": "published",
 	"live-url": "",
 	"duration" : 8,
