@@ -1,9 +1,10 @@
 # ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Family Static API
 
-The Doe Family needs a static API! We need to build the *data structures* and create breakpoints to interact.
+The Doe Family needs a static API! We need to build the *data structures* and create API endpoint to interact with it using Postman.
 
 ## Data structures
-Every **member** of the Doe family must have these values:
+
+Every **member** of the Doe family must be a dictionary (equivalent of [Objects Literals in JS](https://www.dyn-web.com/tutorials/object-literal/)) and have these values:
 
     + id: Int
     + name: String
@@ -12,16 +13,40 @@ Every **member** of the Doe family must have these values:
     + gender: String
     + lucky_numbers: Array of int
 
-The **family** dict (dictionary, equivalent of Objects in JS):
+The **family** data-structure will be a class with the following structure:
 
-    + lastname: "Doe"
-    + members: Array of member
+```py
+class Family:
 
+	def __init__(self, last_name):
+		self.last_name = last_name
+		self._members = []
 
-**Hint**: this is a clone from *Begin with JS - #10 Javascript Objects* Replit [exercise](https://repl.it/student/submissions/5855972). Now to be translated into Python and a static API
+	def add_member(self, member):
+        ## you have to implement this method
+        ## append the member to the list of _members
+		pass
 
+	def delete_member(self, id):
+        ## you have to implement this method
+        ## loop the list and delete the member with the given id
+		pass
 
-## Family Members
+	def update_member(self, id, member):
+        ## you have to implement this method
+        ## loop the list and replace the memeber with the given id
+		pass
+
+	def get_member(self, id):
+        ## you have to implement this method
+        ## loop all the members and return the one with the given id
+		pass
+
+	def get_all_members(self, id):
+		return self._members
+```
+
+## These are the initial Family Members
 ```
 John Doe
 33 Years old
