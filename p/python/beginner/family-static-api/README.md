@@ -8,6 +8,7 @@ Please download one of the following bolerplates to start coding your exercise o
 - Django: [https://github.com/breatheco-de/exercise-family-static-api](https://github.com/breatheco-de/exercise-family-static-api)
 - Flask: [https://github.com/4GeeksAcademy/flask-rest-hello](https://github.com/4GeeksAcademy/flask-rest-hello)
 
+- Create the code needed to developer the API endpoints described further below.
 - The only two files you have to edit are `api/views.py` and `api/family_datastructure.py`
 - We have prepared a set of automated tests that will give you an idea if your code is correct, run the tests by typing `$ pipenv run tests` on the command line.
 
