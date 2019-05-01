@@ -2,13 +2,22 @@
 
 The Doe Family needs a static API! We need to build the *data structures* and create API endpoint to interact with it using Postman.
 
+## ⚠️ Download the boilerplate
+
+Please download one of the following bolerplates to start coding your exercise or open it on gitpod.io:
+- Django: [https://github.com/breatheco-de/exercise-family-static-api](https://github.com/breatheco-de/exercise-family-static-api)
+- Flask: [https://github.com/4GeeksAcademy/flask-rest-hello](https://github.com/4GeeksAcademy/flask-rest-hello)
+
+- The only two files you have to edit are `api/views.py` and `api/family_datastructure.py`
+- We have prepared a set of automated tests that will give you an idea if your code is correct, run the tests by typing `$ pipenv run tests` on the command line.
+
 ## Data structures
 
 Every **member** of the Doe family must be a dictionary (equivalent of [Objects Literals in JS](https://www.dyn-web.com/tutorials/object-literal/)) and have these values:
 
     + id: Int
-    + name: String
-    + lastname: String (Always Doe)
+    + first_name: String
+    + last_name: String (Always Doe)
     + age: Int > 0
     + gender: String
     + lucky_numbers: Array of int
@@ -20,7 +29,15 @@ class Family:
 
 	def __init__(self, last_name):
 		self.last_name = last_name
-		self._members = []
+        # example list of members
+        self._members = [{
+            "id": self._generateId(),
+            "first_name": "John"
+        }]
+
+    # read-only: Use this method to generate random members ID's when adding members into the list
+    def _generateId(self):
+        return randint(0, 99999999)
 
 	def add_member(self, member):
         ## you have to implement this method
@@ -72,7 +89,7 @@ This API must have two endpoints, both return JSON:
 ### 1) Get all family members:
 Which returns the information from the Doe's family.. E.g:
 ```
-GET /members
+GET /member
 
 RESPONSE (Application/JSON):
 
@@ -91,7 +108,7 @@ Important: There are two fields that must be calculated on runtime:
 
 ### 2) Retrieve just one member
 ```
-GET /members/<int:member_id>
+GET /member/<int:member_id>
 Which returns the member of the family where `id == member_id`. E, g:
 
 RESPONSE (application/json):
@@ -104,8 +121,5 @@ RESPONSE (application/json):
 ## Technology Requirements
 
 - All requests and reponses should be in content/type: application/json
-- Use the django or flask framework, here you can find the boilerplates for both:
-    - [Djando boilerplate](https://github.com/4GeeksAcademy/django-rest-hello).
-    - [Flask boilerplate](https://github.com/4GeeksAcademy/flask-rest-hello).
-- Response codes must be 200 for success, 400 for bad request or 404 for not found.
+- Response codes must be `200` for success, `400` for bad request or `404` for not found.
 - This exercise does not include a database, everything must be done in RAM memory.
