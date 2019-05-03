@@ -5,7 +5,7 @@ The Doe Family needs a static API! We need to build the *data structures* and cr
 ## ⚠️ Download the boilerplate
 
 Please download one of the following bolerplates to start coding your exercise or open it on gitpod.io:
-- Django: [https://github.com/breatheco-de/exercise-family-static-api](https://github.com/breatheco-de/exercise-family-static-api)
+- Django: [https://github.com/breatheco-de/exercise-family-static-api-django](https://github.com/breatheco-de/exercise-family-static-api-django)
 - Flask: [https://github.com/4GeeksAcademy/flask-rest-hello](https://github.com/4GeeksAcademy/flask-rest-hello)
 
 - Create the code needed to developer the API endpoints described further below.
