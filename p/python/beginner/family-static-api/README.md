@@ -14,7 +14,7 @@ Please download one of the following bolerplates to start coding your exercise o
 
 ## Data structures
 
-Every **member** of the Doe family must be a dictionary (equivalent of [Objects Literals in JS](https://www.w3schools.com/js/js_objects.asp)) and have these values:
+Every **member** of the Doe family must be a dictionary - equivalent of [Objects Literals in JS](https://www.dyn-web.com/tutorials/object-literal/) - and have these values:
 
     + id: Int
     + first_name: String
