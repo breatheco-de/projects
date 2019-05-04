@@ -11,21 +11,38 @@ Queue systems can also be used to load balancing for different applications like
 
 Clone the following boilerplate for [python/django](https://github.com/breatheco-de/exercise-queue-management-django) and the following for [python/flask](https://github.com/4GeeksAcademy/flask-rest-hello).
 
-Create an API that allows clients to manage a simple Queue
+Create an API that allows clients to manage a simple Queue, use the following data-structure to implement the queue:
 
-3. The API receives a request tp add Bob into the queue (`POST /new`) with any particular priority (FIFO or LIFO).
-3. The API ads Bob and notifies him with an SMS confirmation, the SMS must say how many people are in front of him on the line.
-4. The system now waits until the enpoint `GET /next` gets executed to process the person on the queue.
-5. Every time a `GET /next` request is received, the next person on the queue gets processed until it is Bob's turn.
+```py
+class Queue:
+
+    def __init__(self):
+        self._queue = []
+        # depending on the _mode, the queue has to behave like a FIFO or LIFO
+        self._mode = 'FIFO'
+
+    def enqueue(self, item):
+    def dequeue(self):
+    def get_queue(self):
+    def size(self):
+        return len(self._queue) 
+```
+
+## Example worlflow
+
+1. The API receives a request tp add Bob into the queue (`POST /new`) with any particular priority (FIFO or LIFO).
+2. The API ads Bob and notifies him with an SMS confirmation, the SMS must say how many people are in front of him on the line.
+3. The system now waits until the enpoint `GET /next` gets executed to process the person on the queue.
+4. Every time a `GET /next` request is received, the next person on the queue gets processed until it is Bob's turn.
 5. When Bob is processed, the system sends him another SMS to let him know that his turn has arrived and deletes him from the list.
 
 ## More details
 
 1. You have to create 3 endpoints for your API:
 
-POST `/new`: Will recive information about a user and ad him into the queue.
-GET `/next`: Will process one spot of the queue.
-GET `/all`: Will return a list with everyone that is pending to be processed (the current queue)
+- POST `/new`: Will recive information about a user and ad him into the queue.  
+- GET `/next`: Will process one spot of the queue.  
+- GET `/all`: Will return a list with everyone that is pending to be processed (the current queue) . 
 
 ## 📖 Fundamentals
 
