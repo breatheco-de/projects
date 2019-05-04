@@ -9,9 +9,9 @@ Queue systems can also be used to load balancing for different applications like
 
 ## 📝 Instructions
 
-Clone the following boilerplate for [python/django](https://github.com/breatheco-de/exercise-queue-management-django) and the following for [python/flask](https://github.com/4GeeksAcademy/flask-rest-hello).
-
-Create an API that allows clients to manage a simple Queue, use the following data-structure to implement the queue:
+1. Clone the following boilerplate for [python/django](https://github.com/breatheco-de/exercise-queue-management-django) and the following for [python/flask](https://github.com/4GeeksAcademy/flask-rest-hello).
+2. The API has to integrate with Twillio API to be able to send SMS to notify users when their turn has arrived.
+3. Create an API that allows clients to manage a simple Queue, use the following data-structure to implement the queue:
 
 ```py
 class Queue:
