@@ -90,11 +90,15 @@ class ProjectsJSON{
 	}
 
 	function getAllProjects($size='small'){
+        $projects = [];
         if($size == 'small') foreach($this->projects as $p){
-            unset($this->projects["markdown"]);
+            $p = (array) $p;
+            unset($p["markdown"]);
+            $projects[] = $p;
         }
+        else $projects = $this->projects;
 
-		return $this->projects;
+		return $projects;
 	}
 
 	function fillProjectClassFilePath($prj, $path){
