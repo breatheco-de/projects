@@ -27,12 +27,13 @@ if(!empty($_REQUEST['slug']))
 				header("HTTP/1.0 404 Not Found");
 				echo json_encode(['msg' => 'preview not found']);
 			}
-		} 
+		}
 		else echo json_encode($project);
-	} 
+	}
 	else{
 		header("HTTP/1.0 404 Not Found");
 		echo json_encode(array());
-	} 
+	}
 }
+else if(!empty($_GET['size'])) echo json_encode($json->getAllProjects($_GET['size']));
 else echo json_encode($json->getAllProjects());
