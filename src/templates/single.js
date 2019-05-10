@@ -9,7 +9,7 @@ import Layout from "../components/layout"
 const Single = ({ pageContext, search }) => {
     const iframe = (search.iframe === 'true');
     return(
-    <div>
+    <div className="fontFamily">
         <Layout>
             <div className="container fontFamily">
                 <div className="row p-4">
@@ -51,7 +51,7 @@ const Single = ({ pageContext, search }) => {
                                             <div className="col-4 d-flex justify-content-end">{pageContext.duration} hr</div>
                                         </div>
                                         <div className="row border-bottom p-1 m-0 no-gutters small">
-                                            <div className="col-5"><span><Icon type="code" /></span><span> Technologies:</span></div>
+                                            <div className="col-5"><span><Icon type="code" /></span><span>Technologies:</span></div>
                                             <div className="col-7 d-flex justify-content-end ">{pageContext.technology}</div>
                                         </div>
                                         <div className="row p-1 m-0 no-gutters small">
