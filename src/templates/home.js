@@ -3,6 +3,8 @@ import React from "react";
 import { Filter, Icon } from "@breathecode/ui-components";
 import { SmallJumbotron } from "../components/smalljumbo.js";
 import { Link } from "gatsby";
+import Layout from "../components/layout"
+
 
 
 
@@ -15,6 +17,7 @@ import { Link } from "gatsby";
 const Home = ({ pageContext, technologyTags }) => (
 
     <div>
+    <Layout>
         <div>
             <SmallJumbotron
                 jumboClass="jumbotron jumbotron-fluid mb-0 bg-white"
@@ -93,6 +96,7 @@ const Home = ({ pageContext, technologyTags }) => (
                 ))}
             </div>
         </div>
+        </Layout>
     </div>
 );
 export default Home;

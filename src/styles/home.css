@@ -23,3 +23,10 @@ a{
     text-decoration: underline;
     color:#74AAF9;
 }
+.gradientFooter{
+  background-image: linear-gradient(#FFFFFF,#E9ECEF);
+}
+
+.gradient{
+    background-image: linear-gradient(#E9ECEF, #FFFFFF);
+}

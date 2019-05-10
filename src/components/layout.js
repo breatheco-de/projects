@@ -35,12 +35,14 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+
         </div>
+         <footer className="gradientFooter mt-5 p-5 text-center">
+
+            © {new Date().getFullYear()}, Built By
+            {` `}
+            <a href="https://www.breatheco.de">BreatheCode</a>
+          </footer>
       </>
     )}
   />
