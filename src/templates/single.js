@@ -8,7 +8,7 @@ import withLocation from "../components/withLocation";
 const Single = ({ pageContext, search }) => {
     const iframe = (search.iframe === 'true');
     return(<div>
-            <div className="container">
+            <div className="container fontFamily">
                 <div className="row p-4">
                     <div className="col-12 col-md-6 col-lg-6 col-xl-7 ">
                         <MarkdownParser source={pageContext.markdown} />

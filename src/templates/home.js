@@ -16,12 +16,12 @@ import Layout from "../components/layout"
 
 const Home = ({ pageContext, technologyTags }) => (
 
-    <div>
+    <div className="fontFamily">
     <Layout>
         <div>
             <SmallJumbotron
                 jumboClass="jumbotron jumbotron-fluid mb-0 bg-white"
-                containerClass="pl-4  container"
+                containerClass="pl-3  container"
                 headerClass="display-4 font-weight-bold  text-left"
                 headerText="Pool of Projects"
                 pClass="lead  text-left"
@@ -29,7 +29,7 @@ const Home = ({ pageContext, technologyTags }) => (
             <div className="row sticky-top bg-white border-top border-bottom">
                 <div className="container">
                     <div className="row">
-                        <div className="col d-flex justify-content-start  py-1">
+                        <div className="col d-flex justify-content-start pl-1  py-1">
                         <div className="pl-1">
                             <Filter
                                     label="Tags"
@@ -45,9 +45,11 @@ const Home = ({ pageContext, technologyTags }) => (
                 </div>
             </div>
             <div className="container">
-                { pageContext.projects.map((p, i) => (<div
+                { pageContext.projects.map((p, i) => (
+                <div>
+                <div
                         key={i}
-                        className="row text-center text-md-left mt-2  border-bottom p-3">
+                        className="row text-center text-md-left mt-2  p-3 paddingLeftZero">
                         { p.preview && <div className="col-12 col-md-2 d-flex justify-content-center align-items-center">
                                 <img
                                         className="img-fluid "
@@ -59,7 +61,7 @@ const Home = ({ pageContext, technologyTags }) => (
                         <div className="col-12 col-md">
                             <div className="row">
                                 <div className="col-12">
-                                    <div className="h2 text-dark">{p.title}</div>
+                                    <div><p className=" h2 text-dark">{p.title}</p></div>
                                 </div>
                             </div>
 
@@ -76,9 +78,9 @@ const Home = ({ pageContext, technologyTags }) => (
                             </div>
                             <div className="row mb-2">
                                 <div className="col-12 p-2 col-md">
-                                        {p.difficulty?<span className="badge badge-pill badge-light mr-2">{p.difficulty}</span>:" "}
-                                        {p.duration?<span className="badge badge-pill badge-light mr-2">{p.duration}</span>:" "}
-                                        {p["video-path"]?<span className="badge badge-pill badge-light mr-2">With Video</span>:" "}
+                                        {p.difficulty?<span className="author badge badge-pill badge-light mr-2">{p.difficulty}</span>:" "}
+                                        {p.duration?<span className="author badge badge-pill badge-light mr-2">{p.duration} hr</span>:" "}
+                                        {p["video-path"]?<span className="author badge badge-pill badge-light mr-2">With Video</span>:" "}
 
                                 </div>
                                 <div className="col-12 col-md-3 d-flex justify-content-md-end">
@@ -92,7 +94,11 @@ const Home = ({ pageContext, technologyTags }) => (
                                 </div>
                             </div>
                         </div>
+
                     </div>
+                     <hr className="my-4" />
+                     </div>
+
                 ))}
             </div>
         </div>

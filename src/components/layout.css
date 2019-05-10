@@ -1,3 +1,8 @@
+.paddingLeftZero{
+    padding-left: 0!important;
+}
+
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
