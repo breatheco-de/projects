@@ -17,7 +17,7 @@ const Single = ({ pageContext, search }) => {
                     { !iframe &&
                         <div className="row p-1 sticky-top mt-2">
                             <div className="col text-right">
-                                <Link  className="btn btn-outline-secondary btn-lg d-none d-lg-block " to="/home">
+                                <Link  className="btn btn-outline-secondary btn-lg d-none d-lg-block " to="/">
                                         Browse all projects
                                 </Link>
                             </div>
