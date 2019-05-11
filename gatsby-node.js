@@ -24,18 +24,16 @@ exports.createPages = ({ actions, graphql }) => {
                 })
 
                 projects.forEach(p => {
-                    if(p.slug !== 'random-card'){
-                        createPage({
-                            path: `/project/${p.slug}`,
-                            component: path.resolve("./src/templates/single.js"),
-                            context: p,
-                        })
-                        createPage({
-                            path: `/d/${p.slug}`,
-                            component: path.resolve("./src/templates/single.js"),
-                            context: p,
-                        })
-                    }
+                    createPage({
+                        path: `/project/${p.slug}`,
+                        component: path.resolve("./src/templates/single.js"),
+                        context: p,
+                    })
+                    createPage({
+                        path: `/d/${p.slug}`,
+                        component: path.resolve("./src/templates/single.js"),
+                        context: p,
+                    })
                 });
                 resolve();
             })
