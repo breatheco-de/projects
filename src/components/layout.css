@@ -1,3 +1,11 @@
+.paddingLeftZero{
+    padding-left: 0!important;
+}
+.colorRed{
+    color: red;
+
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
