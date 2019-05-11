@@ -1,14 +1,9 @@
-RewriteEngine Off
 RewriteEngine On
-
-# Map http://projects.breathecode.local to /app.
-RewriteRule ^$ /app/ [L]
 
 # Map http://projects.breathecode.local/x to /app/x unless there is a x in the web root.
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !^/app/
-RewriteRule ^(.*)/(.*)$ /app/index.php?$1=$2
-RewriteRule ^d/(.*)$ /app/index.php?demo=$1
-RewriteRule ^projects.php$ /app/projects.php
-RewriteRule ^json$ /app/projects.php
+
+RewriteCond %{REQUEST_URI} !^/json
+RewriteRule ^(.*)$ /public/$1
+RewriteRule ^$ /public/
