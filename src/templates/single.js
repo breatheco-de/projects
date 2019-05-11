@@ -26,7 +26,7 @@ const Single = ({ pageContext, search }) => {
                         <div className="row p-1 sticky-top mt-2">
                             <div className="col">
                                 <div className="card ">
-                                    <div className="card-body">
+                                    <div className="card-body text-left">
                                         <h5 className="card-title font-weight-bold lead h4">Goal</h5>
                                         <p className="card-subtitle mb-2 text-muted font-italic mb-3">
                                         {pageContext.description}
