@@ -11,12 +11,12 @@ const Single = ({ pageContext, search }) => {
     return(
     <div className="fontFamily">
         <Layout>
-            <div className="container fontFamily">
-                <div className="row p-4">
-                    <div className="col-12 col-md-6 col-lg-6 col-xl-7 ">
+            <div className="container fontFamily single-project">
+                <div className="row">
+                    <div className="col-12 col-md-6 col-lg-6 col-xl-7 order-2 order-md-1">
                         <MarkdownParser source={pageContext.markdown} />
                     </div>
-                    <div className="col-12 col-md-6 col-lg- col-xl-5">
+                    <div className="col-12 col-md-6 col-lg- col-xl-5 order-1 order-md-2 mb-3">
                     { !iframe &&
                         <div className="row p-1 sticky-top mt-2">
                             <div className="col text-right">
@@ -56,7 +56,7 @@ const Single = ({ pageContext, search }) => {
                                         </div>
                                         <div className="row p-1 m-0 no-gutters small">
                                             <div className="col-12 mb-2">Skills: </div>
-                                            <div className="col-12 pl-4">
+                                            <div className="col-12">
                                                 <ul className="list list-unstyled row ml-0">
                                                 {pageContext.talents?pageContext.talents.map((t,i)=>{
                                                         return(

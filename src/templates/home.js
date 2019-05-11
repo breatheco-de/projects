@@ -6,14 +6,6 @@ import { Link } from "gatsby";
 import Layout from "../components/layout"
 
 
-
-
-
-
-
-
-
-
 const Home = ({ pageContext, technologyTags }) => (
 
     <div className="fontFamily">
