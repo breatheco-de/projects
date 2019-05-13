@@ -80,7 +80,7 @@ const Home = ({ pageContext, technologyTags }) => (
                                 <div className="col-12 p-2 col-md">
                                         {p.difficulty?<span className="author badge badge-pill badge-light mr-2"> {p.difficulty}</span>:" "}
                                         {p.duration?<span className="author badge badge-pill badge-light mr-2">{p.duration} hr</span>:" "}
-                                        {p["video-path"]?<span className="author badge badge-pill badge-light mr-2"><span className="colorRed"><Icon type="youtube" className="text-danger" /></span> With Video</span>:" "}
+                                        {p["video-path"]?<span className="author badge badge-pill badge-light mr-2"><span className="colorRed"><Icon type="youtube" className="text-danger" /></span> With Video</span>:<span className="author badge badge-pill badge-light mr-2"><span className="colorRed"><Icon type="youtube" className="text-danger" /></span> No Video</span>}
 
                                 </div>
                                 <div className="col-12 col-md-3 d-flex justify-content-md-end">
