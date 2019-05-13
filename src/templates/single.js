@@ -39,11 +39,11 @@ const Single = ({ pageContext, search }) => {
                                             <div className="col-7 d-flex justify-content-end">{pageContext.difficulty}</div>
                                         </div>
                                         <div className="row border-bottom p-1 m-0 no-gutters small">
-                                            <div className="col-6 "><span className="colorRed"><Icon type="youtube" className="text-danger" /></span> <span>Video available:</span></div>
+                                            <div className="col-6 "><span className="colorRed"><Icon type="youtube" className="text-danger" /></span>&nbsp;<span>Video available:</span></div>
                                             <div className="col-6 d-flex justify-content-end ">{pageContext["video-path"]?"Available":"Not available"}</div>
                                         </div>
                                         <div className="row border-bottom p-1 m-0 no-gutters small">
-                                            <div className="col-6 "><span ><Icon type="play" className="text-danger" /></span> <span> Live demo available:</span></div>
+                                            <div className="col-6 "><span ><Icon type="play" className="text-danger" /></span> &nbsp;<span> Live demo available:</span></div>
                                             <div className="col-6 d-flex justify-content-end ">{pageContext["live-url"]?"Available":"Not available"}</div>
                                         </div>
                                         <div className="row border-bottom p-1 m-0 no-gutters small">
@@ -51,7 +51,7 @@ const Single = ({ pageContext, search }) => {
                                             <div className="col-4 d-flex justify-content-end">{pageContext.duration} hr</div>
                                         </div>
                                         <div className="row border-bottom p-1 m-0 no-gutters small">
-                                            <div className="col-5"><span><Icon type="code" /></span><span>Technologies:</span></div>
+                                            <div className="col-5"><span><Icon type="code" /></span>&nbsp;<span>Technologies:</span></div>
                                             <div className="col-7 d-flex justify-content-end ">{pageContext.technology}</div>
                                         </div>
                                         <div className="row p-1 m-0 no-gutters small">
