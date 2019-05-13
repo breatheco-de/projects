@@ -6,21 +6,13 @@ import { Link } from "gatsby";
 import Layout from "../components/layout"
 
 
-
-
-
-
-
-
-
-
 const Home = ({ pageContext, technologyTags }) => (
 
     <div className="fontFamily">
     <Layout>
         <div>
             <SmallJumbotron
-                jumboClass="jumbotron jumbotron-fluid mb-0 bg-white"
+                jumboClass="jumbotron jumbotron-fluid mb-0 bg-white pt-0"
                 containerClass="pl-3  container"
                 headerClass="display-4 font-weight-bold  text-left"
                 headerText="Pool of Projects"
@@ -78,8 +70,8 @@ const Home = ({ pageContext, technologyTags }) => (
                             </div>
                             <div className="row mb-2">
                                 <div className="col-12 p-2 col-md">
-                                        {p.difficulty?<span className="author badge badge-pill badge-light mr-2"> {p.difficulty}</span>:" "}
-                                        {p.duration?<span className="author badge badge-pill badge-light mr-2">{p.duration} hr</span>:" "}
+                                        {p.difficulty?<span className="author badge badge-pill badge-light mr-2"><span><Icon type="circle" /></span> {p.difficulty}</span>:" "}
+                                        {p.duration?<span className="author badge badge-pill badge-light mr-2"><span><Icon type="circle" /></span> {p.duration} hr duration</span>:" "}
                                         {p["video-path"]?<span className="author badge badge-pill badge-light mr-2"><span className="colorRed"><Icon type="youtube" className="text-danger" /></span> With Video</span>:<span className="author badge badge-pill badge-light mr-2"><span className="colorRed"><Icon type="youtube" className="text-danger" /></span> No Video</span>}
 
                                 </div>

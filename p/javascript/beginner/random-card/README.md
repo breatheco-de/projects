@@ -12,7 +12,7 @@ Create and algorithm that randomly builds a card on every refresh:
 
 In the end, the project needs to look similar to [this demo](https://projects.breatheco.de/json?slug=random-card&preview).
 
-### Hints 
+### Hints
 
 - Remember that the first event on a website lifecycle is [onLoad (your code starts running there)](https://www.w3schools.com/jsref/event_onload.asp), you should generate a random number between 1 and 4 to pick a sute and another random number between 0 and 12 to pick a card number.
 - Create a general **.card** class that applies the general styles to each card, and one additional CSS class for each suite: .spade, .club, .heart & .diamond.
@@ -22,10 +22,4 @@ In the end, the project needs to look similar to [this demo](https://projects.br
 ```
 - You can use images, icons or HTML character entities to generate the sute symbol into the HTML [Here you can find the character entities](https://brajeshwar.github.io/entities/) for the :before and :after content.
 
-HTML	| Symbol	| Numeric	| Description	                    | Hex	        | CSS (ISO) | JS (Octal)|
---------|-----------|-----------|-----------------------------------|---------------|-----------|-----------|
-&loz;	| ◊	        | &#9674;	| lozenge	                        | u+25CA ISOpub	| \25CA	    | \u25ca    |
-&spades;| ♠	        | &#9824;	| black spade suit                  | u+2660 ISOpub	| \2660	    | \u2660    |
-&clubs;	| ♣	        | &#9827;	| black club suit, a.k.a. shamrock  | u+2663 ISOpub	| \2663	    | \u2663    |
-&hearts;| ♥	        | &#9829;	| black heart suit, a.k.a. valentine| u+2665 ISOpub	| \2665	    | \u2665    |
-&diams;	| ♣	        | &#9830;	| black diamond suit                | u+2663 ISOpub	| \2666	    | \u2666    |
+![https://ucarecdn.com/7cd14b33-dd69-4680-aaf3-ab16afe2316b/ScreenShot20190511at30921AM.png](https://ucarecdn.com/7cd14b33-dd69-4680-aaf3-ab16afe2316b/ScreenShot20190511at30921AM.png)

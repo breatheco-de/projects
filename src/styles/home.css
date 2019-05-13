@@ -44,3 +44,11 @@ font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Ne
 .paddingLeftZero{
     padding-left: 0!important;
 }
+
+.single-project{
+    margin-top: -60px;
+}
+
+.fa-play{
+    font-size: 13px;
+}

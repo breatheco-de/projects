@@ -9,6 +9,7 @@ error_reporting(E_ALL);
 
 $json = new ProjectsJSON('../p/');
 
+header("Access-Control-Allow-Origin: *");
 header("Content-type: application/json");
 if(!empty($_REQUEST['slug']))
 {
