@@ -55,19 +55,19 @@ class Single extends React.Component{
                                                     <div className="col-7 d-flex justify-content-end">{pageContext.difficulty}</div>
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
-                                                    <div className="col-6 "><span className="colorRed"><Icon type="youtube" className="text-danger" /></span> <span>Video available:</span></div>
+                                                    <div className="col-6 "><span className="colorRed"><Icon type="youtube" className="text-danger"/></span><span className="ml-1">Video available:</span></div>
                                                     <div className="col-6 d-flex justify-content-end ">{pageContext["video-path"]?"Available":"Not available"}</div>
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
-                                                    <div className="col-6 "><span ><Icon type="play" className="text-danger" /></span> <span> Live demo available:</span></div>
-                                                    <div className="col-6 d-flex justify-content-end ">{pageContext["live-url"]?"Available":"Not available"}</div>
+                                                    <div className="col-7 "><span ><Icon type="play" className="text-danger font-size" /></span><span className="ml-2">Live demo available:</span></div>
+                                                    <div className="col-5 d-flex justify-content-end ">{pageContext["live-url"]?"Available":"Not available"}</div>
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
-                                                    <div className="col-8 ">Project average duration</div>
+                                                    <div className="col-8 "><span><Icon type="circle" /></span><span className="ml-1">Project average duration:</span></div>
                                                     <div className="col-4 d-flex justify-content-end">{pageContext.duration} hr</div>
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
-                                                    <div className="col-5"><span><Icon type="code" /></span><span>Technologies:</span></div>
+                                                    <div className="col-5"><span><Icon type="code" /></span><span className="ml-1">Technologies:</span></div>
                                                     <div className="col-7 d-flex justify-content-end ">{pageContext.technology}</div>
                                                 </div>
                                                 <div className="row p-1 m-0 no-gutters small">
