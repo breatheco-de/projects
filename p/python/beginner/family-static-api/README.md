@@ -15,17 +15,17 @@ Please download one of the following bolerplates to start coding your exercise o
 ## Data structures
 
 Every **member** of the Doe family must be a dictionary - equivalent of [Objects Literals in JS](https://www.dyn-web.com/tutorials/object-literal/) - and have these values:
-
+```
     + id: Int
     + first_name: String
     + last_name: String (Always Doe)
     + age: Int > 0
     + gender: String
     + lucky_numbers: Array of int
-
+```
 The **family** data-structure will be a class with the following structure:
 
-```py
+```python
 class Family:
 
 	def __init__(self, last_name):
@@ -65,31 +65,32 @@ class Family:
 ```
 
 ## These are the initial Family Members
-```
+
+```md
 John Doe
 33 Years old
 Male
 Lucky Numbers: 7, 13, 22
-```
-```
+
 Jane Doe
 35 Years old
 Female
 Lucky Numbers: 10, 14, 3
-```
-```
+
 Jimmy Doe
 5 Years old
 Male
 Lucky Numbers: 1
 ```
+
 ## Endpoints
 
 This API must have two endpoints, both return JSON:
 
 ### 1) Get all family members:
 Which returns the information from the Doe's family.. E.g:
-```
+
+```md
 GET /member
 
 RESPONSE (Application/JSON):
@@ -108,7 +109,8 @@ Important: There are two fields that must be calculated on runtime:
 
 
 ### 2) Retrieve just one member
-```
+
+```md
 GET /member/<int:member_id>
 Which returns the member of the family where `id == member_id`. E, g:
 
