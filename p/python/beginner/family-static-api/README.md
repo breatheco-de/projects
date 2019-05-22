@@ -9,7 +9,9 @@ Please download one of the following bolerplates to start coding your exercise o
 - Flask: [https://github.com/4GeeksAcademy/flask-rest-hello](https://github.com/4GeeksAcademy/flask-rest-hello)
 
 - Create the code needed to developer the API endpoints described further below.
-- The only two files you have to edit are `api/views.py` and `api/family_datastructure.py`
+- The only two files you have to edit are:
+	- For Django: `api/family_datastructure.py`, `api/views.py`.
+	- For Flask: `src/family_datastructure.py`, `src/main.py`.
 - We have prepared a set of automated tests that will give you an idea if your code is correct, run the tests by typing `$ pipenv run tests` on the command line.
 
 ## Data structures
@@ -95,7 +97,7 @@ GET /member
 
 RESPONSE (Application/JSON):
 
-    status_code: This key represents the [HTTP_status_code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). 200 if member exists, 400 if it doesn't, 400 if the request is bad (validations)
+    status_code: 200 if successfully added, 400 if it doesn't because the client-side (request) screw up, 500 if the server encouner an error
     content-type: Application/JSON
     body: an JSON Object that contains:
         - members: Array of members.
@@ -116,7 +118,37 @@ Which returns the member of the family where `id == member_id`. E, g:
 
 RESPONSE (application/json):
 
-    status_code: This key represents the [HTTP_status_code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). 200 if member exists, 400 if it doesn't, 400 if the request is bad (validations)
+    status_code: 200 if successfully added, 400 if it doesn't because the client-side (request) screw up, 500 if the server encouner an error
+    content_type: Application/JSON
+    body: the member json object
+```
+
+
+
+### 3) Add (POST) one member
+
+```md
+POST /member
+Which adds a new member into the Family datastructure
+
+RESPONSE (application/json):
+
+    status_code: 200 if successfully added, 400 if it doesn't because the client-side (request) screw up, 500 if the server encouner an error
+    content_type: Application/JSON
+    body: the member json object
+```
+
+
+
+### 4) DELETE one member
+
+```md
+POST /member/<int:member_id>
+Which deletes a given member by the given ID
+
+RESPONSE (application/json):
+
+    status_code: 200 if successfully deleted, 400 if it doesn't because the client-side (request) screw up, 500 if the server encouner an error
     content_type: Application/JSON
     body: the member json object
 ```
