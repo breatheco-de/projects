@@ -50,7 +50,7 @@ class Home extends React.Component{
                     </div>
                     <div className="container">
                         { pageContext.projects.filter(p => {
-                                if(this.state.selectedTags && this.state.selectedTags.indexOf(p.technology) === -1) return false;
+                                if(this.state.selectedTags && this.state.selectedTags.length>0 && this.state.selectedTags.indexOf(p.technology) === -1) return false;
                                 if(this.state.withVideo && !p["video-path"]) return false;
 
                                 return true;
