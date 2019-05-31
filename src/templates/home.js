@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Filter, Icon, CheckBox } from "@breathecode/ui-components";
+import { Filter, Icon } from "@breathecode/ui-components";
 import { Link } from "gatsby";
 import "@breathecode/ui-components/dist/main.css";
 import Layout from "../components/layout"
-
+import { SmallJumbotron } from "../components/smalljumbo.js";
 class Home extends React.Component{
     constructor(){
         super();
@@ -19,6 +19,14 @@ class Home extends React.Component{
             <div className="fontFamily">
             <Layout>
                 <div>
+                    <SmallJumbotron
+                        jumboClass="jumbotron jumbotron-fluid mb-0 pt-0"
+                        containerClass="pl-3  container"
+                        headerClass="display-4 font-weight-bold  text-left"
+                        headerText="Pool of Projects"
+                        pContent="A curated list of projects to practice while learning new technologies or improving your coding skills"
+                        pClass="lead  text-left"
+                    />
                     <div className="row sticky-top bg-white border-top border-bottom">
                         <div className="container">
                             <div className="row">
