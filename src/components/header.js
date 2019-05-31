@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
             containerClass="pl-3  container"
             headerClass="display-4 font-weight-bold  text-left"
             headerText="Pool of Projects"
-            pContent="A curated list of projects to practice while new technologies or improving your coding skills"
+            pContent="A curated list of projects to practice while learning new technologies or improving your coding skills"
             pClass="lead  text-left"
         />
     </div>
