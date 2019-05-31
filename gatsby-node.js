@@ -11,7 +11,11 @@ exports.createPages = ({ actions, graphql }) => {
         fetch("https://projects.breatheco.de/json?size=big")
             .then(resp => resp.json())
             .then(projects => {
-	            const technologyTags = projects.map(p => p.technology);
+	            let technologyTags = [];
+                for(let i = 0;i<projects.length;i++){
+                    if(technologyTags.indexOf(projects[i].technology) == -1)
+                        technologyTags.push(projects[i].technology);
+                }
 
                 createPage({
 

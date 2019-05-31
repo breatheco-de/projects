@@ -6,6 +6,7 @@ export class SmallJumbotron extends React.Component {
 		return (
 			<div className={this.props.jumboClass}>
 				<div className={this.props.containerClass}>
+                    <img src="http://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,64" />
 					<h1 className={this.props.headerClass}>
 						{this.props.headerText}<span className="text-primary">.</span>md
 						<span className={this.props.spanClass}>{this.props.spanContent}</span>
