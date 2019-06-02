@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "name": "breathecode-projects",
+    "builds": [
+        { "src": "package.json", "use": "@now/static-build", "config": {"distDir": "public"} },
+        { "src": "json/index.php", "use": "@now/php" },
+        { "src": "p/*", "use": "@now/static" }
+    ],
+    "routes": [
+        {
+            "src": "/json",
+            "dest": "/json/index.php"
+        },
+        {
+            "src": "/p/(.*)",
+            "dest": "/p/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/$1"
+        }
+    ]
+}
