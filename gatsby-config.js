@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `BreatheCode`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Projects`,
+    description: `BreatheCode Projects - Coding Projects and exercises for people learning to code or improving their coding skills`,
+    author: `@alesanchezr`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

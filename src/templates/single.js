@@ -4,7 +4,8 @@ import { MarkdownParser, Icon } from "@breathecode/ui-components";
 import "../styles/home.css";
 import withLocation from "../components/withLocation";
 import Iframe from "../components/iframe";
-import Layout from "../components/layout"
+import Layout from "../components/layout";
+import Helmet from "react-helmet";
 
 
 class Single extends React.Component{
@@ -20,6 +21,11 @@ class Single extends React.Component{
 
         const fromIframe = (search.iframe === 'true');
         return(
+            <React.Fragment>
+                <Helmet>
+                    <title>Projects BreatheCode</title>
+                    <meta name="description" content="BreatheCode Projects - Coding Projects and exercises for people learning to code or improving their coding skills" />
+                </Helmet>
             <div className="fontFamily">
                 { this.state.showVideo && <Iframe
                         src={`https://assets.breatheco.de/apps/video/?v=https://assets.breatheco.de/apis/vtutorial/project/${pageContext.slug}`}
@@ -111,6 +117,7 @@ class Single extends React.Component{
                         </div>
                     </Layout>
                 </div>
+            </React.Fragment>
         );
     }
 }
