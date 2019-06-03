@@ -24,7 +24,7 @@ class Home extends React.Component{
                         containerClass="pl-3  container"
                         headerClass="display-4 font-weight-bold  text-left"
                         headerText="Pool of Projects"
-                        pContent="A curated list of projects to practice while learning new technologies or improving your coding skills"
+                        pContent="BreatheCode Projects - Coding Projects and exercises for people learning to code or improving their coding skills"
                         pClass="lead  text-left"
                     />
                     <div className="row sticky-top bg-white border-top border-bottom">
