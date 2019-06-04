@@ -22,9 +22,10 @@ class Single extends React.Component{
         const fromIframe = (search.iframe === 'true');
         return(
             <React.Fragment>
-                <Helmet>
+              <Helmet>
                     <title>Projects BreatheCode</title>
                     <meta name="description" content="BreatheCode Projects - Coding Projects and exercises for people learning to code or improving their coding skills" />
+                     <meta itemprop="image" content="../images/breathecode.32.png"/>
                 </Helmet>
             <div className="fontFamily">
                 { this.state.showVideo && <Iframe
