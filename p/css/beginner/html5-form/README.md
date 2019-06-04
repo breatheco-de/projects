@@ -20,4 +20,4 @@ Here is the bootstrap 4 documentation about forms: [https://getbootstrap.com/doc
 
 ## What to do if you are stuck?
 
-Don't get frustrated and ask for help! After you try on yow own for 30min, it is time to stop trying and ask for help.
+Don't get frustrated and ask for help! After you try on you own for 30min, it is time to stop trying and ask for help.
