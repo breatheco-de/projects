@@ -1,0 +1,12 @@
+{
+	"slug" : "queue-management-api",
+	"title" : "Queue Managment API",
+	"description": "Cloud-based queue management API",
+	"status": "published",
+	"live-url": "",
+	"duration" : 8,
+	"technologies": ["flask", "python", "json", "static files", "logging"],
+	"talents": [
+		{ "badge": "identator", "points": 10 }
+	]
+}

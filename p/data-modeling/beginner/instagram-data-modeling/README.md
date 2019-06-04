@@ -1,0 +1,38 @@
+# Instagram Data Modeling
+
+![Instagram Data Modeling Preview](https://projects.breatheco.de/json?slug=instagram-data-modeling&preview)
+
+## Install the initial boilerplate
+
+Download the initial boilerplate for this exercises by cloning the following github repository:
+
+```
+git clone https://github.com/breatheco-de/exercise-instagram-data-modeling
+```
+
+## Exercise
+
+- Create a UML Diagram of the popular platform: **Instagram**.
+- Try to find 4 entities that represent the platform and are key for it to work.
+- Try to include at least 5 *attributes* per entity (some are invisible for the regular user, but not for a coder).
+- Upload your diagram to a github repository and deliver the project when finished.
+
+Inside he `src/models.py` file you will find have a couple of classes describing an example database.
+
+Here is a 4min video explaining what UML is: [https://www.youtube.com/watch?v=UI6lqHOVHic](https://www.youtube.com/watch?v=UI6lqHOVHic)
+
+## 📝Instructions
+
+Your Job is to update he `src/models.py` file with the code needed to replicate he instagram data model.
+
+The project is using the SQLAlchemy Python library to generate the database.
+
+- What tables you think instagram my have on its database: E.g: Post, User, etc.?
+- What properties should go inside the user? or inside the Post table?
+- Please add at least 4 models with all of its properties.
+- Degenerate the diagram.png file at the end by running `$ python3 models.py` on the console.
+
+## ❔How to generate the UML diagram?
+
+Type `$ python3 models.py` on the console.
+Open he file `diagram.png` to check out your URML diagram!

@@ -1,0 +1,10 @@
+{
+	"title" : "Contact List API",
+	"slug" : "contact-list-api",
+	"status": "published",
+	"duration" : 16,
+	"description" : "Create the data structures and endpoints to manage a contact list using a database",
+	"talents": [
+		{ "badge": "identator", "points": 10 }
+	]
+}

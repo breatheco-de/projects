@@ -1,0 +1,10 @@
+{
+	"status": "published",
+	"title" : "Building Instagram.com User Stories",
+	"slug" : "instagram-data-modeling",
+	"duration" : 3,
+	"description" : "Use your recently adquired knowledge to build instagram.com user stories",
+	"talents": [
+		{ "badge": "fully-committed", "points": 5 }
+	]
+}
