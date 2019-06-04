@@ -6,6 +6,7 @@ import "@breathecode/ui-components/dist/main.css";
 import Layout from "../components/layout"
 import { SmallJumbotron } from "../components/smalljumbo.js";
 import Helmet from "react-helmet";
+
 class Home extends React.Component{
     constructor(){
         super();
@@ -22,6 +23,8 @@ class Home extends React.Component{
                 <Helmet>
                     <title>Projects BreatheCode</title>
                     <meta name="description" content="BreatheCode Projects - Coding Projects and exercises for people learning to code or improving their coding skills" />
+                     <meta itemprop="image" content="../images/breathecode.32.png"/>
+
                 </Helmet>
             <Layout>
                 <div>
