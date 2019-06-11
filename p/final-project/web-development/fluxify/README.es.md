@@ -55,24 +55,24 @@ y comienza a codificar todas tus historias de usuario utilizando Flux.
 class AnyView extends Flux.View{
     constructor(){
         super();
-        //initialize the local state
+        //inicializa el local state
         this.state = {
             products: []
         }
     }
     ...
     componentDidMount(){
-        // you have to re-set the state after the component has been loaded.
+        // debes restablecer el state después de que se haya cargado el componente.
         this.setState({
             products: MyStore.getProducts()
         });
     }
     ...
     render(){
-        // convert the array of products into an array of <Product> components
+        // convertir el arreglo de productos en un arreglo de componentes <Producto>
         let productsInHTML = this.state.products.map((p) => <Product id={p.id} title={p.title} />));
 
-        // render the entire array of <Products>
+        // renderizar todo el arreglo de <Products>
         return (
             <div>{productsInHTML}</div>
         );
@@ -85,13 +85,13 @@ class AnyView extends Flux.View{
 Por ejemplo: si estás haciendo un card de un Ecomerce (comercio electrónico), puedes hacer primero 'eliminar producto' y 'agregar producto', y dejar el producto de edición para más adelante.
 
 ```js
-// Let's say we are doind the delete, on the html you have to add the listener to the DOM element that will trigger the delete
+// Digamos que estamos haciendo la eliminación, en el html tiene que agregar el listener al elemento DOM que activará la eliminación
 <button onClick={() => MyActions.deleteProduct(productId)}>delete product</button>
 
-// On MyActions.js you have to add the deleteProduct function
+// En MyActions.js tiene que agregar la función deleteProduct
 class MyActions extends Flux.Action{
     deleteProduct(productId){
-        //delete your product here
+        //elimina tu producto aqui
 
         //and dispatch later
         this.dispatch('MyStore.setProducts', arrayWithProducts);
