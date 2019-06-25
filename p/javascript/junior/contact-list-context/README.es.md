@@ -1,4 +1,4 @@
-# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Contact Managment Application 
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Contact Managment Application
 
 Tecnologías: HTML, CSS, JS, React, React Router and Context.
 
@@ -11,14 +11,14 @@ Leer, crear, actualizar y eliminar contactos. [Compruébalo aquí!](https://proj
 ### ¿Como empezar?
 
 Clona el repositorio con el boilerplate, no contiene funcionalidades reales
-pero tiene 99.99% del HTML / CSS que necesitarás para el proyecto,
+pero tiene 99.99% del HTML/CSS que necesitarás para el proyecto,
 Te permite centrarte en la funcionalidad.
 
 ***Nota: necesitarás codificar todas las funcionalidades.***
 
 ### El proyecto se divide en:
 
-#### Dos vistas diferentes: 
+#### Dos vistas diferentes:
 
 1. Contacto: Contiene la lista de contactos.
 2. AddContact: es solo un formulario utilizado para crear o actualizar contactos.
@@ -29,8 +29,8 @@ Tarjeta de contacto: muestra solo un contacto.
 ## TO-DO funcionalidades
 
 - Debes agregar el código necesario para que su aplicación maneje los contactos, específicamente:
-    - crea, 
-    - actualiza, 
+    - crea,
+    - actualiza,
     - y elimina.
 - (Opcional) Solicite al usuario una confirmación antes de eliminarla, use el componente modal para eso.
 
@@ -40,7 +40,7 @@ Sugerencia: comience con algún contenido ficticio en la tienda (store.js).
 
 ```Fetch``` la data desde la API: https://assets.breatheco.de/apis/fake/contact/
 
-Sugerencia: use Postman para probar los puntos finales de la API antes de codificar.  
+Sugerencia: use Postman para probar los puntos finales de la API antes de codificar.
 
 ## Pasos para instalar este proyecto
 
@@ -54,7 +54,7 @@ $ npm install
 ```
 ##### 3. Ejecutar el servidor de desarrollo webpack.
 ```
-$ npm run c9
+$ npm run start
 ```
 
 ¡Eso es! Comience a codificar su aplicación React :)
