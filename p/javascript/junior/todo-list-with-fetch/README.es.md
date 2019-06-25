@@ -31,17 +31,17 @@ fetch('http://assets.breatheco.de/apis/fake/todos/user/alesanchezr', {
       }
     })
     .then(resp => {
-        console.log(resp.ok); // will be tru if the response is successfull
-        console.log(resp.status); // the status code = 200 or code = 400 etc.
-        console.log(resp.text()); // will try return the exact result as string
-        return resp.json(); // (returns promise) will try to parse the result as json as return a promise that you can .then for results
+        console.log(resp.ok); // Será true (verdad) si la respuesta es exitosa.
+        console.log(resp.status); // el código de estado = 200 o código = 400 etc.
+        console.log(resp.text()); // Intentará devolver el resultado exacto como cadena (string)
+        return resp.json(); // (regresa una promesa) will try to parse the result as json as return a promise that you can .then for results
     })
     .then(data => {
-        //here is were your code should start after the fetch finishes
-        console.log(data); //this will print on the console the exact object received from the server
+        //Aquí es donde debe comenzar tu código después de que finalice la búsqueda
+        console.log(data); //esto imprimirá en la consola el objeto exacto recibido del servidor
     })
     .catch(error => {
-        //error handling
+        //manejo de errores
         console.log(error);
     });
 ```
