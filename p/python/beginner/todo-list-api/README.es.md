@@ -1,21 +1,21 @@
-# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Todo List API
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) API Lista de Todo
 
-This project can be considered the continuation of the [TodoList Application with React and Fetch](https://projects.breatheco.de/d/todo-list-with-fetch#readme).
-We are going to replicated/code this exact api: [http://assets.breatheco.de/apis/fake/todos/](http://assets.breatheco.de/apis/fake/todos/)
+Este proyecto puede considerarse la continuación de la [Aplicación de TodoList con React y Fetch](https://projects.breatheco.de/d/todo-list-with-fetch#readme).
+Vamos a replicar/codificar esta api exacta: [http://assets.breatheco.de/apis/fake/todos/](http://assets.breatheco.de/apis/fake/todos/)
 
-## 📝 Instructions
+## 📝 Instrucciones
 
-Create an API that connects to a MySQL database and implements the [Following Endpoints](http://assets.breatheco.de/apis/fake/todos/).
+Crea una API que se conecte a una base de datos MySQL e implemente los [siguientes endpoints](http://assets.breatheco.de/apis/fake/todos/).
 
-1. `[GET] /todos/user/<username>` Get list of todo's for a particular user.
-2. `[POST] /todos/user/<username>` Create a new todo list of a particular user.
-3. `[PUT] /todos/user/<username>` Update the entire list of todo's of a particular user.
-4. `[DELETE] /todos/user/<username>` Delete a user and all of their todo's.
+1. `[GET] /todos/user/<username>` Obtener la lista de Todos para un usuario en particular.
+2. `[POST] /todos/user/<username>` Crear una nueva lista de Todos de un usuario en particular.
+3. `[PUT] /todos/user/<username>` Actualizar la lista completa de tareas de un usuario en particular.
+4. `[DELETE] /todos/user/<username>` Eliminar un usuario y todas sus tareas.
 
-## 📖 Fundamentals
+## 📖 Fundamentos
 
-This exercise will make you practice the following fundamentals:
+Este ejercicio te hará practicar los siguientes fundamentos:
 
-1. Building an RESTful API.
-2. Building a database with SQLAlchemy.
-3. Database Migrations.
+1. Construye una RESTful API.
+2. Construye una base de datos con SQLAlchemy.
+3. Migraciones de la base de datos.
