@@ -4,7 +4,7 @@ React improves the creation of custom components, which you can render throughou
 
 For example, to create a bootstrap &#x3C;Card /&#x3E; component you'd code this:
 
-```
+```jsx
 function Card(props){
     render (
         <div className="card">
@@ -21,7 +21,7 @@ function Card(props){
 
 After declaring it, you are able to **import** and **use** it in your webapp like this:
 
-```
+```jsx
 //import react into the bundle
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -41,7 +41,7 @@ Aditionally, you can pass information through **props**:
 
 ... for usage within the render method of your component:
 
-```
+```jsx
 //Declaration of custom component (Card.jsx)
 
 function Card(props){
