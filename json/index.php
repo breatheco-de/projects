@@ -17,7 +17,7 @@ if(!empty($_REQUEST['slug']))
 	$project = $json->getProject($_REQUEST['slug']);
 	if($project){
 		if(isset($_REQUEST['preview']) || isset($_REQUEST['preview/'])){
-			$filePath = $project['preview'];
+			$filePath = '../'.$project['preview'];
 			$file_ext = pathinfo($filePath, PATHINFO_EXTENSION);
 			if(file_exists($filePath)){
 				header("Content-type: image/".$file_ext);
