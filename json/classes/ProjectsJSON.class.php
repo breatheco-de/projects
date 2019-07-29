@@ -161,9 +161,10 @@ class ProjectsJSON{
 	}
 
 	function fillPreviewFilePath($prj,$path){
-		if(file_exists($path.'preview.gif')) $prj["preview"] = str_replace('../','',$path.'preview.gif');
-		else if(file_exists($path.'preview.png')) $prj["preview"] = str_replace('../','',$path.'preview.png');
-		else if(file_exists($path.'preview.jpeg')) $prj["preview"] = str_replace('../','',$path.'preview.jpeg');
+		if(file_exists($path.'preview.gif')) $prj["preview"] = $path.'preview.gif';
+		else if(file_exists($path.'preview.png')) $prj["preview"] = $path.'preview.png';
+		else if(file_exists($path.'preview.jpeg')) $prj["preview"] = $path.'preview.jpeg';
+
 		return $prj;
 	}
 
