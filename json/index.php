@@ -1,13 +1,14 @@
 <?php
 
-require_once('./vendor/autoload.php');
-require_once('./classes/autoload.php');
+$dir = dirname(__FILE__);
+require_once($dir.'/vendor/autoload.php');
+require_once($dir.'/classes/autoload.php');
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$json = new ProjectsJSON('../p/');
+$json = new ProjectsJSON($dir.'/../p/');
 
 header("Access-Control-Allow-Origin: *");
 header("Content-type: application/json");
@@ -37,4 +38,11 @@ if(!empty($_REQUEST['slug']))
 	}
 }
 else if(!empty($_GET['size'])) echo json_encode($json->getAllProjects($_GET['size']));
-else echo json_encode($json->getAllProjects());
+else{
+    if(defined('STDIN')){
+        $myfile = fopen($dir."/projects.json", "w+") or die("Unable to open file!");
+        fwrite($myfile, json_encode($json->getAllProjects()));
+        fclose($myfile);
+    }
+    else echo json_encode($json->getAllProjects());
+}
