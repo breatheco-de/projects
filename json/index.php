@@ -27,7 +27,7 @@ if(!empty($_REQUEST['slug']))
 			}
 			else{
 				header("HTTP/1.0 404 Not Found");
-				echo json_encode(['msg' => 'preview not found in '.$project['preview'].$file_ext]);
+				echo json_encode(['msg' => 'preview not found in '.$_REQUEST['slug'].'/preview'.$file_ext]);
 			}
 		}
 		else echo json_encode($project);
