@@ -72,10 +72,12 @@ class ProjectsJSON{
 		if(array_key_exists("status",$prj)) $prj["status"] = $prj["status"];
 		else $prj["status"] = "draft";
 
-		$prj["technology"] = $parts[$maxDepth-3];
-		$prj["difficulty"] = $parts[$maxDepth-2];
-		$prj["category"] = $parts[$maxDepth-1];
-		$prj["folder-name"] = $parts[$maxDepth];
+        $pIndex = array_search("p", $parts);
+        //print_r($parts); die();
+		$prj["technology"] = $parts[$pIndex+1];
+		$prj["difficulty"] = !empty($parts[$pIndex+3]) ? $parts[$pIndex+2] : null;
+		$prj["category"] = $parts[$pIndex+1];
+		$prj["folder-name"] = !empty($parts[$pIndex+3]) ? $parts[$pIndex+3] : $parts[$pIndex+2];
 
 		return $prj;
 	}
