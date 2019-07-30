@@ -17,7 +17,7 @@ if(!empty($_REQUEST['slug']))
 	$project = $json->getProject($_REQUEST['slug']);
 	if($project){
 		if(isset($_REQUEST['preview']) || isset($_REQUEST['preview/'])){
-			$filePath = '../'.$project['preview'];
+			$filePath = $project['preview'];
 			$file_ext = pathinfo($filePath, PATHINFO_EXTENSION);
 			if(file_exists($filePath)){
 				header("Content-type: image/".$file_ext);
@@ -37,12 +37,16 @@ if(!empty($_REQUEST['slug']))
 		echo json_encode(array());
 	}
 }
-else if(!empty($_GET['size'])) echo json_encode($json->getAllProjects($_GET['size']));
 else{
+    $size = !empty($_GET['size']) ? $_GET['size'] : null;
     if(defined('STDIN')){
         $myfile = fopen($dir."/projects.json", "w+") or die("Unable to open file!");
         fwrite($myfile, json_encode($json->getAllProjects()));
         fclose($myfile);
+
+        $myfile = fopen($dir."/projects_big.json", "w+") or die("Unable to open file!");
+        fwrite($myfile, json_encode($json->getAllProjects('big')));
+        fclose($myfile);
     }
-    else echo json_encode($json->getAllProjects());
+    else echo json_encode($json->getAllProjects($size));
 }

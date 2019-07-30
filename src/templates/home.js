@@ -79,7 +79,7 @@ class Home extends React.Component{
                                 { p.preview && <div className="col-12 col-md-2 d-flex justify-content-center align-items-center">
                                         <img
                                                 className="img-fluid "
-                                                src={"https://projects.breatheco.de/"+p.preview}
+                                                src={"https://projects.breatheco.de/json/"+p.preview}
                                             />
 
                                     </div>
