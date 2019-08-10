@@ -1,5 +1,6 @@
 {
 	"title" : "First Prototype",
+    "visibility": "internal",
 	"slug" : "web-development-project-fluxify",
 	"status": "published",
 	"duration" : 20,

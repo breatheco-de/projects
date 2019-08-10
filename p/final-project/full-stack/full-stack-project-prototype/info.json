@@ -1,6 +1,7 @@
 {
 	"title" : "First Prototype",
 	"slug" : "full-stack-project-prototype",
+    "visibility": "internal",
 	"status": "published",
 	"duration" : 20,
 	"description" : "Create the product prototype",

@@ -34,10 +34,11 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "now-build": "npm run build",
     "start": "gatsby develop -p 3000",
     "format": "prettier --write src/**/*.{js,jsx}",
     "serve": "gatsby serve",
-    "generate-projects": "php ./json/index.php && git add .",
+    "generate-projects": "php ./json/generate.php && git add .",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "pre-commit": [

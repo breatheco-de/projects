@@ -1,6 +1,7 @@
 {
 	"title" : "Use MVC to make your Project Dynamic",
 	"slug" : "full-stack-project-mvc",
+    "visibility": "internal",
 	"status": "published",
 	"duration" : 20,
 	"description" : "Making the prototipe dynamic using MVC",
