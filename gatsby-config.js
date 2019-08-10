@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Projects`,
-    description: `BreatheCode Projects - Coding Projects and exercises for people learning to code or improving their coding skills`,
+    siteUrl: `https://projects.breatheco.de`,
+    title: `BreatheCode Coding Projects and Tutorials`,
+    description: `Find projects to code while improving your coding skills, every project comes with straigh forward instructions, video, code solution and more.`,
     author: `@alesanchezr`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
