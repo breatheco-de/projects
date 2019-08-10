@@ -41,3 +41,10 @@ Implement a read-later funcionality, i.e, a button that allows the user to "save
 #### Use the Context
 
 To ensure that the user can "save" the item, you must implement an action that can be accessible from anywhere within the app.
+
+## 😎 Feeling Confident?
+
+The following features are not needed for the final solution, but you can develop them if you feel confident enough:
+
+- `+1` Prevent the website from fetching the Startwars API again if refreshed (you can use the localstorage to save the store on the local browser).
+- `+3` Implement a search bar with autocomplete for Characters and Planets. When the autocomplete is clicked it should take you to the Character or planet page.
