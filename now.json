@@ -1,10 +1,11 @@
 {
     "version": 2,
+    "alias": "projects.breatheco.de",
     "name": "breathecode-projects",
     "builds": [
         { "src": "package.json", "use": "@now/static-build", "config": {"distDir": "public"} },
-        { "src": "json/index.php", "use": "@now/php" },
-        { "src": "p/*", "use": "@now/static" }
+        { "src": "p/*", "use": "@now/static" },
+        { "src": "json/index.php", "use": "@now/php" }
     ],
     "routes": [
         {

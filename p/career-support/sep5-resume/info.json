@@ -1,5 +1,6 @@
 {
 	"status": "published",
+    "visibility": "internal",
 	"title" : "Last update to your Resume",
 	"slug" : "sep5-resume",
 	"duration" : 3,

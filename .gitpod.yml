@@ -6,6 +6,7 @@ ports:
 tasks:
 - name: Terminal
   command: >
+    npm i now -g;
     echo "";
     echo "Commands you can try:";
     echo " * apachectl stop";

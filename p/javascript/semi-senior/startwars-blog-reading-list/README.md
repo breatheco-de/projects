@@ -14,7 +14,7 @@ We are going to be building a minimalist version of the [Star Wars Databank](htt
 
 #### Building the grid of Characters and Planets
 
-- Create a React webapp that lists the _peope_, _vehicles_ and _planets_ **entities** provided by the [SWAPI](https://swapi.co/documentation). 
+- Create a React webapp that lists the _peope_, _vehicles_ and _planets_ **entities** provided by the [SWAPI](https://swapi.co/documentation).
 
 <p align="center">
    <img height="100" src="https://raw.githubusercontent.com/nachovz/projects/master/p/javascript/semi-senior/startwars-blog-reading-list/sw_data.png" />
@@ -41,4 +41,3 @@ Implement a read-later funcionality, i.e, a button that allows the user to "save
 #### Use the Context
 
 To ensure that the user can "save" the item, you must implement an action that can be accessible from anywhere within the app.
-

@@ -54,7 +54,7 @@ $ npm install
 ```
 ##### 3. Run the webpack development server
 ```
-$ npm run c9
+$ npm run start
 ```
 
 That is it! Start coding your React Application :)

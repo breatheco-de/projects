@@ -1,11 +1,10 @@
 # Music Player React
 
-<p align="center"><img height="300" src="https://projects.breatheco.de/json?slug=music-player-react&preview" /></p>
-
-Let's create a MP3 player that works similar to Spotify, [here is the demo](https://projects.breatheco.de/json?slug=music-player-react&preview).
+Let's create a MP3 player that works similar to Spotify, [here is the demo](https://projects.breatheco.de/json/?slug=music-player-react&preview/).
 
 The buttons should always remain at the bottom of the viewport (use position fixed for that).
 You only need to implement the Play, Pause, Next and previous buttons.
+
 
 ## Requierments
 - List the songs from [the Sounds API](http://assets.breatheco.de/apis/sound/) using the Fetch API.

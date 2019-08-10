@@ -31,7 +31,7 @@ fetch('http://assets.breatheco.de/apis/fake/todos/user/alesanchezr', {
       }
     })
     .then(resp => {
-        console.log(resp.ok); // will be tru if the response is successfull
+        console.log(resp.ok); // will be true if the response is successfull
         console.log(resp.status); // the status code = 200 or code = 400 etc.
         console.log(resp.text()); // will try return the exact result as string
         return resp.json(); // (returns promise) will try to parse the result as json as return a promise that you can .then for results

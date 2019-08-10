@@ -1,6 +1,7 @@
 {
 	"title" : "Student External Profile",
 	"slug" : "student-external-profile",
+    "visibility": "internal",
 	"status": "published",
 	"solution": "",
 	"duration" : 1,

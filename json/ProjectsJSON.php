@@ -10,6 +10,10 @@ class ProjectsJSON{
 		return $this->createHierarchy($rootPath);
 	}
 
+    function getRelative($path){
+        return substr($path, strpos($path, "/json/")+6);
+    }
+
 	function createHierarchy($path){
 
 		$directories = scandir($path);
@@ -66,15 +70,20 @@ class ProjectsJSON{
 
 		if(array_key_exists("live-url",$prj)) $prj["demo"] = $prj["live-url"];
 		else if(array_key_exists("demo",$prj)) $prj["demo"] = $prj["demo"];
-		$prj["url"] = $path;
+		$prj["url"] = $this->getRelative($path);
 
 		if(array_key_exists("status",$prj)) $prj["status"] = $prj["status"];
 		else $prj["status"] = "draft";
 
-		$prj["technology"] = $parts[$maxDepth-3];
-		$prj["difficulty"] = $parts[$maxDepth-2];
-		$prj["category"] = $parts[$maxDepth-1];
-		$prj["folder-name"] = $parts[$maxDepth];
+		if(array_key_exists("visibility",$prj)) $prj["visibility"] = $prj["visibility"];
+		else $prj["visibility"] = "public";
+
+        $pIndex = array_search("p", $parts);
+        //print_r($parts); die();
+		$prj["technology"] = $parts[$pIndex+1];
+		$prj["difficulty"] = !empty($parts[$pIndex+3]) ? $parts[$pIndex+2] : null;
+		$prj["category"] = $parts[$pIndex+1];
+		$prj["folder-name"] = !empty($parts[$pIndex+3]) ? $parts[$pIndex+3] : $parts[$pIndex+2];
 
 		return $prj;
 	}
@@ -103,18 +112,19 @@ class ProjectsJSON{
 
 	function fillProjectInfoFilePath($prj,$path){
 
+        $relativePath = $this->getRelative($path);
 		if(file_exists($path.'info.json') and $json = file_get_contents($path.'info.json'))
 		{
 			$prjObj = json_decode($json);
 			if(is_object($prjObj))
 			{
 				foreach($prjObj as $key => $val) $prj[$key] = $val;
-				$prj["info-path"] = $path.'info.json';
+				$prj["info-path"] = $relativePath.'info.json';
 			}
 			else{
 				echo json_encode(array(
 					"code" => 500,
-					"msg" => "Invalid info-path or info.json for ".$path
+					"msg" => "Invalid info-path or info.json for ".$relativePath
 				)); die();
 			}
 		}
@@ -134,7 +144,9 @@ class ProjectsJSON{
 		{
 			$prjObj = json_decode($json);
 			foreach($prjObj as $key => $val) $prj[$key] = $val;
-			$prj["video-path"] = $path.'video.json';
+
+            $relativePath = $this->getRelative($path);
+			$prj["video-path"] = $relativePath.'video.json';
 		}
 
 		return $prj;
@@ -143,7 +155,8 @@ class ProjectsJSON{
 	function fillReadmeFilePath($prj,$path){
 
 		if(file_exists($path.'README.md')){
-            $prj["readme"] = str_replace('../','',$path.'README.md');
+            $relativePath = $this->getRelative($path);
+            $prj["readme"] = $relativePath;
             $prj["markdown"] = file_get_contents($path.'README.md');
         }
 
@@ -151,16 +164,20 @@ class ProjectsJSON{
 	}
 
 	function fillPreviewFilePath($prj,$path){
-		if(file_exists($path.'preview.gif')) $prj["preview"] = str_replace('../','',$path.'preview.gif');
-		else if(file_exists($path.'preview.png')) $prj["preview"] = str_replace('../','',$path.'preview.png');
-		else if(file_exists($path.'preview.jpeg')) $prj["preview"] = str_replace('../','',$path.'preview.jpeg');
+        $relativePath = $this->getRelative($path);
+
+		if(file_exists($path.'preview.gif')) $prj["preview"] = $relativePath.'/preview.gif';
+		else if(file_exists($path.'preview.png')) $prj["preview"] = $relativePath.'/preview.png';
+		else if(file_exists($path.'preview.jpeg')) $prj["preview"] = $relativePath.'/preview.jpeg';
+
 		return $prj;
 	}
 
 	function fillSourceFilePath($prj,$path){
+        $relativePath = $this->getRelative($path);
 
-		if(file_exists($path.'src.zip')) $prj["source-code"] = str_replace('../','',$path.'src.zip');
-		else if(file_exists($path.'src.tar.gz')) $prj["source-code"] = str_replace('../','',$path.'src.tar.gz');
+		if(file_exists($path.'src.zip')) $prj["source-code"] =  $relativePath.'src.zip';
+		else if(file_exists($path.'src.tar.gz')) $prj["source-code"] =  $relativePath.'src.tar.gz';
 
 		return $prj;
 	}

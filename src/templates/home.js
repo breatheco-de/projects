@@ -5,6 +5,8 @@ import { Link } from "gatsby";
 import "@breathecode/ui-components/dist/main.css";
 import Layout from "../components/layout"
 import { SmallJumbotron } from "../components/smalljumbo.js";
+import Helmet from "react-helmet";
+
 class Home extends React.Component{
     constructor(){
         super();
@@ -16,7 +18,14 @@ class Home extends React.Component{
     render(){
         const { pageContext } = this.props;
         return (
+            <React.Fragment>
             <div className="fontFamily">
+                <Helmet>
+                    <title>Projects BreatheCode</title>
+                    <meta name="description" content="BreatheCode Projects - Coding Projects and exercises for people learning to code or improving their coding skills" />
+                     <meta itemprop="image" content="../images/breathecode.32.png"/>
+
+                </Helmet>
             <Layout>
                 <div>
                     <SmallJumbotron
@@ -24,7 +33,7 @@ class Home extends React.Component{
                         containerClass="pl-3  container"
                         headerClass="display-4 font-weight-bold  text-left"
                         headerText="Pool of Projects"
-                        pContent="A curated list of projects to practice while learning new technologies or improving your coding skills"
+                        pContent="BreatheCode Projects - Coding Projects and exercises for people learning to code or improving their coding skills"
                         pClass="lead  text-left"
                     />
                     <div className="row sticky-top bg-white border-top border-bottom">
@@ -70,7 +79,7 @@ class Home extends React.Component{
                                 { p.preview && <div className="col-12 col-md-2 d-flex justify-content-center align-items-center">
                                         <img
                                                 className="img-fluid "
-                                                src={"https://projects.breatheco.de/"+p.preview}
+                                                src={"https://projects.breatheco.de"+p.preview}
                                             />
 
                                     </div>
@@ -118,6 +127,7 @@ class Home extends React.Component{
                 </div>
                 </Layout>
             </div>
+        </React.Fragment>
         );
     }
 }
