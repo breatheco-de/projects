@@ -40,7 +40,7 @@ function start(node){
 
    if (node.includes("README.md")){console.log("README.md")}
     else{
-   node.forEach((i)=>{console.log(fs.readdirSync("p/" + i)) })
+   node.forEach((i)=>{start(fs.readdirSync("p/" +i)) })
     }
 
 }
