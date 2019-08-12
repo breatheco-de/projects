@@ -32,47 +32,19 @@ https.get(url, res => {
   });
 });
 
-const root = "p"
-const readme = "README.md"
-const arr = []
+const root = fs.readdirSync("p")
+const arr =[]
 
-const css = {technology:"",
-                difficulty:"",
-                readme:""}
-
-const dataModeling ={technology:"",
-                difficulty:"",
-                readme:""}
-const javascript={technology:"",
-                difficulty:"",
-                readme:""}
-const jquery={technology:"",
-                difficulty:"",
-                readme:""}
-const php={technology:"",
-                difficulty:"",
-                readme:""}
-const python ={technology:"",
-                difficulty:"",
-                readme:""}
+function start(node){
 
 
-
-let data = fs.readdir(root, "utf8", (err, files)=>{
-    console.log(files)
-    for (let i =0; i<files.length;i++){
-            if (files[i]==="css")
-            {css.technology = files[i]}
-
-        else
-        fs.readdir(root + "/" + files[i], "utf8", (err, files)=>{})
-         const arr = ["beginner","junior","senior"]
-
+   if (node.includes("README.md")){console.log("README.md")}
+    else{
+   node.forEach((i)=>{console.log(fs.readdirSync("p/" + i)) })
+    }
 
 }
 
-
-
-})
+start(root)
 
 
