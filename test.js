@@ -1,5 +1,6 @@
 const https = require('https');
 const fs = require("fs")
+const path = require("path")
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -13,6 +14,8 @@ const server = https.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+
 
 const url = "https://jsonplaceholder.typicode.com/posts/1";
 const exercises = []
@@ -35,12 +38,16 @@ https.get(url, res => {
 const root = fs.readdirSync("p")
 const arr =[]
 
+
+
+
+
 function start(node){
 
 
    if (node.includes("README.md")){console.log("README.md")}
     else{
-   node.forEach((i)=>{start(fs.readdirSync("p/" +i)) })
+   node.forEach((i)=>{console.log(fs.readdirSync(path.basename(i)))})
     }
 
 }
