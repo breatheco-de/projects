@@ -35,23 +35,78 @@ https.get(url, res => {
   });
 });
 
+
 const root = fs.readdirSync("p")
 const arr =[]
 
 
 
-
-
 function start(node){
+    console.log(fs.readdirSync("p/css/junior/bootstrap-red-dashboard/"))
+    let arr = fs.readdirSync("p/css/junior/bootstrap-red-dashboard/");
 
+    let x =arr.filter(e => e.includes('README'));
+
+    console.log(x);
+
+    node.forEach(node =>{
+        console.log(path.resolve(node).split('/'))
+        fs.lstatSync(path.resolve(node)).isDirectory()
+    })
+
+    arr.forEach(e => console.log( ''   ))
+
+    console.log( fs.lstatSync('p/css/junior/bootstrap-red-dashboard/').isFile() )
 
    if (node.includes("README.md")){console.log("README.md")}
     else{
-   node.forEach((i)=>{console.log(fs.readdirSync(path.basename(i)))})
+   node.forEach((i)=>{console.log(fs.readdirSync(i))})
     }
 
 }
 
 start(root)
 
+// function search(folderName) {
 
+//     let files = fs.readdirSync(folderName);
+
+//     let result = files.find(e => e.includes('README.md'));
+
+//     if (result) return result
+//     else {
+//         files.forEach
+//     }
+// }
+
+// search('p')
+
+let readmeArray = [];
+
+let technologies = ['css','javascript','php']
+
+function search(folderName) {
+
+    let fileArray = 'list of folders/files in this dir';
+
+    let readmeArray = 'filter through fileArray to find the readme';
+
+    if (readmeArray.length > 0)
+        readmeArray.forEach(e => {
+            readmeArray.push({
+                readme: readme,
+                technology: 'pathName'.split('/').find(dir => technologies.includes(dir.toLowerCase()) )
+                            // [documents','src','images','php'].find( ['css','javascript','php'].includes(e) )
+            });
+        })
+
+    fileArray.forEach(e => {
+        if (e.isDirectory())
+            search(e);
+    })
+
+    return 'Complete';
+}
+
+// let x = prompt('start with folder ');
+// search(x);
