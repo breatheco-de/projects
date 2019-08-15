@@ -84,9 +84,15 @@ start(root)*/
 let readmeArray = [];
 
 let technologies = ['css','javascript','php']
+let route = fs.readdirSync(__dirname)
+
 
 function search(folderName) {
-console.log(folderName)
+let css = "css"
+//console.log(folderName)
+//console.log(route)
+console.log(path.parse("p").name)
+//folderName.forEach(folder=>{if(fs.lstatSync(folder).isDirectory() === true) {console.log(search(fs.readdirSync(folder)))} else console.log("no")})
 
     let fileArray = 'list of folders/files in this dir';
 
@@ -110,4 +116,4 @@ console.log(folderName)
 }
 
 // let x = prompt('start with folder ');
- search(__dirname);
+ search(fs.readdirSync(__dirname));
