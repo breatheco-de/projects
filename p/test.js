@@ -35,22 +35,40 @@ https.get(url, res => {
 
 
 let readmeArray = [];
-let technologies = ['css','javascript','php','jquery','python','data-modeling']
+let technologies = ['css','javascript','php','jquery','python','data-modeling', 'final-project']
+let level = ["beginner", "junior", "senior","semi-senior", "full-stack"]
+let projects = []
+
+fs.readdirSync("./css/beginner").forEach(e=>projects.push(String(e)))
+fs.readdirSync("./data-modeling/beginner").forEach(e=>projects.push(String(e)))
+fs.readdirSync("./final-project/full-stack").forEach(e=>projects.push(String(e)))
+fs.readdirSync("./javascript/beginner").forEach(e=>projects.push(String(e)))
+fs.readdirSync("./javascript/junior").forEach(e=>projects.push(String(e)))
+fs.readdirSync("./javascript/semi-senior").forEach(e=>projects.push(String(e)))
+fs.readdirSync("./jquery/beginner").forEach(e=>projects.push(String(e)))
+fs.readdirSync("./php/begginer").forEach(e=>projects.push(String(e)))
+fs.readdirSync("./php/junior").forEach(e=>projects.push(String(e)))
+fs.readdirSync("./python/beginner").forEach(e=>projects.push(String(e)))
 
 function search(route) {
 
     let folderList = fs.readdirSync(route);
 
-
+console.log(folderList)
     folderList.forEach(folder=>{
 
         let newPath = route+'/'+folder
 
+
         if (String(folder).toUpperCase().includes("README"))
             readmeArray.push({
+                project_Name:newPath.split('/').find(dir => projects.includes(dir.toLowerCase())),
                 technology: newPath.split('/').find(dir => technologies.includes(dir.toLowerCase())),
-                path: newPath
+                difficulty:newPath.split('/').find(folder=> level.includes(folder.toLowerCase())),
+                readMe:newPath
+
             })
+
 
         if (fs.lstatSync(newPath).isDirectory()===true) {
                 search(newPath)
@@ -60,74 +78,14 @@ function search(route) {
 }
 
 search(".");
+console.log("this:" + projects)
 
 readmeArray.forEach(e => {
-    console.log(e)
+    console.log(JSON.stringify(e))
     console.log('')
 })
 
 
 
 
-
-//const root = fs.readdirSync("p")
-
-
-
-/*function start(node){
-    console.log(fs.readdirSync("p/css/junior/bootstrap-red-dashboard/"))
-    let arr = fs.readdirSync("p/css/junior/bootstrap-red-dashboard/");
-
-    let x =arr.filter(e => e.includes('README'));
-
-    console.log(x);
-
-    node.forEach(node =>{
-        console.log(path.resolve(node).split('/'))
-        fs.lstatSync(path.resolve(node)).isDirectory()
-    })
-
-    arr.forEach(e => console.log( ''   ))
-
-    console.log( fs.lstatSync('p/css/junior/bootstrap-red-dashboard/').isFile() )
-
-   if (node.includes("README.md")){console.log("README.md")}
-    else{
-   node.forEach((i)=>{console.log(fs.readdirSync(i))})
-    }
-
-}
-
-start(root)*/
-
-// function search(folderName) {
-
-//     let files = fs.readdirSync(folderName);
-
-//     let result = files.find(e => e.includes('README.md'));
-
-//     if (result) return result
-//     else {
-//         files.forEach
-//     }
-// }
-
-    /*if (readmeArray.length > 0)
-        readmeArray.forEach(e => {
-            readmeArray.push({
-                readme: readme,
-                technology: 'pathName'.split('/').find(dir => technologies.includes(dir.toLowerCase()) )
-                            // [documents','src','images','php'].find( ['css','javascript','php'].includes(e) )
-            });
-        })
-
-    fileArray.forEach(e => {
-        if (e.isDirectory())
-            search(e);
-    })
-
-    return 'Complete';*/
-
-
-// let x = prompt('start with folder ');
 
