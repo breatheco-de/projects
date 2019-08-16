@@ -12,7 +12,7 @@ const server = https.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+  //console.log(`Server running at http://${hostname}:${port}/`);
 });
 
 
@@ -29,15 +29,48 @@ https.get(url, res => {
   res.on("end", () => {
     body = JSON.parse(body);
 
-    console.log(body);
     exercises.push(body)
-    console.log(exercises)
   });
 });
 
 
+let readmeArray = [];
+let technologies = ['css','javascript','php','jquery','python','data-modeling']
+
+function search(route) {
+
+    let folderList = fs.readdirSync(route);
+
+
+    folderList.forEach(folder=>{
+
+        let newPath = route+'/'+folder
+
+        if (String(folder).toUpperCase().includes("README"))
+            readmeArray.push({
+                technology: newPath.split('/').find(dir => technologies.includes(dir.toLowerCase())),
+                path: newPath
+            })
+
+        if (fs.lstatSync(newPath).isDirectory()===true) {
+                search(newPath)
+        }
+
+    })
+}
+
+search(".");
+
+readmeArray.forEach(e => {
+    console.log(e)
+    console.log('')
+})
+
+
+
+
+
 //const root = fs.readdirSync("p")
-const arr =[]
 
 
 
@@ -79,53 +112,6 @@ start(root)*/
 //     }
 // }
 
-// search('p')
-
-let readmeArray = [];
-
-let technologies = ['css','javascript','php']
-//let route = fs.readdirSync(__dirname)
-
-
-function search(route) {
-
-    console.log(fs.readdirSync(route))
-
-    let folderList = fs.readdirSync(route);
-
-    console.log('route', route)
-
-    folderList.forEach(folder=>{
-
-        if (route.includes("REAMDE"))
-            console.log("README!")
-
-            console.log('folder', folder)
-            try {
-                console.log('readdirSync', fs.readdirSync(`${route}/${folder}`))
-            }
-            catch(err){
-                console.error(err);
-                return;
-            }
-        if (fs.lstatSync(folder).isDirectory()===true) {
-            console.log('pa ver si llega')
-            try {
-                console.log('path', route+'/'+folder)
-                search(fs.readdirSync(route + '/' + folder))
-            }
-            catch(err) {
-                console.error(err);
-                return;
-            }
-        }
-
-    })
-
-    let fileArray = 'list of folders/files in this dir';
-
-    let readmeArray = 'filter through fileArray to find the readme';
-
     /*if (readmeArray.length > 0)
         readmeArray.forEach(e => {
             readmeArray.push({
@@ -141,8 +127,7 @@ function search(route) {
     })
 
     return 'Complete';*/
-}
-search(".")
+
 
 // let x = prompt('start with folder ');
 
