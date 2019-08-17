@@ -34,12 +34,14 @@ https.get(url, res => {
 });
 
 
-let readmeArray = [];
+let projectsArray = [];
 let technologies = ['css','javascript','php','jquery','python','data-modeling', 'final-project']
 let level = ["beginner", "junior", "senior","semi-senior", "full-stack"]
 let projects = []
 
 fs.readdirSync("./css/beginner").forEach(e=>projects.push(String(e)))
+fs.readdirSync("./css/career-support").forEach(e=>projects.push(String(e)))
+fs.readdirSync("./css/junior").forEach(e=>projects.push(String(e)))
 fs.readdirSync("./data-modeling/beginner").forEach(e=>projects.push(String(e)))
 fs.readdirSync("./final-project/full-stack").forEach(e=>projects.push(String(e)))
 fs.readdirSync("./javascript/beginner").forEach(e=>projects.push(String(e)))
@@ -61,9 +63,9 @@ console.log(folderList)
 
 
         if (String(folder).toUpperCase().includes("README"))
-            readmeArray.push({
-                project_Name:newPath.split('/').find(dir => projects.includes(dir.toLowerCase())),
+            projectsArray.push({
                 technology: newPath.split('/').find(dir => technologies.includes(dir.toLowerCase())),
+                project_Name:newPath.split('/').find(dir => projects.includes(dir.toLowerCase())),
                 difficulty:newPath.split('/').find(folder=> level.includes(folder.toLowerCase())),
                 readMe:newPath
 
@@ -80,9 +82,16 @@ console.log(folderList)
 search(".");
 console.log("this:" + projects)
 
-readmeArray.forEach(e => {
-    console.log(JSON.stringify(e))
+projectsArray.forEach(e => {
+
+    console.log(e.readMe)
+    if (e.readMe.split("/").includes("README.es.md")){e.project_Name = e.project_Name + ".es" }
+
+   // console.log(JSON.stringify(e))
     console.log('')
+    fs.writeFileSync("/workspace/breathecojson/projects/" + e.project_Name + ".json" , JSON.stringify(e))
+
+
 })
 
 
