@@ -42,6 +42,7 @@ let projects = []
 fs.readdirSync("./css/beginner").forEach(e=>projects.push(String(e)))
 fs.readdirSync("./css/career-support").forEach(e=>projects.push(String(e)))
 fs.readdirSync("./css/junior").forEach(e=>projects.push(String(e)))
+fs.readdirSync("./css/senior").forEach(e=>projects.push(String(e)))
 fs.readdirSync("./data-modeling/beginner").forEach(e=>projects.push(String(e)))
 fs.readdirSync("./final-project/full-stack").forEach(e=>projects.push(String(e)))
 fs.readdirSync("./javascript/beginner").forEach(e=>projects.push(String(e)))
@@ -84,12 +85,13 @@ console.log("this:" + projects)
 
 projectsArray.forEach(e => {
 
-    console.log(e.readMe)
-    if (e.readMe.split("/").includes("README.es.md")){e.project_Name = e.project_Name + ".es" }
+
+    console.log(e)
+
 
    // console.log(JSON.stringify(e))
     console.log('')
-    fs.writeFileSync("/workspace/breathecojson/projects/" + e.project_Name + ".json" , JSON.stringify(e))
+    //fs.writeFileSync("/workspace/breathecojson/projects/" + e.project_Name + ".json" , JSON.stringify(e))
 
 
 })
