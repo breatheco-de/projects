@@ -30,6 +30,7 @@ Each group must create the projects ***view components***:
 
 - Title
 - Description
+- Members
 
 #### Each Event must have
 
@@ -98,12 +99,20 @@ store: {
             ID: 9,
             post_content: "The nicest Meetup ever",
             post_title: "Tech Enthusiasts",
+            members: [
+                "robert",
+                "jjtime",
+                "username2",
+                "cheeselover",
+                "neweradude",
+                "james1996"
+            ]
         }
     ],
     session:{
         ID: 2,
         username: "theUser",
-        password: "1234",
+        user_friendly_name:"Joey",
         token: "qwerty12345asdfgzxcv"
     }
 };
