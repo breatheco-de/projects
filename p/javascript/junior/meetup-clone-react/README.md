@@ -13,7 +13,7 @@ _This project is optimized for groups of 2-3 students._
 
 ## This project is meant to be done in two phases
 
-First we want to focus on the visuals, make sure the viewable structures are working correctly. 
+First we want to focus on the visuals, make sure the viewable structures are working correctly.
 Secondly, we should implement the dynamic data display.
 
 ### Phase 1: Create the views, then link them with React Router in your Layout Component.
@@ -60,13 +60,13 @@ After you finish your wireframes, get to coding. Please make sure to only use fu
 
 React context is built into the flux boilerplate. If you are having trouble understanding how context works, please take a look at the demo component that comes with it. (In your views folder)
 
-***Use the store to fill the dummy content*** within the views/components. The store is accessible using the ```Context.Consumer```
+***Use the store to fill the dummy content*** within the views/components. The store is accessible using the ```Consumer```
 
 #### Reference: Using the Context
 
 The `store` structure (```/store/store.js```):
 
-Below, you will find an example of the date for the Meetup clone. This consists of 2 arrays (events and meetups) and an abject for the user session.
+Below, you will find an example of the data for the Meetup clone. This consists of 2 arrays (events and meetups) and an abject for the user session.
 
 You can replace your current store object with this data and even expand it to add more events and groups. Remember that this is placeholder data for now. Later on, we will be using fetch to pull the data in from an API.
 
@@ -118,7 +118,7 @@ store: {
 };
 ```
 
-In order to have access to the global data from your store in one of your components, you must import the context consumer. See the example below.
+In order to have access to the global data from your store in one of your components, you must import the Context Consumer. See the example below.
 
 ```jsx
 
@@ -131,7 +131,7 @@ import {Consumer} from '/path/to/store/appContext.jsx';
         <Consumer>
             {
                 ({store}) => { //When you destructure the store here, you can also pass actions.
-                    //Then you can use the data structure within store into
+                    //Then you can use the data structure within the store into your return
                     return (<span> hello, {store.events[0].post_title} </span>);
                 }
             }

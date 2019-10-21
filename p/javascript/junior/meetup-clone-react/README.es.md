@@ -1,4 +1,4 @@
-# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Contact Managment Application 
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Contact Managment Application
 
 Tecnologias: HTML, CSS, JS, React, React Router and React Context API.
 
@@ -18,21 +18,21 @@ En segundo lugar, debemos implementar la visualización dinámica de datos.
 
 ### Fase 1: Crea las vistas, luego vincúlalas con React Router en su componente de diseño.
 
-Cada grupo debe crear los proyectos ***ver componentes***: 
+Cada grupo debe crear los proyectos ***ver componentes***:
 - Home (Lista de Eventos)
 - Detalle del Event
 - Detalle del Meetup
 
 Usa contenido ficticio inicialmente.
 
-En Meetup.com, Meetups son los grupos u organizaciones anfitrionas de los eventos. 
+En Meetup.com, Meetups son los grupos u organizaciones anfitrionas de los eventos.
 
 ##### Cada Meetup debe tener:
 - Titulo
 - Descripción
 
 
-En contraste, los eventos son los eventos específicos que el grupo está organizando durante el mes. 
+En contraste, los eventos son los eventos específicos que el grupo está organizando durante el mes.
 
 ##### Cada Evento debe tener:
 - Titulo
@@ -60,7 +60,7 @@ RECUERDA: Las etiquetas de anclaje provocarán un redireccionamiento, que no des
 
 ### Fase 2: dinamizar la aplicación implementando React Context.
 
-***Utiliza el store para rellenar el contenido ficticio *** dentro de las vistas/componentes. Se puede acceder a el store utilizando el ```Context.Consumer```
+***Utiliza el store para rellenar el contenido ficticio *** dentro de las vistas/componentes. Se puede acceder a el store utilizando el ```Consumer```
 
 ##### Referencia: Usando el Context
 
@@ -114,22 +114,22 @@ store = {
 Para tener acceso a los datos globales, debe importar el contexto:
 ```jsx
 
-import {Context} from '/path/to/store/appContext.jsx';
+import {Consumer} from '/path/to/store/appContext.jsx';
 
 ...
 
 //Then use the Consumer within the render method
     render(){
         return(
-            <Context.Consumer>
+            <Consumer>
                 {
                     ({store}) => {
-                        //Then you can use the data structure within store into 
+                        //Then you can use the data structure within the store into your return
                         return (<span> hello, {store.events[0].post_title} </span>);
-                        
+
                     }
                 }
-            </Context.Consumer>
+            </Consumer>
         );
     }
 ...
