@@ -41,7 +41,7 @@
     "generate-projects": "php ./json/generate.php",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
-  "pre-commit": [
+  "pre-push": [
     "generate-projects"
   ],
   "repository": {
