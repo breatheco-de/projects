@@ -39,10 +39,11 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "serve": "gatsby serve",
     "generate-projects": "php ./json/generate.php",
+    "warning": "echo '\e[38;2;255;0;0mREMEMBER TO RUN THE generate-projects SCRIPTZ!!!!!\e[0m'",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "pre-push": [
-    "generate-projects"
+    "warning"
   ],
   "repository": {
     "type": "git",
