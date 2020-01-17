@@ -1,10 +1,10 @@
 # ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Simple Counter with React
 
-React improves the creation of custom components, which you can render throughout your webapp using the **ReactDOM.render()** method. A custom component allows you to divide an conquer, separating logical and visual challenges into smaller pieces giving you greater control over the display and functionalities of each part of the webapp.
+React improves the creation of custom components, which you can render throughout your webapp using the **ReactDOM.render()** method. A custom component allows you to divide and conquer, separating logical and visual challenges into smaller pieces- giving you greater control over the display and functionalities of each part of the webapp.
 
 For example, to create a bootstrap &#x3C;Card /&#x3E; component you'd code this:
 
-```
+```jsx
 function Card(props){
     render (
         <div className="card">
@@ -21,16 +21,16 @@ function Card(props){
 
 After declaring it, you are able to **import** and **use** it in your webapp like this:
 
-```
+```jsx
 //import react into the bundle
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Card from './component/Card.jsx'
 
-ReactDOM.render(<Card />, document.quertSelector('#root'));
+ReactDOM.render(<Card />, document.querySelector('#root'));
 ```
 
-Aditionally, you can pass information through **props**:
+Aditionally, you can pass information through the Card component using **props**:
 
 ```html
 
@@ -39,10 +39,10 @@ Aditionally, you can pass information through **props**:
 
 ```
 
-... for usage within the render method of your component:
+... for usage within the render method of your Card component (notice the image src and card title):
 
-```
-//Declaration of custom component (Card.jsx)
+```jsx
+//Declaration of custom component (Card.js)
 
 function Card(props){
     render (
@@ -70,4 +70,9 @@ Create a seconds-counter component, called ***SecondsCounter***. It should look 
 <SecondsCounter seconds={3434} />
 
 ```
-- You can find the clock icon on the left of the component in font-awesome.
+- You can find the clock icon on the left of the component in [Font Awesome](https://fontawesome.com/).
+
+# Bonus
+- Create an option to countdown from a given number.
+- Create stop, reset, and resume functionality
+- Create an alert when the user reaches a specified time, ie the user enters "10", an alert should render notifiying the user that their time was reached

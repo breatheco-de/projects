@@ -1,0 +1,12 @@
+{
+	"slug" : "queue-management-cli",
+	"title" : "Queue Managment CLI",
+	"description": "Terminal-based queue management application",
+	"status": "published",
+	"live-url": "",
+	"duration" : 8,
+	"technologies": ["terminal", "python", "json", "static files", "logging"],
+	"talents": [
+		{ "badge": "identator", "points": 10 }
+	]
+}

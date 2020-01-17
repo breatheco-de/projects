@@ -1,14 +1,14 @@
 {
-	"title" : "Drawing a Son Goku",
-	"slug": "son-goku",
-	"status": "draft",
-	"description" : "Use CSS3 to draw Son Goku from DragonBall",
-	"duration": 6,
+	"title" : "CSS Drawing Goku",
+	"slug" : "css-drawing-goku",
+	"status": "published",
+	"duration" : 6,
+	"description" : "Use your CSS knowledge to draw Goku using Position and Display properties.",
 	"talents": [
-		{ "badge": "position-vs-display", "points": 15 },
+		{ "badge": "identator", "points": 5 },
+		{ "badge": "tag-master", "points": 5 },
 		{ "badge": "select-everything", "points": 10 },
 		{ "badge": "be-dry", "points": 10 },
-		{ "badge": "abc", "points": 10 },
-		{ "badge": "identator", "points": 5 }
+		{ "badge": "abc", "points": 10 }
 	]
 }

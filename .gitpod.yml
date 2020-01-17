@@ -6,6 +6,7 @@ ports:
 tasks:
 - name: Terminal
   command: >
+    npm i now -g;
     echo "";
     echo "Commands you can try:";
     echo " * apachectl stop";
@@ -14,6 +15,7 @@ tasks:
     echo " * gp open /var/log/apache2/error.log";
 - name: Apache
   command: >
-    cd app && composer install
-    apachectl start &&
+    cd json;
+    composer install;
+    apachectl start;
     multitail /var/log/apache2/access.log -I /var/log/apache2/error.log

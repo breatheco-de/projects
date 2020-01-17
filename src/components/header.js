@@ -1,10 +1,10 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
 const Header = ({ siteTitle }) => (
   <header >
-    <div className="gradient mb-3 p-5"/>
+    <div className="gradient p-5 text-center">
+    </div>
 
 
   </header>

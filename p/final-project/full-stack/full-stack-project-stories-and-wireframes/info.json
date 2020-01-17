@@ -2,6 +2,7 @@
 	"title" : "Final Project User Stories & Wireframes",
 	"slug" : "full-stack-project-stories-and-wireframes",
 	"status": "published",
+    "visibility": "internal",
 	"duration" : 8,
 	"description" : "Create the users stories for your final project",
 	"talents": [

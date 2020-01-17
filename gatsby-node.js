@@ -6,41 +6,35 @@ const fs = require('fs');
 
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
+    var content = fs.readFileSync('./json/projects_big.json').toString();
+    const projects = JSON.parse(content);
+    let technologyTags = [];
+    for(let i = 0;i<projects.length;i++){
+        if(technologyTags.indexOf(projects[i].technology) == -1)
+            technologyTags.push(projects[i].technology);
+    }
 
-    return new Promise((resolve, reject) => {
-        fetch("https://projects.breatheco.de/json?size=big")
-            .then(resp => resp.json())
-            .then(projects => {
-	            const technologyTags = projects.map(p => p.technology);
+    createPage({
 
-                createPage({
+        path: `/`,
+        component: path.resolve("./src/templates/home.js"),
+        context: {
+            technologyTags,
+            projects: projects.filter(p => !p.visibility || p.visibility === "public")
+        },
+    })
 
-                    path: `/`,
-                    component: path.resolve("./src/templates/home.js"),
-                    context: {
-                        technologyTags,
-                        projects
-                    },
-                })
-
-                projects.forEach(p => {
-                    createPage({
-                        path: `/project/${p.slug}`,
-                        component: path.resolve("./src/templates/single.js"),
-                        context: p,
-                    })
-                    createPage({
-                        path: `/d/${p.slug}`,
-                        component: path.resolve("./src/templates/single.js"),
-                        context: p,
-                    })
-                });
-                resolve();
-            })
-            .catch(error => {
-                console.log(error);
-                reject();
-            });
+    projects.forEach(p => {
+        createPage({
+            path: `/project/${p.slug}`,
+            component: path.resolve("./src/templates/single.js"),
+            context: p,
+        })
+        createPage({
+            path: `/d/${p.slug}`,
+            component: path.resolve("./src/templates/single.js"),
+            context: p,
+        })
     });
 
 };

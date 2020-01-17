@@ -1,5 +1,6 @@
 {
 	"title" : "First Prototype",
+    "visibility": "internal",
 	"slug" : "web-development-project-prototype",
 	"status": "published",
 	"duration" : 20,
