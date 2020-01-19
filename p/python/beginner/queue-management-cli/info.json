@@ -2,6 +2,7 @@
 	"slug" : "queue-management-cli",
 	"title" : "Queue Managment CLI",
 	"description": "Terminal-based queue management application",
+    "solution": "https://github.com/breatheco-de/queue-managment-cli",
 	"status": "published",
 	"live-url": "",
 	"duration" : 8,

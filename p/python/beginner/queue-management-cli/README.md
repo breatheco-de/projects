@@ -1,4 +1,4 @@
-# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) SMS Queue Management System
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Queue Management System CLI
 
 Lets create a Queue System: Queue system are heavily used in Goverment institutions, airports, banks and many other venues looking to organize the incoming traffic.
 Queue systems can also be used to load balancing for different applications like:
@@ -14,16 +14,16 @@ Queue systems can also be used to load balancing for different applications like
 3. The application also needs to be able to export the queue to a file named `queue.json`.
 4. Use the following data-structure to implement the queue:
 
-```py
+```python
 class Queue:
 
-    def __init__(self, mode):
-        self._queue = []
+    def __init__(self, mode, current_queue=[]):
+        self.queue = current_queue
         # depending on the _mode, the queue has to behave like a FIFO or LIFO
         if mode is None:
             raise "Please specify a queue mode FIFO or LIFO"
         else:
-            self._mode = mode
+            self.mode = mode
     
     def enqueue(self, item):
         pass
@@ -32,7 +32,7 @@ class Queue:
     def get_queue(self):
         pass
     def size(self):
-        return len(self._queue) 
+        return len(self.queue) 
 ```
 
 ## Example worlflow
