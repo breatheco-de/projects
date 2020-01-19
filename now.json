@@ -4,8 +4,7 @@
     "name": "breathecode-projects",
     "builds": [
         { "src": "package.json", "use": "@now/static-build", "config": {"distDir": "public"} },
-        { "src": "p/*", "use": "@now/static" },
-        { "src": "json/index.php", "use": "@now/php" }
+        { "src": "p/*", "use": "@now/static" }
     ],
     "routes": [
         {

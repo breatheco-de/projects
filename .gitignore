@@ -9,7 +9,7 @@ php_errorlog
 #composer related
 composer.phar
 vendor/
-json/*.json
+!json/*.json
 .DS_Store
 
 # Runtime data
