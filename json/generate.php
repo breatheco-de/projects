@@ -40,12 +40,12 @@ else{
     $size = !empty($_GET['size']) ? $_GET['size'] : null;
     if(defined('STDIN')){
         $myfile = fopen($dir."/projects.json", "w+") or die("Unable to open file!");
-        fwrite($myfile, json_encode($json->getAllProjects()));
+        fwrite($myfile, json_encode($json->getAllProjects(), JSON_PRETTY_PRINT));
         fclose($myfile);
 
         $myfile = fopen($dir."/projects_big.json", "w+") or die("Unable to open file!");
-        fwrite($myfile, json_encode($json->getAllProjects('big')));
+        fwrite($myfile, json_encode($json->getAllProjects('big'), JSON_PRETTY_PRINT));
         fclose($myfile);
     }
-    else echo json_encode($json->getAllProjects($size));
+    else echo json_encode($json->getAllProjects($size), JSON_PRETTY_PRINT);
 }
