@@ -1,0 +1,17 @@
+{
+	"video-id": "0J4SbVSjxvU",
+	"timeline":[
+		{ "seconds": "1", "description": "Introduction" },
+		{ "seconds": "1:08", "description": "Installation" },
+		{ "seconds": "3:45", "description": "Explaining the structure" },
+		{ "seconds": "08:10", "description": "First run (bundling + hello world)" },
+		{ "seconds": "10:05", "description": "Where to start coding" },  
+		{ "seconds": "12:25", "description": "First lines of HTML" },  
+		{ "seconds": "13:49", "description": "First lines of Javascript" }, 
+		{ "seconds": "15:29", "description": "How to display something on website refresh" }, 
+		{ "seconds": "16:30", "description": "How to display something on The DOM" },
+		{ "seconds": "17:31", "description": "Generating the excuse" },
+		{ "seconds": "27:45", "description": "Final demonstration" },
+		{ "seconds": "28:16", "description": "Changing the excuse on button click" }
+	]
+}

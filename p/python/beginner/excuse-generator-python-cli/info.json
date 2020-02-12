@@ -1,0 +1,13 @@
+{
+	"title" : "The Excuse Generator CLI (python)",
+	"slug" : "excuse-generator-python-cli",
+	"status": "draft",
+	"duration" : 4,
+	"description" : "Disneyland for procrastinators. This excuse generator in python takes no more than 20 lines of code and can save you for the rest of your life!",
+	"talents": [
+		{ "badge": "identator", "points": 6 },
+		{ "badge": "tag-master", "points": 3 },
+		{ "badge": "abc", "points": 5 },
+		{ "badge": "functional-developer", "points": 5 }
+	]
+}
