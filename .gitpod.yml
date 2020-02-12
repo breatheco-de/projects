@@ -6,7 +6,7 @@ ports:
 tasks:
 - name: Terminal
   command: >
-    npm i now -g;
+    npm i now gatsby-cli -g;
     echo "";
     echo "Commands you can try:";
     echo " * apachectl stop";
