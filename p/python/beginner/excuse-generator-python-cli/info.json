@@ -4,6 +4,7 @@
 	"status": "draft",
 	"duration" : 4,
 	"description" : "Disneyland for procrastinators. This excuse generator in python takes no more than 20 lines of code and can save you for the rest of your life!",
+    "solution": "https://github.com/breatheco-de/model-solutions-excuse-generator/blob/master/cli.py",
 	"talents": [
 		{ "badge": "identator", "points": 6 },
 		{ "badge": "tag-master", "points": 3 },
