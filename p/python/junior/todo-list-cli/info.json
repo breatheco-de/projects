@@ -1,0 +1,13 @@
+{
+	"slug" : "todo-list-cli",
+	"title" : "Todo List CLI",
+	"description": "Todo List CLI using backend language",
+	"status": "published",
+	"live-url": "",
+	"duration" : 8,
+    "solution": "https://github.com/breatheco-de/model-solution-todo-list-cli",
+	"technologies": ["python", "terminal", "command line"],
+	"talents": [
+		{ "badge": "identator", "points": 10 }
+	]
+}

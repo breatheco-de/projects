@@ -1,0 +1,12 @@
+{
+	"title" : "Random Card Generator CLI",
+	"slug" : "random-card",
+	"status": "published",
+	"solution": "https://github.com/breatheco-de/model-solution-random-card",
+	"duration" : 4,
+	"description" : "Use your CSS/HTML/JS skills to randomly draw a poker card on every website refresh.",
+	"talents": [
+		{ "badge": "identator", "points": 6 },
+		{ "badge": "functional-developer", "points": 6 }
+	]
+}
