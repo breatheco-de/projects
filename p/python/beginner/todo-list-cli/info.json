@@ -6,7 +6,7 @@
 	"live-url": "",
 	"duration" : 8,
     "solution": "https://github.com/breatheco-de/model-solution-todo-list-cli",
-	"technologies": ["python", "terminal", "command line"],
+	"technologies": ["python", "terminal", "command line", "csv", "static file storage"],
 	"talents": [
 		{ "badge": "identator", "points": 10 }
 	]

@@ -7,7 +7,6 @@
     "solution": "https://github.com/breatheco-de/model-solutions-excuse-generator/blob/master/cli.py",
 	"talents": [
 		{ "badge": "identator", "points": 6 },
-		{ "badge": "tag-master", "points": 3 },
 		{ "badge": "abc", "points": 5 },
 		{ "badge": "functional-developer", "points": 5 }
 	]
