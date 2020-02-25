@@ -2312,6 +2312,37 @@
         "folder-name": "random-card-cli"
     },
     {
+        "readme": "..\/p\/python\/beginner\/todo-list-cli\/",
+        "preview": "..\/p\/python\/beginner\/todo-list-cli\/\/preview.gif",
+        "slug": "todo-list-cli",
+        "title": "Todo List CLI",
+        "description": "Todo List CLI using backend language",
+        "status": "published",
+        "live-url": "",
+        "duration": 8,
+        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-todo-list-cli",
+        "technologies": [
+            "python",
+            "terminal",
+            "command line"
+        ],
+        "talents": [
+            {
+                "badge": "identator",
+                "points": 10
+            }
+        ],
+        "info-path": "..\/p\/python\/beginner\/todo-list-cli\/info.json",
+        "name": "p",
+        "demo": "",
+        "url": "..\/p\/python\/beginner\/todo-list-cli\/",
+        "visibility": "public",
+        "technology": "python",
+        "difficulty": "beginner",
+        "category": "python",
+        "folder-name": "todo-list-cli"
+    },
+    {
         "readme": "..\/p\/python\/junior\/family-static-api\/",
         "title": "Family Static API with Flask",
         "slug": "family-static-api",
@@ -2416,37 +2447,6 @@
         "difficulty": "junior",
         "category": "python",
         "folder-name": "todo-list-api"
-    },
-    {
-        "readme": "..\/p\/python\/junior\/todo-list-cli\/",
-        "preview": "..\/p\/python\/junior\/todo-list-cli\/\/preview.gif",
-        "slug": "todo-list-cli",
-        "title": "Todo List CLI",
-        "description": "Todo List CLI using backend language",
-        "status": "published",
-        "live-url": "",
-        "duration": 8,
-        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-todo-list-cli",
-        "technologies": [
-            "python",
-            "terminal",
-            "command line"
-        ],
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/python\/junior\/todo-list-cli\/info.json",
-        "name": "p",
-        "demo": "",
-        "url": "..\/p\/python\/junior\/todo-list-cli\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "junior",
-        "category": "python",
-        "folder-name": "todo-list-cli"
     },
     {
         "readme": "..\/p\/python\/junior\/todo-list-cli-with-fetch\/",

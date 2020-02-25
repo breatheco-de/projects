@@ -2362,6 +2362,38 @@
         "folder-name": "random-card-cli"
     },
     {
+        "readme": "..\/p\/python\/beginner\/todo-list-cli\/",
+        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Todo's List CLI (Command Line Interface)\n\n<p align=\"center\">\n  <img height=\"200\" src=\"https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview\" \/>\n<\/p>\n\nCreate a TODO list application that allows users to add and delete tasks from the command line.\n\nBefore beginning your exercise please download the following boilerplate:\n```bash\n$ git clone https:\/\/github.com\/breatheco-de\/exercise-todo-list-cli\n```\n\nAfter downloading, you can test your code by typing: `$ python3 test.py`.\n\n## \ud83d\udcdd Instructions\n- You app needs to work from the the command line [like this](https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview).\n- Th user should be able to add new tasks\n- The use can add as many tasks as it wants.\n- The user can delete tasks by specifying the task position in the list.\n- The user can save the todos to a `todos.csv` file\n- The user can retrieve the todos from a `todos.csv` file\n- There is no way to update a task, the user will have to delete and create again.\n",
+        "preview": "..\/p\/python\/beginner\/todo-list-cli\/\/preview.gif",
+        "slug": "todo-list-cli",
+        "title": "Todo List CLI",
+        "description": "Todo List CLI using backend language",
+        "status": "published",
+        "live-url": "",
+        "duration": 8,
+        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-todo-list-cli",
+        "technologies": [
+            "python",
+            "terminal",
+            "command line"
+        ],
+        "talents": [
+            {
+                "badge": "identator",
+                "points": 10
+            }
+        ],
+        "info-path": "..\/p\/python\/beginner\/todo-list-cli\/info.json",
+        "name": "p",
+        "demo": "",
+        "url": "..\/p\/python\/beginner\/todo-list-cli\/",
+        "visibility": "public",
+        "technology": "python",
+        "difficulty": "beginner",
+        "category": "python",
+        "folder-name": "todo-list-cli"
+    },
+    {
         "readme": "..\/p\/python\/junior\/family-static-api\/",
         "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Family Static API\n\nThe Doe Family needs a static API! We need to build the *data structures* and create API endpoint to interact with it using Postman.\n\n## \u26a0\ufe0f Download the boilerplate\n\nPlease download one of the following bolerplates to start coding your exercise or open it on gitpod.io:\n- Django: [https:\/\/github.com\/breatheco-de\/exercise-family-static-api-django](https:\/\/github.com\/breatheco-de\/exercise-family-static-api-django)\n- Flask: [https:\/\/github.com\/4GeeksAcademy\/flask-rest-hello](https:\/\/github.com\/4GeeksAcademy\/flask-rest-hello)\n\n- Create the code needed to developer the API endpoints described further below.\n- The only two files you have to edit are:\n\t- For Django: `api\/family_datastructure.py`, `api\/views.py`.\n\t- For Flask: `src\/family_datastructure.py`, `src\/main.py`.\n- We have prepared a set of automated tests that will give you an idea if your code is correct, run the tests by typing `$ pipenv run tests` on the command line.\n\n## Data structures\n\nEvery **member** of the Doe family must be a dictionary - equivalent of [Objects Literals in JS](https:\/\/www.dyn-web.com\/tutorials\/object-literal\/) - and have these values:\n```\n    + id: Int\n\t  \n    + first_name: String\n      \n    + last_name: String (Always Doe)\n      \n    + age: Int > 0\n      \n    + lucky_numbers: Array of int\n```\nThe **family** data-structure will be a class with the following structure:\n\n```python\nclass Family:\n\n\tdef __init__(self, last_name):\n\t\tself.last_name = last_name\n        # example list of members\n\t\tself._members = [{\n\t\t\t\"id\": self._generateId(),\n\t\t\t\"first_name\": \"John\"\n\t\t}]\n\n    \t# read-only: Use this method to generate random members ID's when adding members into the list\n    def _generateId(self):\n        return random.randint(0, 99999999) \/\/import random \n\n\tdef add_member(self, member):\n        ## you have to implement this method\n        ## append the member to the list of _members\n\t\tpass\n\n\tdef delete_member(self, id):\n        ## you have to implement this method\n        ## loop the list and delete the member with the given id\n\t\tpass\n\n\tdef update_member(self, id, member):\n        ## you have to implement this method\n        ## loop the list and replace the memeber with the given id\n\t\tpass\n\n\tdef get_member(self, id):\n        ## you have to implement this method\n        ## loop all the members and return the one with the given id\n\t\tpass\n\n\tdef get_all_members(self):\n\t\treturn self._members\n```\n\nNote: don't forget to Initialize the class: `doe_family = Family('Doe')` *before* the routes.\n\n## These are the initial Family Members\n\n```md\nJohn Doe\n33 Years old\nLucky Numbers: 7, 13, 22\n\nJane Doe\n35 Years old\nLucky Numbers: 10, 14, 3\n\nJimmy Doe\n5 Years old\nLucky Numbers: 1\n```\n\n## Endpoints\n\nThis API must have 4 endpoints. They all return JSON:\n\n### 1) Get all family members:\n\n```md\nGET \/members\n\nRESPONSE (content-type: Application\/JSON):\n{\n\tstatus_code: 200 if success. 400 if bad request (wrong info) screw up, 500 if the server encounter an error\n    body: { \n    \tmembers: [], \/\/Array of members.\n\t\tfamily_name: \"\", \/\/the family's last name.\n\t\tlucky_numbers: [], \/\/An array with all family member's lucky numbers.\n\t\tsum_of_lucky: Int \/\/Sum of all family member's lucky numbers.\n}\n```\nImportant: There are two fields that must be calculated on runtime:\n- lucky_numbers is the concatenation of all the lucky numbers from the family members.\n- sum_of_lucky is the sum of all the lucky numbers of the family members.\n\n\n### 2) Retrieve one member\nWhich returns the member of the family where `id == member_id`.\n\n```md\nGET \/member\/<int:member_id>\n\nRESPONSE (content_type: Application\/JSON):\n{\n\tstatus_code: 200 if success. 400 if bad request (wrong info) screw up, 500 if the server encounter an error\n    body: {} \/\/the member's json object\n}\n```\n\n\n\n### 3) Add (POST) new member\n\n```md\nPOST \/member\n\nREQUEST (content_type: Application\/JSON):\n{\n    body: { \/\/the new member's json object\n\t\tname: String,\n\t\tage: Int,\n\t\tlucky_numbers: []\n\t}\n}\n\nRESPONSE (content_type: Application\/JSON):\n{\t\n\tstatus_code: 200 if success. 400 if bad request (wrong info) screw up, 500 if the server encounter an error\n\tdone: True\n}\n```\n\n\n\n### 4) DELETE one member\n\n```md\nPOST \/member\/<int:member_id>\n\nRESPONSE (content_type: Application\/JSON):\n{\n    status_code: 200 if success. 400 if bad request (wrong info) screw up, 500 if the server encounter an error\n    done: True\n}\n```\n\n## Requirements\n\n- All requests and reponses should be in content\/type: application\/json\n- Response codes must be `200` for success, `400` for bad request or `404` for not found.\n- This exercise does not include a database, everything must be done in Runtime (RAM).\n",
         "title": "Family Static API with Flask",
@@ -2470,38 +2502,6 @@
         "difficulty": "junior",
         "category": "python",
         "folder-name": "todo-list-api"
-    },
-    {
-        "readme": "..\/p\/python\/junior\/todo-list-cli\/",
-        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Todo's List CLI (Command Line Interface)\n\n<p align=\"center\">\n  <img height=\"200\" src=\"https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview\" \/>\n<\/p>\n\nCreate a TODO list application that allows users to add and delete tasks from the command line.\n\nBefore beginning your exercise please download the following boilerplate:\n```bash\n$ git clone https:\/\/github.com\/breatheco-de\/exercise-todo-list-cli\n```\n\nAfter downloading, you can test your code by typing: `$ python3 test.py`.\n\n## \ud83d\udcdd Instructions\n- You app needs to work from the the command line [like this](https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview).\n- Th user should be able to add new tasks\n- The use can add as many tasks as it wants.\n- The user can delete tasks by specifying the task position in the list.\n- The user can save the todos to a `todos.csv` file\n- The user can retrieve the todos from a `todos.csv` file\n- There is no way to update a task, the user will have to delete and create again.\n",
-        "preview": "..\/p\/python\/junior\/todo-list-cli\/\/preview.gif",
-        "slug": "todo-list-cli",
-        "title": "Todo List CLI",
-        "description": "Todo List CLI using backend language",
-        "status": "published",
-        "live-url": "",
-        "duration": 8,
-        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-todo-list-cli",
-        "technologies": [
-            "python",
-            "terminal",
-            "command line"
-        ],
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/python\/junior\/todo-list-cli\/info.json",
-        "name": "p",
-        "demo": "",
-        "url": "..\/p\/python\/junior\/todo-list-cli\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "junior",
-        "category": "python",
-        "folder-name": "todo-list-cli"
     },
     {
         "readme": "..\/p\/python\/junior\/todo-list-cli-with-fetch\/",
