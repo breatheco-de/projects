@@ -2332,14 +2332,14 @@
                 "description": "Final demonstration"
             }
         ],
-        "video-path": "..\/p\/python\/beginner\/random-card-python-cli\/video.json",
-        "readme": "..\/p\/python\/beginner\/random-card-python-cli\/",
-        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32)  Random Card Dealer (generator)\n\nIn this project you will learn how to change your website styles during the runtime using [VanillaJS](https:\/\/stackoverflow.com\/questions\/20435653\/what-is-vanillajs) (plain normal js).\n\n## Instructions\n\nCreate and algorithm that randomly builds a card on every refresh:\n\n1. Every time the website refreshes a new random card needs to show\n2. The card must have one of the possible suites: Hearts, Spades, Clubs and Diamons.\n3. The card value must be one of the following: 1 to 10, King, Queen, Jack or Ace (no joker).\n\nIn the end, the project needs to look similar to [this demo](https:\/\/projects.breatheco.de\/json?slug=random-card&preview).\n\n### Hints\n\n- Remember that the first event on a website lifecycle is [onLoad (your code starts running there)](https:\/\/www.w3schools.com\/jsref\/event_onload.asp), you should generate a random number between 1 and 4 to pick a sute and another random number between 0 and 12 to pick a card number.\n- Create a general **.card** class that applies the general styles to each card, and one additional CSS class for each suite: .spade, .club, .heart & .diamond.\n- Apply the .card class to the entire div but only apply one of the suite classes at a time depending on what suite you want to apply. For example a 3 of hearts will have this HTML declaration:\n```\n    <div class='card heart'><\/div>\n```\n- You can use images, icons or HTML character entities to generate the sute symbol into the HTML [Here you can find the character entities](https:\/\/brajeshwar.github.io\/entities\/) for the :before and :after content.\n\n![https:\/\/ucarecdn.com\/7cd14b33-dd69-4680-aaf3-ab16afe2316b\/ScreenShot20190511at30921AM.png](https:\/\/ucarecdn.com\/7cd14b33-dd69-4680-aaf3-ab16afe2316b\/ScreenShot20190511at30921AM.png)",
-        "preview": "..\/p\/python\/beginner\/random-card-python-cli\/\/preview.gif",
-        "title": "Random Card Generator",
+        "video-path": "..\/p\/python\/beginner\/random-card-cli\/video.json",
+        "readme": "..\/p\/python\/beginner\/random-card-cli\/",
+        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32)  Random Card Dealer (generator)\n\nIn this project you will learn how to use coding logic to generate random cards.\n\n## Instructions\n\nCreate and algorithm that randomly builds a random card every time it runs:\n\n1. Every time the algorithm runs a new random card needs to show on the console.\n2. The card must have one of the possible suites: Hearts, Spades, Clubs and Diamons.\n3. The card value must be one of the following: 1 to 10, King, Queen, Jack or Ace (no joker).\n\nIn the end, the project needs to look similar to [this demo](https:\/\/projects.breatheco.de\/json?slug=random-card-python-cli&preview).\n\n### Hints\n\n- You can use emoji for the card suites: `\u2661 \u2667 \u2664 \u2662`\n",
+        "preview": "..\/p\/python\/beginner\/random-card-cli\/\/preview.gif",
+        "title": "Random Card Generator CLI",
         "slug": "random-card",
         "status": "published",
-        "solution": "https:\/\/bitbucket.org\/codingacademy\/random-card",
+        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-random-card",
         "duration": 4,
         "description": "Use your CSS\/HTML\/JS skills to randomly draw a poker card on every website refresh.",
         "talents": [
@@ -2348,50 +2348,18 @@
                 "points": 6
             },
             {
-                "badge": "tag-master",
-                "points": 3
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "position-vs-display",
-                "points": 10
-            },
-            {
-                "badge": "be-dry",
-                "points": 10
-            },
-            {
-                "badge": "css-inspector",
-                "points": 5
-            },
-            {
-                "badge": "window-lover",
-                "points": 3
-            },
-            {
-                "badge": "source-inspector",
-                "points": 5
-            },
-            {
-                "badge": "abc",
-                "points": 6
-            },
-            {
                 "badge": "functional-developer",
                 "points": 6
             }
         ],
-        "info-path": "..\/p\/python\/beginner\/random-card-python-cli\/info.json",
+        "info-path": "..\/p\/python\/beginner\/random-card-cli\/info.json",
         "name": "p",
-        "url": "..\/p\/python\/beginner\/random-card-python-cli\/",
+        "url": "..\/p\/python\/beginner\/random-card-cli\/",
         "visibility": "public",
         "technology": "python",
         "difficulty": "beginner",
         "category": "python",
-        "folder-name": "random-card-python-cli"
+        "folder-name": "random-card-cli"
     },
     {
         "readme": "..\/p\/python\/junior\/family-static-api\/",
@@ -2502,6 +2470,70 @@
         "difficulty": "junior",
         "category": "python",
         "folder-name": "todo-list-api"
+    },
+    {
+        "readme": "..\/p\/python\/junior\/todo-list-cli\/",
+        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Todo's List CLI (Command Line Interface)\n\n<p align=\"center\">\n  <img height=\"200\" src=\"https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview\" \/>\n<\/p>\n\nCreate a TODO list application that allows users to add and delete tasks from the command line.\n\nBefore beginning your exercise please download the following boilerplate:\n```bash\n$ git clone https:\/\/github.com\/breatheco-de\/exercise-todo-list-cli\n```\n\nAfter downloading, you can test your code by typing: `$ python3 test.py`.\n\n## \ud83d\udcdd Instructions\n- You app needs to work from the the command line [like this](https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview).\n- Th user should be able to add new tasks\n- The use can add as many tasks as it wants.\n- The user can delete tasks by specifying the task position in the list.\n- The user can save the todos to a `todos.csv` file\n- The user can retrieve the todos from a `todos.csv` file\n- There is no way to update a task, the user will have to delete and create again.\n",
+        "preview": "..\/p\/python\/junior\/todo-list-cli\/\/preview.gif",
+        "slug": "todo-list-cli",
+        "title": "Todo List CLI",
+        "description": "Todo List CLI using backend language",
+        "status": "published",
+        "live-url": "",
+        "duration": 8,
+        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-todo-list-cli",
+        "technologies": [
+            "python",
+            "terminal",
+            "command line"
+        ],
+        "talents": [
+            {
+                "badge": "identator",
+                "points": 10
+            }
+        ],
+        "info-path": "..\/p\/python\/junior\/todo-list-cli\/info.json",
+        "name": "p",
+        "demo": "",
+        "url": "..\/p\/python\/junior\/todo-list-cli\/",
+        "visibility": "public",
+        "technology": "python",
+        "difficulty": "junior",
+        "category": "python",
+        "folder-name": "todo-list-cli"
+    },
+    {
+        "readme": "..\/p\/python\/junior\/todo-list-cli-with-fetch\/",
+        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Todo's List CLI (Command Line Interface)\n\n<p align=\"center\">\n  <img height=\"200\" src=\"https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview\" \/>\n<\/p>\n\nCreate a TODO list application that allows users to add and delete tasks from the command line.\n\nBefore beginning your exercise please download the following boilerplate:\n```bash\n$ git clone https:\/\/github.com\/breatheco-de\/exercise-todo-list-cli\n```\n\nAfter downloading, you can test your code by typing: `$ python3 test.py`.\n\n## \ud83d\udcdd Instructions\n- You app needs to work from the the command line [like this](https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview).\n- Th user should be able to add new tasks\n- The use can add as many tasks as it wants.\n- The user can delete tasks by specifying the task position in the list.\n- There is no way to update a task, the user will have to delete and create again.\n",
+        "preview": "..\/p\/python\/junior\/todo-list-cli-with-fetch\/\/preview.gif",
+        "slug": "todo-list-cli",
+        "title": "Todo List CLI",
+        "description": "Todo List CLI using backend language",
+        "status": "published",
+        "live-url": "",
+        "duration": 8,
+        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-todo-list-cli",
+        "technologies": [
+            "python",
+            "terminal",
+            "command line"
+        ],
+        "talents": [
+            {
+                "badge": "identator",
+                "points": 10
+            }
+        ],
+        "info-path": "..\/p\/python\/junior\/todo-list-cli-with-fetch\/info.json",
+        "name": "p",
+        "demo": "",
+        "url": "..\/p\/python\/junior\/todo-list-cli-with-fetch\/",
+        "visibility": "public",
+        "technology": "python",
+        "difficulty": "junior",
+        "category": "python",
+        "folder-name": "todo-list-cli-with-fetch"
     },
     {
         "readme": "..\/p\/python\/semi-senior\/queue-management-api\/",

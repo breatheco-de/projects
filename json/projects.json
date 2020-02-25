@@ -2283,13 +2283,13 @@
                 "description": "Final demonstration"
             }
         ],
-        "video-path": "..\/p\/python\/beginner\/random-card-python-cli\/video.json",
-        "readme": "..\/p\/python\/beginner\/random-card-python-cli\/",
-        "preview": "..\/p\/python\/beginner\/random-card-python-cli\/\/preview.gif",
-        "title": "Random Card Generator",
+        "video-path": "..\/p\/python\/beginner\/random-card-cli\/video.json",
+        "readme": "..\/p\/python\/beginner\/random-card-cli\/",
+        "preview": "..\/p\/python\/beginner\/random-card-cli\/\/preview.gif",
+        "title": "Random Card Generator CLI",
         "slug": "random-card",
         "status": "published",
-        "solution": "https:\/\/bitbucket.org\/codingacademy\/random-card",
+        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-random-card",
         "duration": 4,
         "description": "Use your CSS\/HTML\/JS skills to randomly draw a poker card on every website refresh.",
         "talents": [
@@ -2298,50 +2298,18 @@
                 "points": 6
             },
             {
-                "badge": "tag-master",
-                "points": 3
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "position-vs-display",
-                "points": 10
-            },
-            {
-                "badge": "be-dry",
-                "points": 10
-            },
-            {
-                "badge": "css-inspector",
-                "points": 5
-            },
-            {
-                "badge": "window-lover",
-                "points": 3
-            },
-            {
-                "badge": "source-inspector",
-                "points": 5
-            },
-            {
-                "badge": "abc",
-                "points": 6
-            },
-            {
                 "badge": "functional-developer",
                 "points": 6
             }
         ],
-        "info-path": "..\/p\/python\/beginner\/random-card-python-cli\/info.json",
+        "info-path": "..\/p\/python\/beginner\/random-card-cli\/info.json",
         "name": "p",
-        "url": "..\/p\/python\/beginner\/random-card-python-cli\/",
+        "url": "..\/p\/python\/beginner\/random-card-cli\/",
         "visibility": "public",
         "technology": "python",
         "difficulty": "beginner",
         "category": "python",
-        "folder-name": "random-card-python-cli"
+        "folder-name": "random-card-cli"
     },
     {
         "readme": "..\/p\/python\/junior\/family-static-api\/",
@@ -2448,6 +2416,68 @@
         "difficulty": "junior",
         "category": "python",
         "folder-name": "todo-list-api"
+    },
+    {
+        "readme": "..\/p\/python\/junior\/todo-list-cli\/",
+        "preview": "..\/p\/python\/junior\/todo-list-cli\/\/preview.gif",
+        "slug": "todo-list-cli",
+        "title": "Todo List CLI",
+        "description": "Todo List CLI using backend language",
+        "status": "published",
+        "live-url": "",
+        "duration": 8,
+        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-todo-list-cli",
+        "technologies": [
+            "python",
+            "terminal",
+            "command line"
+        ],
+        "talents": [
+            {
+                "badge": "identator",
+                "points": 10
+            }
+        ],
+        "info-path": "..\/p\/python\/junior\/todo-list-cli\/info.json",
+        "name": "p",
+        "demo": "",
+        "url": "..\/p\/python\/junior\/todo-list-cli\/",
+        "visibility": "public",
+        "technology": "python",
+        "difficulty": "junior",
+        "category": "python",
+        "folder-name": "todo-list-cli"
+    },
+    {
+        "readme": "..\/p\/python\/junior\/todo-list-cli-with-fetch\/",
+        "preview": "..\/p\/python\/junior\/todo-list-cli-with-fetch\/\/preview.gif",
+        "slug": "todo-list-cli",
+        "title": "Todo List CLI",
+        "description": "Todo List CLI using backend language",
+        "status": "published",
+        "live-url": "",
+        "duration": 8,
+        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-todo-list-cli",
+        "technologies": [
+            "python",
+            "terminal",
+            "command line"
+        ],
+        "talents": [
+            {
+                "badge": "identator",
+                "points": 10
+            }
+        ],
+        "info-path": "..\/p\/python\/junior\/todo-list-cli-with-fetch\/info.json",
+        "name": "p",
+        "demo": "",
+        "url": "..\/p\/python\/junior\/todo-list-cli-with-fetch\/",
+        "visibility": "public",
+        "technology": "python",
+        "difficulty": "junior",
+        "category": "python",
+        "folder-name": "todo-list-cli-with-fetch"
     },
     {
         "readme": "..\/p\/python\/semi-senior\/queue-management-api\/",
