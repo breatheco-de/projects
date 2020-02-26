@@ -9,10 +9,30 @@ import Helmet from "react-helmet";
 
 
 class Single extends React.Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
-            showVideo: false
+            showVideo: false,
+            markdown: props.pageContext.markdown
+        }
+    }
+
+    componentDidMount(){
+        const { pageContext, search } = this.props;
+
+        if(typeof(markdown) !== 'string'){
+            const readmeURL = pageContext.readme.indexOf("../") == 0 ?
+                "https://projects.breatheco.de/p/" + pageContext.readme + "README.md"
+                :
+                pageContext.readme;
+    
+            fetch(readmeURL)
+                .then(resp => resp.text())
+                .then(data => this.setState({ markdown: data }))
+                .catch(err => {
+                    alert("Error loading the markdon file");
+                    console.error(err);
+                });
         }
     }
 

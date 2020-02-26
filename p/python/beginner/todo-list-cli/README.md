@@ -13,9 +13,20 @@ $ git clone https://github.com/breatheco-de/exercise-todo-list-cli
 
 After downloading, you can test your code by typing: `$ python3 test.py`.
 
+These are the functions you will have to implement:
+
+```python
+def add_one_task(title):
+def print_list():
+def delete_task(number_to_delete):
+def save_todos():
+def load_todos():
+```
+
 ## 📝 Instructions
+
 - You app needs to work from the the command line [like this](https://projects.breatheco.de/json?slug=todo-list-cli&preview).
-- Th user should be able to add new tasks
+- The user should be able to add new tasks
 - The use can add as many tasks as it wants.
 - The user can delete tasks by specifying the task position in the list.
 - The user can save the todos to a `todos.csv` file

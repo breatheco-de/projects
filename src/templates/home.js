@@ -17,6 +17,7 @@ class Home extends React.Component{
     }
     render(){
         const { pageContext } = this.props;
+        console.log(pageContext);
         return (
             <React.Fragment>
             <div className="fontFamily">

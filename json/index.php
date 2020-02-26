@@ -37,6 +37,10 @@ if(!empty($_REQUEST['slug']))
 				header("HTTP/1.0 404 Not Found");
 				echo json_encode(['msg' => 'preview not found in '.$_REQUEST['slug'].'/preview.'.$file_ext]);
 			}
+        }
+		else if(isset($_REQUEST['readme']) || isset($_REQUEST['readme/'])){
+            echo $project->markdown;
+            die();
 		}
 		else echo json_encode($project);
 	}
