@@ -83,6 +83,10 @@ class Single extends React.Component{
                                                     <div className="col-7 d-flex justify-content-end">{pageContext.difficulty}</div>
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
+                                                    <div className="col-6 "><span className="colorRed"><Icon type="github" className="text-danger"/></span><span className="ml-1">Repository:</span></div>
+                                                    <div className="col-6 d-flex justify-content-end ">{pageContext["repository"]? <a target="_blank" href={pageContext["repository"]}>Click to open</a>:"Not available"}</div>
+                                                </div>
+                                                <div className="row border-bottom p-1 m-0 no-gutters small">
                                                     <div className="col-6 "><span className="colorRed"><Icon type="youtube" className="text-danger"/></span><span className="ml-1">Video available:</span></div>
                                                     <div className="col-6 d-flex justify-content-end ">{pageContext["video-path"]?"Available":"Not available"}</div>
                                                 </div>
