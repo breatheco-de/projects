@@ -2192,38 +2192,6 @@
         "folder-name": "contact-list-api"
     },
     {
-        "readme": "..\/p\/python\/beginner\/excuse-generator-python-cli\/",
-        "preview": "..\/p\/python\/beginner\/excuse-generator-python-cli\/\/preview.gif",
-        "title": "The Excuse Generator CLI (python)",
-        "slug": "excuse-generator-python-cli",
-        "status": "draft",
-        "duration": 4,
-        "description": "Disneyland for procrastinators. This excuse generator in python takes no more than 20 lines of code and can save you for the rest of your life!",
-        "solution": "https:\/\/github.com\/breatheco-de\/model-solutions-excuse-generator\/blob\/master\/cli.py",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 6
-            },
-            {
-                "badge": "abc",
-                "points": 5
-            },
-            {
-                "badge": "functional-developer",
-                "points": 5
-            }
-        ],
-        "info-path": "..\/p\/python\/beginner\/excuse-generator-python-cli\/info.json",
-        "name": "p",
-        "url": "..\/p\/python\/beginner\/excuse-generator-python-cli\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "beginner",
-        "category": "python",
-        "folder-name": "excuse-generator-python-cli"
-    },
-    {
         "video-id": "kFrWxuKor_Y",
         "timeline": [
             {
