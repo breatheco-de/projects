@@ -2447,40 +2447,6 @@
         "folder-name": "todo-list-api"
     },
     {
-        "readme": "..\/p\/python\/junior\/todo-list-cli-with-cloud\/",
-        "preview": "..\/p\/python\/junior\/todo-list-cli-with-cloud\/\/preview.gif",
-        "slug": "todo-list-cli-with-cloud",
-        "title": "Todo List CLI on the Cloud",
-        "description": "Todo List CLI using saving and retriving the Todo's on the cloud",
-        "status": "published",
-        "live-url": "",
-        "duration": 8,
-        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-todo-list-cli-with-cloud",
-        "technologies": [
-            "python",
-            "terminal",
-            "command line",
-            "http",
-            "http.request",
-            "apis"
-        ],
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/python\/junior\/todo-list-cli-with-cloud\/info.json",
-        "name": "p",
-        "demo": "",
-        "url": "..\/p\/python\/junior\/todo-list-cli-with-cloud\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "junior",
-        "category": "python",
-        "folder-name": "todo-list-cli-with-cloud"
-    },
-    {
         "readme": "..\/p\/python\/semi-senior\/queue-management-api\/",
         "slug": "queue-management-api",
         "title": "Queue Managment API",

@@ -2359,7 +2359,7 @@
     },
     {
         "readme": "..\/p\/python\/beginner\/todo-list-cli\/",
-        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Todo's List CLI (Command Line Interface)\n\n<p align=\"center\">\n  <img height=\"200\" src=\"https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview\" \/>\n<\/p>\n\nCreate a TODO list application that allows users to add and delete tasks from the command line.\n\nBefore beginning your exercise please download the following boilerplate:\n```bash\n$ git clone https:\/\/github.com\/breatheco-de\/exercise-todo-list-cli\n```\n\nAfter downloading, you can test your code by typing: `$ python3 test.py`.\n\n## \ud83d\udcdd Instructions\n- You app needs to work from the the command line [like this](https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview).\n- Th user should be able to add new tasks\n- The use can add as many tasks as it wants.\n- The user can delete tasks by specifying the task position in the list.\n- The user can save the todos to a `todos.csv` file\n- The user can retrieve the todos from a `todos.csv` file\n- There is no way to update a task, the user will have to delete and create again.\n",
+        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Todo's List CLI (Command Line Interface)\n\n<p align=\"center\">\n  <img height=\"200\" src=\"https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview\" \/>\n<\/p>\n\nCreate a TODO list application that allows users to add and delete tasks from the command line.\n\nBefore beginning your exercise please download the following boilerplate:\n```bash\n$ git clone https:\/\/github.com\/breatheco-de\/exercise-todo-list-cli\n```\n\nAfter downloading, you can test your code by typing: `$ python3 test.py`.\n\nThese are the functions you will have to implement:\n\n```python\ndef add_one_task(title):\ndef print_list():\ndef delete_task(number_to_delete):\ndef save_todos():\ndef load_todos():\n```\n\n## \ud83d\udcdd Instructions\n\n- You app needs to work from the the command line [like this](https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview).\n- The user should be able to add new tasks\n- The use can add as many tasks as it wants.\n- The user can delete tasks by specifying the task position in the list.\n- The user can save the todos to a `todos.csv` file\n- The user can retrieve the todos from a `todos.csv` file\n- There is no way to update a task, the user will have to delete and create again.\n",
         "preview": "..\/p\/python\/beginner\/todo-list-cli\/\/preview.gif",
         "slug": "todo-list-cli",
         "title": "Todo List CLI",
@@ -2500,41 +2500,6 @@
         "difficulty": "junior",
         "category": "python",
         "folder-name": "todo-list-api"
-    },
-    {
-        "readme": "..\/p\/python\/junior\/todo-list-cli-with-cloud\/",
-        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Todo's List CLI (Command Line Interface)\n\n<p align=\"center\">\n  <img height=\"200\" src=\"https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview\" \/>\n<\/p>\n\nCreate a TODO list application that allows users to add and delete tasks from the command line.\n\nBefore beginning your exercise please download the following boilerplate:\n```bash\n$ git clone https:\/\/github.com\/breatheco-de\/exercise-todo-list-cli\n```\n\nAfter downloading, you can test your code by typing: `$ python3 test.py`.\n\n## \ud83d\udcdd Instructions\n- You app needs to work from the the command line [like this](https:\/\/projects.breatheco.de\/json?slug=todo-list-cli&preview).\n- Th user should be able to add new tasks\n- The use can add as many tasks as it wants.\n- The user can delete tasks by specifying the task position in the list.\n- There is no way to update a task, the user will have to delete and create again.\n",
-        "preview": "..\/p\/python\/junior\/todo-list-cli-with-cloud\/\/preview.gif",
-        "slug": "todo-list-cli-with-cloud",
-        "title": "Todo List CLI on the Cloud",
-        "description": "Todo List CLI using saving and retriving the Todo's on the cloud",
-        "status": "published",
-        "live-url": "",
-        "duration": 8,
-        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-todo-list-cli-with-cloud",
-        "technologies": [
-            "python",
-            "terminal",
-            "command line",
-            "http",
-            "http.request",
-            "apis"
-        ],
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/python\/junior\/todo-list-cli-with-cloud\/info.json",
-        "name": "p",
-        "demo": "",
-        "url": "..\/p\/python\/junior\/todo-list-cli-with-cloud\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "junior",
-        "category": "python",
-        "folder-name": "todo-list-cli-with-cloud"
     },
     {
         "readme": "..\/p\/python\/semi-senior\/queue-management-api\/",

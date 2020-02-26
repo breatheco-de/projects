@@ -19,10 +19,11 @@ class Single extends React.Component{
 
     componentDidMount(){
         const { pageContext, search } = this.props;
+        console.log("Context: ", pageContext);
 
         if(typeof(markdown) !== 'string'){
             const readmeURL = pageContext.readme.indexOf("../") == 0 ?
-                "https://projects.breatheco.de/p/" + pageContext.readme + "README.md"
+                "https://projects.breatheco.de/json/?slug="+pageContext.slug+"&readme&size=big"
                 :
                 pageContext.readme;
     
@@ -57,7 +58,7 @@ class Single extends React.Component{
                     <div className="container fontFamily single-project">
                         <div className="row">
                             <div className="col-12 col-md-6 col-lg-6 col-xl-7 order-2 order-md-1">
-                                <MarkdownParser source={pageContext.markdown} />
+                                <MarkdownParser source={this.state.markdown} />
                             </div>
                             <div className="col-12 col-md-6 col-lg- col-xl-5 order-1 order-md-2 mb-3">
                             { !fromIframe &&
