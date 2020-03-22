@@ -16,18 +16,20 @@ export const ProjectCard = ({ project, mode }) => {
 
 const Card = ({ project, preview }) => {
     const p = project;
-    return <div className="card">
-        { preview && <img className="card-img-top" src={preview} alt="Card image cap" />}
-        <div className="card-body p-2">
-            <h5 className="card-title">{p.title}</h5>
-            <p className="card-text">{p.description}</p>
-            <div>
-                {p.difficulty?<span className="author badge badge-pill badge-light mr-2"><span><Icon type="circle" /></span> {p.difficulty}</span>:" "}
-                {p.duration?<span className="author badge badge-pill badge-light mr-2"><span><Icon type="circle" /></span> {p.duration} hr duration</span>:" "}
-                {p["video-id"] && <span className="author badge badge-pill badge-light mr-2"><span className="colorRed"><Icon type="youtube" className="text-danger" /></span> Video Tutorial</span>}
-                {p.technology?<span className="author badge badge-pill badge-light mr-2"><span><Icon type="code" /></span> {p.technology}</span>:" "}
+    return <div className="card">                            
+        <Link className="text-dark" to={"/project/" + p.slug}>
+            { preview && <img className="card-img-top" src={preview} alt="Card image cap" />}
+            <div className="card-body p-2">
+                <h5 className="card-title">{p.title}</h5>
+                <p className="card-text">{p.description}</p>
+                <div>
+                    {p.difficulty?<span className="author badge badge-pill badge-light mr-2"><span><Icon type="circle" /></span> {p.difficulty}</span>:" "}
+                    {p.duration?<span className="author badge badge-pill badge-light mr-2"><span><Icon type="circle" /></span> {p.duration} hr duration</span>:" "}
+                    {p["video-id"] && <span className="author badge badge-pill badge-light mr-2"><span className="colorRed"><Icon type="youtube" className="text-danger" /></span> Video Tutorial</span>}
+                    {p.technology?<span className="author badge badge-pill badge-light mr-2"><span><Icon type="code" /></span> {p.technology}</span>:" "}
+                </div>
             </div>
-        </div>
+        </Link>
     </div>
 };
 
