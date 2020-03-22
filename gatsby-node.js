@@ -1,4 +1,6 @@
-
+const sharp = require('sharp')
+sharp.simd(false)
+sharp.cache(false)
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require("path");
 const fetch = require('node-fetch');
@@ -28,6 +30,7 @@ exports.createPages = async ({ actions, graphql }) => {
     })
 
     projects.forEach(p => {
+        console.log("Create page for project: /"+p.slug);
         createPage({
             path: `/project/${p.slug}`,
             component: path.resolve("./src/templates/single.js"),

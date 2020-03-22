@@ -17,23 +17,28 @@ class Single extends React.Component{
         }
     }
 
+    getReadme(){
+        const { pageContext } = this.props;
+        const readmeURL = pageContext.readme.indexOf("../") == 0 ?
+        "https://projects.breatheco.de/json/?slug="+pageContext.slug+"&readme&size=big"
+        :
+        pageContext.readme;
+
+        fetch(readmeURL)
+            .then(resp => resp.text())
+            .then(data => this.setState({ markdown: data }))
+            .catch(err => {
+                alert("Error loading the markdon file");
+                console.error(err);
+            });
+    }
+
     componentDidMount(){
         const { pageContext, search } = this.props;
         console.log("Context: ", pageContext);
 
         if(typeof(markdown) !== 'string'){
-            const readmeURL = pageContext.readme.indexOf("../") == 0 ?
-                "https://projects.breatheco.de/json/?slug="+pageContext.slug+"&readme&size=big"
-                :
-                pageContext.readme;
-    
-            fetch(readmeURL)
-                .then(resp => resp.text())
-                .then(data => this.setState({ markdown: data }))
-                .catch(err => {
-                    alert("Error loading the markdon file");
-                    console.error(err);
-                });
+            this.getReadme();
         }
     }
 
@@ -88,7 +93,7 @@ class Single extends React.Component{
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
                                                     <div className="col-6 "><span className="colorRed"><Icon type="youtube" className="text-danger"/></span><span className="ml-1">Video available:</span></div>
-                                                    <div className="col-6 d-flex justify-content-end ">{pageContext["video-path"]?"Available":"Not available"}</div>
+                                                    <div className="col-6 d-flex justify-content-end ">{pageContext["video-id"]?"Available":"Not available"}</div>
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
                                                     <div className="col-7 "><span ><Icon type="play" className="text-danger font-size" /></span><span className="ml-2">Live demo available:</span></div>
