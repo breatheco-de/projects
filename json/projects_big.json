@@ -23,7 +23,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep1-experience-and-education\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/career-support\/sep1-experience-and-education\/",
         "technology": "career-support",
         "difficulty": null,
@@ -54,7 +54,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep2-projects\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/career-support\/sep2-projects\/",
         "technology": "career-support",
         "difficulty": null,
@@ -85,7 +85,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep3-skills\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/career-support\/sep3-skills\/",
         "technology": "career-support",
         "difficulty": null,
@@ -116,7 +116,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep4-summary-statement\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/career-support\/sep4-summary-statement\/",
         "technology": "career-support",
         "difficulty": null,
@@ -147,7 +147,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep5-resume\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/career-support\/sep5-resume\/",
         "technology": "career-support",
         "difficulty": null,
@@ -180,292 +180,12 @@
             }
         ],
         "info-path": "..\/p\/career-support\/student-external-profile\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/career-support\/student-external-profile\/",
         "technology": "career-support",
         "difficulty": null,
         "category": "career-support",
         "folder-name": "student-external-profile"
-    },
-    {
-        "readme": "..\/p\/css\/beginner\/html5-form\/",
-        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32)  HTML5 Form\n\nForms are boring, they are difficult to style and we have to start dealing the so many user-related stuff here (Like usability, security, validations, etc.).\n\nOn the other hand, forms are responsable for the Web 2.0, they enable interactive websites and all the fun!\n\nOn this proyect you will learn to style forms like a Pro! Using boorstrap components, HTML5 elements and your first small validations!\n\n## Instructions\n\n1. Please use your bootstrap\/css and HTML5 skills to replicate [this exact same form](https:\/\/projects.breatheco.de\/json?slug=html5-form&preview).\n2. Please, to use all the possible tricks that bootstra gives you to style your forms.\n3. You have to make sure all inputes are being used properly: Input type date, email, Input type number, etc.\n4. You also have to make sure to prevent and validate the form in all ways that HTML5 allows you (required inputs, formats, etc.).\n5. Use the input type=date, don't try to code your own date picker calendar.\n\n## Resources\n\nHere is the bootstrap 4 documentation about forms: [https:\/\/getbootstrap.com\/docs\/4.0\/components\/forms\/](https:\/\/getbootstrap.com\/docs\/4.0\/components\/forms\/)\n\n## What to do if you are stuck?\n\nDon't get frustrated and ask for help! After you try on you own for 30min, it is time to stop trying and ask for help.",
-        "preview": "..\/p\/css\/beginner\/html5-form\/\/preview.png",
-        "status": "published",
-        "title": "Create a HTML5 form",
-        "slug": "html5-form",
-        "solution": "https:\/\/codepen.io\/alesanchezr\/pen\/zeaaVx",
-        "duration": 3,
-        "description": "Create a HTML5 form with all the typical inputs",
-        "talents": [
-            {
-                "badge": "form-inputs",
-                "points": 10
-            },
-            {
-                "badge": "form-designer",
-                "points": 10
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "identator",
-                "points": 5
-            },
-            {
-                "badge": "tag-master",
-                "points": 5
-            },
-            {
-                "badge": "be-dry",
-                "points": 5
-            },
-            {
-                "badge": "abc",
-                "points": 5
-            }
-        ],
-        "info-path": "..\/p\/css\/beginner\/html5-form\/info.json",
-        "name": "p",
-        "url": "..\/p\/css\/beginner\/html5-form\/",
-        "visibility": "public",
-        "technology": "css",
-        "difficulty": "beginner",
-        "category": "css",
-        "folder-name": "html5-form"
-    },
-    {
-        "video-id": "0UrDxsUjF4U",
-        "timeline": [
-            {
-                "seconds": "1",
-                "description": "Introduction"
-            },
-            {
-                "seconds": "77",
-                "description": "Configuring the project"
-            },
-            {
-                "seconds": "115",
-                "description": "Creating the index.html structure"
-            },
-            {
-                "seconds": "230",
-                "description": "Connecting the styles.css"
-            },
-            {
-                "seconds": "292",
-                "description": "The post header, image and description"
-            },
-            {
-                "seconds": "572",
-                "description": "Removing the header top margin"
-            },
-            {
-                "seconds": "640",
-                "description": "Centering the website"
-            },
-            {
-                "seconds": "811",
-                "description": "Padding for text separation"
-            },
-            {
-                "seconds": "896",
-                "description": "Using display inline-block"
-            },
-            {
-                "seconds": "1336",
-                "description": "Last little details"
-            }
-        ],
-        "video-path": "..\/p\/css\/beginner\/instagram-feed\/video.json",
-        "readme": "..\/p\/css\/beginner\/instagram-feed\/",
-        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32)  The Instagram Photo Feed\n\nCongratulations! If you are about to start this project, it means you already have enough knowledge to start doing interesting stuff.\n\n*Deliver, deliver, deliver!*\n\nFrom now on you are going to be treated as a developer, and good developers are the ones that deliver. We are not going to give you stickers for effort, just like in real life your performance is measured on productivity. Period.\n\n## Instructions\n\nUsing everything you have learned with HTML and CSS3, please create a website that replicates [this picture](https:\/\/projects.breatheco.de\/json?slug=instagram-feed&preview) in every way (pixel perfect).\n\nUse the display property like in the old days or the new flex CSS property to make the posts feed.\n\n## Resources\n\n- [This video](https:\/\/www.youtube.com\/watch?v=Y8zMYaD1bz0) from the net ninja is amazing to start understanding the flexbox.\n\nPlease discuss with your coding partner, any other student or mentor about any questions you may have. Coding is hard for everyone.\n",
-        "preview": "..\/p\/css\/beginner\/instagram-feed\/\/preview.gif",
-        "title": "Simple Instagram Photo Feed",
-        "slug": "instagram-feed",
-        "status": "published",
-        "solution": "https:\/\/bitbucket.org\/codingacademy\/instagram-without-bootstrap",
-        "duration": 6,
-        "description": "Very simple instagram simulation to undestand the basics of CSS and HTML5 and how to use them together to create a website.",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            },
-            {
-                "badge": "tag-master",
-                "points": 10
-            },
-            {
-                "badge": "path-master",
-                "points": 10
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "be-dry",
-                "points": 10
-            },
-            {
-                "badge": "abc",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/css\/beginner\/instagram-feed\/info.json",
-        "name": "p",
-        "url": "..\/p\/css\/beginner\/instagram-feed\/",
-        "visibility": "public",
-        "technology": "css",
-        "difficulty": "beginner",
-        "category": "css",
-        "folder-name": "instagram-feed"
-    },
-    {
-        "readme": "..\/p\/css\/beginner\/instagram-post\/",
-        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32)  The Instagram Post\n\nInstagram is one of the most popular user interfaces in the world, this is the first of three exercises that will make you replicate the most important and difficult parts of Instagram.com\n\nIn this case, we are starting with a single post.\n\n## Instructions\n\nCreate the HTML and CSS needed to replicate [this exact same picture](https:\/\/projects.breatheco.de\/json?slug=instagram-post&preview).\n\n## What to do if you are stuck?\n\nAsk the instructor or classmates right away, do not stay stuck for more than 15min because this is one of your first exercises and your are not expected to know everything. Ask questions!!!\n\n## Fundamentals\nThis exercise covers the following fundamentals:\n1. Basic structure for every HTML5 website.\n2. The *Link* tag to import CSS Rules.\n3. Using google fonts.\n3. Using the different selectors available in CSS.\n4. Working with boxes: border, padding and margins.\n5. Overflow.\n6. Using Flex vs Postion vs Float vs Display.\n7. Using a simple form.",
-        "preview": "..\/p\/css\/beginner\/instagram-post\/\/preview.png",
-        "title": "Instagram Post",
-        "slug": "instagram-post",
-        "status": "published",
-        "solution": "https:\/\/codepen.io\/alesanchezr\/pen\/zeaaVx",
-        "duration": 4,
-        "description": "Replicate a single instagram post using HTML and CSS",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            },
-            {
-                "badge": "tag-master",
-                "points": 10
-            },
-            {
-                "badge": "path-master",
-                "points": 10
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "be-dry",
-                "points": 10
-            },
-            {
-                "badge": "abc",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/css\/beginner\/instagram-post\/info.json",
-        "name": "p",
-        "url": "..\/p\/css\/beginner\/instagram-post\/",
-        "visibility": "public",
-        "technology": "css",
-        "difficulty": "beginner",
-        "category": "css",
-        "folder-name": "instagram-post"
-    },
-    {
-        "video-id": "WbZ4W4SoM0c",
-        "timeline": [
-            {
-                "seconds": "1",
-                "description": "Introduction"
-            },
-            {
-                "seconds": "38",
-                "description": "Create sublime project"
-            },
-            {
-                "seconds": "79",
-                "description": "Download Sublime 3"
-            },
-            {
-                "seconds": "173",
-                "description": "Basic HTML5 Structure"
-            },
-            {
-                "seconds": "479",
-                "description": "Creating the HTML for the website"
-            },
-            {
-                "seconds": "515",
-                "description": "Linking the website to an CSS Style Sheet"
-            },
-            {
-                "seconds": "687",
-                "description": "Centering the postcard Vertically and Horizontally"
-            },
-            {
-                "seconds": "996",
-                "description": "Using float to divide the postcard in to sides"
-            },
-            {
-                "seconds": "1346",
-                "description": "Working with overflow: hidden"
-            },
-            {
-                "seconds": "1554",
-                "description": "Copying colors from other websites"
-            },
-            {
-                "seconds": "1745",
-                "description": "Using Google fonts in your website"
-            },
-            {
-                "seconds": "1999",
-                "description": "Using FORMS"
-            }
-        ],
-        "video-path": "..\/p\/css\/beginner\/postcard\/video.json",
-        "readme": "..\/p\/css\/beginner\/postcard\/",
-        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32)  The Postcard\n\nWho does not like postcard's? This is one of your first exercises (if not the first) and it's fun and relatively easy :)\n\nLets create a postcard with HTML5 and CSS and then you can share it with your mom or with your other half, she\/he is going to be proud! :)\n\n## Instructions\n\nCreate the HTML and CSS needed to replicate [this exact same picture](https:\/\/projects.breatheco.de\/json?slug=postcard&preview).\n\nHere the url for 4Geeks logo: [http:\/\/assets.breatheco.de\/apis\/img\/icon\/4geeks.png](http:\/\/assets.breatheco.de\/apis\/img\/icon\/4geeks.png)\n\n## What to do if you are stuck?\n\nThere is a video about this exercise, watch it if you are lost. But don't copy everything, try to code some of your own.\n\n## Fundamentals\nThis exercise covers the following fundamentals:\n1. Basic structure for every HTML5 website.\n2. The *Link* tag to import CSS Rules.\n3. Using google fonts.\n3. Using the different selectors available in CSS.\n4. Working with boxes: border, padding and margins.\n5. Overflow.\n6. Using a simple form.\n",
-        "preview": "..\/p\/css\/beginner\/postcard\/\/preview.png",
-        "title": "Digital Postcard",
-        "slug": "postcard",
-        "status": "published",
-        "solution": "https:\/\/bitbucket.org\/codingacademy\/postcard",
-        "duration": 4,
-        "description": "Replicate this postcard with CSS and HTML",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            },
-            {
-                "badge": "tag-master",
-                "points": 10
-            },
-            {
-                "badge": "path-master",
-                "points": 10
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "be-dry",
-                "points": 10
-            },
-            {
-                "badge": "abc",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/css\/beginner\/postcard\/info.json",
-        "name": "p",
-        "url": "..\/p\/css\/beginner\/postcard\/",
-        "visibility": "public",
-        "technology": "css",
-        "difficulty": "beginner",
-        "category": "css",
-        "folder-name": "postcard"
     },
     {
         "readme": "..\/p\/css\/junior\/bootstrap-red-dashboard\/",
@@ -475,7 +195,7 @@
         "slug": "bootstrap-red-theme",
         "description": "Build a user interface using bootstrap",
         "info-path": "..\/p\/css\/junior\/bootstrap-red-dashboard\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/css\/junior\/bootstrap-red-dashboard\/",
         "visibility": "public",
         "technology": "css",
@@ -515,58 +235,13 @@
             }
         ],
         "info-path": "..\/p\/css\/junior\/drawing\/goku\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/css\/junior\/drawing\/goku\/",
         "visibility": "public",
         "technology": "css",
         "difficulty": "junior",
         "category": "css",
         "folder-name": "drawing"
-    },
-    {
-        "readme": "..\/p\/css\/junior\/instagram-feed-bootstrap\/",
-        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) The Instagram Photo Feed (with Bootstrap)\n\nAs a developer, you are given the task to replicate a picture as a website.\n\n## Instructions\n\n1. Create a website that looks exactly [like this one](https:\/\/projects.breatheco.de\/json?slug=instagram-feed-bootstrap&preview).\n2. Start the CSS and HTML from scratch, please do not re-use from another exercise because you will end up having a mess.\n3. Before starting to code make a drawing of the website will all the bootstrap components you will be using.\n4. Once the components are identified start with the navbar (from top to bottom) and try adapting the examples you find on the internet to what you are asked on the picture. Don't just copy and paste, understand and tweek, if you don't understand the names of the classes used in the component you will end-up hitting a wall and being frustrated.\n5. Use all the possible [bootstrap utilities (helpers)](https:\/\/getbootstrap.com\/docs\/4.1\/utilities), take your time to read them all because it will make your life 99% easier.\n6. The projects have to be 100% responsive using the bootstrap grid system.\n7. Use all the possible bootstrap components, the idea is that you learn them so you can re-use them during the rest of your life.\n\n### Resources\n\nYou have the online lesson about bootstrap and the cheat sheet about bootstrap in the assets section. We also recommend [Net Ninja's video tutorials on bootstrap](https:\/\/www.youtube.com\/watch?v=QAgrHLtG1Yk).\n\n### What to do if you are stuck?\n\n- Clean the cache (always refresh with command+shift+R), using the incognito mode on Google Chrome. \n- Look in google for solutions. \n- Talk to the other students. \n- Talk to senior developers you know. \n- Talk to the mentors over slack.\n\n### What **NOT** to do if you are stuck?\n\n- Don't get frust rated and think you are not good at this: All the developers get stuck all the time, ask around! How do you know if you are good at something that you don't know? \nCoding is a science, facts matter and you have no facts. \n- Don't Keep wondering around for hours without seeking help: Google is only as useful as you are good at googling, please speak to other students or your instructors. \n- Change strategy: Einstein once said, if you do the same stuff you will get the same results.\n",
-        "preview": "..\/p\/css\/junior\/instagram-feed-bootstrap\/\/preview.gif",
-        "title": "Instagram Photo Feed with Bootstrap",
-        "slug": "instagram-feed-bootstrap",
-        "status": "published",
-        "solution": "https:\/\/bitbucket.org\/codingacademy\/instagram-with-bootstrap\/",
-        "duration": 6,
-        "description": "This is an improoved version of the first instagram exercise, now using bootstrap.",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            },
-            {
-                "badge": "tag-master",
-                "points": 10
-            },
-            {
-                "badge": "path-master",
-                "points": 10
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "be-dry",
-                "points": 10
-            },
-            {
-                "badge": "abc",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/css\/junior\/instagram-feed-bootstrap\/info.json",
-        "name": "p",
-        "url": "..\/p\/css\/junior\/instagram-feed-bootstrap\/",
-        "visibility": "public",
-        "technology": "css",
-        "difficulty": "junior",
-        "category": "css",
-        "folder-name": "instagram-feed-bootstrap"
     },
     {
         "readme": "..\/p\/css\/junior\/landing-page\/",
@@ -603,7 +278,7 @@
             }
         ],
         "info-path": "..\/p\/css\/junior\/landing-page\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/css\/junior\/landing-page\/",
         "visibility": "public",
         "technology": "css",
@@ -647,7 +322,7 @@
             }
         ],
         "info-path": "..\/p\/css\/junior\/spotify-landing-page\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/css\/junior\/spotify-landing-page\/",
         "visibility": "public",
         "technology": "css",
@@ -671,7 +346,7 @@
             }
         ],
         "info-path": "..\/p\/data-modeling\/beginner\/instagram-data-modeling\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/data-modeling\/beginner\/instagram-data-modeling\/",
         "visibility": "public",
         "technology": "data-modeling",
@@ -695,7 +370,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/full-stack\/full-stack-demo-day-preparation\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/full-stack\/full-stack-demo-day-preparation\/",
         "technology": "final-project",
         "difficulty": "full-stack",
@@ -718,7 +393,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/full-stack\/full-stack-mvc\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/full-stack\/full-stack-mvc\/",
         "technology": "final-project",
         "difficulty": "full-stack",
@@ -741,7 +416,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/full-stack\/full-stack-project-prototype\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/full-stack\/full-stack-project-prototype\/",
         "technology": "final-project",
         "difficulty": "full-stack",
@@ -765,7 +440,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/full-stack\/full-stack-project-stories-and-wireframes\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/full-stack\/full-stack-project-stories-and-wireframes\/",
         "technology": "final-project",
         "difficulty": "full-stack",
@@ -788,7 +463,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/web-development\/fluxify\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/web-development\/fluxify\/",
         "technology": "final-project",
         "difficulty": "web-development",
@@ -811,7 +486,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/web-development\/prototype\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/web-development\/prototype\/",
         "technology": "final-project",
         "difficulty": "web-development",
@@ -834,7 +509,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/web-development\/user-stories\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/web-development\/user-stories\/",
         "technology": "final-project",
         "difficulty": "web-development",
@@ -857,7 +532,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/web-development\/wireframes\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/web-development\/wireframes\/",
         "technology": "final-project",
         "difficulty": "web-development",
@@ -897,7 +572,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/conditional-profile-card\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/conditional-profile-card\/",
         "visibility": "public",
         "technology": "javascript",
@@ -941,7 +616,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/domain-name-generator\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/domain-name-generator\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1042,7 +717,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/excuse-generator\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/excuse-generator\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1091,7 +766,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/html5-form-validations\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/html5-form-validations\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1208,7 +883,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/random-card\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/random-card\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1241,7 +916,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/simple-counter-react\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/simple-counter-react\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1274,7 +949,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/traffic-light-react\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/traffic-light-react\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1289,7 +964,7 @@
         "slug": "the-calculator",
         "status": "draft",
         "info-path": "..\/p\/javascript\/junior\/calculator\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/calculator\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1447,7 +1122,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/contact-list\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/contact-list\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1536,7 +1211,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/contact-list-context\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/contact-list-context\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1549,7 +1224,7 @@
         "slug": "deck-shuffler",
         "status": "draft",
         "info-path": "..\/p\/javascript\/junior\/deck-shuffler\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/deck-shuffler\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1564,7 +1239,7 @@
         "slug": "hangman",
         "status": "draft",
         "info-path": "..\/p\/javascript\/junior\/hangman\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/hangman\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1625,7 +1300,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/landing-page-with-react\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/landing-page-with-react\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1713,7 +1388,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/meetup-clone-react\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/meetup-clone-react\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1726,7 +1401,7 @@
         "slug": "memory",
         "status": "draft",
         "info-path": "..\/p\/javascript\/junior\/memory\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/memory\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1786,7 +1461,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/multi-view-react-website\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/multi-view-react-website\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1847,7 +1522,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/sorting-cards-with-bubble\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/sorting-cards-with-bubble\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1908,7 +1583,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/sorting-cards-with-select\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/sorting-cards-with-select\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1930,7 +1605,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/tetris\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/tetris\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2007,7 +1682,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/tictactoe-react\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/tictactoe-react\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2092,7 +1767,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/todo-list\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/todo-list\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2117,7 +1792,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/todo-list-with-fetch\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/todo-list-with-fetch\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2141,7 +1816,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/semi-senior\/battlefield\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/semi-senior\/battlefield\/",
         "status": "draft",
         "visibility": "public",
@@ -2158,7 +1833,7 @@
         "status": "draft",
         "description": "Use the audio tag to create your own media player",
         "info-path": "..\/p\/javascript\/semi-senior\/music-player\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/semi-senior\/music-player\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2183,7 +1858,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/semi-senior\/music-player-react\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/semi-senior\/music-player-react\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2207,7 +1882,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/semi-senior\/startwars-blog-reading-list\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/semi-senior\/startwars-blog-reading-list\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2231,98 +1906,13 @@
             }
         ],
         "info-path": "..\/p\/python\/beginner\/contact-list-api\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/python\/beginner\/contact-list-api\/",
         "visibility": "public",
         "technology": "python",
         "difficulty": "beginner",
         "category": "python",
         "folder-name": "contact-list-api"
-    },
-    {
-        "video-id": "kFrWxuKor_Y",
-        "timeline": [
-            {
-                "seconds": "1",
-                "description": "Introduction"
-            },
-            {
-                "seconds": "52",
-                "description": "Instructions "
-            },
-            {
-                "seconds": "3:00",
-                "description": "Installation"
-            },
-            {
-                "seconds": "3:40",
-                "description": "Structure Explanation"
-            },
-            {
-                "seconds": "4:52",
-                "description": "First project run"
-            },
-            {
-                "seconds": "8:55",
-                "description": "Creating the HTML"
-            },
-            {
-                "seconds": "10:00",
-                "description": "Creating the CSS"
-            },
-            {
-                "seconds": "17:00",
-                "description": "Using : before and :after"
-            },
-            {
-                "seconds": "21:12",
-                "description": "Creating the Suit CSS Classes"
-            },
-            {
-                "seconds": "23:20",
-                "description": "Testing the suites with the inspector "
-            },
-            {
-                "seconds": "24:44",
-                "description": "Coding the Javascript"
-            },
-            {
-                "seconds": "26:49",
-                "description": "Genereting a random number and suite"
-            },
-            {
-                "seconds": "31:03",
-                "description": "Final demonstration"
-            }
-        ],
-        "video-path": "..\/p\/python\/beginner\/random-card-cli\/video.json",
-        "readme": "..\/p\/python\/beginner\/random-card-cli\/",
-        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32)  Random Card Dealer (generator)\n\nIn this project you will learn how to use coding logic to generate random cards.\n\n## Instructions\n\nCreate and algorithm that randomly builds a random card every time it runs:\n\n1. Every time the algorithm runs a new random card needs to show on the console.\n2. The card must have one of the possible suites: Hearts, Spades, Clubs and Diamons.\n3. The card value must be one of the following: 1 to 10, King, Queen, Jack or Ace (no joker).\n\nIn the end, the project needs to look similar to [this demo](https:\/\/projects.breatheco.de\/json?slug=random-card-python-cli&preview).\n\n### Hints\n\n- You can use emoji for the card suites: `\u2661 \u2667 \u2664 \u2662`\n",
-        "preview": "..\/p\/python\/beginner\/random-card-cli\/\/preview.gif",
-        "title": "Random Card Generator CLI",
-        "slug": "random-card",
-        "status": "published",
-        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-random-card",
-        "duration": 4,
-        "description": "Use your CSS\/HTML\/JS skills to randomly draw a poker card on every website refresh.",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 6
-            },
-            {
-                "badge": "functional-developer",
-                "points": 6
-            }
-        ],
-        "info-path": "..\/p\/python\/beginner\/random-card-cli\/info.json",
-        "name": "p",
-        "url": "..\/p\/python\/beginner\/random-card-cli\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "beginner",
-        "category": "python",
-        "folder-name": "random-card-cli"
     },
     {
         "readme": "..\/p\/python\/junior\/family-static-api\/",
@@ -2339,7 +1929,7 @@
             }
         ],
         "info-path": "..\/p\/python\/junior\/family-static-api\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/python\/junior\/family-static-api\/",
         "visibility": "public",
         "technology": "python",
@@ -2362,46 +1952,13 @@
             }
         ],
         "info-path": "..\/p\/python\/junior\/family-tree-static-api\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/python\/junior\/family-tree-static-api\/",
         "visibility": "public",
         "technology": "python",
         "difficulty": "junior",
         "category": "python",
         "folder-name": "family-tree-static-api"
-    },
-    {
-        "readme": "..\/p\/python\/junior\/queue-management-cli\/",
-        "markdown": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Queue Management System CLI\n\nLets create a Queue System: Queue system are heavily used in Goverment institutions, airports, banks and many other venues looking to organize the incoming traffic.\nQueue systems can also be used to load balancing for different applications like:\n- Stablishing priorities in web servers incoming requests.\n- Inmigration and visa applicantions that need to be prioritized.\n- Network packages.\n- etc.\n\n## \ud83d\udcdd Instructions\n\n1. Clone the [following boilerplate](https:\/\/github.com\/breatheco-de\/exercise-queue-management-cli)\n2. Create an APP that allows the user to manage a simple Queue: Add a person, Remove person, get current line (queue).\n3. The application also needs to be able to export the queue to a file named `queue.json`.\n4. Use the following data-structure to implement the queue:\n\n```python\nclass Queue:\n\n    def __init__(self, mode, current_queue=[]):\n        self.queue = current_queue\n        # depending on the _mode, the queue has to behave like a FIFO or LIFO\n        if mode is None:\n            raise \"Please specify a queue mode FIFO or LIFO\"\n        else:\n            self.mode = mode\n    \n    def enqueue(self, item):\n        pass\n    def dequeue(self):\n        pass\n    def get_queue(self):\n        pass\n    def size(self):\n        return len(self.queue) \n```\n\n## Example worlflow\n\n1. The CLI show the menu, and the user selects the option to add \"Bob\" into the queue.\n2. The application ads Bob and notifies confirmation on the console and must say how many people are in front of him on the line.\n3. The system now shows the menu (starts again) awaiting for the user to pick another option.\n4. If the user picks the option to remove from the Queue, the next person on the queue gets eliminated and confirmation message shows.\n5. If the user picks to see the entire queue state, a list of everyone gets printed with their respective position in the queue.\n6. If the user picks to export entire queue, a JSON file with a list of everyone gets created.\n\n## \ud83d\udcd6 Fundamentals\n\nThis exercise will make you practice the following fundamentals:\n\n1. Executing python files from the command line.\n2. Get user input from the command line.\n3. Loops, conditionals and functions.\n4. Using plain-text files to store data.\n5. Complex Data Structures.\n6. Queue (FIFO vs FILO)\n7. SMS.\n",
-        "slug": "queue-management-cli",
-        "title": "Queue Managment CLI",
-        "description": "Terminal-based queue management application",
-        "solution": "https:\/\/github.com\/breatheco-de\/queue-managment-cli",
-        "status": "published",
-        "live-url": "",
-        "duration": 8,
-        "technologies": [
-            "terminal",
-            "python",
-            "json",
-            "static files",
-            "logging"
-        ],
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/python\/junior\/queue-management-cli\/info.json",
-        "name": "p",
-        "demo": "",
-        "url": "..\/p\/python\/junior\/queue-management-cli\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "junior",
-        "category": "python",
-        "folder-name": "queue-management-cli"
     },
     {
         "readme": "..\/p\/python\/junior\/todo-list-api\/",
@@ -2425,7 +1982,7 @@
             }
         ],
         "info-path": "..\/p\/python\/junior\/todo-list-api\/info.json",
-        "name": "p",
+        "name": "json",
         "demo": "",
         "url": "..\/p\/python\/junior\/todo-list-api\/",
         "visibility": "public",
@@ -2457,7 +2014,7 @@
             }
         ],
         "info-path": "..\/p\/python\/semi-senior\/queue-management-api\/info.json",
-        "name": "p",
+        "name": "json",
         "demo": "",
         "url": "..\/p\/python\/semi-senior\/queue-management-api\/",
         "visibility": "public",
@@ -2550,7 +2107,7 @@
             }
         ],
         "info-path": "..\/p\/python\/semi-senior\/tictactoe-api-django\/info.json",
-        "name": "p",
+        "name": "json",
         "demo": "https:\/\/assets.breatheco.de\/apis\/tictactoe\/",
         "url": "..\/p\/python\/semi-senior\/tictactoe-api-django\/",
         "visibility": "public",

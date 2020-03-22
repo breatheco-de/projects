@@ -22,7 +22,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep1-experience-and-education\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/career-support\/sep1-experience-and-education\/",
         "technology": "career-support",
         "difficulty": null,
@@ -52,7 +52,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep2-projects\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/career-support\/sep2-projects\/",
         "technology": "career-support",
         "difficulty": null,
@@ -82,7 +82,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep3-skills\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/career-support\/sep3-skills\/",
         "technology": "career-support",
         "difficulty": null,
@@ -112,7 +112,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep4-summary-statement\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/career-support\/sep4-summary-statement\/",
         "technology": "career-support",
         "difficulty": null,
@@ -142,7 +142,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep5-resume\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/career-support\/sep5-resume\/",
         "technology": "career-support",
         "difficulty": null,
@@ -174,288 +174,12 @@
             }
         ],
         "info-path": "..\/p\/career-support\/student-external-profile\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/career-support\/student-external-profile\/",
         "technology": "career-support",
         "difficulty": null,
         "category": "career-support",
         "folder-name": "student-external-profile"
-    },
-    {
-        "readme": "..\/p\/css\/beginner\/html5-form\/",
-        "preview": "..\/p\/css\/beginner\/html5-form\/\/preview.png",
-        "status": "published",
-        "title": "Create a HTML5 form",
-        "slug": "html5-form",
-        "solution": "https:\/\/codepen.io\/alesanchezr\/pen\/zeaaVx",
-        "duration": 3,
-        "description": "Create a HTML5 form with all the typical inputs",
-        "talents": [
-            {
-                "badge": "form-inputs",
-                "points": 10
-            },
-            {
-                "badge": "form-designer",
-                "points": 10
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "identator",
-                "points": 5
-            },
-            {
-                "badge": "tag-master",
-                "points": 5
-            },
-            {
-                "badge": "be-dry",
-                "points": 5
-            },
-            {
-                "badge": "abc",
-                "points": 5
-            }
-        ],
-        "info-path": "..\/p\/css\/beginner\/html5-form\/info.json",
-        "name": "p",
-        "url": "..\/p\/css\/beginner\/html5-form\/",
-        "visibility": "public",
-        "technology": "css",
-        "difficulty": "beginner",
-        "category": "css",
-        "folder-name": "html5-form"
-    },
-    {
-        "video-id": "0UrDxsUjF4U",
-        "timeline": [
-            {
-                "seconds": "1",
-                "description": "Introduction"
-            },
-            {
-                "seconds": "77",
-                "description": "Configuring the project"
-            },
-            {
-                "seconds": "115",
-                "description": "Creating the index.html structure"
-            },
-            {
-                "seconds": "230",
-                "description": "Connecting the styles.css"
-            },
-            {
-                "seconds": "292",
-                "description": "The post header, image and description"
-            },
-            {
-                "seconds": "572",
-                "description": "Removing the header top margin"
-            },
-            {
-                "seconds": "640",
-                "description": "Centering the website"
-            },
-            {
-                "seconds": "811",
-                "description": "Padding for text separation"
-            },
-            {
-                "seconds": "896",
-                "description": "Using display inline-block"
-            },
-            {
-                "seconds": "1336",
-                "description": "Last little details"
-            }
-        ],
-        "video-path": "..\/p\/css\/beginner\/instagram-feed\/video.json",
-        "readme": "..\/p\/css\/beginner\/instagram-feed\/",
-        "preview": "..\/p\/css\/beginner\/instagram-feed\/\/preview.gif",
-        "title": "Simple Instagram Photo Feed",
-        "slug": "instagram-feed",
-        "status": "published",
-        "solution": "https:\/\/bitbucket.org\/codingacademy\/instagram-without-bootstrap",
-        "duration": 6,
-        "description": "Very simple instagram simulation to undestand the basics of CSS and HTML5 and how to use them together to create a website.",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            },
-            {
-                "badge": "tag-master",
-                "points": 10
-            },
-            {
-                "badge": "path-master",
-                "points": 10
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "be-dry",
-                "points": 10
-            },
-            {
-                "badge": "abc",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/css\/beginner\/instagram-feed\/info.json",
-        "name": "p",
-        "url": "..\/p\/css\/beginner\/instagram-feed\/",
-        "visibility": "public",
-        "technology": "css",
-        "difficulty": "beginner",
-        "category": "css",
-        "folder-name": "instagram-feed"
-    },
-    {
-        "readme": "..\/p\/css\/beginner\/instagram-post\/",
-        "preview": "..\/p\/css\/beginner\/instagram-post\/\/preview.png",
-        "title": "Instagram Post",
-        "slug": "instagram-post",
-        "status": "published",
-        "solution": "https:\/\/codepen.io\/alesanchezr\/pen\/zeaaVx",
-        "duration": 4,
-        "description": "Replicate a single instagram post using HTML and CSS",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            },
-            {
-                "badge": "tag-master",
-                "points": 10
-            },
-            {
-                "badge": "path-master",
-                "points": 10
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "be-dry",
-                "points": 10
-            },
-            {
-                "badge": "abc",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/css\/beginner\/instagram-post\/info.json",
-        "name": "p",
-        "url": "..\/p\/css\/beginner\/instagram-post\/",
-        "visibility": "public",
-        "technology": "css",
-        "difficulty": "beginner",
-        "category": "css",
-        "folder-name": "instagram-post"
-    },
-    {
-        "video-id": "WbZ4W4SoM0c",
-        "timeline": [
-            {
-                "seconds": "1",
-                "description": "Introduction"
-            },
-            {
-                "seconds": "38",
-                "description": "Create sublime project"
-            },
-            {
-                "seconds": "79",
-                "description": "Download Sublime 3"
-            },
-            {
-                "seconds": "173",
-                "description": "Basic HTML5 Structure"
-            },
-            {
-                "seconds": "479",
-                "description": "Creating the HTML for the website"
-            },
-            {
-                "seconds": "515",
-                "description": "Linking the website to an CSS Style Sheet"
-            },
-            {
-                "seconds": "687",
-                "description": "Centering the postcard Vertically and Horizontally"
-            },
-            {
-                "seconds": "996",
-                "description": "Using float to divide the postcard in to sides"
-            },
-            {
-                "seconds": "1346",
-                "description": "Working with overflow: hidden"
-            },
-            {
-                "seconds": "1554",
-                "description": "Copying colors from other websites"
-            },
-            {
-                "seconds": "1745",
-                "description": "Using Google fonts in your website"
-            },
-            {
-                "seconds": "1999",
-                "description": "Using FORMS"
-            }
-        ],
-        "video-path": "..\/p\/css\/beginner\/postcard\/video.json",
-        "readme": "..\/p\/css\/beginner\/postcard\/",
-        "preview": "..\/p\/css\/beginner\/postcard\/\/preview.png",
-        "title": "Digital Postcard",
-        "slug": "postcard",
-        "status": "published",
-        "solution": "https:\/\/bitbucket.org\/codingacademy\/postcard",
-        "duration": 4,
-        "description": "Replicate this postcard with CSS and HTML",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            },
-            {
-                "badge": "tag-master",
-                "points": 10
-            },
-            {
-                "badge": "path-master",
-                "points": 10
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "be-dry",
-                "points": 10
-            },
-            {
-                "badge": "abc",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/css\/beginner\/postcard\/info.json",
-        "name": "p",
-        "url": "..\/p\/css\/beginner\/postcard\/",
-        "visibility": "public",
-        "technology": "css",
-        "difficulty": "beginner",
-        "category": "css",
-        "folder-name": "postcard"
     },
     {
         "readme": "..\/p\/css\/junior\/bootstrap-red-dashboard\/",
@@ -464,7 +188,7 @@
         "slug": "bootstrap-red-theme",
         "description": "Build a user interface using bootstrap",
         "info-path": "..\/p\/css\/junior\/bootstrap-red-dashboard\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/css\/junior\/bootstrap-red-dashboard\/",
         "visibility": "public",
         "technology": "css",
@@ -503,57 +227,13 @@
             }
         ],
         "info-path": "..\/p\/css\/junior\/drawing\/goku\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/css\/junior\/drawing\/goku\/",
         "visibility": "public",
         "technology": "css",
         "difficulty": "junior",
         "category": "css",
         "folder-name": "drawing"
-    },
-    {
-        "readme": "..\/p\/css\/junior\/instagram-feed-bootstrap\/",
-        "preview": "..\/p\/css\/junior\/instagram-feed-bootstrap\/\/preview.gif",
-        "title": "Instagram Photo Feed with Bootstrap",
-        "slug": "instagram-feed-bootstrap",
-        "status": "published",
-        "solution": "https:\/\/bitbucket.org\/codingacademy\/instagram-with-bootstrap\/",
-        "duration": 6,
-        "description": "This is an improoved version of the first instagram exercise, now using bootstrap.",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            },
-            {
-                "badge": "tag-master",
-                "points": 10
-            },
-            {
-                "badge": "path-master",
-                "points": 10
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "be-dry",
-                "points": 10
-            },
-            {
-                "badge": "abc",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/css\/junior\/instagram-feed-bootstrap\/info.json",
-        "name": "p",
-        "url": "..\/p\/css\/junior\/instagram-feed-bootstrap\/",
-        "visibility": "public",
-        "technology": "css",
-        "difficulty": "junior",
-        "category": "css",
-        "folder-name": "instagram-feed-bootstrap"
     },
     {
         "readme": "..\/p\/css\/junior\/landing-page\/",
@@ -589,7 +269,7 @@
             }
         ],
         "info-path": "..\/p\/css\/junior\/landing-page\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/css\/junior\/landing-page\/",
         "visibility": "public",
         "technology": "css",
@@ -632,7 +312,7 @@
             }
         ],
         "info-path": "..\/p\/css\/junior\/spotify-landing-page\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/css\/junior\/spotify-landing-page\/",
         "visibility": "public",
         "technology": "css",
@@ -655,7 +335,7 @@
             }
         ],
         "info-path": "..\/p\/data-modeling\/beginner\/instagram-data-modeling\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/data-modeling\/beginner\/instagram-data-modeling\/",
         "visibility": "public",
         "technology": "data-modeling",
@@ -678,7 +358,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/full-stack\/full-stack-demo-day-preparation\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/full-stack\/full-stack-demo-day-preparation\/",
         "technology": "final-project",
         "difficulty": "full-stack",
@@ -700,7 +380,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/full-stack\/full-stack-mvc\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/full-stack\/full-stack-mvc\/",
         "technology": "final-project",
         "difficulty": "full-stack",
@@ -722,7 +402,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/full-stack\/full-stack-project-prototype\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/full-stack\/full-stack-project-prototype\/",
         "technology": "final-project",
         "difficulty": "full-stack",
@@ -745,7 +425,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/full-stack\/full-stack-project-stories-and-wireframes\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/full-stack\/full-stack-project-stories-and-wireframes\/",
         "technology": "final-project",
         "difficulty": "full-stack",
@@ -767,7 +447,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/web-development\/fluxify\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/web-development\/fluxify\/",
         "technology": "final-project",
         "difficulty": "web-development",
@@ -789,7 +469,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/web-development\/prototype\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/web-development\/prototype\/",
         "technology": "final-project",
         "difficulty": "web-development",
@@ -811,7 +491,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/web-development\/user-stories\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/web-development\/user-stories\/",
         "technology": "final-project",
         "difficulty": "web-development",
@@ -833,7 +513,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/web-development\/wireframes\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/final-project\/web-development\/wireframes\/",
         "technology": "final-project",
         "difficulty": "web-development",
@@ -872,7 +552,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/conditional-profile-card\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/conditional-profile-card\/",
         "visibility": "public",
         "technology": "javascript",
@@ -915,7 +595,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/domain-name-generator\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/domain-name-generator\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1015,7 +695,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/excuse-generator\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/excuse-generator\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1063,7 +743,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/html5-form-validations\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/html5-form-validations\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1179,7 +859,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/random-card\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/random-card\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1211,7 +891,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/simple-counter-react\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/simple-counter-react\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1243,7 +923,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/beginner\/traffic-light-react\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/beginner\/traffic-light-react\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1257,7 +937,7 @@
         "slug": "the-calculator",
         "status": "draft",
         "info-path": "..\/p\/javascript\/junior\/calculator\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/calculator\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1414,7 +1094,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/contact-list\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/contact-list\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1502,7 +1182,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/contact-list-context\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/contact-list-context\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1515,7 +1195,7 @@
         "slug": "deck-shuffler",
         "status": "draft",
         "info-path": "..\/p\/javascript\/junior\/deck-shuffler\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/deck-shuffler\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1529,7 +1209,7 @@
         "slug": "hangman",
         "status": "draft",
         "info-path": "..\/p\/javascript\/junior\/hangman\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/hangman\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1589,7 +1269,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/landing-page-with-react\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/landing-page-with-react\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1676,7 +1356,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/meetup-clone-react\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/meetup-clone-react\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1689,7 +1369,7 @@
         "slug": "memory",
         "status": "draft",
         "info-path": "..\/p\/javascript\/junior\/memory\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/memory\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1748,7 +1428,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/multi-view-react-website\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/multi-view-react-website\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1808,7 +1488,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/sorting-cards-with-bubble\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/sorting-cards-with-bubble\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1868,7 +1548,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/sorting-cards-with-select\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/sorting-cards-with-select\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1890,7 +1570,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/tetris\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/tetris\/",
         "visibility": "public",
         "technology": "javascript",
@@ -1966,7 +1646,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/tictactoe-react\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/tictactoe-react\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2050,7 +1730,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/todo-list\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/todo-list\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2074,7 +1754,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/junior\/todo-list-with-fetch\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/junior\/todo-list-with-fetch\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2097,7 +1777,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/semi-senior\/battlefield\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/semi-senior\/battlefield\/",
         "status": "draft",
         "visibility": "public",
@@ -2113,7 +1793,7 @@
         "status": "draft",
         "description": "Use the audio tag to create your own media player",
         "info-path": "..\/p\/javascript\/semi-senior\/music-player\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/semi-senior\/music-player\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2137,7 +1817,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/semi-senior\/music-player-react\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/semi-senior\/music-player-react\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2160,7 +1840,7 @@
             }
         ],
         "info-path": "..\/p\/javascript\/semi-senior\/startwars-blog-reading-list\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/javascript\/semi-senior\/startwars-blog-reading-list\/",
         "visibility": "public",
         "technology": "javascript",
@@ -2183,97 +1863,13 @@
             }
         ],
         "info-path": "..\/p\/python\/beginner\/contact-list-api\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/python\/beginner\/contact-list-api\/",
         "visibility": "public",
         "technology": "python",
         "difficulty": "beginner",
         "category": "python",
         "folder-name": "contact-list-api"
-    },
-    {
-        "video-id": "kFrWxuKor_Y",
-        "timeline": [
-            {
-                "seconds": "1",
-                "description": "Introduction"
-            },
-            {
-                "seconds": "52",
-                "description": "Instructions "
-            },
-            {
-                "seconds": "3:00",
-                "description": "Installation"
-            },
-            {
-                "seconds": "3:40",
-                "description": "Structure Explanation"
-            },
-            {
-                "seconds": "4:52",
-                "description": "First project run"
-            },
-            {
-                "seconds": "8:55",
-                "description": "Creating the HTML"
-            },
-            {
-                "seconds": "10:00",
-                "description": "Creating the CSS"
-            },
-            {
-                "seconds": "17:00",
-                "description": "Using : before and :after"
-            },
-            {
-                "seconds": "21:12",
-                "description": "Creating the Suit CSS Classes"
-            },
-            {
-                "seconds": "23:20",
-                "description": "Testing the suites with the inspector "
-            },
-            {
-                "seconds": "24:44",
-                "description": "Coding the Javascript"
-            },
-            {
-                "seconds": "26:49",
-                "description": "Genereting a random number and suite"
-            },
-            {
-                "seconds": "31:03",
-                "description": "Final demonstration"
-            }
-        ],
-        "video-path": "..\/p\/python\/beginner\/random-card-cli\/video.json",
-        "readme": "..\/p\/python\/beginner\/random-card-cli\/",
-        "preview": "..\/p\/python\/beginner\/random-card-cli\/\/preview.gif",
-        "title": "Random Card Generator CLI",
-        "slug": "random-card",
-        "status": "published",
-        "solution": "https:\/\/github.com\/breatheco-de\/model-solution-random-card",
-        "duration": 4,
-        "description": "Use your CSS\/HTML\/JS skills to randomly draw a poker card on every website refresh.",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 6
-            },
-            {
-                "badge": "functional-developer",
-                "points": 6
-            }
-        ],
-        "info-path": "..\/p\/python\/beginner\/random-card-cli\/info.json",
-        "name": "p",
-        "url": "..\/p\/python\/beginner\/random-card-cli\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "beginner",
-        "category": "python",
-        "folder-name": "random-card-cli"
     },
     {
         "readme": "..\/p\/python\/junior\/family-static-api\/",
@@ -2289,7 +1885,7 @@
             }
         ],
         "info-path": "..\/p\/python\/junior\/family-static-api\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/python\/junior\/family-static-api\/",
         "visibility": "public",
         "technology": "python",
@@ -2311,45 +1907,13 @@
             }
         ],
         "info-path": "..\/p\/python\/junior\/family-tree-static-api\/info.json",
-        "name": "p",
+        "name": "json",
         "url": "..\/p\/python\/junior\/family-tree-static-api\/",
         "visibility": "public",
         "technology": "python",
         "difficulty": "junior",
         "category": "python",
         "folder-name": "family-tree-static-api"
-    },
-    {
-        "readme": "..\/p\/python\/junior\/queue-management-cli\/",
-        "slug": "queue-management-cli",
-        "title": "Queue Managment CLI",
-        "description": "Terminal-based queue management application",
-        "solution": "https:\/\/github.com\/breatheco-de\/queue-managment-cli",
-        "status": "published",
-        "live-url": "",
-        "duration": 8,
-        "technologies": [
-            "terminal",
-            "python",
-            "json",
-            "static files",
-            "logging"
-        ],
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/python\/junior\/queue-management-cli\/info.json",
-        "name": "p",
-        "demo": "",
-        "url": "..\/p\/python\/junior\/queue-management-cli\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "junior",
-        "category": "python",
-        "folder-name": "queue-management-cli"
     },
     {
         "readme": "..\/p\/python\/junior\/todo-list-api\/",
@@ -2372,7 +1936,7 @@
             }
         ],
         "info-path": "..\/p\/python\/junior\/todo-list-api\/info.json",
-        "name": "p",
+        "name": "json",
         "demo": "",
         "url": "..\/p\/python\/junior\/todo-list-api\/",
         "visibility": "public",
@@ -2403,7 +1967,7 @@
             }
         ],
         "info-path": "..\/p\/python\/semi-senior\/queue-management-api\/info.json",
-        "name": "p",
+        "name": "json",
         "demo": "",
         "url": "..\/p\/python\/semi-senior\/queue-management-api\/",
         "visibility": "public",
@@ -2495,7 +2059,7 @@
             }
         ],
         "info-path": "..\/p\/python\/semi-senior\/tictactoe-api-django\/info.json",
-        "name": "p",
+        "name": "json",
         "demo": "https:\/\/assets.breatheco.de\/apis\/tictactoe\/",
         "url": "..\/p\/python\/semi-senior\/tictactoe-api-django\/",
         "visibility": "public",
