@@ -39,23 +39,28 @@ exports.createPages = async ({ actions, graphql }) => {
         if(typeof(p.preview) !== "string" || p.preview === "")
         p.preview = "https://ucarecdn.com/03b6cba5-457e-474c-b4e3-7ea65f3b3375/";
 
-        let difficulty = `${p.difficulty}/` || "";
-
-        p.canonicalPath = `/interactive-coding-tutorial/${difficulty}${p.slug}`;
+        if(typeof(p.difficulty) === "string" && p.difficulty !== "" && p.name !== "p"){
+            p.canonicalPath = `/interactive-coding-tutorial/${p.difficulty}/${p.slug}`;
+        }
+        else{
+            p.canonicalPath = `/project/${p.slug}`;
+        }
         p.url = `https://projects.breatheco.de${p.canonicalPath}`;
         
         
-        console.log("Create page for project: /"+p.slug);
+        console.log("Create page for project: "+p.canonicalPath);
         createPage({
             path: p.canonicalPath,
             component: path.resolve("./src/templates/single.js"),
             context: p,
         });
-        createPage({
-            path: `/project/${p.slug}`,
-            component: path.resolve("./src/templates/single.js"),
-            context: p,
-        });
+        if(p.canonicalPath !== `/project/${p.slug}`){
+            createPage({
+                path: `/project/${p.slug}`,
+                component: path.resolve("./src/templates/single.js"),
+                context: p,
+            });
+        }
         createPage({
             path: `/d/${p.slug}`,
             component: path.resolve("./src/templates/single.js"),

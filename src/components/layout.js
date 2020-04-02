@@ -31,6 +31,7 @@ const Layout = ({ children, meta }) => (
       <>
         <Helmet>
             <title>{meta.title || data.site.siteMetadata.title}</title>
+            {meta.technologies && <meta name="keywords" content={["coding tutorial", "coding project", "coding project", "breathecode", "freecodecamp"].concat(meta.technologies.join(","))}></meta>}
             <meta name="description" content={meta.description || data.site.siteMetadata.description} />
             <meta property="og:site_name" content={data.site.siteMetadata.title}></meta>
             <meta name="twitter:image:alt" content={data.site.siteMetadata.title}></meta>

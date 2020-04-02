@@ -17,7 +17,7 @@ export const ProjectCard = ({ project, mode }) => {
 const Card = ({ project, preview }) => {
     const p = project;
     return <div className="card">                            
-        <Link className="text-dark" to={"/project/" + p.slug}>
+        <Link className="text-dark" to={p.canonicalPath}>
             { preview && <img className="card-img-top" src={preview} alt={`Preview for ${p.title}`} />}
             <div className="card-body p-2">
                 <h5 className="card-title">{p.title}</h5>
