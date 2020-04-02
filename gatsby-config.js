@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://projects.breatheco.de`,
+    preview: `https://ucarecdn.com/03b6cba5-457e-474c-b4e3-7ea65f3b3375/`,
     title: `BreatheCode Coding Projects and Tutorials`,
-    description: `Find projects to code while improving your coding skills, every project comes with straigh forward instructions, video, code solution and more.`,
+    description: `Practice and polish your coding skills by building real life projects and tutorials.`,
     author: `@alesanchezr`,
   },
   plugins: [

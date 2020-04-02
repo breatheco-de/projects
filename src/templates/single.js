@@ -5,7 +5,6 @@ import "../styles/home.css";
 import withLocation from "../components/withLocation";
 import Iframe from "../components/iframe";
 import Layout from "../components/layout";
-import Helmet from "react-helmet";
 
 
 class Single extends React.Component{
@@ -49,36 +48,18 @@ class Single extends React.Component{
         const fromIframe = (search.iframe === 'true');
         return(
             <React.Fragment>
-                <Helmet>
-                    <title>BreatheCode - {pageContext.title}</title>
-                    <meta property="og:site_name" content="BreatheCode"></meta>
-                    <meta name="twitter:image:alt" content="BreatheCode Project Coding Tutorial"></meta>
-                    <meta name="description" content={pageContext.description} />
-                    <meta itemprop="image" content={pageContext.preview}/>
-                    <meta property="og:url"                content={pageContext.url} />
-                    <link rel="canonical" href={pageContext.url} />
-                    <meta property="og:type"               content="article" />
-                    <meta property="og:title"              content={pageContext.title} />
-                    <meta property="og:description"        content={pageContext.description} />
-                    <meta property="og:image"              content={pageContext.preview} />
-                    <meta name="twitter:title" content={pageContext.title} />
-                    <meta name="twitter:description" content={pageContext.description} />
-                    <meta name="twitter:image" content={pageContext.preview} />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:site" content="@alesanchezr" />
-                </Helmet>
             <div className="fontFamily">
                 { this.state.showVideo && <Iframe
                         src={`https://assets.breatheco.de/apps/video/?v=https://assets.breatheco.de/apis/vtutorial/project/${pageContext.slug}`}
                         height="60vh"
                     />
                 }
-                <Layout>
+                <Layout meta={pageContext}>
                     <div className="container fontFamily single-project">
                         <div className="row">
-                            <div className="col-12 col-md-6 col-lg-6 col-xl-7 order-2 order-md-1">
+                            <article className="col-12 col-md-6 col-lg-6 col-xl-7 order-2 order-md-1">
                                 <MarkdownParser source={this.state.markdown} />
-                            </div>
+                            </article>
                             <div className="col-12 col-md-6 col-lg- col-xl-5 order-1 order-md-2 mb-3">
                             { !fromIframe &&
                                 <div className="row p-1 sticky-top mt-2">

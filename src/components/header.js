@@ -5,8 +5,6 @@ const Header = ({ siteTitle }) => (
   <header >
     <div className="gradient p-5 text-center">
     </div>
-
-
   </header>
 )
 

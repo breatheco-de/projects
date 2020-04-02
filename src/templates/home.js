@@ -12,39 +12,16 @@ const Home = ({ pageContext }) => {
     const [ selectedTags, setSelectedTags ] = useState(null);
     const [ withVideo, setWithVideo ] = useState(false);
     const [ displayMode, setDisplayMode ] = useState("card");
-    console.log(pageContext);
+
     const projects = pageContext.projects.filter(p => {
         if(selectedTags && selectedTags.length>0 && selectedTags.indexOf(p.technology) === -1) return false;
         if(withVideo && !p["video-id"]) return false;
         return true;
     });
 
-    const site_name = "BreatheCode Projects";
-    const title = `${site_name} - Practice and polish your coding skills by building real life projects`;
-    const preview = "https://ucarecdn.com/03b6cba5-457e-474c-b4e3-7ea65f3b3375/";
-    const description = `${site_name} - Coding Projects and exercises for people learning to code or improving their coding skills`;
     return <React.Fragment>
-            <div className="fontFamily">
-                <Helmet>
-                    <title>{title}</title>
-                    <meta property="og:site_name" content={site_name}></meta>
-                    <meta name="twitter:image:alt" content="BreatheCode Projects and Coding Tutorials"></meta>
-                    <meta name="description" content={description} />
-                    <meta itemprop="image" content=""/>
-                    <meta property="og:url"                content={`https://projects.breatheco.de`} />
-                    <meta property="og:type"               content="website" />
-                    <meta property="og:title"              content={title} />
-                    <meta property="og:description"        content={description} />
-                    <meta property="og:image"              content={preview} />
-                    <meta name="twitter:title" content={title} />
-                    <meta name="twitter:description" content={description} />
-                    <meta name="twitter:image" content={preview} />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:site" content="@alesanchezr" />
-
-                </Helmet>
             <Layout>
-                <div>
+                <div className="fontFamily">
                     <SmallJumbotron
                         jumboClass="jumbotron jumbotron-fluid mb-0 pt-0"
                         containerClass="pl-3  container"
@@ -91,7 +68,6 @@ const Home = ({ pageContext }) => {
                     </div>
                 </div>
                 </Layout>
-            </div>
         </React.Fragment>
 };
 export default Home;
