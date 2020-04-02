@@ -7,17 +7,34 @@ const fetch = require('node-fetch');
 
 exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
-    let projects = [];
+    let projects = []; //filtered projects after removing repeated
+    let _projects = []; //incoming projects
     const resp = await fetch('https://assets.breatheco.de/apis/project/all');
     if(resp.status >=200 && resp.status <400){
-        projects = await resp.json();
+        _projects = await resp.json();
     }
     let technologyTags = [];
-    for(let i = 0;i<projects.length;i++){
-        if(typeof(projects[i].technology) === 'string') technologyTags.push(projects[i].technology);
-        if(Array.isArray(projects[i].technologies)) technologyTags = technologyTags.concat(projects[i].technologies);
+    let difficulties = [];
+    for(let i = 0;i<_projects.length;i++){
+        
+        //skip repeated projects
+        if(projects.find(p => _projects[i].slug === p.slug)) continue;
+        else projects.push(_projects[i]);
+
+        if(typeof(_projects[i].technology) === 'string') technologyTags.push(_projects[i].technology);
+        if(Array.isArray(_projects[i].technologies)) technologyTags = technologyTags.concat(_projects[i].technologies);
+
+        if(typeof(_projects[i].difficulty) === 'string'){
+            if(_projects[i].difficulty === "junior") _projects[i].difficulty = "easy";
+            else if(_projects[i].difficulty === "semi-senior") _projects[i].difficulty = "intermediate";
+            else if(_projects[i].difficulty === "senior") _projects[i].difficulty = "hard";
+
+            difficulties.push(_projects[i].difficulty)
+        } 
     }
     technologyTags = [...new Set(technologyTags)];
+    difficulties = [...new Set(difficulties)];
+    
 
     createPage({
 
@@ -25,6 +42,7 @@ exports.createPages = async ({ actions, graphql }) => {
         component: path.resolve("./src/templates/home.js"),
         context: {
             technologyTags,
+            difficulties,
             projects: projects.filter(p => !p.visibility || p.visibility === "public")
         },
     })

@@ -7,11 +7,13 @@ import { ProjectCard } from "../components/projectCard.js";
 
 const Home = ({ pageContext }) => {
     const [ selectedTags, setSelectedTags ] = useState(null);
+    const [ difficulty, setDifficulty ] = useState(null);
     const [ withVideo, setWithVideo ] = useState(false);
     const [ displayMode, setDisplayMode ] = useState("card");
 
     const projects = pageContext.projects.filter(p => {
         if(selectedTags && selectedTags.length>0 && selectedTags.indexOf(p.technology) === -1) return false;
+        if(difficulty && p.difficulty !== difficulty) return false;
         if(withVideo && !p["video-id"]) return false;
         return true;
     });
@@ -38,6 +40,17 @@ const Home = ({ pageContext }) => {
                                                 onChange={(selectedTags)=> setSelectedTags(selectedTags.map(t => t.value))}
                                                 options={pageContext.technologyTags ? pageContext.technologyTags.map((t)=>{
                                                     return {label: t,value: t}
+                                                }):[{label:" ",value: " "}]}
+                                            />
+                                    </div>
+                                    <div className="pl-1">
+                                        <Filter
+                                                label="Difficulty"
+                                                multiselect={false}
+                                                placeholder="Filter by difficulty"
+                                                onChange={(difficulty)=> setDifficulty(difficulty ? difficulty.value : null)}
+                                                options={pageContext.difficulties ? pageContext.difficulties.map((d)=>{
+                                                    return {label: d,value: d}
                                                 }):[{label:" ",value: " "}]}
                                             />
                                     </div>
