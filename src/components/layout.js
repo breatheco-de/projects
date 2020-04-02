@@ -66,5 +66,8 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
   meta: PropTypes.object.isRequired,
 }
+Layout.defaultProps = {
+  meta: {},
+}
 
 export default Layout

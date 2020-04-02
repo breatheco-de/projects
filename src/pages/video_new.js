@@ -1,6 +1,5 @@
 import React from "react";
 import ReactPlayer from 'react-player';
-import SEO from "../components/seo";
 import "../styles/video.css";
 import withLocation from "../components/withLocation";
 import { Button } from "@breathecode/ui-components";
@@ -21,8 +20,7 @@ const Menu = () => (
 )
 
 const Video = () => (
-  <div className="bcvideo">
-    <SEO title="Page two" />
+  <div className="bcvideo" meta={{ title: "New Video Player" }}>
     <Menu />
     <ReactPlayer
         url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
