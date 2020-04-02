@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import ReactPlayer from 'react-player';
 import SEO from "../components/seo";
 import "../styles/video.css";

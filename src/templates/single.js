@@ -19,7 +19,8 @@ class Single extends React.Component{
 
     getReadme(){
         const { pageContext } = this.props;
-        const readmeURL = pageContext.readme.indexOf("../") == 0 ?
+
+        const readmeURL = pageContext.readme.indexOf("../") === 0 ?
         "https://projects.breatheco.de/json/?slug="+pageContext.slug+"&readme&size=big"
         :
         pageContext.readme;
@@ -34,7 +35,7 @@ class Single extends React.Component{
     }
 
     componentDidMount(){
-        const { pageContext, search } = this.props;
+        const { pageContext } = this.props;
         console.log("Context: ", pageContext);
 
         if(typeof(markdown) !== 'string'){
@@ -49,9 +50,22 @@ class Single extends React.Component{
         return(
             <React.Fragment>
                 <Helmet>
-                    <title>Projects BreatheCode - {pageContext.title}</title>
-                    <meta name="description" content={pageContext.description || "BreatheCode Projects - Coding Projects and exercises for people learning to code or improving their coding skills"} />
-                    <meta itemprop="image" content={pageContext.preview || "https://ucarecdn.com/03b6cba5-457e-474c-b4e3-7ea65f3b3375/"}/>
+                    <title>BreatheCode - {pageContext.title}</title>
+                    <meta property="og:site_name" content="BreatheCode"></meta>
+                    <meta name="twitter:image:alt" content="BreatheCode Project Coding Tutorial"></meta>
+                    <meta name="description" content={pageContext.description} />
+                    <meta itemprop="image" content={pageContext.preview}/>
+                    <meta property="og:url"                content={pageContext.url} />
+                    <link rel="canonical" href={pageContext.url} />
+                    <meta property="og:type"               content="article" />
+                    <meta property="og:title"              content={pageContext.title} />
+                    <meta property="og:description"        content={pageContext.description} />
+                    <meta property="og:image"              content={pageContext.preview} />
+                    <meta name="twitter:title" content={pageContext.title} />
+                    <meta name="twitter:description" content={pageContext.description} />
+                    <meta name="twitter:image" content={pageContext.preview} />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:site" content="@alesanchezr" />
                 </Helmet>
             <div className="fontFamily">
                 { this.state.showVideo && <Iframe
@@ -89,7 +103,7 @@ class Single extends React.Component{
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
                                                     <div className="col-6 "><span className="colorRed"><Icon type="github" className="text-danger"/></span><span className="ml-1">Repository:</span></div>
-                                                    <div className="col-6 d-flex justify-content-end ">{pageContext["repository"]? <a target="_blank" href={pageContext["repository"]}>Click to open</a>:"Not available"}</div>
+                                                    <div className="col-6 d-flex justify-content-end ">{pageContext["repository"]? <a target="_blank" href={pageContext["repository"]} rel="noopener noreferrer">Click to open</a>:"Not available"}</div>
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
                                                     <div className="col-6 "><span className="colorRed"><Icon type="youtube" className="text-danger"/></span><span className="ml-1">Video available:</span></div>
