@@ -30,7 +30,7 @@ const Layout = ({ children, meta }) => (
     render={data => (
       <>
         <Helmet>
-            <title>BreatheCode - {meta.title || data.site.siteMetadata.title}</title>
+            <title>{meta.title || data.site.siteMetadata.title}</title>
             <meta name="description" content={meta.description || data.site.siteMetadata.description} />
             <meta property="og:site_name" content={data.site.siteMetadata.title}></meta>
             <meta name="twitter:image:alt" content={data.site.siteMetadata.title}></meta>
