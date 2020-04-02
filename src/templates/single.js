@@ -135,23 +135,24 @@ class Single extends React.Component{
                                                 </div>
 
                                                 <div className="row text-center">
-                                                    <div className="col-6">
-                                                        {pageContext.demo? <a
-                                                            href={pageContext.demo}
-                                                            className="btn btn-outline-primary btn-md px-4 w-100 ">
-                                                            Live Demo
-                                                        </a>:" "}
-
-                                                    </div>
-                                                    <div className="col-6">
-
-                                                        {pageContext["video-id"]?<button
-                                                            onClick={() => this.setState({ showVideo: true })}
-                                                            className="btn btn-outline-success btn-md px-4 w-100 ">
-                                                            Watch Video
-                                                        </button>:" "}
-
-                                                    </div>
+                                                    {pageContext.demo && 
+                                                        <div className="col">
+                                                            <a
+                                                                href={pageContext.demo}
+                                                                className="btn btn-outline-primary btn-md px-4 w-100 ">
+                                                                Live Demo
+                                                            </a>
+                                                        </div>
+                                                    }
+                                                    {pageContext["video-id"] &&
+                                                        <div className="col">
+                                                            <button
+                                                                onClick={() => this.setState({ showVideo: true })}
+                                                                className="btn btn-outline-success btn-md px-4 w-100 ">
+                                                                Watch Video
+                                                            </button>
+                                                        </div>
+                                                    }
                                                 </div>
                                             </div>
                                         </div>
