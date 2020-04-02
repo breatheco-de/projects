@@ -23,7 +23,7 @@ const Home = ({ pageContext }) => {
                 <Helmet>
                     <title>Projects BreatheCode - Practice and polish your coding skills by building real life projects</title>
                     <meta name="description" content="BreatheCode Projects - Coding Projects and exercises for people learning to code or improving their coding skills" />
-                     <meta itemprop="image" content="../images/breathecode.32.png"/>
+                     <meta itemprop="image" content="https://ucarecdn.com/03b6cba5-457e-474c-b4e3-7ea65f3b3375/"/>
 
                 </Helmet>
             <Layout>
