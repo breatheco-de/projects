@@ -1,6 +1,6 @@
 
 import React, { Component } from "react";
-import { Panel, Loading } from "@breathecode/ui-components";
+import { Loading } from "@breathecode/ui-components";
 import PropTypes from "prop-types";
 
 export default class IFrameView extends Component {
@@ -16,6 +16,7 @@ export default class IFrameView extends Component {
 			<div className="p-0">
 				<Loading className="text-center" show={this.state.loading} />
 				<iframe
+					title={this.props.title}
 					onLoad={() => this.setState({ loading: false })}
 					className="lesson-iframe"
 					src={this.props.src}
@@ -30,9 +31,11 @@ export default class IFrameView extends Component {
 
 IFrameView.propTypes = {
 	src: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
 	height: PropTypes.string
 };
 
 IFrameView.defaultProps = {
-  height: 'calc(100vh - 62px)'
+  height: 'calc(100vh - 62px)',
+  title: ''
 };

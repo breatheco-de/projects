@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-
 import { Filter } from "@breathecode/ui-components";
-
 import "@breathecode/ui-components/dist/main.css";
 import Layout from "../components/layout"
 import { SmallJumbotron } from "../components/smalljumbo.js";
 import { ProjectCard } from "../components/projectCard.js";
-import Helmet from "react-helmet";
 
 const Home = ({ pageContext }) => {
     const [ selectedTags, setSelectedTags ] = useState(null);

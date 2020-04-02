@@ -18,7 +18,7 @@ const Card = ({ project, preview }) => {
     const p = project;
     return <div className="card">                            
         <Link className="text-dark" to={"/project/" + p.slug}>
-            { preview && <img className="card-img-top" src={preview} alt="Card image cap" />}
+            { preview && <img className="card-img-top" src={preview} alt={`Preview for ${p.title}`} />}
             <div className="card-body p-2">
                 <h5 className="card-title">{p.title}</h5>
                 <p className="card-text">{p.description}</p>
@@ -37,7 +37,7 @@ const Row = ({ project, preview }) => {
     const p = project;
     return <div className="row text-center text-md-left mt-2  p-3 paddingLeftZero">
         { preview && <div className="col-12 col-md-2 d-flex justify-content-center align-items-center">
-                    <img className="img-fluid " src={preview} />
+                    <img className="img-fluid " src={preview} alt={`Preview for ${p.title}`} />
             </div>
         }
         <div className="col-12 col-md">

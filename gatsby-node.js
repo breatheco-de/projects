@@ -31,27 +31,36 @@ exports.createPages = async ({ actions, graphql }) => {
 
     projects.forEach(p => {
 
-        if(typeof(p.title) === "string" || p.title !== "")
-            p.title += "Coding Tutorial - ";
+        if(typeof(p.title) === "string" && p.title !== "")
+            p.title = "Coding Tutorial - " + p.title;
             
         if(typeof(p.description) !== "string" || p.description === "")
-        p.description = "BreatheCode Projects - Coding Projects and exercises for people learning to code or improving their coding skills";
+        p.description = "BreatheCode Coding Projects tutorials and exercises for people learning to code or improving their coding skills";
         if(typeof(p.preview) !== "string" || p.preview === "")
         p.preview = "https://ucarecdn.com/03b6cba5-457e-474c-b4e3-7ea65f3b3375/";
-        p.url = `https://projects.breatheco.de/project/${p.slug}`;
+
+        let difficulty = `${p.difficulty}/` || "";
+
+        p.canonicalPath = `/interactive-coding-tutorial/${difficulty}${p.slug}`;
+        p.url = `https://projects.breatheco.de${p.canonicalPath}`;
         
         
         console.log("Create page for project: /"+p.slug);
         createPage({
+            path: p.canonicalPath,
+            component: path.resolve("./src/templates/single.js"),
+            context: p,
+        });
+        createPage({
             path: `/project/${p.slug}`,
             component: path.resolve("./src/templates/single.js"),
             context: p,
-        })
+        });
         createPage({
             path: `/d/${p.slug}`,
             component: path.resolve("./src/templates/single.js"),
             context: p,
-        })
+        });
     });
 
     return true;
