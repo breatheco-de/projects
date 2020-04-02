@@ -31,11 +31,15 @@ exports.createPages = async ({ actions, graphql }) => {
 
     projects.forEach(p => {
 
+        if(typeof(p.title) === "string" || p.title !== "")
+            p.title += "Coding Tutorial - ";
+            
         if(typeof(p.description) !== "string" || p.description === "")
         p.description = "BreatheCode Projects - Coding Projects and exercises for people learning to code or improving their coding skills";
         if(typeof(p.preview) !== "string" || p.preview === "")
         p.preview = "https://ucarecdn.com/03b6cba5-457e-474c-b4e3-7ea65f3b3375/";
         p.url = `https://projects.breatheco.de/project/${p.slug}`;
+        
         
         console.log("Create page for project: /"+p.slug);
         createPage({
