@@ -103,6 +103,14 @@ const Upload = ({ location }) => {
             {
                 status.step === 2 && results &&
                 <div>
+                    <div>
+                    { !results.difficulty && <li class="text-danger">Missing difficulty</li> }
+                    { !results.description && <li class="text-danger">Missing description</li> }
+                    { !results.technologies && <li class="text-danger">Missing technologies</li> }
+                    { !results.solution && <li class="text-warning">Missing solution</li> }
+                    { !results.duration && <li class="text-warning">Missing duration</li> }
+                    { !results["video-id"] && <li class="text-warning">Missing video</li> }
+                    </div>
                     <ProjectCard mode="row" 
                         key={results.slug} project={results}
                         defaultPreview={"https://ucarecdn.com/03b6cba5-457e-474c-b4e3-7ea65f3b3375/"}
@@ -115,7 +123,10 @@ const Upload = ({ location }) => {
                                 ...results,
                                 repository: formData.url
                             })
-                            .then(data => setStatus({ error: false, message: "Project updated successfully", value:"idle" }))
+                            .then(data => {
+                                setStatus({ error: false, message: "Project updated successfully", value:"idle" });
+                                setFormData({ url: "" });
+                            })
                             .catch(error => setStatus({ error: true, message: error.msg || error.message || error, value: "done" }))}
                             >
                                 Upload project seed
