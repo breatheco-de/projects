@@ -1,16 +1,16 @@
 import React from "react";
 import { Icon } from "@breathecode/ui-components";
 import { Link } from "gatsby";
-export const ProjectCard = ({ project, mode }) => {
+export const ProjectCard = ({ project, mode,  defaultPreview, target }) => {
     const previewUrl = typeof(project.preview) !== "undefined" ? 
         project.preview.indexOf('http') > -1 ? project.preview : "https://projects.breatheco.de/"+project.preview
         :
         null;
 
         return  mode === "row" ? 
-        <Row project={project} preview={previewUrl} />
+        <Row project={project} preview={previewUrl} defaultPreview={defaultPreview} target={target} />
         :
-        <Card project={project} preview={previewUrl} />;
+        <Card project={project} preview={previewUrl} defaultPreview={defaultPreview} target={target} />;
 };
 
 
@@ -33,11 +33,16 @@ const Card = ({ project, preview }) => {
     </div>
 };
 
-const Row = ({ project, preview }) => {
+const Row = ({ project, preview, defaultPreview, target }) => {
     const p = project;
+    console.log("defaultPreview", defaultPreview);
     return <div className="row text-center text-md-left mt-2  p-3 paddingLeftZero">
-        { preview && <div className="col-12 col-md-2 d-flex justify-content-center align-items-center">
+        { preview ? <div className="col-12 col-md-2 d-flex justify-content-center align-items-center">
                     <img className="img-fluid " src={preview} alt={`Preview for ${p.title}`} />
+            </div>
+            :
+            defaultPreview && <div className="col-12 col-md-2 d-flex justify-content-center align-items-center">
+                <img className="img-fluid border rounded" src={defaultPreview} alt={`Preview for ${p.title}`} />
             </div>
         }
         <div className="col-12 col-md">
@@ -65,9 +70,13 @@ const Row = ({ project, preview }) => {
                 <div className="col-12 col-md-3 d-flex justify-content-md-end">
                     <div className="row mx-auto">
                         <div className="col-12 d-flex align-items-end">
-                            <Link className="btn btn-outline-primary buttonHeight  px-2 " to={"/project/" + p.slug}>
-                                README.md
-                            </Link>
+                            { (target && target === '_blank') ? 
+                                <a href={"/project/" + p.slug} el="noopener noreferrer" className="btn btn-outline-primary buttonHeight  px-2" target="_blank">README.md</a>
+                                :
+                                <Link className="btn btn-outline-primary buttonHeight  px-2 " to={"/project/" + p.slug}>
+                                    README.md
+                                </Link>
+                            }
                         </div>
                     </div>
                 </div>

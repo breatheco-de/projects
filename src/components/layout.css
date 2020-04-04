@@ -5,7 +5,7 @@
     color: red;
 
 }
-
+.pointer{ cursor: pointer;}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
