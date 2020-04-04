@@ -19,12 +19,13 @@ const projectURL = (url) => {
         slug: m[2]
     });
 }
-
+console.log("Assets url: ",process.env.ASSETS_URL);
 const uploadProject = async (location, project) => {
     const params = new URLSearchParams(location.search);
     const token = params.get('assets_token');
 
     if(!token) throw new Error("Missing token");
+    if(!process.env.ASSETS_URL) throw new Error("Missing assets url");
     const resp = await fetch(`${process.env.ASSETS_URL}/apis/project/registry/${project.slug}?access_token=${token}`,{
         method: "POST",
         headers: {"Content-Type":"application/json"},
