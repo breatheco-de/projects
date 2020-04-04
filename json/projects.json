@@ -1742,29 +1742,6 @@
         "folder-name": "music-player-react"
     },
     {
-        "readme": "..\/p\/javascript\/semi-senior\/startwars-blog-reading-list\/",
-        "preview": "..\/p\/javascript\/semi-senior\/startwars-blog-reading-list\/\/preview.gif",
-        "title": "Starwars blog reading list",
-        "slug": "startwars-blog-reading-list",
-        "status": "published",
-        "duration": 16,
-        "description": "Create a simple to-read website for Star Wars fans. Use the SWAPI to fetch and React + React Router + Context to save the reading list.",
-        "talents": [
-            {
-                "badge": "tag-master",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/javascript\/semi-senior\/startwars-blog-reading-list\/info.json",
-        "name": "json",
-        "url": "..\/p\/javascript\/semi-senior\/startwars-blog-reading-list\/",
-        "visibility": "public",
-        "technology": "javascript",
-        "difficulty": "semi-senior",
-        "category": "javascript",
-        "folder-name": "startwars-blog-reading-list"
-    },
-    {
         "readme": "..\/p\/python\/beginner\/contact-list-api\/",
         "preview": "..\/p\/python\/beginner\/contact-list-api\/\/preview.png",
         "title": "Contact List API",
