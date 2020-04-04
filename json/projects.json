@@ -236,48 +236,6 @@
         "folder-name": "drawing"
     },
     {
-        "readme": "..\/p\/css\/junior\/landing-page\/",
-        "title": "Landing Page",
-        "slug": "landing-page",
-        "status": "draft",
-        "duration": 6,
-        "description": "Build a beautiful landing page using bootstrap",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            },
-            {
-                "badge": "tag-master",
-                "points": 10
-            },
-            {
-                "badge": "path-master",
-                "points": 10
-            },
-            {
-                "badge": "select-everything",
-                "points": 10
-            },
-            {
-                "badge": "be-dry",
-                "points": 10
-            },
-            {
-                "badge": "abc",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/css\/junior\/landing-page\/info.json",
-        "name": "json",
-        "url": "..\/p\/css\/junior\/landing-page\/",
-        "visibility": "public",
-        "technology": "css",
-        "difficulty": "junior",
-        "category": "css",
-        "folder-name": "landing-page"
-    },
-    {
         "readme": "..\/p\/css\/junior\/spotify-landing-page\/",
         "preview": "..\/p\/css\/junior\/spotify-landing-page\/\/preview.png",
         "title": "Spotify Landing Page",
