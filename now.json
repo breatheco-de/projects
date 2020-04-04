@@ -16,5 +16,10 @@
             "src": "/(.*)",
             "dest": "/$1"
         }
-    ]
+    ],
+    "build": {
+        "env": {
+            "ASSETS_TOKEN": "@assets_token"
+        }
+    }
 }
