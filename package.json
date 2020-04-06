@@ -8,7 +8,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@breathecode/ui-components": "^1.1.62",
+    "@breathecode/ui-components": "^1.1.70",
     "bc-react-notifier": "^1.1.6",
     "gatsby": "^2.19.16",
     "gatsby-image": "^2.0.41",
