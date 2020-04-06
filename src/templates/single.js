@@ -84,7 +84,7 @@ class Single extends React.Component{
                                                     <div className="col-7 d-flex justify-content-end">{pageContext.difficulty}</div>
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
-                                                    <div className="col-6 "><span className="colorRed"><Icon type="github" className="text-danger"/></span><span className="ml-1">Repository:</span></div>
+                                                    <div className="col-6 "><span className="colorRed"><Icon type="github"/></span><span className="ml-1">Repository:</span></div>
                                                     <div className="col-6 d-flex justify-content-end ">{pageContext["repository"]? <a target="_blank" href={pageContext["repository"]} rel="noopener noreferrer">Click to open</a>:"Not available"}</div>
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
@@ -96,7 +96,7 @@ class Single extends React.Component{
                                                     <div className="col-5 d-flex justify-content-end ">{pageContext["live-url"]?"Available":"Not available"}</div>
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
-                                                    <div className="col-8 "><span><Icon type="circle" /></span><span className="ml-1">Project average duration:</span></div>
+                                                    <div className="col-8 "><span><Icon type="clock" /></span><span className="ml-1">Project average duration:</span></div>
                                                     <div className="col-4 d-flex justify-content-end">{pageContext.duration} hr</div>
                                                 </div>
                                                 <div className="row border-bottom p-1 m-0 no-gutters small">
