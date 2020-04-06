@@ -24,7 +24,7 @@ const Card = ({ project, preview }) => {
                 <p className="card-text">{p.description}</p>
                 <div>
                     {p.difficulty?<span className="author badge badge-pill badge-light mr-2"><span><Icon type="circle" /></span> {p.difficulty}</span>:" "}
-                    {p.duration?<span className="author badge badge-pill badge-light mr-2"><span><Icon type="circle" /></span> {p.duration} hr duration</span>:" "}
+                    {p.duration?<span className="author badge badge-pill badge-light mr-2"><span><Icon type="clock" /></span> {p.duration} hr duration</span>:" "}
                     {p["video-id"] && <span className="author badge badge-pill badge-light mr-2"><span className="colorRed"><Icon type="youtube" className="text-danger" /></span> Video Tutorial</span>}
                     {p.technology?<span className="author badge badge-pill badge-light mr-2"><span><Icon type="code" /></span> {p.technology}</span>:" "}
                 </div>
