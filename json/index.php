@@ -22,10 +22,10 @@ function getProjects($slug=null){
 }
 if(!empty($_REQUEST['slug']))
 {
-	$project = getProjects($_REQUEST['slug']);
+	$project = (array) getProjects($_REQUEST['slug']);
 	if($project){
 		if(isset($_REQUEST['preview']) || isset($_REQUEST['preview/'])){
-			$filePath = $project->preview;
+			$filePath = $project['preview'];
 			$file_ext = pathinfo($filePath, PATHINFO_EXTENSION);
 			if(file_exists($filePath)){
 				header("Content-type: image/".$file_ext);
@@ -39,7 +39,8 @@ if(!empty($_REQUEST['slug']))
 			}
         }
 		else if(isset($_REQUEST['readme']) || isset($_REQUEST['readme/'])){
-            echo $project->markdown;
+			if(!isset($_REQUEST['lang']) || $_REQUEST['lang'] == 'us') echo $project['markdown'];
+			else echo $project['markdown-'.$_REQUEST['lang']];
             die();
 		}
 		else echo json_encode($project);
