@@ -18,10 +18,10 @@ class Single extends React.Component{
         }
     }
 
-    getReadme(_lang="us"){
+    getReadme(_lang=null){
         const { pageContext } = this.props;
 
-        _lang = this.state.lang || this.props.search.lang || "us";
+        _lang = _lang || this.state.lang || this.props.search.lang || "us";
         const readmeURL = pageContext.readme.indexOf("../") === 0 ?
         "https://projects.breatheco.de/json/?slug="+pageContext.slug+"&lang="+_lang+"&readme&size=big"
         :
@@ -51,7 +51,10 @@ class Single extends React.Component{
         const fromIframe = (search.iframe === 'true');
         return(
             <React.Fragment>
-            <LanguageSwitcher current={this.state.lang ? this.state.lang : "us"} translations={pageContext.translations} />
+            <LanguageSwitcher 
+                current={this.state.lang ? this.state.lang : "us"} translations={pageContext.translations} 
+                onClick={(lang) => this.getReadme(lang)}
+            />
             <div className="fontFamily">
                 { this.state.showVideo && <Iframe
                         title={`Video tutorial for ${pageContext.title}`}
