@@ -1,6 +1,10 @@
 [
     {
         "readme": "..\/p\/career-support\/sep1-experience-and-education\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "status": "published",
         "visibility": "internal",
         "title": "Update your Career Experiences and Education",
@@ -31,6 +35,10 @@
     },
     {
         "readme": "..\/p\/career-support\/sep2-projects\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "status": "published",
         "visibility": "internal",
         "title": "Update your project portfolio",
@@ -61,6 +69,10 @@
     },
     {
         "readme": "..\/p\/career-support\/sep3-skills\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "status": "published",
         "visibility": "internal",
         "title": "Update your Skills",
@@ -91,6 +103,10 @@
     },
     {
         "readme": "..\/p\/career-support\/sep4-summary-statement\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "status": "published",
         "visibility": "internal",
         "title": "Update your Career Summary",
@@ -121,6 +137,10 @@
     },
     {
         "readme": "..\/p\/career-support\/sep5-resume\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "status": "published",
         "visibility": "internal",
         "title": "Last update to your Resume",
@@ -151,6 +171,10 @@
     },
     {
         "readme": "..\/p\/career-support\/student-external-profile\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/career-support\/student-external-profile\/\/preview.png",
         "title": "Student External Profile",
         "slug": "student-external-profile",
@@ -183,6 +207,10 @@
     },
     {
         "readme": "..\/p\/css\/junior\/bootstrap-red-dashboard\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "Bootstrap Red Dashboard Interface",
         "status": "draft",
         "slug": "bootstrap-red-theme",
@@ -198,6 +226,10 @@
     },
     {
         "readme": "..\/p\/css\/junior\/drawing\/goku\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/css\/junior\/drawing\/goku\/\/preview.gif",
         "title": "CSS Drawing Goku",
         "slug": "css-drawing-goku",
@@ -237,6 +269,9 @@
     },
     {
         "readme": "..\/p\/css\/junior\/spotify-landing-page\/",
+        "translations": [
+            "us"
+        ],
         "preview": "..\/p\/css\/junior\/spotify-landing-page\/\/preview.png",
         "title": "Spotify Landing Page",
         "slug": "spotify-landing-page",
@@ -280,6 +315,9 @@
     },
     {
         "readme": "..\/p\/data-modeling\/beginner\/instagram-data-modeling\/",
+        "translations": [
+            "us"
+        ],
         "preview": "..\/p\/data-modeling\/beginner\/instagram-data-modeling\/\/preview.png",
         "status": "published",
         "title": "Building Instagram.com User Stories",
@@ -303,6 +341,9 @@
     },
     {
         "readme": "..\/p\/final-project\/full-stack\/full-stack-demo-day-preparation\/",
+        "translations": [
+            "us"
+        ],
         "title": "Demo Day Preparation for Full-Stack Software Development",
         "visibility": "internal",
         "slug": "full-stack-demo-day-preparation",
@@ -325,6 +366,10 @@
     },
     {
         "readme": "..\/p\/final-project\/full-stack\/full-stack-mvc\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "Use MVC to make your Project Dynamic",
         "slug": "full-stack-project-mvc",
         "visibility": "internal",
@@ -347,6 +392,10 @@
     },
     {
         "readme": "..\/p\/final-project\/full-stack\/full-stack-project-prototype\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "First Prototype",
         "slug": "full-stack-project-prototype",
         "visibility": "internal",
@@ -369,6 +418,10 @@
     },
     {
         "readme": "..\/p\/final-project\/full-stack\/full-stack-project-stories-and-wireframes\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/final-project\/full-stack\/full-stack-project-stories-and-wireframes\/\/preview.png",
         "title": "Final Project User Stories & Wireframes",
         "slug": "full-stack-project-stories-and-wireframes",
@@ -392,6 +445,10 @@
     },
     {
         "readme": "..\/p\/final-project\/web-development\/fluxify\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "First Prototype",
         "visibility": "internal",
         "slug": "web-development-project-fluxify",
@@ -414,6 +471,10 @@
     },
     {
         "readme": "..\/p\/final-project\/web-development\/prototype\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "First Prototype",
         "visibility": "internal",
         "slug": "web-development-project-prototype",
@@ -436,6 +497,10 @@
     },
     {
         "readme": "..\/p\/final-project\/web-development\/user-stories\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "Final Project User Stories",
         "slug": "web-development-project-stories",
         "visibility": "internal",
@@ -458,6 +523,10 @@
     },
     {
         "readme": "..\/p\/final-project\/web-development\/wireframes\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "Final Project Wireframes",
         "slug": "web-development-project-wireframes",
         "visibility": "internal",
@@ -480,6 +549,10 @@
     },
     {
         "readme": "..\/p\/javascript\/beginner\/conditional-profile-card\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/javascript\/beginner\/conditional-profile-card\/\/preview.gif",
         "title": "Conditional Profile Card Generator",
         "slug": "conditional-profile-card",
@@ -520,6 +593,10 @@
     },
     {
         "readme": "..\/p\/javascript\/beginner\/domain-name-generator\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "Domain Name Generator",
         "slug": "domain-generator",
         "status": "published",
@@ -615,6 +692,10 @@
         ],
         "video-path": "..\/p\/javascript\/beginner\/excuse-generator\/video.json",
         "readme": "..\/p\/javascript\/beginner\/excuse-generator\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/javascript\/beginner\/excuse-generator\/\/preview.gif",
         "title": "The Excuse Generator",
         "slug": "excuse-generator",
@@ -663,6 +744,10 @@
     },
     {
         "readme": "..\/p\/javascript\/beginner\/html5-form-validations\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/javascript\/beginner\/html5-form-validations\/\/preview.gif",
         "status": "published",
         "title": "Use JS to validate an HTML Form",
@@ -719,6 +804,10 @@
         ],
         "video-path": "..\/p\/javascript\/beginner\/simple-counter-react\/video.json",
         "readme": "..\/p\/javascript\/beginner\/simple-counter-react\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/javascript\/beginner\/simple-counter-react\/\/preview.gif",
         "title": "Simple Counter",
         "slug": "simple-counter-react",
@@ -751,6 +840,10 @@
         ],
         "video-path": "..\/p\/javascript\/beginner\/traffic-light-react\/video.json",
         "readme": "..\/p\/javascript\/beginner\/traffic-light-react\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/javascript\/beginner\/traffic-light-react\/\/preview.gif",
         "title": "Traffic Light",
         "slug": "traffic-light-react",
@@ -775,6 +868,10 @@
     },
     {
         "readme": "..\/p\/javascript\/junior\/calculator\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "The Calculator",
         "slug": "the-calculator",
         "status": "draft",
@@ -858,6 +955,10 @@
         ],
         "video-path": "..\/p\/javascript\/junior\/contact-list\/video.json",
         "readme": "..\/p\/javascript\/junior\/contact-list\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/javascript\/junior\/contact-list\/\/preview.gif",
         "title": "Contact List App Using React & Flux",
         "slug": "contact-list",
@@ -945,6 +1046,7 @@
         "folder-name": "contact-list"
     },
     {
+        "translations": [],
         "title": "Shuffle the Deck",
         "slug": "deck-shuffler",
         "status": "draft",
@@ -959,6 +1061,9 @@
     },
     {
         "readme": "..\/p\/javascript\/junior\/hangman\/",
+        "translations": [
+            "us"
+        ],
         "title": "The Hangman",
         "slug": "hangman",
         "status": "draft",
@@ -973,6 +1078,10 @@
     },
     {
         "readme": "..\/p\/javascript\/junior\/meetup-clone-react\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "The Meetup.com Clone using react.js",
         "slug": "meetup-clone-react",
         "status": "published",
@@ -1059,6 +1168,7 @@
         "folder-name": "meetup-clone-react"
     },
     {
+        "translations": [],
         "title": "Memory Game",
         "slug": "memory",
         "status": "draft",
@@ -1073,6 +1183,10 @@
     },
     {
         "readme": "..\/p\/javascript\/junior\/multi-view-react-website\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "Multi View React Web App",
         "slug": "multi-view-react-website",
         "status": "published",
@@ -1132,6 +1246,10 @@
     },
     {
         "readme": "..\/p\/javascript\/junior\/sorting-cards-with-bubble\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/javascript\/junior\/sorting-cards-with-bubble\/\/preview.gif",
         "title": "Bubble Sorting Cards",
         "slug": "sorting-cards-with-bubble",
@@ -1192,6 +1310,10 @@
     },
     {
         "readme": "..\/p\/javascript\/junior\/sorting-cards-with-select\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/javascript\/junior\/sorting-cards-with-select\/\/preview.gif",
         "title": "Sorting Cards with Select",
         "slug": "sorting-cards-with-select",
@@ -1251,6 +1373,7 @@
         "folder-name": "sorting-cards-with-select"
     },
     {
+        "translations": [],
         "title": "Tetris with JS",
         "slug": "tetris-js",
         "draft": true,
@@ -1274,6 +1397,10 @@
     },
     {
         "readme": "..\/p\/javascript\/junior\/tictactoe-react\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/javascript\/junior\/tictactoe-react\/\/preview.gif",
         "title": "TicTacToe with React.js",
         "slug": "tictactoe-react",
@@ -1350,6 +1477,10 @@
     },
     {
         "readme": "..\/p\/javascript\/junior\/todo-list-with-fetch\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/javascript\/junior\/todo-list-with-fetch\/\/preview.gif",
         "title": "Todolist Application Using React and Fetch",
         "slug": "todo-list-with-fetch",
@@ -1374,6 +1505,10 @@
     },
     {
         "readme": "..\/p\/javascript\/semi-senior\/battlefield\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "Battlefield",
         "slug": "battlefield",
         "instructions": [
@@ -1398,6 +1533,10 @@
     },
     {
         "readme": "..\/p\/javascript\/semi-senior\/music-player\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "Create an MP3 player like Spotify.com",
         "slug": "media-player",
         "status": "draft",
@@ -1413,6 +1552,10 @@
     },
     {
         "readme": "..\/p\/javascript\/semi-senior\/music-player-react\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/javascript\/semi-senior\/music-player-react\/\/preview.gif",
         "title": "Audio player like Spotify with React.js",
         "slug": "music-player-react",
@@ -1437,6 +1580,10 @@
     },
     {
         "readme": "..\/p\/python\/beginner\/contact-list-api\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "preview": "..\/p\/python\/beginner\/contact-list-api\/\/preview.png",
         "title": "Contact List API",
         "slug": "contact-list-api",
@@ -1460,6 +1607,10 @@
     },
     {
         "readme": "..\/p\/python\/junior\/family-static-api\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "Family Static API with Flask",
         "slug": "family-static-api",
         "status": "published",
@@ -1482,6 +1633,10 @@
     },
     {
         "readme": "..\/p\/python\/junior\/family-tree-static-api\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "Family Tree Static API with Flask",
         "slug": "family-tree-static-api",
         "status": "published",
@@ -1504,6 +1659,10 @@
     },
     {
         "readme": "..\/p\/python\/junior\/todo-list-api\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "slug": "todo-list-api",
         "title": "Todo List API",
         "description": "Todo List API using Flask or Django",
@@ -1534,6 +1693,10 @@
     },
     {
         "readme": "..\/p\/python\/semi-senior\/queue-management-api\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "slug": "queue-management-api",
         "title": "Queue Managment API",
         "description": "Cloud-based queue management API",
@@ -1565,6 +1728,10 @@
     },
     {
         "readme": "..\/p\/python\/semi-senior\/tictactoe-api-django\/",
+        "translations": [
+            "us",
+            "es"
+        ],
         "title": "TicTacToe REST API with django",
         "slug": "tictactoe-api",
         "status": "published",
