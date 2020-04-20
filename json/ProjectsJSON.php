@@ -52,11 +52,11 @@ class ProjectsJSON{
 		//generating video.json path (if any)
 		$prj = $this->fillVideoFilePath($prj, $path);
 
-		//generating readme path (if any)
-		$prj = $this->fillReadmeFilePath($prj, $path);
-		
 		//generating languages
 		$prj = $this->fillLangs($prj, $path);
+		
+		//generating readme path (if any)
+		$prj = $this->fillReadmeFilePath($prj, $path);
 
 		//generating preview path (if any)
 		$prj = $this->fillPreviewFilePath($prj, $path);
