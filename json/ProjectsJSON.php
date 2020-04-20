@@ -170,6 +170,10 @@ class ProjectsJSON{
             $relativePath = $this->getRelative($path);
             $prj["readme"] = $relativePath;
             $prj["markdown"] = file_get_contents($path.'README.md');
+            foreach($lang as $prj["translations"]){
+				if($lang=="us") $prj["markdown"] = file_get_contents($path.'README.md');
+				else $prj["markdown-".$lang] = file_get_contents($path.'README.'.$lang.'.md');
+			} 
         }
 
 		return $prj;
