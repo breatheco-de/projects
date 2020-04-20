@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { MarkdownParser, Icon } from "@breathecode/ui-components";
 import "../styles/home.css";
 import withLocation from "../components/withLocation";
+import LanguageSwitcher from "../components/language";
 import Iframe from "../components/iframe";
 import Layout from "../components/layout";
 
@@ -12,21 +13,23 @@ class Single extends React.Component{
         super(props);
         this.state = {
             showVideo: false,
-            markdown: props.pageContext.markdown
+            markdown: props.pageContext.markdown,
+            lang: null
         }
     }
 
-    getReadme(){
+    getReadme(_lang="us"){
         const { pageContext } = this.props;
 
+        _lang = this.state.lang || this.props.search.lang || "us";
         const readmeURL = pageContext.readme.indexOf("../") === 0 ?
-        "https://projects.breatheco.de/json/?slug="+pageContext.slug+"&readme&size=big"
+        "https://projects.breatheco.de/json/?slug="+pageContext.slug+"&lang="+_lang+"&readme&size=big"
         :
         pageContext.readme;
 
         fetch(readmeURL)
             .then(resp => resp.text())
-            .then(data => this.setState({ markdown: data }))
+            .then(data => this.setState({ markdown: data, lang: _lang }))
             .catch(err => {
                 alert("Error loading the markdon file");
                 console.error(err);
@@ -48,6 +51,7 @@ class Single extends React.Component{
         const fromIframe = (search.iframe === 'true');
         return(
             <React.Fragment>
+            <LanguageSwitcher current={this.state.lang ? this.state.lang : "us"} translations={pageContext.translations} />
             <div className="fontFamily">
                 { this.state.showVideo && <Iframe
                         title={`Video tutorial for ${pageContext.title}`}

@@ -54,6 +54,9 @@ class ProjectsJSON{
 
 		//generating readme path (if any)
 		$prj = $this->fillReadmeFilePath($prj, $path);
+		
+		//generating languages
+		$prj = $this->fillLangs($prj, $path);
 
 		//generating preview path (if any)
 		$prj = $this->fillPreviewFilePath($prj, $path);
@@ -148,6 +151,15 @@ class ProjectsJSON{
             $relativePath = $this->getRelative($path);
 			$prj["video-path"] = $relativePath.'video.json';
 		}
+
+		return $prj;
+	}
+
+	function fillLangs($prj,$path){
+
+		$prj["translations"] = [];
+		if(file_exists($path.'README.md')) $prj["translations"][] = "us";
+		if(file_exists($path.'README.es.md')) $prj["translations"][] = "es";
 
 		return $prj;
 	}

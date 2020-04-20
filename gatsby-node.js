@@ -64,6 +64,8 @@ exports.createPages = async ({ actions, graphql }) => {
             p.canonicalPath = `/project/${p.slug}`;
         }
         p.url = `https://projects.breatheco.de${p.canonicalPath}`;
+
+        if (!Array.isArray(p.translations)) p.translations = ["us"];
         
         
         console.log("Create page for project: "+p.canonicalPath);

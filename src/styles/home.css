@@ -54,3 +54,40 @@ font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Ne
 .fa-play{
     font-size: 13px;
 }
+
+.language-switcher{
+    position: fixed;
+    width: 40px;
+    cursor: pointer;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px;
+    font-size: 10px;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+.language-switcher .icon{
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+.language-switcher ul{
+        display: none;
+        padding: 0;
+        margin: 0;
+}
+.language-switcher ul li{
+    list-style: none;
+    width: 40px;
+    padding: 5px;
+    margin-top: -4px;
+    margin-left: -6px;
+}
+.language-switcher ul li:hover{
+        border: 1px solid #f8f9fa;
+        background: white;
+}
+.language-switcher ul li:hover ul{ display: block; }
