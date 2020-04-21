@@ -25,7 +25,7 @@ class Single extends React.Component{
         const readmeURL = pageContext.readme.indexOf("../") === 0 ?
         "https://projects.breatheco.de/json/?slug="+pageContext.slug+"&lang="+_lang+"&readme&size=big"
         :
-        pageContext.readme;
+        pageContext["readme"+(["us","en"].includes(_lang) ? "" : "-"+_lang)];
 
         fetch(readmeURL)
             .then(resp => resp.text())

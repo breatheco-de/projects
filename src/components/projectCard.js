@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "@breathecode/ui-components";
 import { Link } from "gatsby";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 export const ProjectCard = ({ project, mode,  defaultPreview, target }) => {
     const previewUrl = typeof(project.preview) !== "undefined" ? 
         project.preview.indexOf('http') > -1 ? project.preview : "https://projects.breatheco.de/"+project.preview
@@ -18,7 +19,13 @@ const Card = ({ project, preview }) => {
     const p = project;
     return <div className="card">                            
         <Link className="text-dark" to={p.canonicalPath}>
-            { preview && <img className="card-img-top" src={preview} alt={`Preview for ${p.title}`} />}
+            { preview && 
+                <LazyLoadImage
+                    alt={`Preview for ${p.title}`}
+                    src={preview} // use normal <img> attributes as props
+                    width={"100%"} 
+                />
+            }
             <div className="card-body p-2">
                 <h5 className="card-title">{p.title}</h5>
                 <p className="card-text">{p.description}</p>
@@ -38,7 +45,12 @@ const Row = ({ project, preview, defaultPreview, target }) => {
     console.log("defaultPreview", defaultPreview);
     return <div className="row text-center text-md-left mt-2  p-3 paddingLeftZero">
         { preview ? <div className="col-12 col-md-2 d-flex justify-content-center align-items-center">
-                    <img className="img-fluid " src={preview} alt={`Preview for ${p.title}`} />
+            <LazyLoadImage
+                alt={`Preview for ${p.title}`}
+                height={"300px"}
+                src={preview} // use normal <img> attributes as props
+                width={"100%"} />
+                    {/* <img className="img-fluid " src={preview} alt={`Preview for ${p.title}`} /> */}
             </div>
             :
             defaultPreview && <div className="col-12 col-md-2 d-flex justify-content-center align-items-center">
