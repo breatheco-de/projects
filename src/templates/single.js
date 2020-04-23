@@ -80,7 +80,7 @@ class Single extends React.Component{
                             }
                                 <div className="row p-1 sticky-top mt-2">
                                     <div className="col">
-                                        <div className="card ">
+                                        <div className="card w-100">
                                             <div className="card-body text-left">
                                                 <h5 className="card-title font-weight-bold lead h4">Goal</h5>
                                                 <p className="card-subtitle mb-2 text-muted font-italic mb-3">
@@ -111,6 +111,14 @@ class Single extends React.Component{
                                                     <div className="col-7 d-flex justify-content-end ">{pageContext.technology}</div>
                                                 </div>
                                                 <div className="row p-1 m-0 no-gutters small">
+                                                    <div className="col-5"><span>🌎</span><span className="ml-1">Translations:</span></div>
+                                                    <div className="col-7 d-flex justify-content-end ">
+                                                        <ul className="d-inline">
+                                                        {pageContext.translations.map(l => <li><img style={{ height: "15px"}} className="rounded" src={`https://www.countryflags.io/${l}/flat/64.png`} /></li>)}
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                {/* <div className="row p-1 m-0 no-gutters small">
                                                     <div className="col-12 mb-2">Skills: </div>
                                                     <div className="col-12">
                                                         <ul className="list list-unstyled row ml-0">
@@ -121,7 +129,7 @@ class Single extends React.Component{
                                                         }):""}
                                                         </ul>
                                                     </div>
-                                                </div>
+                                                </div> */}
 
                                                 <div className="row text-center">
                                                     {pageContext.demo && 
@@ -138,7 +146,16 @@ class Single extends React.Component{
                                                             <button
                                                                 onClick={() => this.setState({ showVideo: true })}
                                                                 className="btn btn-outline-success btn-md px-4 w-100 ">
-                                                                Watch Video
+                                                                Watch Video Tutorial
+                                                            </button>
+                                                        </div>
+                                                    }
+                                                    {pageContext["repository"] &&
+                                                        <div className="col">
+                                                            <button
+                                                                onClick={() => window.open(pageContext["repository"])}
+                                                                className="btn btn-light btn-md px-4 w-100 ">
+                                                                <Icon type="github"/> Contribute
                                                             </button>
                                                         </div>
                                                     }
