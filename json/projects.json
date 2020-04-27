@@ -567,51 +567,6 @@
             "us",
             "es"
         ],
-        "readme": "..\/p\/javascript\/beginner\/conditional-profile-card\/",
-        "markdown-es": "# Conditional Profile Card\n\nComo desarrollador web, estar\u00e1s creando muchos HTML din\u00e1micos + CSS usando algoritmos de Javascript.\n\nEn este ejercicio, debes crear el c\u00f3digo HTML necesario para representar una tarjeta de perfil. El c\u00f3digo final cambiar\u00e1 en tiempo de ejecuci\u00f3n en funci\u00f3n de una serie de variables que podr\u00edan cambiar. Aqu\u00ed hay un ejemplo de la tarjeta de perfil:\n\n![Conditional Profile Card](https:\/\/projects.breatheco.de\/p\/javascript\/beginner\/conditional-profile-card\/preview.gif)\n\n## Valores de variables iniciales\n\n| Nombre | Tipo | Valor por Defecto | Descripci\u00f3n |\n| --- | --- | --- | --- |\n| background | string | null | la url de la imagen que se utilizar\u00e1 como fondo para la portada del perfil |\n| includeCover | boolean | true | Determina si debe mostrarse la portada. |\n| avatarURL | string | null | la url para el perfil de la imagen del avatar |\n| socialMediaPosition | string | \"right\" | puede ser `left` o` right` y determina d\u00f3nde colocar la barra de redes sociales |\n| twitter | string | null | El nombre de usuario de Twitter que se mostrar\u00e1 en el perfil. |\n| github | string | null | El nombre de usuario de Github que se mostrar\u00e1 en el perfil. |\n| linkedin | string | null | El nombre de usuario de linkedin que se mostrar\u00e1 en el perfil. |\n| instagram | string | null | El nombre de usuario de Instagram para ser mostrado en el perfil. |\n| name | string | null | El nombre del usuario que se mostrar\u00e1 en el perfil.|\n| lastname | string | null | El nombre del usuario que se mostrar\u00e1 en el perfil. |\n| role | string | null | El nombre del t\u00edtulo del trabajo que se mostrar\u00e1 en el perfil. |\n| country | string | null | El pa\u00eds de residencia del usuario que se mostrar\u00e1 en el perfil. |\n| city | string | null | La ciudad de residencia del usuario que se mostrar\u00e1 en el perfil.|\n\n## Ejemplo de HTML codificado\n\nEste es un ejemplo de una posible **salida (output)** HTML, debe reemplazar: \n  *name*,           \/\/h1 \n  *lastname*,       \/\/h1\n  *role*,           \/\/h2\n  *city*,           \/\/h3\n  *country*,        \/\/h3\n  *social networks*,\/\/ul\n  *photo*,          \/\/img\n  *background*,     \/\/div->img\n\nCon valores reales.\n\n```html\n<div class=\"widget\">\n  <div class=\"cover\"><img src=\"https:\/\/the_url.com\/for_the_background.png\" \/><\/div>\n  <img src=\"https:\/\/the_url.com\/for_the_image.png\" class=\"photo\" \/>\n  <h1>Ryan Boylett<\/h1>\n  <h2>Web Developer<\/h2>\n  <h3>Miami, USA<\/h3>\n  <ul class=\"position-right\">\n    <li><a href=\"https:\/\/twitter.com\/alesanchezr\"><i class=\"fa fa-twitter\"><\/i><\/a><\/li>\n    <li><a href=\"https:\/\/github.com\/alesanchezr\"><i class=\"fa fa-github\"><\/i><\/a><\/li>\n    <li><a href=\"https:\/\/linkedin.com\/alesanchezr\"><i class=\"fa fa-linkedin\"><\/i><\/a><\/li>\n    <li><a href=\"https:\/\/instagram.com\/alesanchezr\"><i class=\"fa fa-instagram\"><\/i><\/a><\/li>\n  <\/ul>\n<\/div>\n```\n\n## Instalaci\u00f3n\n\n1. Clona este repositorio para descargar la plantilla inicial:\n\n`git clone https:\/\/github.com\/breatheco-de\/exercise-conditional-profile-card`\n\n2. Entra en la carpeta del proyecto: \n\n`cd exercise-conditional-profile-card`\n\n3. Instala los paquetes NPM:\nNota: si est\u00e1 utilizando c9, aseg\u00farese de estar ejecutando la \u00faltima versi\u00f3n de node: \n\n`nvm install 8`\n\n`nvm use 8`\n\n\n`npm install`\n\n4. Construir por primera vez: \n\n`npm run build`\n\n5.Si est\u00e1s usando la cloud 9, haga clic con el bot\u00f3n derecho en el archivo `public \/ index.html` y haga clic en \"ejecutar\" para iniciar el servidor y obtener el enlace de su sitio web p\u00fablico.\n\n6. Comience a actualizar la funci\u00f3n `render` dentro del archivo `index.js`, ese es el \u00fanico archivo que tiene que hacer de nuevo `npm run build` y actualice la url de su sitio web p\u00fablico.\n\nNota: cada vez que actualice un archivo, tendr\u00e1 que volver a compilarlo para actualizar el paquete.\n",
-        "preview": "..\/p\/javascript\/beginner\/conditional-profile-card\/\/preview.gif",
-        "title": "Conditional Profile Card Generator",
-        "slug": "conditional-profile-card",
-        "status": "published",
-        "solution": "https:\/\/github.com\/breatheco-de\/conditional-profile-card",
-        "duration": 4,
-        "description": "Practice conditions, render a profile card based on a series of variables that could change in value during runtime like: username, avatar, etc.",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 6
-            },
-            {
-                "badge": "tag-master",
-                "points": 3
-            },
-            {
-                "badge": "window-lover",
-                "points": 3
-            },
-            {
-                "badge": "abc",
-                "points": 5
-            },
-            {
-                "badge": "functional-developer",
-                "points": 5
-            }
-        ],
-        "info-path": "..\/p\/javascript\/beginner\/conditional-profile-card\/info.json",
-        "name": "json",
-        "url": "..\/p\/javascript\/beginner\/conditional-profile-card\/",
-        "visibility": "public",
-        "technology": "javascript",
-        "difficulty": "beginner",
-        "category": "javascript",
-        "folder-name": "conditional-profile-card"
-    },
-    {
-        "translations": [
-            "us",
-            "es"
-        ],
         "readme": "..\/p\/javascript\/beginner\/domain-name-generator\/",
         "markdown-es": "# The Domain Name Generator\n\nEncontrar un nombre de dominio es dif\u00edcil, \u00bfpor qu\u00e9 no automatizarlo? :)\n\n## Instrucciones\n\nCrea un script que genere todas las combinaciones posibles de nombres de dominio.\nde una lista de pronombres, adjetivos y sustantivos, por ejemplo:\n\n```\n  var pronoun = ['the','our'];\n  var adj = ['great', 'big' ];\n  var noun = ['jogger','racoon'];\n```\n\nDebe generar algo como:\n\n```\nthegreatjogger.com\nthegreatracoon.com\nourgreatjogger.com\nourgreatracoon.com\nthebigjogger.com\nthebigracoon.com\nourbigjogger.com\nourbigracoon.com\n```\n\nSugerencia: deber\u00e1 usar los bucles anidados para mezclar los diferentes valores.\n\nSus herramientas: Para bucle, concatenaci\u00f3n de cuerdas.\n\n## Un poco de historia sobre el proyecto (lee solo si te importa)\n\nAntes de que el mercado de dominios fuera centralizado y convertido en una mafia.\ncontrolado por Godaddy, Enom y algunos otros. Ciudadanos como t\u00fa y yo\nFueron capaces de comprar un dominio .com de forma realmente f\u00e1cil. \n\nDe hecho, este proyecto fue construido originalmente en 2002 por uno de los maestros de 4Geeks\nmientras intentaba encontrar nombres de dominio para comprar para varios proyectos.\n\n",
         "title": "Domain Name Generator",
