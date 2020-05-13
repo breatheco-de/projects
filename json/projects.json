@@ -564,8 +564,8 @@
     },
     {
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/beginner\/domain-name-generator\/",
         "markdown-es": "# The Domain Name Generator\n\nEncontrar un nombre de dominio es dif\u00edcil, \u00bfpor qu\u00e9 no automatizarlo? :)\n\n## Instrucciones\n\nCrea un script que genere todas las combinaciones posibles de nombres de dominio.\nde una lista de pronombres, adjetivos y sustantivos, por ejemplo:\n\n```\n  var pronoun = ['the','our'];\n  var adj = ['great', 'big' ];\n  var noun = ['jogger','racoon'];\n```\n\nDebe generar algo como:\n\n```\nthegreatjogger.com\nthegreatracoon.com\nourgreatjogger.com\nourgreatracoon.com\nthebigjogger.com\nthebigracoon.com\nourbigjogger.com\nourbigracoon.com\n```\n\nSugerencia: deber\u00e1 usar los bucles anidados para mezclar los diferentes valores.\n\nSus herramientas: Para bucle, concatenaci\u00f3n de cuerdas.\n\n## Un poco de historia sobre el proyecto (lee solo si te importa)\n\nAntes de que el mercado de dominios fuera centralizado y convertido en una mafia.\ncontrolado por Godaddy, Enom y algunos otros. Ciudadanos como t\u00fa y yo\nFueron capaces de comprar un dominio .com de forma realmente f\u00e1cil. \n\nDe hecho, este proyecto fue construido originalmente en 2002 por uno de los maestros de 4Geeks\nmientras intentaba encontrar nombres de dominio para comprar para varios proyectos.\n\n",
@@ -612,8 +612,8 @@
     },
     {
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/beginner\/html5-form-validations\/",
         "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32)  HTML5 Form Validations\n\nDespu\u00e9s de crear el HTML y el CSS para este formulario, debemos asegurarnos de que evite que el usuario env\u00ede un formulario con la informaci\u00f3n o el formato incorrectos. En el desarrollo web, lo llamamos: Validaci\u00f3n de formularios.\n\nPara evitar que se env\u00ede un formulario, tenemos que escuchar el evento \"enviar\" que se activa con el formulario cuando el usuario presiona: la tecla Intro \/ Retorno o el bot\u00f3n Enviar.\n\nHere is a little more about preventing an event from occurring: [https:\/\/www.youtube.com\/watch?v=I_fVO_NzT2g&t=401s](https:\/\/www.youtube.com\/watch?v=I_fVO_NzT2g&t=401s)\n\n![Form Validations Preview](https:\/\/projects.breatheco.de\/json?slug=html5-form-validations&preview)\n\n## Instrucciones\n\nAfter the user submits the form:\n1. Aseg\u00farate de detener el flujo del env\u00edo utilizando `preventDefault ()`, [aqu\u00ed hay un poco m\u00e1s sobre preventDefault ()](https:\/\/www.youtube.com\/watch?v=3SNyh57XSIA).\n2. Despu\u00e9s de evitar el env\u00edo, aseg\u00farese de que todos los valores de entrada sean correctos y tengan el formato correcto.\n3. Si hay una o m\u00e1s entradas con un valor no v\u00e1lido, muestre un error claro en la parte superior del formulario con un mensaje muy expl\u00edcito sobre lo que sucedi\u00f3.\n4. Cambie el color de fondo de las entradas relevantes (las que tienen datos incorrectos).\n\n## \u00bfQu\u00e9 hacer si est\u00e1s atascado?\n\n\u00a1No te sientas frustrado y pide ayuda! Despu\u00e9s de probarte por tu cuenta durante 20 minutos, es hora de dejar de trabajar y pedir ayuda.",
@@ -673,8 +673,8 @@
         ],
         "video-path": "..\/p\/javascript\/beginner\/simple-counter-react\/video.json",
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/beginner\/simple-counter-react\/",
         "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Simple Counter with React\n\nReact mejora la creaci\u00f3n de componentes personalizados, que puedes representar a trav\u00e9s de tu aplicaci\u00f3n web utilizando el m\u00e9todo **ReactDOM.render()**. Un componente personalizado te permite dividir y conquistar, separando los desaf\u00edos l\u00f3gicos y visuales en partes m\u00e1s peque\u00f1as, lo que le brinda un mayor control sobre la pantalla y las funcionalidades de cada parte de la aplicaci\u00f3n web.\n\nPor ejemplo, para crear un bootstrap &#x3C;Card \/&#x3E; componente codificar\u00edas esto:\n\n```\nfunction Card(props){\n    render (\n        <div className=\"card\">\n            <img className=\"card-img-top\" src=\"http:\/\/via.placeholder.com\/350x150\" alt=\"Card image cap\" \/>\n            <div className=\"card-body\">\n                <h5 className=\"card-title\">Card title<\/h5>\n                <p className=\"card-text\">Some quick example text to build on the card title and fill the card's content.<\/p>\n                <a href=\"#\" className=\"btn btn-primary\">Go somewhere<\/a>\n            <\/div>\n        <\/div>\n    );\n}\n```\n\nDespu\u00e9s de declararlo, puedes **importar** y **utilizar** en tu aplicaci\u00f3n web de esta manera:\n\n```\n\/\/import react into the bundle\nimport React from 'react';\nimport ReactDOM from 'react-dom';\nimport Card from '.\/component\/Card.jsx'\n\nReactDOM.render(<Card \/>, document.quertSelector('#root'));\n```\n\nAdicionalmente, puedes pasar informaci\u00f3n a trav\u00e9s de **props**:\n\n```html\n\n<!-- Uso del componente personalizado. -->\n<Card imageUrl=\"http:\/\/via.placeholder.com\/350x150\" title=\"A nice image\" \/>\n\n```\n\n... para uso dentro del m\u00e9todo de renderizaci\u00f3n de su componente:\n\n```\n\/\/Declaration of custom component (Card.jsx)\n\nfunction Card(props){\n    render (\n        <div className=\"card\">\n            <img className=\"card-img-top\" src={props.imageUrl} alt=\"Card image cap\" \/>\n            <div className=\"card-body\">\n                <h5 className=\"card-title\">{props.title}<\/h5>\n                <p className=\"card-text\">Some quick example text to build on the card title and fill the card's content.<\/p>\n                <a href=\"#\" className=\"btn btn-primary\">Go somewhere<\/a>\n            <\/div>\n        <\/div>\n    );\n}\n```\n\n# Instrucciones\n\nCrea un componente de contador de segundos, llamado ***SecondsCounter***. Deber\u00eda verse [como este](https:\/\/projects.breatheco.de\/json?slug=simple-counter-react&preview).\n\n- El prop\u00f3sito principal del componente es mostrar cu\u00e1ntos segundos han pasado desde que el sitio web termin\u00f3 de cargarse (onLoad).\n- Use el ***ReactDOM.render()*** para representar el componente en la aplicaci\u00f3n web.\n- Use la funci\u00f3n ***setInterval()*** para volver a renderizar el componente cada segundo.\n- El componente no necesita un estado local, puede pasar la cantidad de segundos como **props** de la siguiente manera:\n```\n<SecondsCounter seconds={3434} \/>\n\n```\n- Puede encontrar el \u00edcono del reloj a la izquierda del componente en fuente impresionante.\n",
@@ -710,8 +710,8 @@
         ],
         "video-path": "..\/p\/javascript\/beginner\/traffic-light-react\/video.json",
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/beginner\/traffic-light-react\/",
         "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Traffic Light with React\n\nTambi\u00e9n es posible crear componentes de reacci\u00f3n utilizando una declaraci\u00f3n de clase.\n\nPor ejemplo, para crear un &#x3C;TrafficLight \/&#x3E; componente utilizando la declaraci\u00f3n de clase puede escribir este c\u00f3digo:\n```\nclass TrafficLight extends React.Component{\n    constructor(){\n        super();\n        this.state = {\n            \/\/your state properties here\n        }\n    }\n    render(){\n        return (\n            \/\/return your html here\n        )\n    }\n}\n```\n\nEl uso de la declaraci\u00f3n de clase es excelente porque permite que los componentes tengan un estado que se puede cambiar durante el ciclo de vida del componente o durante el tiempo de ejecuci\u00f3n de la aplicaci\u00f3n.\n\n# Instrucciones\n\nSimulemos un sem\u00e1foro [como este](https:\/\/projects.breatheco.de\/json?slug=traffic-light-react&preview).\n\nLa luz tiene que brillar cuando se hace clic.\n\n- Todo el prop\u00f3sito del componente es mostrar un sem\u00e1foro con luces de lectura, amarillas y verdes.\n- Cuando se hace clic (se selecciona) alguna luz, \u00e9sta debe brillar, pero las otras luces deben dejar de brillar.\n- El componente debe tener un estado que almacene el color actual que debe brillar, por eso debe declarar el componente como una clase (no como una funci\u00f3n) de esta manera:\n```js\nclass TrafficLight extends React.Component{\n    \/\/Tu constructor y m\u00e9todo de renderizaci\u00f3n aqu\u00ed.\n}\n```\n- Utilice ReactDOM.render para procesar el componente en el DOM de esta manera\n```js\nReactDOM.render(<TrafficLight \/>, document.querySelector('#app'));\n```",
@@ -736,25 +736,6 @@
         "difficulty": "beginner",
         "category": "javascript",
         "folder-name": "traffic-light-react"
-    },
-    {
-        "translations": [
-            "us",
-            "es"
-        ],
-        "readme": "..\/p\/javascript\/junior\/calculator\/",
-        "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Calculator\n\nLa calculadora es un proyecto ideal para\nhttps:\/\/projects.breatheco.de\/json?slug=calculator&preview",
-        "title": "The Calculator",
-        "slug": "the-calculator",
-        "status": "draft",
-        "info-path": "..\/p\/javascript\/junior\/calculator\/info.json",
-        "name": "json",
-        "url": "..\/p\/javascript\/junior\/calculator\/",
-        "visibility": "public",
-        "technology": "javascript",
-        "difficulty": "junior",
-        "category": "javascript",
-        "folder-name": "calculator"
     },
     {
         "video-id": "CmdPegEyyVs",
@@ -827,8 +808,8 @@
         ],
         "video-path": "..\/p\/javascript\/junior\/contact-list\/video.json",
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/junior\/contact-list\/",
         "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Contact Managment Application \n\nTecnolog\u00edas: HTML, CSS, JS, React, React Router and Flux.\n\n\u00a1Hola! Es hora de empezar a hacer aplicaciones frontales profesionales. Esta vez\nCrearemos una peque\u00f1a aplicaci\u00f3n de gesti\u00f3n de contactos que permitir\u00e1 a los usuarios:\nCrear, actualizar, eliminar y leer contactos. [Compru\u00e9balo aqu\u00ed!](https:\/\/projects.breatheco.de\/json?slug=contact-list&preview)\n\n***Utiliza la arquitectura de Flux para esto:*** La arquitectura de Flux es una de las propuestas m\u00e1s utilizadas para las arquitecturas de aplicaciones web..\n\n### \u00bfComo empezar?\n\nClona el repositorio con el boilerplate, no contiene funcionalidades reales\npero tiene 99.99% del HTML \/ CSS que necesitar\u00e1s para el proyecto,\nTe permite centrarte en la funcionalidad.\n\n### El proyecto se divide en:\n\n#### Dos vistas diferentes:\n\n1. Contacto: Contiene la lista de contactos.\n2. Agregar contacto: es solo un formulario que puede usar para crear o actualizar contactos.\n\n#### Hay un componente adicional:\nTarjeta de contacto: componente ideal para mostrar solo un contacto.\n\n## Funcionalidades esperadas\n\n- Debe agregar el c\u00f3digo necesario para que su aplicaci\u00f3n cree, edite,\ny eliminar contactos de la lista.\n\n- (Opcional, pero es un punto a favor) P\u00eddale al usuario la confirmaci\u00f3n antes de borrar, use la\nComponente modal para eso.\n\n## Pasos para instalar este proyecto\n\n##### 1. Clona el repository\n```\n$ git clone https:\/\/github.com\/breatheco-de\/exercise-contact-list.git\n```\n##### 2. Instala el \/node_modules\n```\n$ npm install\n```\n##### 3. Ejecutar el servidor de desarrollo webpack.\n```\n$ npm run c9\n```\n\n\u00a1Eso es! Comience a codificar su aplicaci\u00f3n ReactJS + Flux.",
@@ -919,40 +900,9 @@
         "folder-name": "contact-list"
     },
     {
-        "translations": [],
-        "title": "Shuffle the Deck",
-        "slug": "deck-shuffler",
-        "status": "draft",
-        "info-path": "..\/p\/javascript\/junior\/deck-shuffler\/info.json",
-        "name": "json",
-        "url": "..\/p\/javascript\/junior\/deck-shuffler\/",
-        "visibility": "public",
-        "technology": "javascript",
-        "difficulty": "junior",
-        "category": "javascript",
-        "folder-name": "deck-shuffler"
-    },
-    {
         "translations": [
+            "es",
             "us"
-        ],
-        "readme": "..\/p\/javascript\/junior\/hangman\/",
-        "title": "The Hangman",
-        "slug": "hangman",
-        "status": "draft",
-        "info-path": "..\/p\/javascript\/junior\/hangman\/info.json",
-        "name": "json",
-        "url": "..\/p\/javascript\/junior\/hangman\/",
-        "visibility": "public",
-        "technology": "javascript",
-        "difficulty": "junior",
-        "category": "javascript",
-        "folder-name": "hangman"
-    },
-    {
-        "translations": [
-            "us",
-            "es"
         ],
         "readme": "..\/p\/javascript\/junior\/meetup-clone-react\/",
         "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Contact Managment Application \n\nTecnologias: HTML, CSS, JS, React, React Router and React Context API.\n\n\u00a1Hola! Es hora de empezar a hacer aplicaciones frontales profesionales. Esta vez\nCrearemos una peque\u00f1a aplicaci\u00f3n de Meetup.com que permita a los usuarios navegar y confirmar eventos, muy similar a c\u00f3mo funciona Meetup.com.\n\n**Event**s  son la entidad central en el sistema, la vista principal (Home) tendr\u00e1 una lista de **Event**s organizado por fechas.\nCada **Event** esta vinculado _a single **Meetup**_.\nUn **Meetup** puede ser vinculado _one or more_ **Event**s.\n\n_Optimizado para grupos de 2-3 estudiantes._\n\n## Este proyecto est\u00e1 destinado a realizarse en dos fases.\n\nPrimero queremos enfocarnos en las im\u00e1genes, asegurarnos de que las estructuras visibles est\u00e9n funcionando correctamente.\nEn segundo lugar, debemos implementar la visualizaci\u00f3n din\u00e1mica de datos.\n\n### Fase 1: Crea las vistas, luego vinc\u00falalas con React Router en su componente de dise\u00f1o.\n\nCada grupo debe crear los proyectos ***ver componentes***: \n- Home (Lista de Eventos)\n- Detalle del Event\n- Detalle del Meetup\n\nUsa contenido ficticio inicialmente.\n\nEn Meetup.com, Meetups son los grupos u organizaciones anfitrionas de los eventos. \n\n##### Cada Meetup debe tener:\n- Titulo\n- Descripci\u00f3n\n\n\nEn contraste, los eventos son los eventos espec\u00edficos que el grupo est\u00e1 organizando durante el mes. \n\n##### Cada Evento debe tener:\n- Titulo\n- Descripci\u00f3n\n- Fecha\n- Hora\n- Meetup\n\n\n\nNota: Piensa en DRY (Don't repeat yourself) y declara solo ***un*** componente y usa ```props``` para manejar una estructura similar pero contenido diferente.\n\nRECUERDA: Las etiquetas de anclaje provocar\u00e1n un redireccionamiento, que no deseas en React. Aseg\u00farate de usar el componente ``` Link ``` de React Router para implementar la navegaci\u00f3n entre vistas.\n\n```jsx\n...\n\n<Link to=\"\/event\">\n\tTitle of event\n<\/Link>\n\n...\n```\n\n\n### Fase 2: dinamizar la aplicaci\u00f3n implementando React Context.\n\n***Utiliza el store para rellenar el contenido ficticio *** dentro de las vistas\/componentes. Se puede acceder a el store utilizando el ```Context.Consumer```\n\n##### Referencia: Usando el Context\n\nThe `store` structure (```\/store\/store.js```):\n\nAlgunos contenidos ficticios.\n\n```javascript\nstore = {\n    events:[\n        {\n            ID: 36,\n            post_content: \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero consectetur risus vehicula interdum eu at elit. Proin a commodo erat, eu molestie ipsum. Aliquam tristique nunc a est tristique, et convallis risus ullamcorper. Fusce nec massa ac enim pellentesque ornare. Pellentesque non sapien varius, pellentesque tellus sit amet, facilisis justo. Duis rhoncus nunc id elementum dapibus. Sed dictum lacinia vestibulum.\",\n            post_title: \"Lorem Event\",\n            meta_keys: {\n                day: \"20180428\",\n                time: \"07:00:00\",\n                _meetup: \"9\",\n                _rsvpNo: [\n                    \"robert\",\n                    \"jjtime\",\n                    \"username2\"\n                ],\n                _rsvpYes: {\n                    \"cheeselover\",\n                    \"neweradude\",\n                    \"james1996\"\n                }\n            }\n        },\n        ...\n    ],\n    meetups:[\n        {\n            ID: 9,\n            post_content: \"The nicest Meetup ever\",\n            post_title: \"Tech Enthusiasts\",\n        },\n        ...\n    ],\n    session:{\n        ID: 2,\n        username: \"theUser\",\n        password: \"1234\",\n        token: \"qwerty12345asdfgzxcv\"\n    }\n    ]\n};\n```\n\nPara tener acceso a los datos globales, debe importar el contexto:\n```jsx\n\nimport {Context} from '\/path\/to\/store\/appContext.jsx';\n\n...\n\n\/\/Then use the Consumer within the render method\n    render(){\n        return(\n            <Context.Consumer>\n                {\n                    ({store}) => {\n                        \/\/Then you can use the data structure within store into \n                        return (<span> hello, {store.events[0].post_title} <\/span>);\n                        \n                    }\n                }\n            <\/Context.Consumer>\n        );\n    }\n...\n\n```\n\nTodo tu Fetch\/AJAX estar\u00e1 en la secci\u00f3n ```componentDidMount()``` del archivo appContext.jsx.\n\n### \u00bfComo empezar?\n\nComienza con el boilerplate (plantilla) de React.\n\n## Pasos para instalar el boilerplate\n\nNota: breathecode-cli usa nvm 8:\n\n```$ nvm install 8```\n\n```$ nvm use 8```\n\n##### 0. Aseg\u00farate de tener instalado el breathecode-cli en tu entorno. [Instrucciones detalladas](https:\/\/www.npmjs.com\/package\/@breathecode\/breathecode-cli)\n```\n$ npm install -g breathecode-cli\n````\n\n##### 1. Comienza con boilerplate de React\n```\n$ breathecode start:react-project\n```\n##### 2. Instala el \/node_modules\n```\n$ npm install\n```\n##### 3. Ejecutar el servidor de desarrollo webpack.\n```\n$ npm run c9\n```\n\n\u00a1Eso es! Tiempo para codificar.\n\n_\"El momento m\u00e1s espantoso es siempre antes de empezar.\"_\n\n-_Stephen King_\n\n",
@@ -1042,23 +992,9 @@
         "folder-name": "meetup-clone-react"
     },
     {
-        "translations": [],
-        "title": "Memory Game",
-        "slug": "memory",
-        "status": "draft",
-        "info-path": "..\/p\/javascript\/junior\/memory\/info.json",
-        "name": "json",
-        "url": "..\/p\/javascript\/junior\/memory\/",
-        "visibility": "public",
-        "technology": "javascript",
-        "difficulty": "junior",
-        "category": "javascript",
-        "folder-name": "memory"
-    },
-    {
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/junior\/multi-view-react-website\/",
         "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Multi view Website with React \n\nTecnolog\u00edas: HTML, CSS, JS, React, react-router, react context.\n\nBasta con las p\u00e1ginas de destino y los proyectos de vista \u00fanica, es hora de crear nuestra primera aplicaci\u00f3n web.\n\nEste es un proyecto de colaboraci\u00f3n, la clase se dividir\u00e1 en 4 grupos y cada uno crear\u00e1 una parte de un sitio web de vista m\u00faltiple.\n\n### Piezas\/Grupos:\n\n- NavBar\/Footer\/Login View (Session) |\nhttps:\/\/getbootstrap.com\/docs\/4.1\/examples\/carousel\/ & https:\/\/getbootstrap.com\/docs\/4.1\/examples\/sign-in\/\n- Landing Page with Carousel (Products and Posts) | \nhttps:\/\/getbootstrap.com\/docs\/4.1\/examples\/carousel\/\n- Blog\/Post View (Posts) | \nhttps:\/\/getbootstrap.com\/docs\/4.1\/examples\/blog\/\n- Store\/Checkout (Products) | \nhttps:\/\/getbootstrap.com\/docs\/4.1\/examples\/product\/ & https:\/\/getbootstrap.com\/docs\/4.1\/examples\/checkout\/\n\n### Este proyecto est\u00e1 destinado a realizarse en dos fases.\n\n#### Fase 1: configurar las vistas. Reaccionar enrutador.\n\nCada grupo tendr\u00e1 que crear el ***componente vista ***  correspondiente con contenido ficticio (inicialmente) y tantos componentes \"m\u00e1s peque\u00f1os\" como sea necesario.\n\nNota: Piensa DRY (Don't repeat yourself) y declare solo un componente *** y use `` `props``` para manejar contenido diferente.\n\n#### Fase 2: dinamizar la aplicaci\u00f3n. React Context.\n\nEach group must use the Consumer given by the instructor in order to ***use the store to fill the content*** of the pieces:\n\n- Navbar: debe mostrar el nombre de usuario y la imagen del usuario (suponga que el usuario est\u00e1 conectado).\n- Login: Mostrar el formulario de inicio de sesi\u00f3n.\n- Landing Page: debe mostrar 3 publicaciones en el carrusel, 3 publicaciones en una cuadr\u00edcula y 3 productos en la secci\u00f3n de productos.\n- Blog: debe mostrar 6 entradas de blog\n- Post View: debe mostrar los detalles de la publicaci\u00f3n pulsada.\n\n##### Usando el Context\n\nThe `store` structure:\n\n```javascript\nstore = {\n    posts:[\n        {\n            title: 'This is a World Post',\n            content: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.',\n            date: 'Oct 15',\n            tags: ['World'],\n            author: 'Denise A',\n            image: 'https:\/\/venturebeat.com\/wp-content\/uploads\/2015\/09\/Screen-Shot-2015-09-03-at-13.43.14-e1441259794560.png',\n            thumbnail: 'https:\/\/media.takealot.com\/covers_tsins\/50045787\/50045787-1-listgrid.jpg'\n        },\n        ...\n    ],\n    \n    products:[\n        {\n            name: 'Vintage Phone',\n            image: 'https:\/\/images.pexels.com\/photos\/9165\/hand-top-white-old.jpg?auto=compress&cs=tinysrgb&h=500&w=500',\n            price: 300.67,\n            description: 'Embrace nostagia with a brand new flip phone'\n        },\n        ...\n    ],\n    \n    session:{\n        username:'Rigo',\n        email: 'rigocodes@gmail.com',\n        loggedIn: false\n    },\n    \n    cart:[\n        {\n            name: 'Polaroid Camera',\n            image: 'https:\/\/images.pexels.com\/photos\/191160\/pexels-photo-191160.jpeg?auto=compress&cs=tinysrgb&h=500&w=500',\n            price: 129.99,\n            description: 'Get instant photos'\n        },\n        ...\n    ]\n};\n```\n\nPara tener acceso a los datos globales, deber\u00e1 importar el archivo principal del contexto:\n```jsx\nimport {Context} from '\/path\/to\/store\/appContext.jsx';\n\n...\n\n\/\/Then use the Consumer within the render method\n    render(){\n        return(\n            <Context.Consumer>\n                {\n                    ({store}) => {\n                        \/\/Then you can use the data structure within store into \n                        return (<span> hello, {store.session.username} <\/span>);\n                        \n                    }\n                }\n            <\/Context.Consumer>\n        );\n    }\n...\n\n```\n\nSugerencia: puede ver un ejemplo de ```Context.Consumer``` en acci\u00f3n en:\n\n```\ndemo.jsx\n - demoList.jsx\n - demoProducts.jsx\n```\n\n### \u00bfComo Empezar?\n\n##### 1. Clonar el repositorio inicial del instructor.\n```\n$ git clone <repository_url>\n```\n##### 2. Instala el \/node_modules\n```\n$ npm install\n```\n##### 3. Ejecutar el servidor de desarrollo webpack.\n```\n$ npm run c9\n```\n\nListo!\n*tap* *tap* *tap* (Start coding!)\n",
@@ -1121,8 +1057,8 @@
     },
     {
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/junior\/sorting-cards-with-bubble\/",
         "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Sorting Cards with Bubble algorithm\n\nLa clasificaci\u00f3n se considera un concepto importante en muchos lenguajes de programaci\u00f3n, ya que nos ayuda a ubicar elementos de una manera m\u00e1s r\u00e1pida y sencilla.\n\nEl algoritmo de clasificaci\u00f3n de burbujas es uno de los m\u00e1s f\u00e1ciles de aprender y ese es el primero que se ense\u00f1a normalmente. Aqu\u00ed hay una explicaci\u00f3n de 5 minutos sobre c\u00f3mo funciona el algoritmo de burbuja:\n[https:\/\/www.youtube.com\/watch?v=xli_FI7CuzA](https:\/\/www.youtube.com\/watch?v=xli_FI7CuzA)\n\n## Instrucciones\n\n1. Crea una funci\u00f3n que genere una lista de cartas al azar.\n1. Permita que el usuario especifique cu\u00e1ntas tarjetas aleatorias debe generar el sitio web utilizando una entrada de texto.\n2. Agregue un bot\u00f3n de \"sorteo\" que, al hacer clic, hace que esas tarjetas en el sitio web sean hermosas.\n3. Agregue un bot\u00f3n de \"clasificaci\u00f3n\" que ordene las tarjetas usando el algoritmo de clasificaci\u00f3n `bubble`.\n4. Guarde todos los cambios dif\u00edciles de realizar al ordenar la lista de tarjetas en una nueva matriz.\n5. Muestra el registro completo de cambios uno encima del otro.\n\nEsta es una animaci\u00f3n de c\u00f3mo deber\u00eda verse su aplicaci\u00f3n:\n![Bubble Sorting Cards on a website](https:\/\/projects.breatheco.de\/json?slug=sorting-cards-with-bubble&preview)\n\nPista:\n\n1. La estrategia primero, nadie comienza a codificar la soluci\u00f3n antes de tener una estrategia clara.\n2. Ap\u00e9gate a tu estrategia, olv\u00eddate del stackoverflow para la estrategia.\n3. Divide y conquista, intenta separar el ejercicio en ejercicios m\u00e1s peque\u00f1os, por ejemplo:\n    - Cree el CSS y HTML codificados antes de intentar que sea din\u00e1mico, eso le dar\u00e1 una idea clara de qu\u00e9 c\u00f3digo HTML necesita construir con su algoritmo.\n    - Primero genere una matriz de tarjetas aleatorias, aseg\u00farese de que se est\u00e1 generando correctamente (utilizando la consola.log) antes de intentar procesarla en el sitio web.\n    - Cree una funci\u00f3n solo para crear el HTML de UNA tarjeta y luego reutil\u00edcela para renderizar todo.",
@@ -1186,8 +1122,8 @@
     },
     {
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/junior\/sorting-cards-with-select\/",
         "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Sorting Cards using the selection algorithm\n\nEl \"algoritmo de selecci\u00f3n de selecci\u00f3n\" es tambi\u00e9n otro ejemplo simple de c\u00f3mo funcionan las computadoras al ordenar la lista de cosas. Aqu\u00ed hay una explicaci\u00f3n de 5 minutos sobre c\u00f3mo funciona el algoritmo de selecci\u00f3n:\n[https:\/\/www.youtube.com\/watch?v=g-PGLbMth_g](https:\/\/www.youtube.com\/watch?v=g-PGLbMth_g)\n\n## Instrucciones\n\n1. Crea una funci\u00f3n que genere una lista de cartas al azar.\n1. Permita que el usuario especifique cu\u00e1ntas tarjetas aleatorias debe generar el sitio web utilizando una entrada de texto.\n2. Agregue un bot\u00f3n de \"sorteo\" que, al hacer clic, hace que esas tarjetas en el sitio web sean hermosas.\n3. Agregue un bot\u00f3n de \"clasificaci\u00f3n\" que ordene las tarjetas usando el algoritmo de clasificaci\u00f3n `selection`.\n4. Guarde todos los cambios dif\u00edciles de realizar al ordenar la lista de tarjetas en una nueva matriz.\n5. Muestra el registro completo de cambios uno encima del otro.\n\nThis is an example of how your application should look:\n\n![Bubble Sorting Cards on a website](https:\/\/projects.breatheco.de\/json?slug=sorting-cards-with-select&preview)\n\nPista:\n\n1. La estrategia primero, nadie comienza a codificar la soluci\u00f3n antes de tener una estrategia clara.\n2. Ap\u00e9gate a tu estrategia, olv\u00eddate del stackoverflow para la estrategia.\n3. Divide y conquista, intenta separar el ejercicio en ejercicios m\u00e1s peque\u00f1os, por ejemplo:\n    - Cree el CSS y HTML codificados antes de intentar que sea din\u00e1mico, eso le dar\u00e1 una idea clara de qu\u00e9 c\u00f3digo HTML necesita construir con su algoritmo.\n    - Primero genere una matriz de tarjetas aleatorias, aseg\u00farese de que se est\u00e1 generando correctamente (utilizando la consola.log) antes de intentar procesarla en el sitio web.\n    - Cree una funci\u00f3n solo para crear el HTML de UNA tarjeta y luego reutil\u00edcela para renderizar todo.",
@@ -1250,32 +1186,9 @@
         "folder-name": "sorting-cards-with-select"
     },
     {
-        "translations": [],
-        "title": "Tetris with JS",
-        "slug": "tetris-js",
-        "draft": true,
-        "status": "draft",
-        "duration": 16,
-        "description": "Create a tetris game using js",
-        "talents": [
-            {
-                "badge": "tag-master",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/javascript\/junior\/tetris\/info.json",
-        "name": "json",
-        "url": "..\/p\/javascript\/junior\/tetris\/",
-        "visibility": "public",
-        "technology": "javascript",
-        "difficulty": "junior",
-        "category": "javascript",
-        "folder-name": "tetris"
-    },
-    {
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/junior\/tictactoe-react\/",
         "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) TicTacToe Con React\n\nEs hora de empezar a construir cosas geniales, \u00a1codifiquemos nuestro primer juego!\n\n<p align=\"center\"><img height=\"300\" src=\"https:\/\/projects.breatheco.de\/json?slug=tictactoe-react&preview\" \/><\/p>\n\n## \ud83d\udcdd Instrucciones\n\nCrea un tictactoe en React.js al igual que [este](https:\/\/projects.breatheco.de\/json?slug=tictactoe-react&preview). Recuerda seguir el flujo de trabajo recomendado para comenzar la codificaci\u00f3n:\n\n1. Dise\u00f1a tu sitemap: \u00bfCu\u00e1ntas p\u00e1ginas \/ vistas?\n2. Dise\u00f1ando tu estructura (wireframe): \u00bfQu\u00e9 componentes y d\u00f3nde?\n3. Comienza a codificar tus componentes solo para mostrar \"Hola mundo\" en cada uno de ellos (para asegurarse de que funcionan).\n4. Crea una lista de todas las posibles interacciones (eventos) del usuario y del sistema que se producen durante el tiempo de ejecuci\u00f3n (por ejemplo: el usuario hace clic en un bot\u00f3n para iniciar el juego)\n6. Crea unas funciones de javascript que manejen cada uno de esos eventos.\n7. `Console.log` en cada una de esas funciones para asegurarse de que se est\u00e1n llamando.\n9. Contin\u00faa... mira el video si tienes alguna otra duda.\n\n### Conceptos que debes aprender:\n\n- State de los componentes (variables globales)\n- Props\n- Met\u00f3do de Renderizado\n- La funci\u00f3n para comprobar el ganador es un gran algoritmo de aprendizaje.\n\n### Video Tutorial:\n\nAqu\u00ed hay un video que explica c\u00f3mo hacerlo: [https:\/\/www.youtube.com\/watch?v=MQonrbY8Ezg&list=PLx0T51ydRO_7qabdLlT69keo68WmbXkrB](https:\/\/www.youtube.com\/watch?v=MQonrbY8Ezg&list=PLx0T51ydRO_7qabdLlT69keo68WmbXkrB)\n\n",
@@ -1355,8 +1268,8 @@
     },
     {
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/junior\/todo-list-with-fetch\/",
         "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Segunda parte de la TODO List, agregando fetch\n\nEste ejercicio est\u00e1 destinado a ser completado despu\u00e9s de la [aplicaci\u00f3n de la TODO List](https:\/\/projects.breatheco.de\/d\/todo-list#readme) porque la primera parte es el boilerplate perfecto para comenzar a usar API's.\n\nPara esta segunda parte, sincronizaremos nuestra lista de tareas con una base de datos real, usando la siguiente [RESTful](http:\/\/content.breatheco.de\/lesson\/understanding-rest-apis) y API p\u00fablica realizada para este ejercicio.\n\n\ud83d\udd17 Click aqu\u00ed para acceder a la [documentaci\u00f3n de la API del TODO-list ](http:\/\/assets.breatheco.de\/apis\/fake\/todos\/).\n\nTodo este ejercicio se trata de la programaci\u00f3n de asincrona porque las interacciones `from` y` to` del servidor deben realizarse de forma as\u00edncrona. De esa manera, el usuario no tiene que esperar a que llegue la informaci\u00f3n.\n\n## Instrucciones:\n\n- Haz que tu TODO List se sincronice con la API de backend cada vez que se agregue o elimine una tarea.\n- Agregue un bot\u00f3n de limpieza de todas las tareas que eliminar\u00e1 toda la lista del servidor y actualizar\u00e1 la lista vac\u00eda en el front-end.\n\nHay 3 momentos cr\u00edticos en la l\u00ednea de tiempo de la aplicaci\u00f3n (denominado El tiempo de ejecuci\u00f3n) para centrarse en su integraci\u00f3n:\n- **Despu\u00e9s de que la lista se carga vac\u00eda por primera vez (componentDidMount)**: debes obtener (GET) los datos de la API y actualizar las tareas cuando la informaci\u00f3n finalmente llegue.\n- **Cuando se agrega una nueva tarea**: debes PONER (PUT) la nueva lista en el servidor.\n- **Cuando se elimina una tarea**: Debes PONER (PUT) la nueva lista en el servidor.\n\n## Pista\n\nUtilice la siguiente fetch call para sincronizar tus tareas con el servidor cada vez que haya un cambio en la lista.\n\n```js\nfetch('http:\/\/assets.breatheco.de\/apis\/fake\/todos\/user\/alesanchezr', {\n      method: \"PUT\",\n      body: JSON.stringify(todos),\n      headers: {\n        \"Content-Type\": \"application\/json\"\n      }\n    })\n    .then(resp => {\n        console.log(resp.ok); \/\/ Ser\u00e1 true (verdad) si la respuesta es exitosa.\n        console.log(resp.status); \/\/ el c\u00f3digo de estado = 200 o c\u00f3digo = 400 etc.\n        console.log(resp.text()); \/\/ Intentar\u00e1 devolver el resultado exacto como cadena (string)\n        return resp.json(); \/\/ (regresa una promesa) will try to parse the result as json as return a promise that you can .then for results\n    })\n    .then(data => {\n        \/\/Aqu\u00ed es donde debe comenzar tu c\u00f3digo despu\u00e9s de que finalice la b\u00fasqueda\n        console.log(data); \/\/esto imprimir\u00e1 en la consola el objeto exacto recibido del servidor\n    })\n    .catch(error => {\n        \/\/manejo de errores\n        console.log(error);\n    });\n```\n\nPara cualquier otra solicitud, debes seguir cambiando las variables en el fetch:El URL, el m\u00e9todo y el payload (carga \u00fatil).\n",
@@ -1384,8 +1297,8 @@
     },
     {
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/semi-senior\/battlefield\/",
         "markdown-es": "# battleship-javascript\nUn juego de acorazado muy simple escrito en JavaScript simple: http:\/\/learntocodela.github.io\/battleship-javascript\/\n\nLea sobre el juego y sus reglas aqu\u00ed: https:\/\/en.wikipedia.org\/wiki\/Battleship_(game)\n\n### Paso 1: Crea tus archivos\n\nReferencias utiles:\n- [Final HTML file](https:\/\/github.com\/learntocodela\/battleship-javascript\/blob\/gh-pages\/index.html)\n- [Final CSS file](https:\/\/github.com\/learntocodela\/battleship-javascript\/blob\/gh-pages\/style.css)\n- [Final JS file](https:\/\/github.com\/learntocodela\/battleship-javascript\/blob\/gh-pages\/battleship.js)\n- [CSS Relative and Absolute Positioning](http:\/\/learnlayout.com\/position.html)\n\n### Paso 2: Crea una cuadr\u00edcula en tu p\u00e1gina HTML para el tablero de juego\n\nReferencias utiles:\n- [Document.getElementById()](https:\/\/developer.mozilla.org\/en-us\/docs\/web\/api\/document\/getelementbyid\/)\n- [Document.createElement()](https:\/\/developer.mozilla.org\/en-us\/docs\/web\/api\/document\/createelement\/)\n- [appendChild()](https:\/\/developer.mozilla.org\/en-us\/docs\/web\/api\/node\/appendchild\/)\n- [style property](https:\/\/developer.mozilla.org\/en-us\/docs\/web\/api\/htmlelement\/style\/)\n- [Loops in JavaScript](https:\/\/developer.mozilla.org\/en-us\/docs\/web\/javascript\/guide\/loops_and_iteration\/)\n\n### Paso 3: Modela el tablero de juego en JavaScript y coloca naves.\n\nReferencias utiles:\n- [Arrays in JavaScript](https:\/\/developer.mozilla.org\/en-us\/docs\/web\/javascript\/reference\/global_objects\/array\/)\n\n### Paso 4: Crea un manejador de eventos y escribe la l\u00f3gica del juego.\n\nReferencias utiles:\n- [Events in JavaScript](http:\/\/www.kirupa.com\/html5\/javascript_events.htm)\n- [Handling Events for Many Elements](http:\/\/www.kirupa.com\/html5\/handling_events_for_many_elements.htm)\n- [Handling Events - Eloquent JavaScript Chapter 14](http:\/\/eloquentjavascript.net\/14_event.html)\n\n### Paso 5: Juega el juego!\n\nJuega el juego ac\u00e1: http:\/\/learntocodela.github.io\/battleship-javascript\/\n\nCaracter\u00edsticas a implementar a continuaci\u00f3n:\n- Mostrar mensajes del juego dentro de la p\u00e1gina HTML en lugar de usar [alert()](https:\/\/developer.mozilla.org\/en-us\/docs\/web\/api\/Window\/alert\/)\n- Aleatorizar la colocaci\u00f3n de las naves al comienzo de cada juego.\n- Hacer mejores gr\u00e1ficos, tal vez agregar efectos de sonido?\n- \u00a1Crea una versi\u00f3n para 2 jugadores del juego!\n",
@@ -1413,8 +1326,8 @@
     },
     {
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/semi-senior\/music-player\/",
         "markdown-es": "#MP3 Player\n\nPermite crear un reproductor de MP3 comoSpotify.com!\n\n## Fundamentos\n\nEste ejercicio cubre los siguientes fundamentos:\n1. CSS avanzado y HTML\n2. La etiqueta *audio* para emular un reproductor HTML5.\n3. M\u00f3dulos Javascriopt.\n4. Javascript avanzado de las pr\u00e1cticas de programaci\u00f3n.\n5. Trabajar con el DOM.",
@@ -1433,8 +1346,8 @@
     },
     {
         "translations": [
-            "us",
-            "es"
+            "es",
+            "us"
         ],
         "readme": "..\/p\/javascript\/semi-senior\/music-player-react\/",
         "markdown-es": "# Music Player React\n\nVamos a crear un reproductor de MP3 que funciona de manera similar a Spotify, [aqui esta la demo](https:\/\/projects.breatheco.de\/json\/?slug=music-player-react&preview\/).\n\nLos botones siempre deben permanecer en la parte inferior de la ventana gr\u00e1fica (use la posici\u00f3n fijada para eso).\nSolo necesita implementar los botones Reproducir, Pausa, Siguiente y anterior.\n\n\n## Requerimientos\n- Listar las canciones de [esta API](http:\/\/assets.breatheco.de\/apis\/sound\/)utilizando la funci\u00f3n de fetch.\n- Cuando el usuario hace clic en una canci\u00f3n, el jugador debe comenzar a reproducirla.\n- Cuando el usuario hace clic en el bot\u00f3n \"siguiente\", el reproductor debe comenzar a reproducir la siguiente canci\u00f3n de la lista, si no hay una canci\u00f3n siguiente, debe comenzar nuevamente tocando la primera canci\u00f3n de la lista, lo mismo se aplica a la \"anterior\" bot\u00f3n.\n- Use el atributo reaccionar ref para obtener la etiqueta de audio del DOM.\n- No hay necesidad de volumen, sin embargo, lo puedes agregar si te sientes con confianza\n\n## Recomendaciones\n- Nunca llame a la funci\u00f3n setState porque perder\u00e1 el estado de la etiqueta de audio si se llama a la funci\u00f3n de render",
@@ -1459,255 +1372,5 @@
         "difficulty": "semi-senior",
         "category": "javascript",
         "folder-name": "music-player-react"
-    },
-    {
-        "translations": [
-            "us",
-            "es"
-        ],
-        "readme": "..\/p\/python\/beginner\/contact-list-api\/",
-        "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Lista de Contacto con REST API en Flask\n\nCrear y mantener las API REST es EL trabajo diario para la mayor\u00eda de los desarrolladores backend, por lo que es una habilidad que necesitamos para madurar. En este proyecto practicaremos cada paso del proceso de desarrollo de API.\n\nVamos a construir la API que gestiona una base de datos de contactos y expondr\u00e1 p\u00fablicamente los endpoints para que las aplicaciones del cliente (incluida la nuestra) puedan usarla. Esta vez incluiremos *Groups*, una nueva entidad que permitir\u00e1 al sistema agrupar *Contacts*. Ejemplo: Trabajo, Familia, Amigos. **Sugerencia**: podemos implementar esta l\u00f3gica utilizando una relaci\u00f3n *many-to-many* entre las dos tablas.\n\n## \ud83d\udcdd Instrucciones\n\nCrea una API con los siguientes endpoints:\n\n1. Obtenga una lista de todos los contactos `GET \/contact\/all`\n2. Crear un nuevo Contacto `POST \/contact`\n3. Obtener un Contacto espec\u00edfico (con los objetos del grupo al que pertenece) `GET \/contact\/{contact_id}`\n4. Eliminar un Contacto `DELETE \/contact\/{contact_id}`\n5. Actualiza el Contacto `UPDATE \/contact\/{contact_id}`\n6. Obtener una lista de todos los nombres e IDs del grupo `GET \/group\/all`\n7. Crea un nuevo Grupo `POST \/group`\n8. Obtener un grupo espec\u00edfico (con todos los objetos de contacto relacionados con \u00e9l) `GET \/group\/{group_id}`\n9. Actualizar el nombre de grupo `UPDATE \/group\/{group_id}`\n10. Elimina un Grupo `DELETE \/group\/{group_id}`\n\nUn contacto debe tener la siguiente estructura de datos en la base de datos:\n```python\n# Contact\n    id: (int, primary_key)\n    full_name: (string, mandatory)\n    email: (string, mandatory)\n    address: (string, optional)\n    phone: (string, optional)\n    groups: (list of foreign_key)\n\n# Group\n    id: (int, primary_key)\n    name: (string, mandatory)\n    contacts: (list of foreign_key)\n```\n\n## Documentaci\u00f3n formal DE API\n\n1. GET \/contact\/all\n```\n    REQUEST (application\/json)\n        type: GET\n        body: null\n    RESPONSE (application\/json)\n        code: 200 | 404 | 500\n        body: [\n            {\n                \"full_name\": \"Dave Bradley\",\n                \"email\": \"dave@gmail.com\",\n                \"address\":\"47568 NW 34ST, 33434 FL, USA\",\n                \"phone\":\"7864445566\",\n                \"groups\": [2,3]\n            },\n            ...\n        ]\n```\n2. Crear un nuevo contacto\n```\n    REQUEST (application\/json)\n        type: POST\n        path: \/contact\n        body: {\n            \"full_name\": \"Dave Bradley\",\n            \"email\": \"dave@gmail.com\",\n            \"address\":\"47568 NW 34ST, 33434 FL, USA\",\n            \"phone\":\"7864445566\",\n            \"groups\": [2,3]\n        }\n    RESPONSE (application\/json)\n        code: 200 | 400 | 500\n        body: {\n            \"id\": 12\n            \"full_name\": \"Dave Bradley\",\n            \"email\": \"dave@gmail.com\",\n            \"address\":\"47568 NW 34ST, 33434 FL, USA\",\n            \"phone\":\"7864445566\",\n            \"groups\": [2,3]\n        }\n```\n3. Obtener un contacto espec\u00edfico\n```\n    REQUEST (application\/json)\n        type: GET\n        path: \/contact\/{contact_id}\n    RESPONSE (application\/json)\n        code: 200 | 404 | 400 | 500\n        body:{\n            \"id\": 12\n            \"full_name\": \"Dave Bradley\",\n            \"email\": \"dave@gmail.com\",\n            \"address\":\"47568 NW 34ST, 33434 FL, USA\",\n            \"phone\":\"7864445566\",\n            \"groups\": [\n                {\n                    \"id\": 2,\n                    \"name\": \"Family\"\n                },{\n                    \"id\": 3,\n                    \"name\": \"Gamers\"\n                }\n             ]\n        }\n```\n4. Actualizar un contacto dado\n```\n    REQUEST (application\/json)\n        type: PUT\n        path: \/contact\/{contact_id}\n        body: {\n            \"full_name\": \"Dave Bradley\",\n            \"email\": \"dave@gmail.com\",\n            \"address\":\"47568 NW 34ST, 33434 FL, USA\",\n            \"phone\":\"7864445566\",\n            \"groups\": [2,3]\n        }\n    RESPONSE (application\/json)\n        code: 200 | 404 | 400 | 500\n        body:{\n            \"id\": 12\n            \"full_name\": \"Dave Bradley\",\n            \"email\": \"dave@gmail.com\",\n            \"address\":\"47568 NW 34ST, 33434 FL, USA\",\n            \"phone\":\"7864445566\",\n            \"groups\": [2,3]\n        }\n```\n5. Eliminar un contacto por id\n```\n    REQUEST (application\/json)\n        type: DELETE\n        path: \/contact\/{contact_id}\n        body: null\n    RESPONSE (application\/json)\n        code: 200 | 404 | 500\n        body: {\n            \"deleted\": {\n                \"id\": 12,\n                \"full_name\": \"Dave Bradley\",\n            }\n        }\n```\n6. Listar todos los grupos\n```\n    REQUEST (application\/json)\n        type: GET\n        path: \/group\/\n        body: null\n    RESPONSE (application\/json)\n        code: 200 | 500\n        body: {\n            \"data\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"Work\"\n                },{\n                    \"id\": 2,\n                    \"name\": \"Gamers\"\n                }\n            ]\n        }\n```\n7. Obtener un grupo espec\u00edfico\n```\n    REQUEST (application\/json)\n        type: GET\n        path: \/group\/{group_id}\n    RESPONSE (application\/json)\n        code: 200 | 404 | 400 | 500\n        body:{\n            \"id\": 2\n            \"name\": \"Work\",\n            \"contacts\": [\n                {\n                    \"id\": 12\n                    \"full_name\": \"Dave Bradley\",\n                    \"email\": \"dave@gmail.com\",\n                    \"address\":\"47568 NW 34ST, 33434 FL, USA\",\n                    \"phone\":\"7864445566\",\n                    \"groups\": [2,3]\n                }\n             ]\n        }\n```\n8. Actualizar el id de un grupo dado\n```\n    REQUEST (application\/json)\n        type: PUT\n        path: \/group\/{group_id}\n        body: {\n            \"name\": \"Beach Crew\",\n        }\n    RESPONSE (application\/json)\n        code: 200 | 404 | 400 | 500\n        body:{\n            \"id\": 2\n            \"name\": \"Beach Crew\",\n        }\n```\n9. Eliminar un grupo por id\n```\n    REQUEST (application\/json)\n        type: DELETE\n        path: \/group\/{group_id}\n        body: null\n    RESPONSE (application\/json)\n        code: 200 | 404 | 500\n        body: {\n            \"deleted\": {\n                \"id\": 2,\n                \"name\": \"Beach Crew\",\n            }\n        }\n```  \n  \n  \n## \ud83d\udca1 \u00bfComo Comenzar?\n\n1. Comienza leyendo las instrucciones muy cuidadosamente.\n2. Build the database model class Contact and Group.\n3. Implemente el m\u00e9todo (POST) para poder agregar algunos contactos y grupos a la base de datos para asegurarse de que tiene datos ficticios.\n4. Crea el GET(all) endpoints. Lista de contactos y lista de grupos.\n5. Implementa el rest de los endpoints.\n6. Conecta tu aplicaci\u00f3n de React Contact List usando `fetch`.\n  \nSugerencia: use Postman como una herramienta de prueba antes de conectar su aplicaci\u00f3n frontal (React Contact List).\n## \ud83d\udcd6 Fundamentos\n\nEste ejercicio te har\u00e1 practicar los siguientes fundamentos:\n\n1. Leer la Documentaci\u00f3n de la API\n2. Construir una RESTful API\n2. Construir modelos de data\n3. Base de Datos SQL\n4. REST API's\n5. Python Flask\n6. Fetch y async\n  \n  \n",
-        "preview": "..\/p\/python\/beginner\/contact-list-api\/\/preview.png",
-        "title": "Contact List API",
-        "slug": "contact-list-api",
-        "status": "published",
-        "duration": 16,
-        "description": "Create the data structures and endpoints to manage a contact list using a database",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/python\/beginner\/contact-list-api\/info.json",
-        "name": "json",
-        "url": "..\/p\/python\/beginner\/contact-list-api\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "beginner",
-        "category": "python",
-        "folder-name": "contact-list-api"
-    },
-    {
-        "translations": [
-            "us",
-            "es"
-        ],
-        "readme": "..\/p\/python\/junior\/family-static-api\/",
-        "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Family Static API\n\n\u00a1La familia Doe necesita una API est\u00e1tica! Necesitamos construir las *estructuras de datos (data structures)* y crear un API endpoint para interactuar con \u00e9l utilizando Postman.\n\n## \u26a0\ufe0f Descarga el boilerplate\n\nPor favor Descarga uno de los siguientes bolerplates para comenzar a codificar tu ejercicio o \u00e1brelo en gitpod.io:\n- Django: [https:\/\/github.com\/breatheco-de\/exercise-family-static-api-django](https:\/\/github.com\/breatheco-de\/exercise-family-static-api-django)\n- Flask: [https:\/\/github.com\/4GeeksAcademy\/flask-rest-hello](https:\/\/github.com\/4GeeksAcademy\/flask-rest-hello)\n\n- Crea el c\u00f3digo necesario para desarrollar los API endpoints descritos m\u00e1s adelante.\n- Los \u00fanicos dos archivos que tienes que editar son:\n\t- For Django: `api\/family_datastructure.py`, `api\/views.py`.\n\t- For Flask: `src\/family_datastructure.py`, `src\/main.py`.\n- Hemos preparado un conjunto de pruebas automatizadas que te dar\u00e1n una idea de si tu c\u00f3digo es correcto, ejecute las pruebas escribiendo `$ pipenv run tests` en la l\u00ednea de comandos (terminal o consola).\n\n## Estructuras de datos (Data structures)\n\nCada **miembro** de la familia Doe debe ser un diccionario, equivalente a [Objetos literales en JS](https:\/\/www.dyn-web.com\/tutorials\/object-literal\/) - y tienen estos valores:\n```\n    + id: Int\n    + first_name: String\n    + last_name: String (Always Doe)\n    + age: Int > 0\n    + gender: String\n    + lucky_numbers: Array of int\n```\nLa estructura de datos **family** ser\u00e1 una clase con la siguiente estructura:\n\n```python\nclass Family:\n\n\tdef __init__(self, last_name):\n\t\tself.last_name = last_name\n        # example list of members\n        self._members = [{\n            \"id\": self._generateId(),\n            \"first_name\": \"John\"\n        }]\n\n    # read-only: Use this method to generate random members ID's when adding members into the list\n    def _generateId(self):\n        return randint(0, 99999999)\n\n\tdef add_member(self, member):\n        ## you have to implement this method\n        ## append the member to the list of _members\n\t\tpass\n\n\tdef delete_member(self, id):\n        ## you have to implement this method\n        ## loop the list and delete the member with the given id\n\t\tpass\n\n\tdef update_member(self, id, member):\n        ## you have to implement this method\n        ## loop the list and replace the memeber with the given id\n\t\tpass\n\n\tdef get_member(self, id):\n        ## you have to implement this method\n        ## loop all the members and return the one with the given id\n\t\tpass\n\n\tdef get_all_members(self, id):\n\t\treturn self._members\n```\n\n## Estos son los miembros iniciales de la familia.\n\n```md\nJohn Doe\n33 Years old\nMale\nLucky Numbers: 7, 13, 22\n\nJane Doe\n35 Years old\nFemale\nLucky Numbers: 10, 14, 3\n\nJimmy Doe\n5 Years old\nMale\nLucky Numbers: 1\n```\n\n## Endpoints\n\nEsta API debe tener dos endpoints, ambos devuelven JSON:\n\n### 1) Obten todos los miembros de la familia:\nLo que devuelve la informaci\u00f3n de la familia de Doe.. Ejemplo:\n\n```md\nGET \/member\n\nRESPONSE (Application\/JSON):\n\n    c\u00f3digo de estado: 200 si se agreg\u00f3 con \u00e9xito, 400 si no lo hace porque el cliente (solicitud) falla, 500 si el servidor encuentra un error\n    content-type: Application\/JSON\n    body: un Objeto JSON que contiene:\n        - miembros: Arreglo de miembros.\n        - family_name: El apellido de la familia.\n        - lucky_numbers: Una matriz con todos los n\u00fameros de la suerte de los miembros de la familia.\n        - sum_of_lucky: Suma de todos los n\u00fameros de la suerte de los miembros de la familia.\n```\nImportant: Hay dos campos que deben calcularse en tiempo de ejecuci\u00f3n:\n- lucky_numbers es la concatenaci\u00f3n de todos los n\u00fameros de la suerte de los miembros de la familia\n- sum_of_lucky es la suma de todos los n\u00fameros de la suerte de los miembros de la familia.\n\n\n### 2) Recupera solo un miembro\n\n```md\nGET \/member\/<int:member_id>\nLo que retorna el miembro de la familia donde`id == member_id`. E, g:\n\nRESPONSE (application\/json):\n\n    c\u00f3digo de estado: 200 si se agreg\u00f3 con \u00e9xito, 400 si no lo hace porque el cliente (solicitud) falla, 500 si el servidor encuentra un error\n    content_type: Application\/JSON\n    body: the member json object\n```\n\n\n\n### 3) A\u00f1adir (POST) un miembro\n\n```md\nPOST \/member\nLo que agrega un nuevo miembro a la estructura de datos de la familia\n\nRESPONSE (application\/json):\n\n    c\u00f3digo de estado: 200 si se agreg\u00f3 con \u00e9xito, 400 si no lo hace porque el cliente (solicitud) falla, 500 si el servidor encuentra un error\n    content_type: Application\/JSON\n    body: the member json object\n```\n\n\n\n### 4) ELIMINA un miembro\n\n```md\nPOST \/member\/<int:member_id>\nQue elimina un miembro dado por el ID dado\n\nRESPONSE (application\/json):\n\n    status_code: 200 if successfully deleted, 400 if it doesn't because the client-side (request) screw up, 500 if the server encouner an error\n    content_type: Application\/JSON\n    body: the member json object\n```\n\n## Requisitos tecnol\u00f3gicos\n\n- Todas las solicitudes y respuestas deben estar en content\/type: application\/json\n- Los c\u00f3digos de respuesta deben ser `200` para tener \u00e9xito,` 400` para una solicitud incorrecta o `404` para no encontrados.\n- Este ejercicio no incluye una base de datos, todo se debe hacer en la memoria RAM.\n",
-        "title": "Family Static API with Flask",
-        "slug": "family-static-api",
-        "status": "published",
-        "duration": 8,
-        "description": "Create an API to show family members",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/python\/junior\/family-static-api\/info.json",
-        "name": "json",
-        "url": "..\/p\/python\/junior\/family-static-api\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "junior",
-        "category": "python",
-        "folder-name": "family-static-api"
-    },
-    {
-        "translations": [
-            "us",
-            "es"
-        ],
-        "readme": "..\/p\/python\/junior\/family-tree-static-api\/",
-        "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) API est\u00e1tica del \u00e1rbol geneal\u00f3gico\n\nBasado en las tecnolog\u00edas\/estrategias que hemos aprendido, construye una API est\u00e1tica que maneje un \u00e1rbol familiar. Tu eres libre de usar tu propia informaci\u00f3n familiar, tambi\u00e9n puedes usar datos falsos.\n\n## Requerimientos\n\nSu API debe tener, al menos, 7 miembros distribuidos en 3 generaciones:\n\n**abuelos -> padres -> generaci\u00f3n actual**\n\nEl \u00e1rbol geneal\u00f3gico debe representarse como un \u00e1rbol de objetos estructurados, es decir: cada persona (nodo en el \u00e1rbol) debe tener: id, nombre, apellido, edad y una referencia (id) a sus padres e hijos (si corresponde).\n\nLa API debe exponer un endpoint que devuelva la lista completa de miembros de la familia ordenados por mayor a menor.\n\nLa API debe exponer un endpoint que devuelve a un miembro espec\u00edfico del \u00e1rbol familiar por su id (que debe ser \u00fanico) y la informaci\u00f3n sobre sus hijos y padres.\n\n### tecnolog\u00edas\n\nLa API se debe desarrollar utilizando **Flask** y cada punto final debe devolver un archivo *v\u00e1lido* **JSON**.\n\n### Pista\n\nEs posible que desees dibujar (l\u00e1piz y papel) la estructura de \u00e1rbol para tener una estructura \"visual\" en mente. Usa las l\u00edneas para mostrar las referencias entre padres e hijos.\n\nLas referencias deben ser el n\u00famero de identificaci\u00f3n de los miembros.\n\nCrea tus estructuras de datos antes de crear los puntos finales, use variables globales.\n",
-        "title": "Family Tree Static API with Flask",
-        "slug": "family-tree-static-api",
-        "status": "published",
-        "duration": 8,
-        "description": "Create an API to read from a family tree structure",
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/python\/junior\/family-tree-static-api\/info.json",
-        "name": "json",
-        "url": "..\/p\/python\/junior\/family-tree-static-api\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "junior",
-        "category": "python",
-        "folder-name": "family-tree-static-api"
-    },
-    {
-        "translations": [
-            "us",
-            "es"
-        ],
-        "readme": "..\/p\/python\/junior\/todo-list-api\/",
-        "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) API Lista de Todo\n\nEste proyecto puede considerarse la continuaci\u00f3n de la [Aplicaci\u00f3n de TodoList con React y Fetch](https:\/\/projects.breatheco.de\/d\/todo-list-with-fetch#readme).\nVamos a replicar\/codificar esta api exacta: [http:\/\/assets.breatheco.de\/apis\/fake\/todos\/](http:\/\/assets.breatheco.de\/apis\/fake\/todos\/)\n\n## \ud83d\udcdd Instrucciones\n\nCrea una API que se conecte a una base de datos MySQL e implemente los [siguientes endpoints](http:\/\/assets.breatheco.de\/apis\/fake\/todos\/).\n\n1. `[GET] \/todos\/user\/<username>` Obtener la lista de Todos para un usuario en particular.\n2. `[POST] \/todos\/user\/<username>` Crear una nueva lista de Todos de un usuario en particular.\n3. `[PUT] \/todos\/user\/<username>` Actualizar la lista completa de tareas de un usuario en particular.\n4. `[DELETE] \/todos\/user\/<username>` Eliminar un usuario y todas sus tareas.\n\n## \ud83d\udcd6 Fundamentos\n\nEste ejercicio te har\u00e1 practicar los siguientes fundamentos:\n\n1. Construye una RESTful API.\n2. Construye una base de datos con SQLAlchemy.\n3. Migraciones de la base de datos.",
-        "slug": "todo-list-api",
-        "title": "Todo List API",
-        "description": "Todo List API using Flask or Django",
-        "status": "published",
-        "live-url": "",
-        "duration": 8,
-        "technologies": [
-            "flask",
-            "python",
-            "json",
-            "logging"
-        ],
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/python\/junior\/todo-list-api\/info.json",
-        "name": "json",
-        "demo": "",
-        "url": "..\/p\/python\/junior\/todo-list-api\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "junior",
-        "category": "python",
-        "folder-name": "todo-list-api"
-    },
-    {
-        "translations": [
-            "us",
-            "es"
-        ],
-        "readme": "..\/p\/python\/semi-senior\/queue-management-api\/",
-        "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) Sistema de gesti\u00f3n de filas SMS\n\nPermite crear un sistema de filas: el sistema de filas se utiliza en gran medida en las instituciones gubernamentales, aeropuertos, bancos y muchos otros lugares que buscan organizar el tr\u00e1fico entrante.\nLos sistemas de fila tambi\u00e9n se pueden usar para equilibrar la carga de diferentes aplicaciones como:\n- Establecimiento de prioridades en las solicitudes entrantes de servidores web.\n- Inmigraci\u00f3n y solicitudes de visa que deben ser priorizadas.\n- Paquetes de red.\n- etc.\n\n## \ud83d\udcdd Instrucciones\n\n1. Clona el siguiente texto para [python\/django](https:\/\/github.com\/breatheco-de\/exercise-queue-management-django) y lo siguiente para [python\/flask](https:\/\/github.com\/4GeeksAcademy\/flask-rest-hello).\n2. La API debe integrarse con Twilio para poder enviar SMS para notificar a los usuarios cuando llegue su turno.\n3. Crea una API que permita a los clientes administrar una fila simple, use la siguiente estructura de datos para implementar la fila:\n\n```py\nclass Queue:\n\n    def __init__(self):\n        self._queue = []\n        # depending on the _mode, the queue has to behave like a FIFO or LIFO\n        self._mode = 'FIFO'\n\n    def enqueue(self, item):\n    def dequeue(self):\n    def get_queue(self):\n    def size(self):\n        return len(self._queue)\n```\n\n## Ejemplo de Flujo de Trabajo\n\n1. La API recibe una solicitud para agregar a Bob a la fila (`POST \/ new`) con cualquier prioridad particular (FIFO o LIFO).\n2. La API agrega a Bob y le notifica con un SMS de confirmaci\u00f3n, el SMS debe indicar cu\u00e1ntas personas est\u00e1n frente a \u00e9l en la l\u00ednea.\n3. El sistema ahora espera hasta que el endpoint `GET \/ next` se ejecute para procesar a la persona en la fila.\n4. Cada vez que se recibe una solicitud `GET \/ next`, la siguiente persona en la fila se procesa hasta que sea el turno de Bob.\n5. Cuando Bob es procesado, el sistema le env\u00eda otro SMS para avisarle que ha llegado su turno y lo elimina de la lista.\n\n## M\u00e1s Detalles\n\n1. Tu debes crear 3 endpoints para tu API:\n\n- POST `\/new`: Recibir\u00e1 informaci\u00f3n sobre un usuario y lo agregar\u00e1 a la fila.\n- GET `\/next`: Se procesar\u00e1 un punto de la fila.\n- GET `\/all`: Devolver\u00e1 una lista con todos los que est\u00e9n pendientes de ser procesados (la fila actual).\n\n## \ud83d\udcd6 Fundamentos\n\nEste ejercicio te har\u00e1 practicar los siguientes fundamentos:\n\n1. Aqu\u00ed puedes encontrar information sobre [como enviar un sms con twillio](https:\/\/www.twilio.com\/docs\/sms\/send-messages), tendr\u00e1s que registrarse y crear una cuenta (gratis) y tambi\u00e9n registrar un n\u00famero (gratis)\n4. Construir una RESTful API\n5. Estructuras de datos complejas.\n6. Queue (FIFO vs FILO)\n7. SMS.\n",
-        "slug": "queue-management-api",
-        "title": "Queue Managment API",
-        "description": "Cloud-based queue management API",
-        "status": "published",
-        "live-url": "",
-        "duration": 8,
-        "technologies": [
-            "flask",
-            "python",
-            "json",
-            "static files",
-            "logging"
-        ],
-        "talents": [
-            {
-                "badge": "identator",
-                "points": 10
-            }
-        ],
-        "info-path": "..\/p\/python\/semi-senior\/queue-management-api\/info.json",
-        "name": "json",
-        "demo": "",
-        "url": "..\/p\/python\/semi-senior\/queue-management-api\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "semi-senior",
-        "category": "python",
-        "folder-name": "queue-management-api"
-    },
-    {
-        "translations": [
-            "us",
-            "es"
-        ],
-        "readme": "..\/p\/python\/semi-senior\/tictactoe-api-django\/",
-        "markdown-es": "# ![alt text](https:\/\/assets.breatheco.de\/apis\/img\/images.php?blob&random&cat=icon&tags=breathecode,32) API de TicTacToe Con Django & REST\n\nEste proyecto es una peque\u00f1a implementaci\u00f3n de API para el Proyecto TicTacToe.\n\n## Instrucciones\n\nUsando el [framework de django](https:\/\/www.djangoproject.com\/) y la libreria de [DjangoRest](http:\/\/www.django-rest-framework.org\/) desarrolla una API que implementa la siguiente API a continuaci\u00f3n, no hay necesidad de implementar ning\u00fan protocolo de autenticaci\u00f3n en este momento.\n\n1. Consigue todos los juegos registrados\n```\n\t[GET] \/games\n\tPARAMS: None\n\tREQUEST BODY: None\n\tRESPONSE BODY:\n\t[\n\t\t{\n\t\t\t\"player1\": \"Rose\",\n\t\t\t\"player2\": \"Emily\",\n\t\t\t\"winner\": \"Rose\"\n\t\t},\n\t\t...\n\t]\n```\n2. A\u00f1adir nuevo juego al registro\n```\n\t[POST] \/game\n\tPARAMS: None\n\tREQUEST BODY:\n\t[\n\t\t{\n\t\t\t\"id\": 1,\n\t\t\t\"player1\": \"Rose\",\n\t\t\t\"player2\": \"Emily\",\n\t\t\t\"winner\": \"Rose\"\n\t\t},\n\t\t...\n\t]\n\tRESPONSE BODY:\n\t[\n\t\t{\n\t\t\t\"id\": 1,\n\t\t\t\"player1\": \"Rose\",\n\t\t\t\"player2\": \"Emily\",\n\t\t\t\"winner\": \"Rose\"\n\t\t},\n\t\t...\n\t]\n```\n3. Eliminar todos los registros de juegos\n```\n\t[DELETE] \/games\n\tPARAMS: None\n\tREQUEST BODY: NONE\n\tRESPONSE BODY:\n\t{\n\t\tcode: 200,\n\t\tmessage: \"ok\"\n\t}\n```\n",
-        "title": "TicTacToe REST API with django",
-        "slug": "tictactoe-api",
-        "status": "published",
-        "live-url": "https:\/\/assets.breatheco.de\/apis\/tictactoe\/",
-        "duration": 16,
-        "description": "Create a rest API with django-rest",
-        "talents": [
-            {
-                "badge": "functional-developer",
-                "points": 10
-            },
-            {
-                "badge": "git-creator",
-                "points": 5
-            },
-            {
-                "badge": "the-console",
-                "points": 5
-            },
-            {
-                "badge": "conditionals",
-                "points": 5
-            },
-            {
-                "badge": "looper",
-                "points": 5
-            },
-            {
-                "badge": "abstract-configer",
-                "points": 5
-            },
-            {
-                "badge": "package-composer",
-                "points": 5
-            },
-            {
-                "badge": "the-console",
-                "points": 5
-            },
-            {
-                "badge": "docu-lover",
-                "points": 10
-            },
-            {
-                "badge": "transaction-master",
-                "points": 10
-            },
-            {
-                "badge": "client-vs-server",
-                "points": 10
-            },
-            {
-                "badge": "http-requester",
-                "points": 10
-            },
-            {
-                "badge": "speak-json",
-                "points": 5
-            },
-            {
-                "badge": "model-master",
-                "points": 10
-            },
-            {
-                "badge": "migrator",
-                "points": 10
-            },
-            {
-                "badge": "crud-master",
-                "points": 10
-            },
-            {
-                "badge": "speak-json",
-                "points": 5
-            },
-            {
-                "badge": "speak-json",
-                "points": 5
-            }
-        ],
-        "info-path": "..\/p\/python\/semi-senior\/tictactoe-api-django\/info.json",
-        "name": "json",
-        "demo": "https:\/\/assets.breatheco.de\/apis\/tictactoe\/",
-        "url": "..\/p\/python\/semi-senior\/tictactoe-api-django\/",
-        "visibility": "public",
-        "technology": "python",
-        "difficulty": "semi-senior",
-        "category": "python",
-        "folder-name": "tictactoe-api-django"
     }
 ]
