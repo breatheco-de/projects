@@ -25,7 +25,7 @@ Este `Student Showcase` todavía está en fase beta y tu eres uno de los primero
 
   El archivo `YML` debe contener toda tu información personal y profesional. Verifica los detalles en [Completando el archivo YML](#completing-the-yml-file)
   
-  Por ejemplo: [rigoberto.yml](https://github.com/4GeeksAcademy/student-external-profile/blob/master/src/students/example.yml).
+  Por ejemplo: [example.yml](https://github.com/4GeeksAcademy/student-external-profile/blob/master/site/resumes/example.yml).
   
   ```
   Importante: deberías probar tu sintáxis de `YML`aqui: http://www.yamllint.com/
@@ -47,16 +47,16 @@ Este `Student Showcase` todavía está en fase beta y tu eres uno de los primero
 
 Después de completar el PR (Pull Request), la aplicación generará automáticamente tu propio portafolio de estudiantes, para verlo, ve si tu nombre aparece aquí:
 
-**[http://sep.4geeksacademy.co/students](http://sep.4geeksacademy.co/students)**
+**[https://sep.4geeksacademy.co](https://sep.4geeksacademy.co)**
 
 Tu perfil debe verse como el siguiente:
 
 <p align="center">
-  <img height="350" src="https://raw.githubusercontent.com/4GeeksAcademy/student-external-profile/master/preview.png">
+  <img height="350" src="https://raw.githubusercontent.com/4GeeksAcademy/student-external-profile/master/site/static/preview.png">
 </p>
 
 <p align="center">
-  <a href="http://sep.4geeksacademy.co/sharu725" target="_blank">Wach Live Demo Here</a>
+  <a href="https://sep.4geeksacademy.co/sharu725" target="_blank">Wach Live Demo Here</a>
 </p>
 
 ## Completando el archivo YML
@@ -73,7 +73,7 @@ skills: List your skills with a percentage of expertise.
 ```
 
 <p align="center">
-  <img height="350" src="https://raw.githubusercontent.com/4GeeksAcademy/student-external-profile/master/static/yml.png">
+  <img height="350" src="https://raw.githubusercontent.com/4GeeksAcademy/student-external-profile/master/site/static/yml.png">
 </p>
 
 Puede elegir una plantilla y un aspecto diferentes, por ejemplo:
