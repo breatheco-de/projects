@@ -25,7 +25,7 @@ Este `Student Showcase` todavía está en fase beta y tu eres uno de los primero
 
   El archivo `YML` debe contener toda tu información personal y profesional. Verifica los detalles en [Completando el archivo YML](#completing-the-yml-file)
   
-  Por ejemplo: [rigoberto.yml](https://github.com/4GeeksAcademy/student-external-profile/blob/master/site/resumes/example.yml).
+  Por ejemplo: [example.yml](https://github.com/4GeeksAcademy/student-external-profile/blob/master/site/resumes/example.yml).
   
   ```
   Importante: deberías probar tu sintáxis de `YML`aqui: http://www.yamllint.com/
