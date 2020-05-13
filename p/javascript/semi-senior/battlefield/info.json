@@ -1,6 +1,7 @@
 {
 	"title" : "Battlefield",
 	"slug" : "battlefield",
+	"translations": ["es", "us"],
 	"instructions":[
 		{
 			"content": "This will be the first instruction",

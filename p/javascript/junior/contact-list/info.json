@@ -2,6 +2,7 @@
 	"title" : "Contact List App Using React & Flux",
 	"slug" : "contact-list",
 	"status": "published",
+	"translations": ["es", "us"],
 	"solution": "https://bitbucket.org/codingacademy/contact-list",
 	"duration" : 24,
 	"description" : "Create a simple contact list application using the React.js framework and Flux Architecture",

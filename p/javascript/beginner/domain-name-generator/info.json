@@ -4,6 +4,7 @@
 	"status": "published",
 	"solution" : "https://bitbucket.org/codingacademy/domain-generator",
 	"duration" : 4,
+	"translations": ["es", "us"],
 	"description" : "The domain mafia is far from over, with more domain extensions every day is a good idea to chase for great domain available to buy. Who knows, maybe you get lucky and become a millionaire!",
 	"talents": [
 		{ "badge": "identator", "points": 6 },

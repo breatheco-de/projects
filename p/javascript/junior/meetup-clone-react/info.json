@@ -3,6 +3,7 @@
 	"slug" : "meetup-clone-react",
 	"status": "published",
 	"solution": "#",
+	"translations": ["es", "us"],
 	"duration" : 24,
 	"description" : "Use React and HTTP Fetch to create a Meetup.com clone",
 	"talents": [

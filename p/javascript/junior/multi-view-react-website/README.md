@@ -4,7 +4,7 @@ Technologies: HTML, CSS, JS, React, react-router, react context.
 
 Enough with the landing pages and single view projects, it is time to build our first web app. 
 
-This is a collaborative project, the class will be separated in 4 groups and each will create a piece of a multi view website.
+This is a collaborative project, the class will be separated in 4 groups and each will create a piece of a multi-view website.
 
 ### Pieces/Groups:
 
@@ -21,7 +21,7 @@ https://getbootstrap.com/docs/4.1/examples/product/ & https://getbootstrap.com/d
 
 #### Phase 1: set the views. React Router.
 
-Each group will have to create the correspondant ***view component*** with dummy content (initially) and as many "smaller" components as needed.
+Each group will have to create the corresponding ***view component*** with dummy content (initially) and as many "smaller" components as needed.
 
 Note: Think DRY (Don't repeat yourself) and declare only ***one*** component and use ```props``` to handle different content.
 
@@ -31,7 +31,7 @@ Each group must use the Consumer given by the instructor in order to ***use the 
 
 - Navbar: must show the user's username and picture (assume the user is logged in).
 - Login: show the login form.
-- Landing Page: must show 3 posts in the carousel, 3 post in a grid and 3 products in the products section.
+- Landing Page: must show 3 posts in the carousel, 3 posts in a grid and 3 products in the products section.
 - Blog: must show 6 blog posts
 - Post View: must show clicked post details.
 

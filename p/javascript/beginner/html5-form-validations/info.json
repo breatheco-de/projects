@@ -3,6 +3,7 @@
 	"title" : "Use JS to validate an HTML Form",
 	"slug" : "html5-form-validations",
 	"duration" : 4,
+	"translations": ["es", "us"],
 	"solution" : "https://codepen.io/alesanchezr/pen/zeaaVx",
 	"description" : "Use Javascript to validate the inputs of an HTML form (on submit)",
 	"talents": [

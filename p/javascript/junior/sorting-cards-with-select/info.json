@@ -4,6 +4,7 @@
 	"status": "published",
 	"solution": "https://jsfiddle.net/BreatheCode/8c36nrk5/7/",
 	"duration" : 4,
+	"translations": ["es", "us"],
 	"description" : "Practice building algorithms by doing a selection-sorting algorithm and displaying it on a website",
 	"talents": [
 		{ "badge": "identator", "points": 6 },

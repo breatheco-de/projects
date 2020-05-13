@@ -3,6 +3,7 @@
 	"slug" : "multi-view-react-website",
 	"status": "published",
 	"solution": "",
+	"translations": ["es", "us"],
 	"duration" : 24,
 	"description" : "Create a web app using React router and Context",
 	"talents": [

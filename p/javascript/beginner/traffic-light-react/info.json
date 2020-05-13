@@ -2,6 +2,7 @@
 	"title" : "Traffic Light",
 	"slug" : "traffic-light-react",
 	"status": "published",
+	"translations": ["es", "us"],
 	"solution": "https://bitbucket.org/codingacademy/traffic-light-react",
 	"duration" : 4,
 	"description" : "Create a small react component with its own state and event listeners",

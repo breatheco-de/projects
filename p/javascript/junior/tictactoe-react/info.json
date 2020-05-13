@@ -2,6 +2,7 @@
 	"title" : "TicTacToe with React.js",
 	"slug" : "tictactoe-react",
 	"status": "published",
+	"translations": ["es", "us"],
 	"solution": "https://bitbucket.org/codingacademy/tictactoe-react",
 	"duration" : 16,
 	"description" : "Create a simple tictactoe 2 player game (no AI), using the React.js framework",
