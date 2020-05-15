@@ -142,7 +142,7 @@ const Upload = ({ location }) => {
 
 // API search function
 function searchProject(url) {
-    return fetch(url)
+    return fetch(url, { cache: "no-store" })
       .then(r => r.json())
       .then(data => data) //bc.json
       .catch(error => {
