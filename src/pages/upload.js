@@ -15,7 +15,11 @@ const projectURL = (url) => {
     const regex = /https:\/\/github\.com\/([a-z0-9-]+)\/([a-z0-9-]+)$/gm;
     let m = regex.exec(url);
     return !m ? null : ({
-        url: `https://raw.githubusercontent.com/${m[1]}/${m[2]}/master/bc.json`,
+        url: [
+            `https://raw.githubusercontent.com/${m[1]}/${m[2]}/master/learn.json`,
+            `https://raw.githubusercontent.com/${m[1]}/${m[2]}/master/bc.json`,
+            `https://raw.githubusercontent.com/${m[1]}/${m[2]}/master/.learn/learn.json`,
+        ],
         slug: m[2]
     });
 }
@@ -141,14 +145,14 @@ const Upload = ({ location }) => {
 }
 
 // API search function
-function searchProject(url) {
-    return fetch(url, { cache: "no-store" })
-      .then(r => r.json())
-      .then(data => data) //bc.json
-      .catch(error => {
-        console.error(error);
-        return null;
-      });
+const searchProject = async (url) => {
+    if(!Array.isArray(url)) url = [url];
+    for(let i = 0;i<url.length;i++){
+        let resp = await fetch(url[i], { cache: "no-store" });
+        if(resp.status === 200) return await resp.json();
+    }
+    
+    throw new Error("Project configuration not found");
 }
   
 export default withLocation(Upload)
