@@ -21,7 +21,7 @@ Este `Student Showcase` todavía está en fase beta y tu eres uno de los primero
   
   ```$ git clone <url_of_repository> ```
   
-3. En tu *espacio de trabajo*, crea un archivo `<your_github_username> .yml` dentro de `/ src / students /` con tu información de perfil.
+3. En tu *espacio de trabajo*, crea un archivo `<your_github_username> .yml` dentro de `/ site / resumes /` con tu información de perfil.
 
   El archivo `YML` debe contener toda tu información personal y profesional. Verifica los detalles en [Completando el archivo YML](#completing-the-yml-file)
   
