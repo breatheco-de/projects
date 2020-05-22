@@ -12,8 +12,9 @@ const ENTER_KEY = 13;
 let timer = null;
 
 const projectURL = (url) => {
-    const regex = /https:\/\/github\.com\/([a-z0-9-]+)\/([a-z0-9-]+)$/gm;
+    const regex = /https:\/\/github\.com\/([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+)\/?$/gm;
     let m = regex.exec(url);
+    console.log("regex result", m, url);
     return !m ? null : ({
         url: [
             `https://raw.githubusercontent.com/${m[1]}/${m[2]}/master/learn.json`,
