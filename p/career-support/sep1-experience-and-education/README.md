@@ -1,17 +1,20 @@
 ## Experience & Education
+
 Have you ever written a story about yourself? Well, this may be the first time! You'll write the story of your professional history.
 
 We want you to start by telling us about your education and work experience. But don't start just yet, there's a right way to do it :) Keep reading and we'll tell you how it's done.
 
 ### Instructions
+
  1. Carefully read the following content.
- 2. You will be doing your second pull request! Please look for the [Student Exernal Profile repository](https://github.com/4GeeksAcademy/student-external-profile) again.
- 3. Find your corresponding student `.YML` file inside the `src/students/` folder.
+ 2. You will be doing your second pull request! Please look for the [About 4Geeks Academy](https://github.com/4GeeksAcademy/About-4Geeks-Academy) again.
+ 3. Find your corresponding student `.YML` file.
  4. Update the section about your relevant work experience & education following the indications provided in the rest of this document.
  
  ## How to write your experience and education?
 
 ### Work Experience
+
 Your **work history** is the most important component of your resume. Employers will want know where you have worked, when you worked there, and what responsibilities you held in each role you have had. They will be looking to see how your experience lines up with what they are looking for in prospective employees.
 
  - List the jobs and internships you have held in reverse chronological order, with the most recent positions first.
