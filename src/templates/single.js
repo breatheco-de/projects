@@ -144,7 +144,14 @@ class Single extends React.Component{
                                                     {pageContext["video-id"] &&
                                                         <div className="col">
                                                             <button
-                                                                onClick={() => this.setState({ showVideo: true })}
+                                                                onClick={() => {
+                                                                    if (pageContext["video-id"].match(/http(s?):\/\/.+/)){
+                                                                        window.open(pageContext["video-id"]);
+                                                                    }
+                                                                    else{
+                                                                        this.setState({ showVideo: true });
+                                                                    }
+                                                                }}
                                                                 className="btn btn-outline-success btn-md px-4 w-100 ">
                                                                 Watch Video Tutorial
                                                             </button>
