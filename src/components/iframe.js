@@ -32,10 +32,12 @@ export default class IFrameView extends Component {
 IFrameView.propTypes = {
 	src: PropTypes.string.isRequired,
 	title: PropTypes.string.isRequired,
+	onLoad: PropTypes.func,
 	height: PropTypes.string
 };
 
 IFrameView.defaultProps = {
   height: 'calc(100vh - 62px)',
+  onLoad: null,
   title: ''
 };

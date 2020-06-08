@@ -57,6 +57,7 @@ class Single extends React.Component{
             />
             <div className="fontFamily">
                 { this.state.showVideo && <Iframe
+                        onLoad={() => window.scrollTo(0,0)}
                         title={`Video tutorial for ${pageContext.title}`}
                         src={`https://assets.breatheco.de/apps/video/?slug=${pageContext.slug}`}
                         height="60vh"
