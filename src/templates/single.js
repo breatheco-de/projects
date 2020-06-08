@@ -58,7 +58,7 @@ class Single extends React.Component{
             <div className="fontFamily">
                 { this.state.showVideo && <Iframe
                         title={`Video tutorial for ${pageContext.title}`}
-                        src={`https://assets.breatheco.de/apps/video/?v=https://assets.breatheco.de/apis/vtutorial/project/${pageContext.slug}`}
+                        src={`https://assets.breatheco.de/apps/video/?slug=${pageContext.slug}`}
                         height="60vh"
                     />
                 }
