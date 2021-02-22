@@ -1,8 +1,4 @@
 {
-    "version": 2,
-    "builds": [
-        { "src": "package.json", "use": "@now/static-build", "config": {"distDir": "public"} }
-    ],
     "routes": [
         {
             "src": "/json",
@@ -16,10 +12,5 @@
             "src": "/(.*)",
             "dest": "/$1"
         }
-    ],
-    "build": {
-        "env": {
-            "ASSETS_TOKEN": "@assets_token"
-        }
-    }
+    ]
 }

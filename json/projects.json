@@ -27,7 +27,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep1-experience-and-education\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/career-support\/sep1-experience-and-education\/",
         "technology": "career-support",
         "difficulty": null,
@@ -62,7 +62,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep2-projects\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/career-support\/sep2-projects\/",
         "technology": "career-support",
         "difficulty": null,
@@ -97,7 +97,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep3-skills\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/career-support\/sep3-skills\/",
         "technology": "career-support",
         "difficulty": null,
@@ -132,7 +132,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep4-summary-statement\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/career-support\/sep4-summary-statement\/",
         "technology": "career-support",
         "difficulty": null,
@@ -167,7 +167,7 @@
             }
         ],
         "info-path": "..\/p\/career-support\/sep5-resume\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/career-support\/sep5-resume\/",
         "technology": "career-support",
         "difficulty": null,
@@ -192,7 +192,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/full-stack\/full-stack-demo-day-preparation\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/final-project\/full-stack\/full-stack-demo-day-preparation\/",
         "technology": "final-project",
         "difficulty": "full-stack",
@@ -219,7 +219,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/full-stack\/full-stack-mvc\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/final-project\/full-stack\/full-stack-mvc\/",
         "technology": "final-project",
         "difficulty": "full-stack",
@@ -246,7 +246,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/full-stack\/full-stack-project-prototype\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/final-project\/full-stack\/full-stack-project-prototype\/",
         "technology": "final-project",
         "difficulty": "full-stack",
@@ -274,7 +274,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/full-stack\/full-stack-project-stories-and-wireframes\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/final-project\/full-stack\/full-stack-project-stories-and-wireframes\/",
         "technology": "final-project",
         "difficulty": "full-stack",
@@ -301,7 +301,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/web-development\/fluxify\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/final-project\/web-development\/fluxify\/",
         "technology": "final-project",
         "difficulty": "web-development",
@@ -328,7 +328,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/web-development\/prototype\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/final-project\/web-development\/prototype\/",
         "technology": "final-project",
         "difficulty": "web-development",
@@ -355,7 +355,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/web-development\/user-stories\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/final-project\/web-development\/user-stories\/",
         "technology": "final-project",
         "difficulty": "web-development",
@@ -382,7 +382,7 @@
             }
         ],
         "info-path": "..\/p\/final-project\/web-development\/wireframes\/info.json",
-        "name": "json",
+        "name": "p",
         "url": "..\/p\/final-project\/web-development\/wireframes\/",
         "technology": "final-project",
         "difficulty": "web-development",
