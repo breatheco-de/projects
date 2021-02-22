@@ -1,9 +1,0 @@
-RewriteEngine On
-
-# Map http://projects.breathecode.local/x to /app/x unless there is a x in the web root.
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-RewriteCond %{REQUEST_URI} !^/json
-RewriteRule ^(.*)$ /public/$1
-RewriteRule ^$ /public/

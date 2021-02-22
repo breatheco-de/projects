@@ -9,9 +9,13 @@ exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
     let projects = []; //filtered projects after removing repeated
     let _projects = []; //incoming projects
-    const resp = await fetch('https://assets.breatheco.de/apis/project/all');
+    const resp = await fetch(`${process.env.ASSETS_URL}/apis/project/registry/all`);
     if(resp.status >=200 && resp.status <400){
-        _projects = await resp.json();
+        _projects = Object.values(await resp.json());
+        console.log("Original projects: "+_projects)
+    }
+    else{
+        console.error(`Error fetching projects with ${resp.status}`)
     }
     let technologyTags = [];
     let difficulties = [];
@@ -48,7 +52,7 @@ exports.createPages = async ({ actions, graphql }) => {
     })
 
     projects.forEach(p => {
-
+        console.log("Creating page for project "+p.title)
         if(typeof(p.title) === "string" && p.title !== "")
             p.title = "Coding Tutorial - " + p.title;
             
