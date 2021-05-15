@@ -9,7 +9,7 @@ exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
     let projects = []; //filtered projects after removing repeated
     let _projects = []; //incoming projects
-    const resp = await fetch(`${process.env.ASSETS_URL}/apis/project/registry/all`);
+    const resp = await fetch(`https://assets.breatheco.de/apis/project/registry/all`);
     if(resp.status >=200 && resp.status <400){
         _projects = Object.values(await resp.json());
         console.log("Original projects: "+_projects)
