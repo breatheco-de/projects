@@ -1,3 +1,6 @@
+require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+})
 const sharp = require('sharp')
 sharp.simd(false)
 sharp.cache(false)
@@ -9,6 +12,7 @@ exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
     let projects = []; //filtered projects after removing repeated
     let _projects = []; //incoming projects
+
     const resp = await fetch(`${process.env.ASSETS_URL}/apis/project/registry/all`);
     if(resp.status >=200 && resp.status <400){
         _projects = Object.values(await resp.json());
