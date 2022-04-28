@@ -6,6 +6,13 @@ import withLocation from "../components/withLocation";
 import LanguageSwitcher from "../components/language";
 import Iframe from "../components/iframe";
 import Layout from "../components/layout";
+import usSvg from "../assets/us.svg";
+import esSvg from "../assets/es.svg";
+
+const langSvg = {
+    'us': usSvg,
+    'es': esSvg,
+}
 
 
 class Single extends React.Component{
@@ -47,7 +54,7 @@ class Single extends React.Component{
 
     render(){
         const { pageContext, search } = this.props;
-
+        console.log(pageContext, 'pageContext');
         const fromIframe = (search.iframe === 'true');
         return(
             <React.Fragment>
@@ -115,7 +122,7 @@ class Single extends React.Component{
                                                     <div className="col-5"><span>🌎</span><span className="ml-1">Translations:</span></div>
                                                     <div className="col-7 d-flex justify-content-end ">
                                                         <ul className="d-inline">
-                                                        {pageContext.translations.map(l => <li><img style={{ height: "15px"}} className="rounded" src={`https://www.countryflags.io/${l}/flat/64.png`} /></li>)}
+                                                        {pageContext.translations.map(l => <li><img style={{ height: "15px"}} className="rounded" src={langSvg[l]} /></li>)}
                                                         </ul>
                                                     </div>
                                                 </div>
