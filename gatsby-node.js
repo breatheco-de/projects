@@ -13,10 +13,11 @@ exports.createPages = async ({ actions, graphql }) => {
     let projects = []; //filtered projects after removing repeated
     let _projects = []; //incoming projects
 
-    const resp = await fetch(`${process.env.ASSETS_URL}/apis/project/registry/all`);
+    const resp = await fetch(`${process.env.ASSETS_URL}/v1/registry/asset?type=project`);
     if(resp.status >=200 && resp.status <400){
-        _projects = Object.values(await resp.json());
-        console.log("Original projects: "+_projects)
+        // _projects = Object.values(await resp.json());
+        _projects = await resp.json();
+        console.log("Original projects: " + _projects)
     }
     else{
         console.error(`Error fetching projects with ${resp.status}`)
@@ -42,7 +43,6 @@ exports.createPages = async ({ actions, graphql }) => {
     }
     technologyTags = [...new Set(technologyTags)];
     difficulties = [...new Set(difficulties)];
-    
 
     createPage({
 
@@ -51,7 +51,7 @@ exports.createPages = async ({ actions, graphql }) => {
         context: {
             technologyTags,
             difficulties,
-            projects: projects.filter(p => !p.visibility || p.visibility === "public")
+            projects: projects.filter(p => !p.visibility || p.visibility === "PUBLIC")
         },
     })
 
