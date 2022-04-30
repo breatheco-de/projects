@@ -9,6 +9,7 @@ import Layout from "../components/layout";
 import usSvg from "../assets/us.svg";
 import esSvg from "../assets/es.svg";
 
+
 const langSvg = {
     'us': usSvg,
     'es': esSvg,
@@ -29,11 +30,10 @@ class Single extends React.Component{
         const { pageContext } = this.props;
 
         _lang = _lang || this.state.lang || this.props.search.lang || "us";
-        const readmeURL = pageContext.readme.indexOf("../") === 0 ?
-        "https://projects.breatheco.de/json/?slug="+pageContext.slug+"&lang="+_lang+"&readme&size=big"
-        :
-        pageContext["readme"+(["us","en"].includes(_lang) ? "" : "-"+_lang)];
 
+        let readmeURL = `https://breathecode.herokuapp.com/v1/registry/asset/${pageContext.translations_slug[_lang]}.md`;
+
+        console.log(readmeURL);
         fetch(readmeURL)
             .then(resp => resp.text())
             .then(data => this.setState({ markdown: data, lang: _lang }))
