@@ -1,3 +1,5 @@
+> <h1>This project is deprecated, we are using the [breathecode website](https://github.com/breatheco-de/website) instead, but in a couple of months we will discontinue the website as well and only use the 4Geeks.com API.</h1>
+
 <p align="center"><img src="https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,128"></p>
 <h1 align="center"> BreatheCode's Project-Exercises Pool </h1>
 
